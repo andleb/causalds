@@ -1,0 +1,449 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Unmeasured Chronic NSAID Use"
+  ],
+  "proxified_nodes": [
+    "H. pylori-Associated Gastric Pathology",
+    "Helicobacter pylori Infection Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "H. pylori-Associated Gastric Pathology",
+    "Helicobacter pylori Infection Status"
+  ],
+  "proxy_groups": {
+    "H. pylori-Associated Gastric Pathology": [
+      "H. pylori-Associated Gastric Pathology1",
+      "H. pylori-Associated Gastric Pathology2",
+      "H. pylori-Associated Gastric Pathology3",
+      "H. pylori-Associated Gastric Pathology4",
+      "H. pylori-Associated Gastric Pathology5",
+      "H. pylori-Associated Gastric Pathology6",
+      "H. pylori-Associated Gastric Pathology7"
+    ],
+    "Helicobacter pylori Infection Status": [
+      "Helicobacter pylori Infection Status1",
+      "Helicobacter pylori Infection Status2",
+      "Helicobacter pylori Infection Status3"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "H. pylori-Associated Gastric Pathology": {
+      "conceptual_node": "H. pylori-Associated Gastric Pathology",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology1",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": 0.8033545053069198
+            },
+            "b": -0.7331539106356767,
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": 0.5671209581631796
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": -0.7393260034578721
+            }
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology2",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": 0.5532758221612853
+            },
+            "b": -1.1313596362162215,
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": 0.814311921471728
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": 0.10024886693426471
+            }
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology3",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.773222995721516,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": 1.071831412708968
+            },
+            "b": -0.16993580929573202,
+            "w_pair": {},
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": -0.565597489822055
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": -0.1400749390341942
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology4",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.4791697135980013,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  26
+                ],
+                [
+                  26,
+                  63
+                ],
+                [
+                  63,
+                  29
+                ],
+                [
+                  29,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  26
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "H. pylori-Associated Gastric Pathology"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology5",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": 1.3776980025216004
+            },
+            "b": -0.2709796957335452,
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": -0.32989484235046296
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": -0.47501575467770163
+            }
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology6",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": -1.5552615047770884
+            },
+            "b": 1.502913468701103,
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": -0.9483239767463258
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": -1.1280757918627367
+            }
+          }
+        },
+        {
+          "column_name": "H. pylori-Associated Gastric Pathology7",
+          "conceptual_node": "H. pylori-Associated Gastric Pathology",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "H. pylori-Associated Gastric Pathology": -0.4841751554797574
+            },
+            "b": 0.07537956801596016,
+            "w_nl": {
+              "H. pylori-Associated Gastric Pathology": -0.6601529930572457
+            },
+            "nl_shift": {
+              "H. pylori-Associated Gastric Pathology": 1.1446650158284664
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.5633627846814645,
+        "min_information": 0.5633627846814645,
+        "average_information": 0.5633627846814645,
+        "lower_tail_quantiles": {
+          "q10": 0.5633627846814645,
+          "q25": 0.5633627846814645
+        },
+        "per_proxy": {
+          "H. pylori-Associated Gastric Pathology1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.023230163778414935,
+            "p_w1_z0": 0.3705426356589147,
+            "p_w1_z1": 0.606368330464716
+          },
+          "H. pylori-Associated Gastric Pathology2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.023984708039311915,
+            "p_w1_z0": 0.2277660324171952,
+            "p_w1_z1": 0.45180722891566266
+          },
+          "H. pylori-Associated Gastric Pathology3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.08001915716623846,
+            "mean_z0": -0.2635430672732049,
+            "mean_z1": 0.4370609309127508,
+            "pooled_var": 6.134105627411476
+          },
+          "H. pylori-Associated Gastric Pathology4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.31573470459186226,
+            "mean_z0": 0.97831804660749,
+            "mean_z1": -0.9935089573476036,
+            "pooled_var": 12.314457919830245
+          },
+          "H. pylori-Associated Gastric Pathology5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.039969769728830054,
+            "p_w1_z0": 0.4046511627906977,
+            "p_w1_z1": 0.7123924268502582
+          },
+          "H. pylori-Associated Gastric Pathology6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06762431395879465,
+            "p_w1_z0": 0.7269908386187456,
+            "p_w1_z1": 0.3306368330464716
+          },
+          "H. pylori-Associated Gastric Pathology7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.012799967418012245,
+            "p_w1_z0": 0.5997885835095137,
+            "p_w1_z1": 0.4242685025817556
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "H. pylori-Associated Gastric Pathology6",
+          "log_loss": 0.5626569067890784,
+          "auc": 0.6984446393244376
+        },
+        "calibrated": {
+          "log_loss": 0.41250580563119726,
+          "auc": 0.8593758907572301
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.15015110115788116,
+          "auc_gain": 0.16093125143279252
+        }
+      }
+    },
+    "Helicobacter pylori Infection Status": {
+      "conceptual_node": "Helicobacter pylori Infection Status",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Helicobacter pylori Infection Status1",
+          "conceptual_node": "Helicobacter pylori Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.6234037038009346,
+          "params": {
+            "w": {
+              "Helicobacter pylori Infection Status": -0.25292851737843525
+            },
+            "b": -0.5204641666153863,
+            "w_pair": {},
+            "w_nl": {
+              "Helicobacter pylori Infection Status": -0.3795289224029593
+            },
+            "nl_shift": {
+              "Helicobacter pylori Infection Status": 1.0085525477400208
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Helicobacter pylori Infection Status2",
+          "conceptual_node": "Helicobacter pylori Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2058905046707136,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  27,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Helicobacter pylori Infection Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Helicobacter pylori Infection Status3",
+          "conceptual_node": "Helicobacter pylori Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.137565387127866,
+          "params": {
+            "w": {
+              "Helicobacter pylori Infection Status": 0.5478633041115207
+            },
+            "b": 0.008454230987380842,
+            "w_pair": {},
+            "w_nl": {
+              "Helicobacter pylori Infection Status": 1.0513063457874985
+            },
+            "nl_shift": {
+              "Helicobacter pylori Infection Status": -0.5400951477153577
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.14788438732865564,
+        "average_information": 0.6536826692294908,
+        "lower_tail_quantiles": {
+          "q10": 0.15122130880296902,
+          "q25": 0.15122130880296902
+        },
+        "per_proxy": {
+          "Helicobacter pylori Infection Status1": {
+            "proxy_type": "continuous"
+          },
+          "Helicobacter pylori Infection Status2": {
+            "proxy_type": "continuous"
+          },
+          "Helicobacter pylori Infection Status3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Helicobacter pylori Infection Status3",
+          "rmse": 0.8270232827454453,
+          "r2": 0.5937364810064337
+        },
+        "calibrated": {
+          "rmse": 0.7967943675906313,
+          "r2": 0.6228927650814637
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.030228915154814073,
+          "r2_gain": 0.029156284075030015
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

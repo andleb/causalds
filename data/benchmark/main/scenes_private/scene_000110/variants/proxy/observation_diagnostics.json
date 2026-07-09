@@ -1,0 +1,297 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Infectious Disease Severity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Infectious Disease Severity"
+  ],
+  "proxy_groups": {
+    "Infectious Disease Severity": [
+      "Infectious Disease Severity1",
+      "Infectious Disease Severity2",
+      "Infectious Disease Severity3",
+      "Infectious Disease Severity4",
+      "Infectious Disease Severity5",
+      "Infectious Disease Severity6",
+      "Infectious Disease Severity7",
+      "Infectious Disease Severity8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Infectious Disease Severity": {
+      "conceptual_node": "Infectious Disease Severity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Infectious Disease Severity1",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.8440479745380807,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": 0.9723134472100747
+            },
+            "b": 0.4229094428387049,
+            "w_pair": {},
+            "w_nl": {
+              "Infectious Disease Severity": 0.587123361530114
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": -0.8890566487939657
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity2",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.2655546251133236,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": 1.0357570455988205
+            },
+            "b": -0.17814189178103867,
+            "w_pair": {},
+            "w_nl": {
+              "Infectious Disease Severity": -0.5871838422889591
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": -0.02065230978189847
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity3",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.4976051393785896,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": -1.0399398328735292
+            },
+            "b": 0.24132858454046174,
+            "w_pair": {},
+            "w_nl": {
+              "Infectious Disease Severity": 0.8454679738359459
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": 0.49358975247714665
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity4",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": 0.6827133953225217
+            },
+            "b": -0.9684296412595349,
+            "w_nl": {
+              "Infectious Disease Severity": -0.9947599596088257
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": -1.0603679229136167
+            }
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity5",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.7522589373383899,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": 0.5026796637250421
+            },
+            "b": -1.0888385146265802,
+            "w_pair": {},
+            "w_nl": {
+              "Infectious Disease Severity": 0.2629959038521543
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": 0.14602256033718453
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity6",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.9559910935168983,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": -0.7403038865308614
+            },
+            "b": 0.181790250469194,
+            "w_pair": {},
+            "w_nl": {
+              "Infectious Disease Severity": -0.31725393518750966
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": -0.3946743931761123
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity7",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Infectious Disease Severity": -1.760158654397014
+            },
+            "b": -0.5280416292497566,
+            "w_nl": {
+              "Infectious Disease Severity": 0.6363646624687037
+            },
+            "nl_shift": {
+              "Infectious Disease Severity": -0.6002973084160028
+            }
+          }
+        },
+        {
+          "column_name": "Infectious Disease Severity8",
+          "conceptual_node": "Infectious Disease Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.046171072057833,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  50
+                ],
+                [
+                  50,
+                  16
+                ],
+                [
+                  16,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  16
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Infectious Disease Severity"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.507351900679255,
+        "average_information": 0.6348329387346358,
+        "lower_tail_quantiles": {
+          "q10": 0.5112083505825834,
+          "q25": 0.5288772968597855
+        },
+        "per_proxy": {
+          "Infectious Disease Severity1": {
+            "proxy_type": "continuous"
+          },
+          "Infectious Disease Severity2": {
+            "proxy_type": "continuous"
+          },
+          "Infectious Disease Severity3": {
+            "proxy_type": "continuous"
+          },
+          "Infectious Disease Severity4": {
+            "proxy_type": "binary"
+          },
+          "Infectious Disease Severity5": {
+            "proxy_type": "continuous"
+          },
+          "Infectious Disease Severity6": {
+            "proxy_type": "continuous"
+          },
+          "Infectious Disease Severity7": {
+            "proxy_type": "binary"
+          },
+          "Infectious Disease Severity8": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Infectious Disease Severity7",
+          "rmse": 1.5243836682252818,
+          "r2": 0.35147127460209915
+        },
+        "calibrated": {
+          "rmse": 0.9631662491006582,
+          "r2": 0.7410933804807553
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.5612174191246236,
+          "r2_gain": 0.3896221058786562
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

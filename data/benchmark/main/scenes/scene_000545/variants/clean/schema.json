@@ -1,0 +1,55 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Occupational Heavy Metal Exposure Index": {
+      "dtype": "float64"
+    },
+    "Peripheral Neuropathy and Systemic Toxicity Burden": {
+      "dtype": "float64"
+    },
+    "Neurogenic Urinary Incontinence Severity": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Occupational Heavy Metal Exposure Index": {
+          "dtype": "float64"
+        },
+        "Peripheral Neuropathy and Systemic Toxicity Burden": {
+          "dtype": "float64"
+        },
+        "Neurogenic Urinary Incontinence Severity": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Occupational Heavy Metal Exposure Index": {
+          "dtype": "float64"
+        },
+        "Peripheral Neuropathy and Systemic Toxicity Burden": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Occupational Heavy Metal Exposure Index": {
+      "dtype": "float64"
+    },
+    "Peripheral Neuropathy and Systemic Toxicity Burden": {
+      "dtype": "float64"
+    },
+    "Neurogenic Urinary Incontinence Severity": {
+      "dtype": "float64"
+    }
+  }
+}

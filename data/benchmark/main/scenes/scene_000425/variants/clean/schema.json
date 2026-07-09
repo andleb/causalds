@@ -1,0 +1,75 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Ambient Relative Humidity": {
+      "dtype": "float64"
+    },
+    "Wood Moisture Above Fiber Saturation Point": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dimensional Change in Wood": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Ambient Relative Humidity": {
+          "dtype": "float64"
+        },
+        "Wood Moisture Above Fiber Saturation Point": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dimensional Change in Wood": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Ambient Relative Humidity": {
+          "dtype": "float64"
+        },
+        "Wood Moisture Above Fiber Saturation Point": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Ambient Relative Humidity": {
+      "dtype": "float64"
+    },
+    "Wood Moisture Above Fiber Saturation Point": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dimensional Change in Wood": {
+      "dtype": "float64"
+    }
+  }
+}

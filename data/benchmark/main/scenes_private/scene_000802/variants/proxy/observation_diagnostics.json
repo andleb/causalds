@@ -1,0 +1,416 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Paternal DNA Methylation Level at Growth-Associated Loci",
+    "Thiamine Deficiency Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Paternal DNA Methylation Level at Growth-Associated Loci",
+    "Thiamine Deficiency Status"
+  ],
+  "proxy_groups": {
+    "Paternal DNA Methylation Level at Growth-Associated Loci": [
+      "Paternal DNA Methylation Level at Growth-Associated Loci1",
+      "Paternal DNA Methylation Level at Growth-Associated Loci2",
+      "Paternal DNA Methylation Level at Growth-Associated Loci3"
+    ],
+    "Thiamine Deficiency Status": [
+      "Thiamine Deficiency Status1",
+      "Thiamine Deficiency Status2",
+      "Thiamine Deficiency Status3",
+      "Thiamine Deficiency Status4",
+      "Thiamine Deficiency Status5",
+      "Thiamine Deficiency Status6",
+      "Thiamine Deficiency Status7",
+      "Thiamine Deficiency Status8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Paternal DNA Methylation Level at Growth-Associated Loci": {
+      "conceptual_node": "Paternal DNA Methylation Level at Growth-Associated Loci",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Paternal DNA Methylation Level at Growth-Associated Loci1",
+          "conceptual_node": "Paternal DNA Methylation Level at Growth-Associated Loci",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.114127038753063,
+          "params": {
+            "w": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": 1.3586764658075707
+            },
+            "b": -0.03299861880096921,
+            "w_pair": {},
+            "w_nl": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": 0.6240736043329164
+            },
+            "nl_shift": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": 0.7300156053751761
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Paternal DNA Methylation Level at Growth-Associated Loci2",
+          "conceptual_node": "Paternal DNA Methylation Level at Growth-Associated Loci",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9349779149289235,
+          "params": {
+            "w": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": -0.9690365579032711
+            },
+            "b": 0.15901570324097267,
+            "w_pair": {},
+            "w_nl": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": 1.1324990936862551
+            },
+            "nl_shift": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": -0.6053704255868395
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Paternal DNA Methylation Level at Growth-Associated Loci3",
+          "conceptual_node": "Paternal DNA Methylation Level at Growth-Associated Loci",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": -1.056186394621116
+            },
+            "b": 0.4872232390493185,
+            "w_nl": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": -0.7321160582347528
+            },
+            "nl_shift": {
+              "Paternal DNA Methylation Level at Growth-Associated Loci": 0.2196379035765299
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.8202891278802347,
+        "average_information": 1.0319000954194963,
+        "lower_tail_quantiles": {
+          "q10": 0.8223792404020878,
+          "q25": 0.8231149439700688
+        },
+        "per_proxy": {
+          "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+            "proxy_type": "continuous"
+          },
+          "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+            "proxy_type": "continuous"
+          },
+          "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Paternal DNA Methylation Level at Growth-Associated Loci1",
+          "rmse": 0.7913246867228304,
+          "r2": 0.6327439480598525
+        },
+        "calibrated": {
+          "rmse": 0.6848841660618732,
+          "r2": 0.7248979771559414
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10644052066095722,
+          "r2_gain": 0.09215402909608894
+        }
+      }
+    },
+    "Thiamine Deficiency Status": {
+      "conceptual_node": "Thiamine Deficiency Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Thiamine Deficiency Status1",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.3316337301989427,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": 0.8745753344144721
+            },
+            "b": -0.07560042984172669,
+            "w_pair": {},
+            "w_nl": {
+              "Thiamine Deficiency Status": -0.6542797839827195
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": 0.8685013956644645
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status2",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.5140960784773334,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": -0.7858971170917279
+            },
+            "b": -0.3706072887735218,
+            "w_pair": {},
+            "w_nl": {
+              "Thiamine Deficiency Status": 0.9894499648726377
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": -1.1336822929655748
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status3",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": -0.3960138194874395
+            },
+            "b": 1.0175685867770077,
+            "w_nl": {
+              "Thiamine Deficiency Status": 0.35030309096015905
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": 0.7801163451435857
+            }
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status4",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": -0.4542818865780779
+            },
+            "b": -2.3475415485534845,
+            "w_nl": {
+              "Thiamine Deficiency Status": -0.3344072459266414
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": -0.682864585681004
+            }
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status5",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": 0.44380430604981314
+            },
+            "b": 0.8946652813181832,
+            "w_nl": {
+              "Thiamine Deficiency Status": 0.3202725268167317
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": -0.8228754862094015
+            }
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status6",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.2961798050315343,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": 1.361464481008667
+            },
+            "b": -1.2941595423590844,
+            "w_pair": {},
+            "w_nl": {
+              "Thiamine Deficiency Status": 0.8104715699720724
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": -0.2638982065081945
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status7",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": -0.01110901570835554
+            },
+            "b": -0.639064632888174,
+            "w_nl": {
+              "Thiamine Deficiency Status": -0.9814934053042685
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": -0.031996767975572826
+            }
+          }
+        },
+        {
+          "column_name": "Thiamine Deficiency Status8",
+          "conceptual_node": "Thiamine Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Thiamine Deficiency Status": 0.8609641419514444
+            },
+            "b": 0.20198973715397514,
+            "w_nl": {
+              "Thiamine Deficiency Status": 0.8532950123127201
+            },
+            "nl_shift": {
+              "Thiamine Deficiency Status": 0.2653966266664787
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.563422825732399,
+        "min_information": 0.563422825732399,
+        "average_information": 0.563422825732399,
+        "lower_tail_quantiles": {
+          "q10": 0.563422825732399,
+          "q25": 0.563422825732399
+        },
+        "per_proxy": {
+          "Thiamine Deficiency Status1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.07527957254375278,
+            "mean_z0": 0.3537003811010412,
+            "mean_z1": 0.7191793405270908,
+            "pooled_var": 1.7743840097592714
+          },
+          "Thiamine Deficiency Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.07126793910524848,
+            "mean_z0": 0.4043044157466412,
+            "mean_z1": -0.18870398118820128,
+            "pooled_var": 4.934321986158486
+          },
+          "Thiamine Deficiency Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.00028192340810408775,
+            "p_w1_z0": 0.6967364532019704,
+            "p_w1_z1": 0.6666666666666666
+          },
+          "Thiamine Deficiency Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0011917431787094243,
+            "p_w1_z0": 0.07881773399014778,
+            "p_w1_z1": 0.047636103151862466
+          },
+          "Thiamine Deficiency Status5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0028450761617098957,
+            "p_w1_z0": 0.7407635467980296,
+            "p_w1_z1": 0.8236031518624641
+          },
+          "Thiamine Deficiency Status6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.37996624865300704,
+            "mean_z0": -1.0943511906320378,
+            "mean_z1": 0.7506123042340944,
+            "pooled_var": 8.958401725036254
+          },
+          "Thiamine Deficiency Status7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0031477171805146635,
+            "p_w1_z0": 0.3322044334975369,
+            "p_w1_z1": 0.2365090735434575
+          },
+          "Thiamine Deficiency Status8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.02944260550135263,
+            "p_w1_z0": 0.5049261083743842,
+            "p_w1_z1": 0.8046800382043935
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Thiamine Deficiency Status8",
+          "log_loss": 0.5429863056820013,
+          "auc": 0.6624454649827785
+        },
+        "calibrated": {
+          "log_loss": 0.36846353659503406,
+          "auc": 0.7826309988518945
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.1745227690869673,
+          "auc_gain": 0.12018553386911601
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,388 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Annual Household Income",
+    "Legal Marital Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Annual Household Income",
+    "Legal Marital Status"
+  ],
+  "proxy_groups": {
+    "Annual Household Income": [
+      "Annual Household Income1",
+      "Annual Household Income2",
+      "Annual Household Income3",
+      "Annual Household Income4",
+      "Annual Household Income5"
+    ],
+    "Legal Marital Status": [
+      "Legal Marital Status1",
+      "Legal Marital Status2",
+      "Legal Marital Status3",
+      "Legal Marital Status4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Annual Household Income": {
+      "conceptual_node": "Annual Household Income",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Annual Household Income1",
+          "conceptual_node": "Annual Household Income",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 3.038159183499818,
+          "params": {
+            "w": {
+              "Annual Household Income": -0.8536689260202204
+            },
+            "b": 0.12189154197467014,
+            "w_pair": {},
+            "w_nl": {
+              "Annual Household Income": 0.2583723080902717
+            },
+            "nl_shift": {
+              "Annual Household Income": 0.8683536841098816
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Annual Household Income2",
+          "conceptual_node": "Annual Household Income",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.681487204300438,
+          "params": {
+            "w": {
+              "Annual Household Income": -1.1800098297121622
+            },
+            "b": -0.3064369862249535,
+            "w_pair": {},
+            "w_nl": {
+              "Annual Household Income": 0.34023828727133787
+            },
+            "nl_shift": {
+              "Annual Household Income": -0.8017135415662506
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Annual Household Income3",
+          "conceptual_node": "Annual Household Income",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Annual Household Income": -0.9625802149477689
+            },
+            "b": 0.09844757719334293,
+            "w_nl": {
+              "Annual Household Income": 0.6486771985409598
+            },
+            "nl_shift": {
+              "Annual Household Income": 0.6242409633991568
+            }
+          }
+        },
+        {
+          "column_name": "Annual Household Income4",
+          "conceptual_node": "Annual Household Income",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Annual Household Income": 1.732962279103916
+            },
+            "b": -0.5955034213396034,
+            "w_nl": {
+              "Annual Household Income": -0.16068191734153708
+            },
+            "nl_shift": {
+              "Annual Household Income": 1.4384938633097728
+            }
+          }
+        },
+        {
+          "column_name": "Annual Household Income5",
+          "conceptual_node": "Annual Household Income",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4826403411413793,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  30
+                ],
+                [
+                  30,
+                  12
+                ],
+                [
+                  12,
+                  24
+                ],
+                [
+                  24,
+                  62
+                ],
+                [
+                  62,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  30
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  62
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Annual Household Income"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.3350826899746149,
+        "average_information": 4.143414791077699,
+        "lower_tail_quantiles": {
+          "q10": 1.3803895691835337,
+          "q25": 1.5958247956516485
+        },
+        "per_proxy": {
+          "Annual Household Income1": {
+            "proxy_type": "continuous"
+          },
+          "Annual Household Income2": {
+            "proxy_type": "continuous"
+          },
+          "Annual Household Income3": {
+            "proxy_type": "binary"
+          },
+          "Annual Household Income4": {
+            "proxy_type": "binary"
+          },
+          "Annual Household Income5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Annual Household Income2",
+          "rmse": 0.6558574289301923,
+          "r2": 0.6471674120776685
+        },
+        "calibrated": {
+          "rmse": 0.5195052342404115,
+          "r2": 0.7786244460186308
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.13635219468978077,
+          "r2_gain": 0.1314570339409623
+        }
+      }
+    },
+    "Legal Marital Status": {
+      "conceptual_node": "Legal Marital Status",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Legal Marital Status1",
+          "conceptual_node": "Legal Marital Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.534982826978492,
+          "params": {
+            "w": {
+              "Legal Marital Status": -0.5779851771013514
+            },
+            "b": -0.3438040961908402,
+            "w_pair": {},
+            "w_nl": {
+              "Legal Marital Status": -0.22388592113938965
+            },
+            "nl_shift": {
+              "Legal Marital Status": -0.1858231272562234
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Legal Marital Status2",
+          "conceptual_node": "Legal Marital Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 3.020470950852536,
+          "params": {
+            "w": {
+              "Legal Marital Status": -0.837117350743446
+            },
+            "b": -0.04303232676473302,
+            "w_pair": {},
+            "w_nl": {
+              "Legal Marital Status": -0.6608768489131167
+            },
+            "nl_shift": {
+              "Legal Marital Status": 1.3051519836792318
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Legal Marital Status3",
+          "conceptual_node": "Legal Marital Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.6394040554590816,
+          "params": {
+            "w": {
+              "Legal Marital Status": -1.3270499768201287
+            },
+            "b": -0.8117724673885608,
+            "w_pair": {},
+            "w_nl": {
+              "Legal Marital Status": -0.8152348551375056
+            },
+            "nl_shift": {
+              "Legal Marital Status": -0.29572615812775505
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Legal Marital Status4",
+          "conceptual_node": "Legal Marital Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.87953214868557,
+          "params": {
+            "w": {
+              "Legal Marital Status": -1.3825897959229976
+            },
+            "b": -0.8634782928217274,
+            "w_pair": {},
+            "w_nl": {
+              "Legal Marital Status": -0.2750642296243303
+            },
+            "nl_shift": {
+              "Legal Marital Status": -0.3434365481898147
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.7749220476088015,
+        "average_information": 0.9807917676868201,
+        "lower_tail_quantiles": {
+          "q10": 0.7802888988181691,
+          "q25": 0.7802888988181691
+        },
+        "per_proxy": {
+          "Legal Marital Status1": {
+            "proxy_type": "continuous"
+          },
+          "Legal Marital Status2": {
+            "proxy_type": "continuous"
+          },
+          "Legal Marital Status3": {
+            "proxy_type": "continuous"
+          },
+          "Legal Marital Status4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Legal Marital Status3",
+          "rmse": 0.9031695707231711,
+          "r2": 0.5318194213263308
+        },
+        "calibrated": {
+          "rmse": 0.7473817578683382,
+          "r2": 0.6794027544912824
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1557878128548329,
+          "r2_gain": 0.14758333316495165
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

@@ -1,0 +1,99 @@
+{
+  "n_rows": 16000,
+  "n_columns": 5,
+  "columns": {
+    "Randomized Potassium Fertilizer Rate": {
+      "dtype": "float64"
+    },
+    "Seasonal Solar Radiation Accumulation": {
+      "dtype": "float64"
+    },
+    "Randomized High-Yield Seed Assignment": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Randomized Irrigation Water Volume": {
+      "dtype": "float64"
+    },
+    "Total Crop Yield": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 5,
+      "columns": {
+        "Randomized Potassium Fertilizer Rate": {
+          "dtype": "float64"
+        },
+        "Seasonal Solar Radiation Accumulation": {
+          "dtype": "float64"
+        },
+        "Randomized High-Yield Seed Assignment": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Randomized Irrigation Water Volume": {
+          "dtype": "float64"
+        },
+        "Total Crop Yield": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 4,
+      "columns": {
+        "Randomized Potassium Fertilizer Rate": {
+          "dtype": "float64"
+        },
+        "Seasonal Solar Radiation Accumulation": {
+          "dtype": "float64"
+        },
+        "Randomized High-Yield Seed Assignment": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Total Crop Yield": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Randomized Potassium Fertilizer Rate": {
+      "dtype": "float64"
+    },
+    "Seasonal Solar Radiation Accumulation": {
+      "dtype": "float64"
+    },
+    "Randomized High-Yield Seed Assignment": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Randomized Irrigation Water Volume": {
+      "dtype": "float64"
+    },
+    "Total Crop Yield": {
+      "dtype": "float64"
+    }
+  }
+}

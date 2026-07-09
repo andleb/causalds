@@ -1,0 +1,393 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Watershed Groundwater Storage Capacity"
+  ],
+  "proxified_nodes": [
+    "Annual Precipitation Deficit",
+    "Hydrological Drought Occurrence"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Annual Precipitation Deficit",
+    "Hydrological Drought Occurrence"
+  ],
+  "proxy_groups": {
+    "Annual Precipitation Deficit": [
+      "Annual Precipitation Deficit1",
+      "Annual Precipitation Deficit2"
+    ],
+    "Hydrological Drought Occurrence": [
+      "Hydrological Drought Occurrence1",
+      "Hydrological Drought Occurrence2",
+      "Hydrological Drought Occurrence3",
+      "Hydrological Drought Occurrence4",
+      "Hydrological Drought Occurrence5",
+      "Hydrological Drought Occurrence6",
+      "Hydrological Drought Occurrence7",
+      "Hydrological Drought Occurrence8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Annual Precipitation Deficit": {
+      "conceptual_node": "Annual Precipitation Deficit",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Annual Precipitation Deficit1",
+          "conceptual_node": "Annual Precipitation Deficit",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.3174237384178875,
+          "params": {
+            "w": {
+              "Annual Precipitation Deficit": 1.1497057180185708
+            },
+            "b": 0.3239155695619395,
+            "w_pair": {},
+            "w_nl": {
+              "Annual Precipitation Deficit": 0.7478231544251632
+            },
+            "nl_shift": {
+              "Annual Precipitation Deficit": -0.4800658015745718
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Annual Precipitation Deficit2",
+          "conceptual_node": "Annual Precipitation Deficit",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Annual Precipitation Deficit": -1.2072219001533835
+            },
+            "b": -0.6744004496194376,
+            "w_nl": {
+              "Annual Precipitation Deficit": 0.12301355033822287
+            },
+            "nl_shift": {
+              "Annual Precipitation Deficit": -1.3982146701106342
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.19833380584478133,
+        "average_information": 0.3740902628356777,
+        "lower_tail_quantiles": {
+          "q10": 0.2181660438807209,
+          "q25": 0.23909505013073584
+        },
+        "per_proxy": {
+          "Annual Precipitation Deficit1": {
+            "proxy_type": "continuous"
+          },
+          "Annual Precipitation Deficit2": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Annual Precipitation Deficit2",
+          "rmse": 0.752839486719851,
+          "r2": 0.17075428737391618
+        },
+        "calibrated": {
+          "rmse": 0.7018547825915329,
+          "r2": 0.2792693652146232
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.050984704128318126,
+          "r2_gain": 0.10851507784070702
+        }
+      }
+    },
+    "Hydrological Drought Occurrence": {
+      "conceptual_node": "Hydrological Drought Occurrence",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Hydrological Drought Occurrence1",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": 0.9513156315657029
+            },
+            "b": -0.3891561377286854,
+            "w_nl": {
+              "Hydrological Drought Occurrence": 0.7740596725850108
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": -0.694996144663509
+            }
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence2",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": 0.3140449073901562
+            },
+            "b": -0.3159010248362448,
+            "w_nl": {
+              "Hydrological Drought Occurrence": 0.317898351200928
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": -0.14845757683112248
+            }
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence3",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5639593069007356,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": -1.4293549016239713
+            },
+            "b": 0.11502857246419104,
+            "w_pair": {},
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.5007580459981681
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": -0.09280538756568912
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence4",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": 1.8020580868795295
+            },
+            "b": 0.10656554092587774,
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.31341780079752324
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": -1.0966285500778583
+            }
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence5",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": 0.6778441268889475
+            },
+            "b": -0.02084053568635957,
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.7390391837713531
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": 0.14484055878065716
+            }
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence6",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2418502482619123,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": 1.0323746064478374
+            },
+            "b": 0.7241440210909809,
+            "w_pair": {},
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.8373539749814893
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": 0.13937198066029
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence7",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.8770210724279512,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": -1.1786983787883967
+            },
+            "b": 0.0065493326798010225,
+            "w_pair": {},
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.36671689491958326
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": -0.6499812737490315
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Hydrological Drought Occurrence8",
+          "conceptual_node": "Hydrological Drought Occurrence",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.0846876170645177,
+          "params": {
+            "w": {
+              "Hydrological Drought Occurrence": -0.7130934814191421
+            },
+            "b": -0.04025439842353504,
+            "w_pair": {},
+            "w_nl": {
+              "Hydrological Drought Occurrence": -0.4027601381338676
+            },
+            "nl_shift": {
+              "Hydrological Drought Occurrence": 0.6643302691187456
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 3.222589869412592,
+        "min_information": 3.222589869412592,
+        "average_information": 3.222589869412592,
+        "lower_tail_quantiles": {
+          "q10": 3.222589869412592,
+          "q25": 3.222589869412592
+        },
+        "per_proxy": {
+          "Hydrological Drought Occurrence1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.034941642512558976,
+            "p_w1_z0": 0.483093237294918,
+            "p_w1_z1": 0.7390043982407037
+          },
+          "Hydrological Drought Occurrence2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.005814443905725743,
+            "p_w1_z0": 0.43557422969187676,
+            "p_w1_z1": 0.54328268692523
+          },
+          "Hydrological Drought Occurrence3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.7971513161378265,
+            "mean_z0": 0.07117440893214863,
+            "mean_z1": -1.704624445873937,
+            "pooled_var": 1.7547000880858277
+          },
+          "Hydrological Drought Occurrence4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.07836952150896696,
+            "p_w1_z0": 0.4819927971188475,
+            "p_w1_z1": 0.8480607756897242
+          },
+          "Hydrological Drought Occurrence5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0021325600594026117,
+            "p_w1_z0": 0.5248099239695878,
+            "p_w1_z1": 0.5896641343462615
+          },
+          "Hydrological Drought Occurrence6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.027941024391769324,
+            "mean_z0": 0.859820498736724,
+            "mean_z1": 1.1558873584724902,
+            "pooled_var": 3.137164343180592
+          },
+          "Hydrological Drought Occurrence7": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.24598173200740653,
+            "mean_z0": -0.24234049167682978,
+            "mean_z1": -1.522955403721365,
+            "pooled_var": 6.6670583200115585
+          },
+          "Hydrological Drought Occurrence8": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.0302576288889347,
+            "mean_z0": 0.21353562740936455,
+            "mean_z1": -0.8838070012701057,
+            "pooled_var": 1.1687958535340122
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Hydrological Drought Occurrence3",
+          "log_loss": 0.5156741589967463,
+          "auc": 0.8230362057590513
+        },
+        "calibrated": {
+          "log_loss": 0.35258732392915304,
+          "auc": 0.9239134809783702
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.16308683506759325,
+          "auc_gain": 0.10087727521931888
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

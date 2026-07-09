@@ -1,0 +1,325 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Latent Terrorism Threat Level"
+  ],
+  "proxified_nodes": [
+    "Randomized Security Alert Threshold Calibration Parameter"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Randomized Security Alert Threshold Calibration Parameter"
+  ],
+  "proxy_groups": {
+    "Randomized Security Alert Threshold Calibration Parameter": [
+      "Randomized Security Alert Threshold Calibration Parameter1",
+      "Randomized Security Alert Threshold Calibration Parameter2",
+      "Randomized Security Alert Threshold Calibration Parameter3",
+      "Randomized Security Alert Threshold Calibration Parameter4",
+      "Randomized Security Alert Threshold Calibration Parameter5",
+      "Randomized Security Alert Threshold Calibration Parameter6",
+      "Randomized Security Alert Threshold Calibration Parameter7",
+      "Randomized Security Alert Threshold Calibration Parameter8",
+      "Randomized Security Alert Threshold Calibration Parameter9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Randomized Security Alert Threshold Calibration Parameter": {
+      "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter1",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.16845867952748683
+            },
+            "b": -1.0473983592551037,
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.84383304929817
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.8940852540667796
+            }
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter2",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5961956289462758,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.9663490909575361
+            },
+            "b": -1.2063068068161942,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.7664416523410601
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.37773867967668395
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter3",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.967676954362042,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 1.0132006675475007
+            },
+            "b": 0.08900371274662021,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.03849309911055965
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.8919721448543816
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter4",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.7871664050042049
+            },
+            "b": -0.22285887746150373,
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.9824031794658794
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.6317773381370282
+            }
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter5",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.281410311774449,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  42
+                ],
+                [
+                  42,
+                  52
+                ],
+                [
+                  52,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  42
+                ],
+                [
+                  1,
+                  52
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Randomized Security Alert Threshold Calibration Parameter"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter6",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9449712745890975,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.2549832398095381
+            },
+            "b": 0.15271592968273345,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.4072979140622824
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": -1.0439647887395545
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter7",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.618387157050745,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.910355696596245
+            },
+            "b": -0.4822133898455887,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.8821717168625285
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": -1.4815794667147562
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter8",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.4324525340386733,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.6582084954756975
+            },
+            "b": -0.003597702870598857,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.49300643810172695
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.05990483598709884
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Security Alert Threshold Calibration Parameter9",
+          "conceptual_node": "Randomized Security Alert Threshold Calibration Parameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Randomized Security Alert Threshold Calibration Parameter": 1.8944580015293417
+            },
+            "b": 1.1876986203757405,
+            "w_nl": {
+              "Randomized Security Alert Threshold Calibration Parameter": -0.471782196968325
+            },
+            "nl_shift": {
+              "Randomized Security Alert Threshold Calibration Parameter": 0.28874563295043454
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6422394150348988,
+        "average_information": 0.7693365123682467,
+        "lower_tail_quantiles": {
+          "q10": 0.6487769425310539,
+          "q25": 0.6492087729752676
+        },
+        "per_proxy": {
+          "Randomized Security Alert Threshold Calibration Parameter1": {
+            "proxy_type": "binary"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter2": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter3": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter4": {
+            "proxy_type": "binary"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter5": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter6": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter7": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter8": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Security Alert Threshold Calibration Parameter9": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 3
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Randomized Security Alert Threshold Calibration Parameter2",
+          "rmse": 1.3905397555661472,
+          "r2": 0.4480251837275536
+        },
+        "calibrated": {
+          "rmse": 0.8413104655520255,
+          "r2": 0.7979471285990083
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.5492292900141217,
+          "r2_gain": 0.34992194487145467
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

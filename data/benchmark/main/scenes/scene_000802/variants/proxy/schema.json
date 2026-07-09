@@ -1,0 +1,437 @@
+{
+  "n_rows": 16000,
+  "n_columns": 16,
+  "columns": {
+    "Childhood Socioeconomic Status Index": {
+      "dtype": "float64"
+    },
+    "Paternal Genetic Height Score": {
+      "dtype": "float64"
+    },
+    "Adult Height": {
+      "dtype": "float64"
+    },
+    "Cumulative Alcohol Consumption": {
+      "dtype": "float64"
+    },
+    "Cognitive Impairment Severity Score": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status1": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status2": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status6": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 16,
+      "columns": {
+        "Childhood Socioeconomic Status Index": {
+          "dtype": "float64"
+        },
+        "Paternal Genetic Height Score": {
+          "dtype": "float64"
+        },
+        "Adult Height": {
+          "dtype": "float64"
+        },
+        "Cumulative Alcohol Consumption": {
+          "dtype": "float64"
+        },
+        "Cognitive Impairment Severity Score": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status1": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status2": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status6": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 15,
+      "columns": {
+        "Childhood Socioeconomic Status Index": {
+          "dtype": "float64"
+        },
+        "Paternal Genetic Height Score": {
+          "dtype": "float64"
+        },
+        "Adult Height": {
+          "dtype": "float64"
+        },
+        "Cumulative Alcohol Consumption": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status1": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status2": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status6": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 18,
+      "columns": {
+        "Childhood Socioeconomic Status Index": {
+          "dtype": "float64"
+        },
+        "Paternal Genetic Height Score": {
+          "dtype": "float64"
+        },
+        "Adult Height": {
+          "dtype": "float64"
+        },
+        "Cumulative Alcohol Consumption": {
+          "dtype": "float64"
+        },
+        "Cognitive Impairment Severity Score": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+          "dtype": "float64"
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status1": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status2": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status6": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Thiamine Deficiency Status8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Paternal DNA Methylation Level at Growth-Associated Loci": {
+          "dtype": "float64"
+        },
+        "Thiamine Deficiency Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Childhood Socioeconomic Status Index": {
+      "dtype": "float64"
+    },
+    "Paternal Genetic Height Score": {
+      "dtype": "float64"
+    },
+    "Adult Height": {
+      "dtype": "float64"
+    },
+    "Cumulative Alcohol Consumption": {
+      "dtype": "float64"
+    },
+    "Cognitive Impairment Severity Score": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci1": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci2": {
+      "dtype": "float64"
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status1": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status2": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status6": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Thiamine Deficiency Status8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Paternal DNA Methylation Level at Growth-Associated Loci": {
+      "dtype": "float64"
+    },
+    "Thiamine Deficiency Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

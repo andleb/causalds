@@ -1,0 +1,191 @@
+{
+  "n_rows": 16000,
+  "n_columns": 6,
+  "columns": {
+    "Cabinet-Level Power Struggles": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Conflict-Directed Interpersonal Anger": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Institutional Opposition Resources1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Institutional Opposition Resources2": {
+      "dtype": "float64"
+    },
+    "Institutional Opposition Resources3": {
+      "dtype": "float64"
+    },
+    "Institutional Opposition Resources4": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 6,
+      "columns": {
+        "Cabinet-Level Power Struggles": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Conflict-Directed Interpersonal Anger": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources2": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources3": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 5,
+      "columns": {
+        "Cabinet-Level Power Struggles": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources2": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources3": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 7,
+      "columns": {
+        "Cabinet-Level Power Struggles": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Conflict-Directed Interpersonal Anger": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Institutional Opposition Resources2": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources3": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources4": {
+          "dtype": "float64"
+        },
+        "Institutional Opposition Resources": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Cabinet-Level Power Struggles": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Conflict-Directed Interpersonal Anger": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Institutional Opposition Resources1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Institutional Opposition Resources2": {
+      "dtype": "float64"
+    },
+    "Institutional Opposition Resources3": {
+      "dtype": "float64"
+    },
+    "Institutional Opposition Resources4": {
+      "dtype": "float64"
+    },
+    "Institutional Opposition Resources": {
+      "dtype": "float64"
+    }
+  }
+}

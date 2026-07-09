@@ -1,0 +1,521 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Ingested Isospora belli Oocyst Count",
+    "Intestinal Colonization Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Ingested Isospora belli Oocyst Count",
+    "Intestinal Colonization Status"
+  ],
+  "proxy_groups": {
+    "Ingested Isospora belli Oocyst Count": [
+      "Ingested Isospora belli Oocyst Count1",
+      "Ingested Isospora belli Oocyst Count2",
+      "Ingested Isospora belli Oocyst Count3",
+      "Ingested Isospora belli Oocyst Count4",
+      "Ingested Isospora belli Oocyst Count5",
+      "Ingested Isospora belli Oocyst Count6"
+    ],
+    "Intestinal Colonization Status": [
+      "Intestinal Colonization Status1",
+      "Intestinal Colonization Status2",
+      "Intestinal Colonization Status3",
+      "Intestinal Colonization Status4",
+      "Intestinal Colonization Status5",
+      "Intestinal Colonization Status6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Ingested Isospora belli Oocyst Count": {
+      "conceptual_node": "Ingested Isospora belli Oocyst Count",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count1",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": 2.0077895299488357
+            },
+            "b": 0.2932029274346782,
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": -0.4979706791895511
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -0.2706741127961947
+            }
+          }
+        },
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count2",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4759506985599844,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": -0.8424718819508592
+            },
+            "b": 0.13152421935439554,
+            "w_pair": {},
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": 0.3997482407073789
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -1.1490258329807204
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count3",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.2385369727244804,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": 0.9178326827907209
+            },
+            "b": 0.059435473742523184,
+            "w_pair": {},
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": 0.3682173425974443
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -1.497285367733711
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count4",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.4598948842862303,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": 0.8280274339389332
+            },
+            "b": 0.22094822455380375,
+            "w_pair": {},
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": -0.5802312575650337
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -0.8579367347889758
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count5",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.0000888082705783,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": 1.0929497682763383
+            },
+            "b": -0.3242933047223934,
+            "w_pair": {},
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": 0.15434507211152282
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -1.2214075630466996
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Ingested Isospora belli Oocyst Count6",
+          "conceptual_node": "Ingested Isospora belli Oocyst Count",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Ingested Isospora belli Oocyst Count": 0.7872829759818717
+            },
+            "b": 0.6913385897746345,
+            "w_nl": {
+              "Ingested Isospora belli Oocyst Count": 0.3571144888865398
+            },
+            "nl_shift": {
+              "Ingested Isospora belli Oocyst Count": -1.4157018845749585
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6135967375766154,
+        "average_information": 1.1695855487301812,
+        "lower_tail_quantiles": {
+          "q10": 0.6204757561594934,
+          "q25": 0.6204757561594934
+        },
+        "per_proxy": {
+          "Ingested Isospora belli Oocyst Count1": {
+            "proxy_type": "binary"
+          },
+          "Ingested Isospora belli Oocyst Count2": {
+            "proxy_type": "continuous"
+          },
+          "Ingested Isospora belli Oocyst Count3": {
+            "proxy_type": "continuous"
+          },
+          "Ingested Isospora belli Oocyst Count4": {
+            "proxy_type": "continuous"
+          },
+          "Ingested Isospora belli Oocyst Count5": {
+            "proxy_type": "continuous"
+          },
+          "Ingested Isospora belli Oocyst Count6": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Ingested Isospora belli Oocyst Count5",
+          "rmse": 1.2980497601615182,
+          "r2": 0.33500189561151483
+        },
+        "calibrated": {
+          "rmse": 0.7738232906848391,
+          "r2": 0.7636686591930657
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.5242264694766791,
+          "r2_gain": 0.42866676358155087
+        }
+      }
+    },
+    "Intestinal Colonization Status": {
+      "conceptual_node": "Intestinal Colonization Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Intestinal Colonization Status1",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": -1.554521336657337
+            },
+            "b": 0.6776162496733119,
+            "w_nl": {
+              "Intestinal Colonization Status": 1.1296132166178876
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": -1.341185031809501
+            }
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status2",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.885194102004778,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": -0.23726495518624013
+            },
+            "b": -1.6504590426851207,
+            "w_pair": {},
+            "w_nl": {
+              "Intestinal Colonization Status": 0.7505613797850539
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": -0.20455206818415506
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status3",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5754558147086195,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  51,
+                  56
+                ],
+                [
+                  56,
+                  63
+                ],
+                [
+                  63,
+                  25
+                ],
+                [
+                  25,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  25
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Intestinal Colonization Status"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status4",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.5428237113160126,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  20,
+                  29
+                ],
+                [
+                  29,
+                  23
+                ],
+                [
+                  23,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  23
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Intestinal Colonization Status"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status5",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": -0.077767376943213
+            },
+            "b": 0.22981216400054924,
+            "w_nl": {
+              "Intestinal Colonization Status": 0.755473729528183
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": -0.48261239341661644
+            }
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status6",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.404778490897441,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": -0.14793958586588285
+            },
+            "b": -0.3661491984660256,
+            "w_pair": {},
+            "w_nl": {
+              "Intestinal Colonization Status": -0.34382938227796855
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": 1.2817172337827074
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 5.205712981039307,
+        "min_information": 5.205712981039307,
+        "average_information": 5.205712981039307,
+        "lower_tail_quantiles": {
+          "q10": 5.205712981039307,
+          "q25": 5.205712981039307
+        },
+        "per_proxy": {
+          "Intestinal Colonization Status1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.057012136074152904,
+            "p_w1_z0": 0.7945646703573226,
+            "p_w1_z1": 0.47332339791356187
+          },
+          "Intestinal Colonization Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.005529648272980732,
+            "mean_z0": -1.4638942394510754,
+            "mean_z1": -1.2497608778228342,
+            "pooled_var": 8.292226611638402
+          },
+          "Intestinal Colonization Status3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 3.416453863187232,
+            "mean_z0": -1.0223510500188717,
+            "mean_z1": 1.011879142529117,
+            "pooled_var": 1.211224457283721
+          },
+          "Intestinal Colonization Status4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.6811621576912779,
+            "mean_z0": -0.9797871152486306,
+            "mean_z1": 1.004306134049247,
+            "pooled_var": 2.3416099416105918
+          },
+          "Intestinal Colonization Status5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0003170545035715627,
+            "p_w1_z0": 0.6226472068444892,
+            "p_w1_z1": 0.6468951813214109
+          },
+          "Intestinal Colonization Status6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.04523812131009184,
+            "mean_z0": -0.057811011167589244,
+            "mean_z1": -0.41985414686669004,
+            "pooled_var": 2.897450829320733
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Intestinal Colonization Status3",
+          "log_loss": 0.40225288597099995,
+          "auc": 0.8998872702371675
+        },
+        "calibrated": {
+          "log_loss": 0.2578023066293214,
+          "auc": 0.9621203995868824
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.14445057934167854,
+          "auc_gain": 0.06223312934971492
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

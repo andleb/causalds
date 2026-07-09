@@ -1,0 +1,447 @@
+{
+  "n_rows": 16000,
+  "n_columns": 16,
+  "columns": {
+    "Severe Damage Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth2": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth3": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth5": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth6": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth7": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume1": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume4": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume7": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume8": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 16,
+      "columns": {
+        "Severe Damage Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth2": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth3": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth5": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth6": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume1": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume4": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 15,
+      "columns": {
+        "Peak Flood Depth1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth2": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth3": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth5": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth6": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume1": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume4": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 18,
+      "columns": {
+        "Severe Damage Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth2": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth3": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Peak Flood Depth5": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth6": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume1": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume4": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Storm Precipitation Volume7": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume8": {
+          "dtype": "float64"
+        },
+        "Peak Flood Depth": {
+          "dtype": "float64"
+        },
+        "Storm Precipitation Volume": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Severe Damage Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth2": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth3": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Peak Flood Depth5": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth6": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth7": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume1": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume4": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Storm Precipitation Volume7": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume8": {
+      "dtype": "float64"
+    },
+    "Peak Flood Depth": {
+      "dtype": "float64"
+    },
+    "Storm Precipitation Volume": {
+      "dtype": "float64"
+    }
+  }
+}

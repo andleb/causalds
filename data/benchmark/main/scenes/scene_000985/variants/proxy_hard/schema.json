@@ -1,0 +1,363 @@
+{
+  "n_rows": 16000,
+  "n_columns": 14,
+  "columns": {
+    "Pirfenidone Treatment Assignment": {
+      "dtype": "float64"
+    },
+    "Rescue Antiemetic Utilization": {
+      "dtype": "float64"
+    },
+    "Nausea-Mediated Treatment Adherence1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Nausea-Mediated Treatment Adherence2": {
+      "dtype": "float64"
+    },
+    "Nausea-Mediated Treatment Adherence3": {
+      "dtype": "float64"
+    },
+    "Patient Age1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age4": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity1": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity2": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity3": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity4": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 14,
+      "columns": {
+        "Pirfenidone Treatment Assignment": {
+          "dtype": "float64"
+        },
+        "Rescue Antiemetic Utilization": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Nausea-Mediated Treatment Adherence2": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence3": {
+          "dtype": "float64"
+        },
+        "Patient Age1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity1": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity2": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity3": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 13,
+      "columns": {
+        "Rescue Antiemetic Utilization": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Nausea-Mediated Treatment Adherence2": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence3": {
+          "dtype": "float64"
+        },
+        "Patient Age1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity1": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity2": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity3": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 17,
+      "columns": {
+        "Pirfenidone Treatment Assignment": {
+          "dtype": "float64"
+        },
+        "Rescue Antiemetic Utilization": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Nausea-Mediated Treatment Adherence2": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence3": {
+          "dtype": "float64"
+        },
+        "Patient Age1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Patient Age4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity1": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity2": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity3": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity4": {
+          "dtype": "float64"
+        },
+        "Post-Treatment Nausea Severity5": {
+          "dtype": "float64"
+        },
+        "Nausea-Mediated Treatment Adherence": {
+          "dtype": "float64"
+        },
+        "Patient Age": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Post-Treatment Nausea Severity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Pirfenidone Treatment Assignment": {
+      "dtype": "float64"
+    },
+    "Rescue Antiemetic Utilization": {
+      "dtype": "float64"
+    },
+    "Nausea-Mediated Treatment Adherence1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Nausea-Mediated Treatment Adherence2": {
+      "dtype": "float64"
+    },
+    "Nausea-Mediated Treatment Adherence3": {
+      "dtype": "float64"
+    },
+    "Patient Age1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Patient Age4": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity1": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity2": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity3": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity4": {
+      "dtype": "float64"
+    },
+    "Post-Treatment Nausea Severity5": {
+      "dtype": "float64"
+    },
+    "Nausea-Mediated Treatment Adherence": {
+      "dtype": "float64"
+    },
+    "Patient Age": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Post-Treatment Nausea Severity": {
+      "dtype": "float64"
+    }
+  }
+}

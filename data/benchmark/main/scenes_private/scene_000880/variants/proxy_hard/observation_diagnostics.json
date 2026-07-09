@@ -1,0 +1,324 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Induced Seismic Magnitude",
+    "Industrial Blasting Conducted"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Induced Seismic Magnitude",
+    "Industrial Blasting Conducted"
+  ],
+  "proxy_groups": {
+    "Induced Seismic Magnitude": [
+      "Induced Seismic Magnitude1",
+      "Induced Seismic Magnitude2",
+      "Induced Seismic Magnitude3",
+      "Induced Seismic Magnitude4"
+    ],
+    "Industrial Blasting Conducted": [
+      "Industrial Blasting Conducted1",
+      "Industrial Blasting Conducted2",
+      "Industrial Blasting Conducted3",
+      "Industrial Blasting Conducted4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Induced Seismic Magnitude": {
+      "conceptual_node": "Induced Seismic Magnitude",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Induced Seismic Magnitude1",
+          "conceptual_node": "Induced Seismic Magnitude",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Induced Seismic Magnitude": 1.292687487003451
+            },
+            "b": 0.5459154931014415,
+            "w_nl": {
+              "Induced Seismic Magnitude": -1.3704299202578607
+            },
+            "nl_shift": {
+              "Induced Seismic Magnitude": -0.32802807462630823
+            }
+          }
+        },
+        {
+          "column_name": "Induced Seismic Magnitude2",
+          "conceptual_node": "Induced Seismic Magnitude",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Induced Seismic Magnitude": 0.12129308984880816
+            },
+            "b": -0.9821997597849268,
+            "w_nl": {
+              "Induced Seismic Magnitude": 0.2974694262473149
+            },
+            "nl_shift": {
+              "Induced Seismic Magnitude": -0.5871575236981654
+            }
+          }
+        },
+        {
+          "column_name": "Induced Seismic Magnitude3",
+          "conceptual_node": "Induced Seismic Magnitude",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.6909929668888541,
+          "params": {
+            "w": {
+              "Induced Seismic Magnitude": -1.0706898917754983
+            },
+            "b": -0.6038264817180672,
+            "w_pair": {},
+            "w_nl": {
+              "Induced Seismic Magnitude": -0.3265774200246907
+            },
+            "nl_shift": {
+              "Induced Seismic Magnitude": -0.6185159339552261
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Induced Seismic Magnitude4",
+          "conceptual_node": "Induced Seismic Magnitude",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.109200569682296,
+          "params": {
+            "w": {
+              "Induced Seismic Magnitude": 0.8255427603614492
+            },
+            "b": 0.5679188823795007,
+            "w_pair": {},
+            "w_nl": {
+              "Induced Seismic Magnitude": 0.6496349451472391
+            },
+            "nl_shift": {
+              "Induced Seismic Magnitude": 0.19246244493944298
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.2823379273843236,
+        "average_information": 1.6962968916766985,
+        "lower_tail_quantiles": {
+          "q10": 0.288189186649435,
+          "q25": 0.31883931353056505
+        },
+        "per_proxy": {
+          "Induced Seismic Magnitude1": {
+            "proxy_type": "binary"
+          },
+          "Induced Seismic Magnitude2": {
+            "proxy_type": "binary"
+          },
+          "Induced Seismic Magnitude3": {
+            "proxy_type": "continuous"
+          },
+          "Induced Seismic Magnitude4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Induced Seismic Magnitude3",
+          "rmse": 0.8584604279279643,
+          "r2": 0.3965430399440464
+        },
+        "calibrated": {
+          "rmse": 0.7382005100958571,
+          "r2": 0.5537744622249198
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.12025991783210721,
+          "r2_gain": 0.1572314222808734
+        }
+      }
+    },
+    "Industrial Blasting Conducted": {
+      "conceptual_node": "Industrial Blasting Conducted",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Industrial Blasting Conducted1",
+          "conceptual_node": "Industrial Blasting Conducted",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Industrial Blasting Conducted": -0.43351548448256727
+            },
+            "b": -0.707944270387021,
+            "w_nl": {
+              "Industrial Blasting Conducted": -1.0546827336304885
+            },
+            "nl_shift": {
+              "Industrial Blasting Conducted": 0.948853582012235
+            }
+          }
+        },
+        {
+          "column_name": "Industrial Blasting Conducted2",
+          "conceptual_node": "Industrial Blasting Conducted",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Industrial Blasting Conducted": -0.6329429870703861
+            },
+            "b": -0.8511308864469471,
+            "w_nl": {
+              "Industrial Blasting Conducted": 0.41925006830919204
+            },
+            "nl_shift": {
+              "Industrial Blasting Conducted": 0.9796497904444661
+            }
+          }
+        },
+        {
+          "column_name": "Industrial Blasting Conducted3",
+          "conceptual_node": "Industrial Blasting Conducted",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Industrial Blasting Conducted": 0.47789909730422997
+            },
+            "b": -0.05487577733399522,
+            "w_nl": {
+              "Industrial Blasting Conducted": 0.3356950600712462
+            },
+            "nl_shift": {
+              "Industrial Blasting Conducted": -0.7059855407316369
+            }
+          }
+        },
+        {
+          "column_name": "Industrial Blasting Conducted4",
+          "conceptual_node": "Industrial Blasting Conducted",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.1695900395702155,
+          "params": {
+            "w": {
+              "Industrial Blasting Conducted": 0.39153728298636575
+            },
+            "b": 1.179253596784972,
+            "w_pair": {},
+            "w_nl": {
+              "Industrial Blasting Conducted": 0.8702615126537722
+            },
+            "nl_shift": {
+              "Industrial Blasting Conducted": 0.738218970756825
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.532270323697232,
+        "min_information": 0.532270323697232,
+        "average_information": 0.532270323697232,
+        "lower_tail_quantiles": {
+          "q10": 0.532270323697232,
+          "q25": 0.532270323697232
+        },
+        "per_proxy": {
+          "Industrial Blasting Conducted1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.02876499147471602,
+            "p_w1_z0": 0.4548928778228141,
+            "p_w1_z1": 0.22780466344038716
+          },
+          "Industrial Blasting Conducted2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0038087181197367474,
+            "p_w1_z0": 0.2611464968152866,
+            "p_w1_z1": 0.18794544654641443
+          },
+          "Industrial Blasting Conducted3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.010560083826251475,
+            "p_w1_z0": 0.5129125651418645,
+            "p_w1_z1": 0.6570171579410471
+          },
+          "Industrial Blasting Conducted4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.4891365302765278,
+            "mean_z0": 0.6650273572862455,
+            "mean_z1": 1.791307644733814,
+            "pooled_var": 2.5933603551872144
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Industrial Blasting Conducted4",
+          "log_loss": 0.6384620169044942,
+          "auc": 0.71820910153202
+        },
+        "calibrated": {
+          "log_loss": 0.5367569713089229,
+          "auc": 0.7986128288809164
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.10170504559557136,
+          "auc_gain": 0.08040372734889645
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

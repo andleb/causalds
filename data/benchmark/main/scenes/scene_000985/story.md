@@ -1,0 +1,5 @@
+# scene_000985
+
+Dr. Chen evaluated a 74-year-old patient recently diagnosed with idiopathic pulmonary fibrosis, documenting the Patient Age as 74 years in the clinical record. Following the randomized protocol, the patient received a positive Pirfenidone Treatment Assignment and began the antifibrotic regimen. The combination of advanced Patient Age and active drug exposure directly contributed to significant gastrointestinal toxicity, with Post-Treatment Nausea Severity escalating to 8 on the standardized 0-10 scale within the first month.
+
+Confronted with this debilitating nausea severity, the medical team initiated Rescue Antiemetic Utilization, prescribing ondansetron to manage the symptoms. Ultimately, the patient's Nausea-Mediated Treatment Adherence was calculated at 72 percent for the observation period-a figure determined both by the persistent high nausea severity and the compensatory effects of the antiemetic intervention.

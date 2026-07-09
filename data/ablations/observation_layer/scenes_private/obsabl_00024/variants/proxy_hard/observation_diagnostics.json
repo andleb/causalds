@@ -1,0 +1,733 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Initial Soil Salinity",
+    "Irrigation Water Salinity",
+    "Soil Salinity Hazard Classification"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Initial Soil Salinity",
+    "Irrigation Water Salinity",
+    "Soil Salinity Hazard Classification"
+  ],
+  "proxy_groups": {
+    "Initial Soil Salinity": [
+      "Initial Soil Salinity1",
+      "Initial Soil Salinity2",
+      "Initial Soil Salinity3",
+      "Initial Soil Salinity4",
+      "Initial Soil Salinity5",
+      "Initial Soil Salinity6"
+    ],
+    "Irrigation Water Salinity": [
+      "Irrigation Water Salinity1",
+      "Irrigation Water Salinity2",
+      "Irrigation Water Salinity3",
+      "Irrigation Water Salinity4",
+      "Irrigation Water Salinity5",
+      "Irrigation Water Salinity6"
+    ],
+    "Soil Salinity Hazard Classification": [
+      "Soil Salinity Hazard Classification1",
+      "Soil Salinity Hazard Classification2",
+      "Soil Salinity Hazard Classification3",
+      "Soil Salinity Hazard Classification4",
+      "Soil Salinity Hazard Classification5",
+      "Soil Salinity Hazard Classification6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Initial Soil Salinity": {
+      "conceptual_node": "Initial Soil Salinity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Initial Soil Salinity1",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": -1.8874657942488007
+            },
+            "b": -1.6093609959578803,
+            "w_nl": {
+              "Initial Soil Salinity": -0.555946929245322
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": 0.9905342310336627
+            }
+          }
+        },
+        {
+          "column_name": "Initial Soil Salinity2",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.4239657102829852,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": -1.345726237011093
+            },
+            "b": -0.6841284957560645,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Soil Salinity": -0.5228099695913933
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": -0.8019202435611327
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Initial Soil Salinity3",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": -0.5273243623706296
+            },
+            "b": -0.5385138021168931,
+            "w_nl": {
+              "Initial Soil Salinity": -0.6827855515436445
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": -0.5966780311414053
+            }
+          }
+        },
+        {
+          "column_name": "Initial Soil Salinity4",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 3.061215336338627,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": -0.7267801491133424
+            },
+            "b": 0.7249556631820884,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Soil Salinity": 0.9681372328857911
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": 0.501855351136153
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Initial Soil Salinity5",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.0535901899855404,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": 1.0194274090268491
+            },
+            "b": 0.5344297762245723,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Soil Salinity": -0.02115864497500991
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": -0.392813319665843
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Initial Soil Salinity6",
+          "conceptual_node": "Initial Soil Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.629136973741531,
+          "params": {
+            "w": {
+              "Initial Soil Salinity": -0.3519396435850352
+            },
+            "b": 0.03970299751207004,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Soil Salinity": -0.5966509789598133
+            },
+            "nl_shift": {
+              "Initial Soil Salinity": 0.3643389393711156
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.678358682025024,
+        "average_information": 1.6990017490733784,
+        "lower_tail_quantiles": {
+          "q10": 0.6903207202621935,
+          "q25": 0.6914269374275158
+        },
+        "per_proxy": {
+          "Initial Soil Salinity1": {
+            "proxy_type": "binary"
+          },
+          "Initial Soil Salinity2": {
+            "proxy_type": "continuous"
+          },
+          "Initial Soil Salinity3": {
+            "proxy_type": "binary"
+          },
+          "Initial Soil Salinity4": {
+            "proxy_type": "continuous"
+          },
+          "Initial Soil Salinity5": {
+            "proxy_type": "continuous"
+          },
+          "Initial Soil Salinity6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Initial Soil Salinity2",
+          "rmse": 1.0157060822367794,
+          "r2": 0.6373428065984615
+        },
+        "calibrated": {
+          "rmse": 0.6817458816113419,
+          "r2": 0.8366176132198637
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3339602006254375,
+          "r2_gain": 0.19927480662140218
+        }
+      }
+    },
+    "Irrigation Water Salinity": {
+      "conceptual_node": "Irrigation Water Salinity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Irrigation Water Salinity1",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Water Salinity": 0.10617497159703393
+            },
+            "b": -0.1533605728552438,
+            "w_nl": {
+              "Irrigation Water Salinity": -0.5713511493218945
+            },
+            "nl_shift": {
+              "Irrigation Water Salinity": -0.723757295509527
+            }
+          }
+        },
+        {
+          "column_name": "Irrigation Water Salinity2",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.161529036089977,
+          "params": {
+            "w": {
+              "Irrigation Water Salinity": 0.8427655233424963
+            },
+            "b": -0.21083482569692952,
+            "w_pair": {},
+            "w_nl": {
+              "Irrigation Water Salinity": 0.6441439290521676
+            },
+            "nl_shift": {
+              "Irrigation Water Salinity": 0.09635835901484802
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Irrigation Water Salinity3",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 3.170137792661799,
+          "params": {
+            "w": {
+              "Irrigation Water Salinity": 0.3657716803258468
+            },
+            "b": 0.08792061954090839,
+            "w_pair": {},
+            "w_nl": {
+              "Irrigation Water Salinity": 0.43352068163691926
+            },
+            "nl_shift": {
+              "Irrigation Water Salinity": 0.5055063810070273
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Irrigation Water Salinity4",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 3.1114635174155207,
+          "params": {
+            "w": {
+              "Irrigation Water Salinity": -0.374082251202553
+            },
+            "b": 0.7879995876630557,
+            "w_pair": {},
+            "w_nl": {
+              "Irrigation Water Salinity": -0.16446787046146616
+            },
+            "nl_shift": {
+              "Irrigation Water Salinity": -0.41822350281131593
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Irrigation Water Salinity5",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.0935544830834045,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  41
+                ],
+                [
+                  41,
+                  31
+                ],
+                [
+                  31,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  31
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Irrigation Water Salinity"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Irrigation Water Salinity6",
+          "conceptual_node": "Irrigation Water Salinity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Water Salinity": -1.473787154023352
+            },
+            "b": 0.11804622750753647,
+            "w_nl": {
+              "Irrigation Water Salinity": 0.9723271611736812
+            },
+            "nl_shift": {
+              "Irrigation Water Salinity": 1.2366754561366422
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.22858979467246004,
+        "average_information": 0.35992499163248654,
+        "lower_tail_quantiles": {
+          "q10": 0.22860977844713576,
+          "q25": 0.23016705006822885
+        },
+        "per_proxy": {
+          "Irrigation Water Salinity1": {
+            "proxy_type": "binary"
+          },
+          "Irrigation Water Salinity2": {
+            "proxy_type": "continuous"
+          },
+          "Irrigation Water Salinity3": {
+            "proxy_type": "continuous"
+          },
+          "Irrigation Water Salinity4": {
+            "proxy_type": "continuous"
+          },
+          "Irrigation Water Salinity5": {
+            "proxy_type": "continuous"
+          },
+          "Irrigation Water Salinity6": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Irrigation Water Salinity2",
+          "rmse": 1.3339194100346747,
+          "r2": 0.5220895382023683
+        },
+        "calibrated": {
+          "rmse": 1.0773372775121755,
+          "r2": 0.6882612941079338
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.2565821325224993,
+          "r2_gain": 0.16617175590556554
+        }
+      }
+    },
+    "Soil Salinity Hazard Classification": {
+      "conceptual_node": "Soil Salinity Hazard Classification",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Soil Salinity Hazard Classification1",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Soil Salinity Hazard Classification": -0.05657564700713036
+            },
+            "b": -1.3655006593491537,
+            "w_nl": {
+              "Soil Salinity Hazard Classification": 0.7690879175821909
+            },
+            "nl_shift": {
+              "Soil Salinity Hazard Classification": 0.35349274693232524
+            }
+          }
+        },
+        {
+          "column_name": "Soil Salinity Hazard Classification2",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.189038780164881,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  41
+                ],
+                [
+                  41,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Soil Salinity Hazard Classification"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Soil Salinity Hazard Classification3",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Soil Salinity Hazard Classification": 0.7414808768941028
+            },
+            "b": -0.20995621997500805,
+            "w_nl": {
+              "Soil Salinity Hazard Classification": 0.32616255066905303
+            },
+            "nl_shift": {
+              "Soil Salinity Hazard Classification": -1.0716152992263857
+            }
+          }
+        },
+        {
+          "column_name": "Soil Salinity Hazard Classification4",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.5002683065424307,
+          "params": {
+            "w": {
+              "Soil Salinity Hazard Classification": 0.8187049280757684
+            },
+            "b": 0.8454545778212772,
+            "w_pair": {},
+            "w_nl": {
+              "Soil Salinity Hazard Classification": -0.6006148095032753
+            },
+            "nl_shift": {
+              "Soil Salinity Hazard Classification": 0.23745129047079017
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Soil Salinity Hazard Classification5",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.7583659485174847,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  14,
+                  33
+                ],
+                [
+                  33,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Soil Salinity Hazard Classification"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Soil Salinity Hazard Classification6",
+          "conceptual_node": "Soil Salinity Hazard Classification",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Soil Salinity Hazard Classification": 0.5649431739680839
+            },
+            "b": -0.32031609721579407,
+            "w_nl": {
+              "Soil Salinity Hazard Classification": -0.29254092125085895
+            },
+            "nl_shift": {
+              "Soil Salinity Hazard Classification": -0.9747431115657362
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 3.6196178349850716,
+        "min_information": 3.6196178349850716,
+        "average_information": 3.6196178349850716,
+        "lower_tail_quantiles": {
+          "q10": 3.6196178349850716,
+          "q25": 3.6196178349850716
+        },
+        "per_proxy": {
+          "Soil Salinity Hazard Classification1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.004504025146648674,
+            "p_w1_z0": 0.1708528843499862,
+            "p_w1_z1": 0.24805607271930785
+          },
+          "Soil Salinity Hazard Classification2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.8289849205261215,
+            "mean_z0": 0.97554094295068,
+            "mean_z1": -0.9975760026157748,
+            "pooled_var": 4.696334498353304
+          },
+          "Soil Salinity Hazard Classification3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.016947412709202588,
+            "p_w1_z0": 0.497285858864661,
+            "p_w1_z1": 0.6787865513087286
+          },
+          "Soil Salinity Hazard Classification4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.12759936863468843,
+            "mean_z0": 0.9915044934298075,
+            "mean_z1": 1.2713861451270514,
+            "pooled_var": 0.6139038131218619
+          },
+          "Soil Salinity Hazard Classification5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 2.6314753105095057,
+            "mean_z0": -1.0161201676484606,
+            "mean_z1": 1.009700408163905,
+            "pooled_var": 1.5595620407284527
+          },
+          "Soil Salinity Hazard Classification6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.010106797458904838,
+            "p_w1_z0": 0.3817278498481921,
+            "p_w1_z1": 0.523491402913153
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Soil Salinity Hazard Classification5",
+          "log_loss": 0.43679103010894527,
+          "auc": 0.8785628421522506
+        },
+        "calibrated": {
+          "log_loss": 0.3660443255381346,
+          "auc": 0.9181508588506404
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.07074670457081067,
+          "auc_gain": 0.03958801669838985
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

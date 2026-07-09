@@ -1,0 +1,544 @@
+{
+  "n_rows": 16000,
+  "n_columns": 19,
+  "columns": {
+    "Mayor's Years in Office at Crisis Start": {
+      "dtype": "float64"
+    },
+    "Accumulated Interest on Defaulted Bonds1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Interest on Defaulted Bonds2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Interest on Defaulted Bonds3": {
+      "dtype": "float64"
+    },
+    "Accumulated Interest on Defaulted Bonds4": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis1": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis2": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Legal Crisis4": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount4": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount5": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount6": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Municipality Located in State Capital2": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital3": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 19,
+      "columns": {
+        "Mayor's Years in Office at Crisis Start": {
+          "dtype": "float64"
+        },
+        "Accumulated Interest on Defaulted Bonds1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds3": {
+          "dtype": "float64"
+        },
+        "Accumulated Interest on Defaulted Bonds4": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis1": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis2": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Legal Crisis4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount5": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount6": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Municipality Located in State Capital2": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital3": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 18,
+      "columns": {
+        "Accumulated Interest on Defaulted Bonds1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds3": {
+          "dtype": "float64"
+        },
+        "Accumulated Interest on Defaulted Bonds4": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis1": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis2": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Legal Crisis4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount5": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount6": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Municipality Located in State Capital2": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital3": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 23,
+      "columns": {
+        "Mayor's Years in Office at Crisis Start": {
+          "dtype": "float64"
+        },
+        "Accumulated Interest on Defaulted Bonds1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds3": {
+          "dtype": "float64"
+        },
+        "Accumulated Interest on Defaulted Bonds4": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis1": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis2": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Legal Crisis4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Bond Principal Amount4": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount5": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount6": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Municipality Located in State Capital2": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital3": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Interest on Defaulted Bonds": {
+          "dtype": "float64"
+        },
+        "Duration of Legal Crisis": {
+          "dtype": "float64"
+        },
+        "Initial Bond Principal Amount": {
+          "dtype": "float64"
+        },
+        "Municipality Located in State Capital": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Mayor's Years in Office at Crisis Start": {
+      "dtype": "float64"
+    },
+    "Accumulated Interest on Defaulted Bonds1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Interest on Defaulted Bonds2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Interest on Defaulted Bonds3": {
+      "dtype": "float64"
+    },
+    "Accumulated Interest on Defaulted Bonds4": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis1": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis2": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Legal Crisis4": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Bond Principal Amount4": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount5": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount6": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Municipality Located in State Capital2": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital3": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Interest on Defaulted Bonds": {
+      "dtype": "float64"
+    },
+    "Duration of Legal Crisis": {
+      "dtype": "float64"
+    },
+    "Initial Bond Principal Amount": {
+      "dtype": "float64"
+    },
+    "Municipality Located in State Capital": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

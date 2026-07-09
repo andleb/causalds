@@ -1,0 +1,363 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Cardiopulmonary Abnormalities",
+    "Circulatory Failure"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Cardiopulmonary Abnormalities",
+    "Circulatory Failure"
+  ],
+  "proxy_groups": {
+    "Cardiopulmonary Abnormalities": [
+      "Cardiopulmonary Abnormalities1",
+      "Cardiopulmonary Abnormalities2",
+      "Cardiopulmonary Abnormalities3",
+      "Cardiopulmonary Abnormalities4",
+      "Cardiopulmonary Abnormalities5",
+      "Cardiopulmonary Abnormalities6"
+    ],
+    "Circulatory Failure": [
+      "Circulatory Failure1",
+      "Circulatory Failure2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Cardiopulmonary Abnormalities": {
+      "conceptual_node": "Cardiopulmonary Abnormalities",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Cardiopulmonary Abnormalities1",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.8143501991391442,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  14,
+                  57
+                ],
+                [
+                  57,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Cardiopulmonary Abnormalities"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Cardiopulmonary Abnormalities2",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.1506602077749686,
+          "params": {
+            "w": {
+              "Cardiopulmonary Abnormalities": -1.0882991007779612
+            },
+            "b": -0.6558247523414505,
+            "w_pair": {},
+            "w_nl": {
+              "Cardiopulmonary Abnormalities": 0.8625104795058507
+            },
+            "nl_shift": {
+              "Cardiopulmonary Abnormalities": 0.5926942630326781
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Cardiopulmonary Abnormalities3",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Cardiopulmonary Abnormalities": 1.3703495884538166
+            },
+            "b": -0.12283441195701696,
+            "w_nl": {
+              "Cardiopulmonary Abnormalities": 0.42504943248143234
+            },
+            "nl_shift": {
+              "Cardiopulmonary Abnormalities": -0.5193396291569451
+            }
+          }
+        },
+        {
+          "column_name": "Cardiopulmonary Abnormalities4",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8973960272469559,
+          "params": {
+            "w": {
+              "Cardiopulmonary Abnormalities": 1.3208610318948595
+            },
+            "b": -0.9394601570697844,
+            "w_pair": {},
+            "w_nl": {
+              "Cardiopulmonary Abnormalities": 0.8077955343243453
+            },
+            "nl_shift": {
+              "Cardiopulmonary Abnormalities": 0.7293976033156397
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cardiopulmonary Abnormalities5",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.613882094416776,
+          "params": {
+            "w": {
+              "Cardiopulmonary Abnormalities": 0.9708959204736377
+            },
+            "b": 0.03969059921183586,
+            "w_pair": {},
+            "w_nl": {
+              "Cardiopulmonary Abnormalities": 0.18591982066788904
+            },
+            "nl_shift": {
+              "Cardiopulmonary Abnormalities": 0.2383455546763109
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Cardiopulmonary Abnormalities6",
+          "conceptual_node": "Cardiopulmonary Abnormalities",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Cardiopulmonary Abnormalities": 0.585199452143273
+            },
+            "b": -0.8116479107560758,
+            "w_nl": {
+              "Cardiopulmonary Abnormalities": -0.7811110911350148
+            },
+            "nl_shift": {
+              "Cardiopulmonary Abnormalities": -0.6006353488959738
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 2.113078969485654,
+        "min_information": 2.113078969485654,
+        "average_information": 2.113078969485654,
+        "lower_tail_quantiles": {
+          "q10": 2.113078969485654,
+          "q25": 2.113078969485654
+        },
+        "per_proxy": {
+          "Cardiopulmonary Abnormalities1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6550969321512643,
+            "mean_z0": -1.023644367128144,
+            "mean_z1": 1.0280361197857846,
+            "pooled_var": 6.425603012000386
+          },
+          "Cardiopulmonary Abnormalities2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.10675149440296608,
+            "mean_z0": -1.1170989319688178,
+            "mean_z1": -1.4099473530957207,
+            "pooled_var": 0.8033629715083129
+          },
+          "Cardiopulmonary Abnormalities3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.05261952878766172,
+            "p_w1_z0": 0.5076284994815583,
+            "p_w1_z1": 0.8220243037210355
+          },
+          "Cardiopulmonary Abnormalities4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.9117172164994265,
+            "mean_z0": -1.41766116500292,
+            "mean_z1": 0.6079468338569559,
+            "pooled_var": 4.500395178231992
+          },
+          "Cardiopulmonary Abnormalities5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.3822223312524886,
+            "mean_z0": 0.020764673932138482,
+            "mean_z1": 1.1072853590249667,
+            "pooled_var": 3.0885877213562267
+          },
+          "Cardiopulmonary Abnormalities6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.004671466391846797,
+            "p_w1_z0": 0.23833506147237446,
+            "p_w1_z1": 0.33089289757717566
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Cardiopulmonary Abnormalities4",
+          "log_loss": 0.5741496598975657,
+          "auc": 0.7664368972746332
+        },
+        "calibrated": {
+          "log_loss": 0.3708091928572063,
+          "auc": 0.9015902166317262
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.2033404670403594,
+          "auc_gain": 0.13515331935709307
+        }
+      }
+    },
+    "Circulatory Failure": {
+      "conceptual_node": "Circulatory Failure",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Circulatory Failure1",
+          "conceptual_node": "Circulatory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Circulatory Failure": 1.626877494118781
+            },
+            "b": 0.44799701569672634,
+            "w_nl": {
+              "Circulatory Failure": 0.44234295099350784
+            },
+            "nl_shift": {
+              "Circulatory Failure": 0.5745395551719357
+            }
+          }
+        },
+        {
+          "column_name": "Circulatory Failure2",
+          "conceptual_node": "Circulatory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.5673744481868472,
+          "params": {
+            "w": {
+              "Circulatory Failure": -1.434724141732342
+            },
+            "b": 0.01664531723812251,
+            "w_pair": {},
+            "w_nl": {
+              "Circulatory Failure": 0.4941137714286309
+            },
+            "nl_shift": {
+              "Circulatory Failure": 0.9442584139860051
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.17862111937163205,
+        "average_information": 0.3862189980635402,
+        "lower_tail_quantiles": {
+          "q10": 0.3082094100853414,
+          "q25": 0.3089262994138169
+        },
+        "per_proxy": {
+          "Circulatory Failure1": {
+            "proxy_type": "binary"
+          },
+          "Circulatory Failure2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Circulatory Failure1",
+          "rmse": 0.997990842913984,
+          "r2": 0.33513160099997896
+        },
+        "calibrated": {
+          "rmse": 0.9004659974470673,
+          "r2": 0.4587259396133735
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.09752484546691664,
+          "r2_gain": 0.12359433861339453
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

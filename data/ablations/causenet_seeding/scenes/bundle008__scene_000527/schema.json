@@ -1,0 +1,67 @@
+{
+  "n_rows": 16000,
+  "n_columns": 4,
+  "columns": {
+    "Chronic Kidney Disease": {
+      "dtype": "float64"
+    },
+    "Earlobe Attachment Type": {
+      "dtype": "float64"
+    },
+    "Physical Functional Disability": {
+      "dtype": "float64"
+    },
+    "Tongue Rolling Ability": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 4,
+      "columns": {
+        "Chronic Kidney Disease": {
+          "dtype": "float64"
+        },
+        "Earlobe Attachment Type": {
+          "dtype": "float64"
+        },
+        "Physical Functional Disability": {
+          "dtype": "float64"
+        },
+        "Tongue Rolling Ability": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 3,
+      "columns": {
+        "Chronic Kidney Disease": {
+          "dtype": "float64"
+        },
+        "Earlobe Attachment Type": {
+          "dtype": "float64"
+        },
+        "Tongue Rolling Ability": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Chronic Kidney Disease": {
+      "dtype": "float64"
+    },
+    "Earlobe Attachment Type": {
+      "dtype": "float64"
+    },
+    "Physical Functional Disability": {
+      "dtype": "float64"
+    },
+    "Tongue Rolling Ability": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Duration of Occupational Chemical Exposure"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Duration of Occupational Chemical Exposure"
+  ],
+  "proxy_groups": {
+    "Duration of Occupational Chemical Exposure": [
+      "Duration of Occupational Chemical Exposure1",
+      "Duration of Occupational Chemical Exposure2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Duration of Occupational Chemical Exposure": {
+      "conceptual_node": "Duration of Occupational Chemical Exposure",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Duration of Occupational Chemical Exposure1",
+          "conceptual_node": "Duration of Occupational Chemical Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.0581360004515945,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  10,
+                  26
+                ],
+                [
+                  26,
+                  56
+                ],
+                [
+                  56,
+                  13
+                ],
+                [
+                  13,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  26
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  13
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Occupational Chemical Exposure"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Duration of Occupational Chemical Exposure2",
+          "conceptual_node": "Duration of Occupational Chemical Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.514923176491891,
+          "params": {
+            "w": {
+              "Duration of Occupational Chemical Exposure": 1.0373087896070716
+            },
+            "b": 0.5185397833009692,
+            "w_pair": {},
+            "w_nl": {
+              "Duration of Occupational Chemical Exposure": 0.3671549158002598
+            },
+            "nl_shift": {
+              "Duration of Occupational Chemical Exposure": 0.15585904105282156
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.15931516497705608,
+        "average_information": 0.24495098971788148,
+        "lower_tail_quantiles": {
+          "q10": 0.16569993886714782,
+          "q25": 0.16621070966809237
+        },
+        "per_proxy": {
+          "Duration of Occupational Chemical Exposure1": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Occupational Chemical Exposure2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Duration of Occupational Chemical Exposure2",
+          "rmse": 1.4455507471603044,
+          "r2": 0.46327251318782614
+        },
+        "calibrated": {
+          "rmse": 1.2820893664883108,
+          "r2": 0.5777946343653524
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.16346138067199356,
+          "r2_gain": 0.11452212117752625
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

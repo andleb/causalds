@@ -1,0 +1,331 @@
+{
+  "n_rows": 16000,
+  "n_columns": 11,
+  "columns": {
+    "Intergovernmental Negotiation Duration": {
+      "dtype": "float64"
+    },
+    "Comprehensiveness of the Anglo-Irish Agreement": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate5": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate6": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate7": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate9": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 11,
+      "columns": {
+        "Intergovernmental Negotiation Duration": {
+          "dtype": "float64"
+        },
+        "Comprehensiveness of the Anglo-Irish Agreement": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate5": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate6": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate7": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 10,
+      "columns": {
+        "Intergovernmental Negotiation Duration": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate5": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate6": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate7": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 12,
+      "columns": {
+        "Intergovernmental Negotiation Duration": {
+          "dtype": "float64"
+        },
+        "Comprehensiveness of the Anglo-Irish Agreement": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate5": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate6": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate7": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Formal Negotiation Mandate9": {
+          "dtype": "float64"
+        },
+        "Formal Negotiation Mandate": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Intergovernmental Negotiation Duration": {
+      "dtype": "float64"
+    },
+    "Comprehensiveness of the Anglo-Irish Agreement": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate5": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate6": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate7": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Formal Negotiation Mandate9": {
+      "dtype": "float64"
+    },
+    "Formal Negotiation Mandate": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

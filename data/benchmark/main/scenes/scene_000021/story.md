@@ -1,0 +1,5 @@
+# scene_000021
+
+The National Weather Service tracked the approaching system and classified the Storm Severity at Category 3 on the Saffir-Simpson scale, indicating sustained winds of 111-129 mph with significant damage potential. As the storm made landfall, emergency management centers began tallying infrastructure impacts across the affected counties.
+
+The intense wind speeds and heavy rainfall caused widespread transportation disruptions, resulting in a high Number of Road Closures as debris blocked highways and flooding made several routes impassable. Municipal crews reported downed trees and damaged bridges that forced officials to shut down access to multiple thoroughfares throughout the region. Simultaneously, the severe atmospheric conditions triggered infrastructure failures in the electrical grid, and residents across three counties discovered that a Power Outage Occurred as high winds toppled utility poles and flying debris severed transmission lines. The binary status of the power system shifted from operational to failed in multiple jurisdictions as the storm's intensity peaked.

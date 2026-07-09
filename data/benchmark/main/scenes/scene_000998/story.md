@@ -1,0 +1,7 @@
+# scene_000998
+
+In patients with onchocerciasis, the Adult Onchocerca Worm Burden serves as the fundamental driver of disease manifestation, with higher estimated worm counts directly leading to the formation of Multiple Palpable Nodules Present across bony prominences such as the iliac crests, scapulae, and knees. These adult parasites, coiled within fibrous tissue onchocercomas, continuously release progeny that migrate into the dermis, establishing a measurable Dermal Microfilarial Density expressed as microfilariae per mg of skin tissue.
+
+As these microfilariae complete their life cycle and die within the dermal layers, they trigger inflammatory immune responses that manifest as Pruritus Intensity, quantified on a visual analog scale from 0 to 10, with higher microfilarial loads producing progressively more severe itching sensations independent of the nodule status.
+
+The overall localized morbidity experienced by patients depends on two converging factors derived from the worm population: Clinically Significant Nodule Discomfort arises specifically when individuals harbor both a substantial Adult Onchocerca Worm Burden and Multiple Palpable Nodules Present, as the sheer volume of coiled worms within these fibrous capsules-combined with the mechanical presence of numerous subcutaneous nodules-generates sufficient tissue pressure and inflammatory signaling to cross the threshold into clinically meaningful discomfort.

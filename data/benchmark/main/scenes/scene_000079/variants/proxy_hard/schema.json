@@ -1,0 +1,373 @@
+{
+  "n_rows": 16000,
+  "n_columns": 15,
+  "columns": {
+    "C. difficile Infection": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission2": {
+      "dtype": "float64"
+    },
+    "Critical Illness Requiring ICU Admission3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission4": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure1": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure2": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure3": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure4": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden1": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Environmental C. difficile Spore Burden3": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden4": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden5": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden6": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 15,
+      "columns": {
+        "C. difficile Infection": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission2": {
+          "dtype": "float64"
+        },
+        "Critical Illness Requiring ICU Admission3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission4": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure3": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden1": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Environmental C. difficile Spore Burden3": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden5": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 14,
+      "columns": {
+        "Critical Illness Requiring ICU Admission1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission2": {
+          "dtype": "float64"
+        },
+        "Critical Illness Requiring ICU Admission3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission4": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure3": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden1": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Environmental C. difficile Spore Burden3": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden5": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 18,
+      "columns": {
+        "C. difficile Infection": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission2": {
+          "dtype": "float64"
+        },
+        "Critical Illness Requiring ICU Admission3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Critical Illness Requiring ICU Admission4": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure3": {
+          "dtype": "float64"
+        },
+        "Cumulative Systemic Antibiotic Exposure4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden1": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Environmental C. difficile Spore Burden3": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden4": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden5": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden6": {
+          "dtype": "float64"
+        },
+        "Critical Illness Requiring ICU Admission": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Cumulative Systemic Antibiotic Exposure": {
+          "dtype": "float64"
+        },
+        "Environmental C. difficile Spore Burden": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "C. difficile Infection": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission2": {
+      "dtype": "float64"
+    },
+    "Critical Illness Requiring ICU Admission3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Critical Illness Requiring ICU Admission4": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure1": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure2": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure3": {
+      "dtype": "float64"
+    },
+    "Cumulative Systemic Antibiotic Exposure4": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden1": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Environmental C. difficile Spore Burden3": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden4": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden5": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden6": {
+      "dtype": "float64"
+    },
+    "Critical Illness Requiring ICU Admission": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Cumulative Systemic Antibiotic Exposure": {
+      "dtype": "float64"
+    },
+    "Environmental C. difficile Spore Burden": {
+      "dtype": "float64"
+    }
+  }
+}

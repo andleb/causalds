@@ -1,0 +1,419 @@
+{
+  "n_rows": 16000,
+  "n_columns": 19,
+  "columns": {
+    "Train Collisions": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation1": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation2": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation3": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation4": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation5": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Entry into Occupied Track Section2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Entry into Occupied Track Section3": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section4": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Signal Passed at Danger1": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger2": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger3": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger4": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault1": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault2": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault3": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault4": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 19,
+      "columns": {
+        "Train Collisions": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation1": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation2": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation3": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation4": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation5": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section3": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section4": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Signal Passed at Danger1": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger2": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger3": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger4": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault1": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault2": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault3": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 18,
+      "columns": {
+        "ATP Warning Light Activation1": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation2": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation3": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation4": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation5": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section3": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section4": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Signal Passed at Danger1": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger2": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger3": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger4": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault1": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault2": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault3": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 23,
+      "columns": {
+        "Train Collisions": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation1": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation2": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation3": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation4": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation5": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Entry into Occupied Track Section3": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section4": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Signal Passed at Danger1": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger2": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger3": {
+          "dtype": "float64"
+        },
+        "Signal Passed at Danger4": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault1": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault2": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault3": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault4": {
+          "dtype": "float64"
+        },
+        "ATP Warning Light Activation": {
+          "dtype": "float64"
+        },
+        "Entry into Occupied Track Section": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Signal Passed at Danger": {
+          "dtype": "float64"
+        },
+        "Track Circuit Fault": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Train Collisions": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation1": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation2": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation3": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation4": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation5": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Entry into Occupied Track Section2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Entry into Occupied Track Section3": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section4": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Signal Passed at Danger1": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger2": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger3": {
+      "dtype": "float64"
+    },
+    "Signal Passed at Danger4": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault1": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault2": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault3": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault4": {
+      "dtype": "float64"
+    },
+    "ATP Warning Light Activation": {
+      "dtype": "float64"
+    },
+    "Entry into Occupied Track Section": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Signal Passed at Danger": {
+      "dtype": "float64"
+    },
+    "Track Circuit Fault": {
+      "dtype": "float64"
+    }
+  }
+}

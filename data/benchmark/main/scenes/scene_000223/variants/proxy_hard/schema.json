@@ -1,0 +1,237 @@
+{
+  "n_rows": 16000,
+  "n_columns": 10,
+  "columns": {
+    "Number of Biological Children": {
+      "dtype": "float64"
+    },
+    "Annual Household Income1": {
+      "dtype": "float64"
+    },
+    "Annual Household Income2": {
+      "dtype": "float64"
+    },
+    "Annual Household Income3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Household Income4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Household Income5": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status1": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status2": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status3": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status4": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 10,
+      "columns": {
+        "Number of Biological Children": {
+          "dtype": "float64"
+        },
+        "Annual Household Income1": {
+          "dtype": "float64"
+        },
+        "Annual Household Income2": {
+          "dtype": "float64"
+        },
+        "Annual Household Income3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income5": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status1": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status2": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status3": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 9,
+      "columns": {
+        "Annual Household Income1": {
+          "dtype": "float64"
+        },
+        "Annual Household Income2": {
+          "dtype": "float64"
+        },
+        "Annual Household Income3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income5": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status1": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status2": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status3": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 12,
+      "columns": {
+        "Number of Biological Children": {
+          "dtype": "float64"
+        },
+        "Annual Household Income1": {
+          "dtype": "float64"
+        },
+        "Annual Household Income2": {
+          "dtype": "float64"
+        },
+        "Annual Household Income3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Household Income5": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status1": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status2": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status3": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status4": {
+          "dtype": "float64"
+        },
+        "Annual Household Income": {
+          "dtype": "float64"
+        },
+        "Legal Marital Status": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Number of Biological Children": {
+      "dtype": "float64"
+    },
+    "Annual Household Income1": {
+      "dtype": "float64"
+    },
+    "Annual Household Income2": {
+      "dtype": "float64"
+    },
+    "Annual Household Income3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Household Income4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Household Income5": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status1": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status2": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status3": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status4": {
+      "dtype": "float64"
+    },
+    "Annual Household Income": {
+      "dtype": "float64"
+    },
+    "Legal Marital Status": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "n_rows": 16000,
+  "n_columns": 7,
+  "columns": {
+    "Irrigation Activation Subsidy": {
+      "dtype": "float64"
+    },
+    "Field Soil Erosion Rate": {
+      "dtype": "float64"
+    },
+    "Irrigation Event Executed1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed3": {
+      "dtype": "float64"
+    },
+    "Irrigation Event Executed4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 7,
+      "columns": {
+        "Irrigation Activation Subsidy": {
+          "dtype": "float64"
+        },
+        "Field Soil Erosion Rate": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed3": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 6,
+      "columns": {
+        "Irrigation Activation Subsidy": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed3": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 8,
+      "columns": {
+        "Irrigation Activation Subsidy": {
+          "dtype": "float64"
+        },
+        "Field Soil Erosion Rate": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed3": {
+          "dtype": "float64"
+        },
+        "Irrigation Event Executed4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Event Executed": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Irrigation Activation Subsidy": {
+      "dtype": "float64"
+    },
+    "Field Soil Erosion Rate": {
+      "dtype": "float64"
+    },
+    "Irrigation Event Executed1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed3": {
+      "dtype": "float64"
+    },
+    "Irrigation Event Executed4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Event Executed": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

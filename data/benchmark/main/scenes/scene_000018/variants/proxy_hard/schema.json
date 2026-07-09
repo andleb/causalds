@@ -1,0 +1,217 @@
+{
+  "n_rows": 16000,
+  "n_columns": 8,
+  "columns": {
+    "Systemic Inflammatory Biomarker Level": {
+      "dtype": "float64"
+    },
+    "Autoimmune Disease Activity Score1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Autoimmune Disease Activity Score2": {
+      "dtype": "float64"
+    },
+    "Autoimmune Disease Activity Score3": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status1": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status2": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status3": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 8,
+      "columns": {
+        "Systemic Inflammatory Biomarker Level": {
+          "dtype": "float64"
+        },
+        "Autoimmune Disease Activity Score1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Autoimmune Disease Activity Score2": {
+          "dtype": "float64"
+        },
+        "Autoimmune Disease Activity Score3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status1": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status2": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 7,
+      "columns": {
+        "Autoimmune Disease Activity Score1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Autoimmune Disease Activity Score2": {
+          "dtype": "float64"
+        },
+        "Autoimmune Disease Activity Score3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status1": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status2": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 10,
+      "columns": {
+        "Systemic Inflammatory Biomarker Level": {
+          "dtype": "float64"
+        },
+        "Autoimmune Disease Activity Score1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Autoimmune Disease Activity Score2": {
+          "dtype": "float64"
+        },
+        "Autoimmune Disease Activity Score3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status1": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status2": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status3": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Autoimmune Disease Activity Score": {
+          "dtype": "float64"
+        },
+        "Occupational Chemical Exposure Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Systemic Inflammatory Biomarker Level": {
+      "dtype": "float64"
+    },
+    "Autoimmune Disease Activity Score1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Autoimmune Disease Activity Score2": {
+      "dtype": "float64"
+    },
+    "Autoimmune Disease Activity Score3": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status1": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status2": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status3": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Autoimmune Disease Activity Score": {
+      "dtype": "float64"
+    },
+    "Occupational Chemical Exposure Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

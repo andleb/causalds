@@ -1,0 +1,90 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Neighborhood Violent Crime Rate": {
+      "dtype": "float64"
+    },
+    "Officer-Involved Shooting Incidents": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Calls for an Independent Civilian Police Review Board": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Neighborhood Violent Crime Rate": {
+          "dtype": "float64"
+        },
+        "Officer-Involved Shooting Incidents": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Calls for an Independent Civilian Police Review Board": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Neighborhood Violent Crime Rate": {
+          "dtype": "float64"
+        },
+        "Officer-Involved Shooting Incidents": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Neighborhood Violent Crime Rate": {
+      "dtype": "float64"
+    },
+    "Officer-Involved Shooting Incidents": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Calls for an Independent Civilian Police Review Board": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

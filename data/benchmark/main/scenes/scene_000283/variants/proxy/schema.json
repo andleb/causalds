@@ -1,0 +1,563 @@
+{
+  "n_rows": 16000,
+  "n_columns": 23,
+  "columns": {
+    "Extracellular Glucose Concentration": {
+      "dtype": "float64"
+    },
+    "Toxin Gene mRNA Expression Level": {
+      "dtype": "float64"
+    },
+    "LdrD Toxic Protein Concentration": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Permeabilization": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension1": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension4": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension5": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension7": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration2": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration3": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration4": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration5": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration9": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration10": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Depolarization1": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Depolarization2": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 23,
+      "columns": {
+        "Extracellular Glucose Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin Gene mRNA Expression Level": {
+          "dtype": "float64"
+        },
+        "LdrD Toxic Protein Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Permeabilization": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension1": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension4": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension5": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension7": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration2": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration3": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration4": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration5": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration9": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration10": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization1": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization2": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 22,
+      "columns": {
+        "Extracellular Glucose Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin Gene mRNA Expression Level": {
+          "dtype": "float64"
+        },
+        "LdrD Toxic Protein Concentration": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension1": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension4": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension5": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension7": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration2": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration3": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration4": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration5": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration9": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration10": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization1": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization2": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 26,
+      "columns": {
+        "Extracellular Glucose Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin Gene mRNA Expression Level": {
+          "dtype": "float64"
+        },
+        "LdrD Toxic Protein Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Permeabilization": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension1": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension4": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension5": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dissolved Oxygen Tension7": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration2": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration3": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration4": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration5": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Intracellular ATP Concentration9": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration10": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization1": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization2": {
+          "dtype": "float64"
+        },
+        "Dissolved Oxygen Tension": {
+          "dtype": "float64"
+        },
+        "Intracellular ATP Concentration": {
+          "dtype": "float64"
+        },
+        "Toxin-Induced Membrane Depolarization": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Extracellular Glucose Concentration": {
+      "dtype": "float64"
+    },
+    "Toxin Gene mRNA Expression Level": {
+      "dtype": "float64"
+    },
+    "LdrD Toxic Protein Concentration": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Permeabilization": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension1": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension4": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension5": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dissolved Oxygen Tension7": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration2": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration3": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration4": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration5": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Intracellular ATP Concentration9": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration10": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Depolarization1": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Depolarization2": {
+      "dtype": "float64"
+    },
+    "Dissolved Oxygen Tension": {
+      "dtype": "float64"
+    },
+    "Intracellular ATP Concentration": {
+      "dtype": "float64"
+    },
+    "Toxin-Induced Membrane Depolarization": {
+      "dtype": "float64"
+    }
+  }
+}

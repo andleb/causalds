@@ -1,0 +1,256 @@
+{
+  "n_rows": 16000,
+  "n_columns": 10,
+  "columns": {
+    "Mechanical Ventilation Required": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hospitalization Duration": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity1": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity2": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity3": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Infectious Disease Severity5": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity6": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Infectious Disease Severity8": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 10,
+      "columns": {
+        "Mechanical Ventilation Required": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hospitalization Duration": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity1": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity2": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity3": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity5": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity6": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 9,
+      "columns": {
+        "Mechanical Ventilation Required": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity1": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity2": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity3": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity5": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity6": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 11,
+      "columns": {
+        "Mechanical Ventilation Required": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hospitalization Duration": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity1": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity2": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity3": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity5": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity6": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Infectious Disease Severity8": {
+          "dtype": "float64"
+        },
+        "Infectious Disease Severity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Mechanical Ventilation Required": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hospitalization Duration": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity1": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity2": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity3": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Infectious Disease Severity5": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity6": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Infectious Disease Severity8": {
+      "dtype": "float64"
+    },
+    "Infectious Disease Severity": {
+      "dtype": "float64"
+    }
+  }
+}

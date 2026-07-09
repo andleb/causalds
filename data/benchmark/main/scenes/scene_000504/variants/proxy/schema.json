@@ -1,0 +1,432 @@
+{
+  "n_rows": 16000,
+  "n_columns": 20,
+  "columns": {
+    "Geographic Remoteness from Urban Centers": {
+      "dtype": "float64"
+    },
+    "Community Subclinical Parasite Burden": {
+      "dtype": "float64"
+    },
+    "Perceived Curse Severity": {
+      "dtype": "float64"
+    },
+    "Curse-Related Psychological Distress": {
+      "dtype": "float64"
+    },
+    "Somatic Symptom Disorder Diagnosis": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Ascariasis Prevalence1": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence2": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence3": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence4": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence5": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence6": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence1": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence5": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence6": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence7": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence8": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence9": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 20,
+      "columns": {
+        "Geographic Remoteness from Urban Centers": {
+          "dtype": "float64"
+        },
+        "Community Subclinical Parasite Burden": {
+          "dtype": "float64"
+        },
+        "Perceived Curse Severity": {
+          "dtype": "float64"
+        },
+        "Curse-Related Psychological Distress": {
+          "dtype": "float64"
+        },
+        "Somatic Symptom Disorder Diagnosis": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Ascariasis Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence2": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence3": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence4": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence7": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence8": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 19,
+      "columns": {
+        "Geographic Remoteness from Urban Centers": {
+          "dtype": "float64"
+        },
+        "Community Subclinical Parasite Burden": {
+          "dtype": "float64"
+        },
+        "Perceived Curse Severity": {
+          "dtype": "float64"
+        },
+        "Curse-Related Psychological Distress": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence2": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence3": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence4": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence7": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence8": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 22,
+      "columns": {
+        "Geographic Remoteness from Urban Centers": {
+          "dtype": "float64"
+        },
+        "Community Subclinical Parasite Burden": {
+          "dtype": "float64"
+        },
+        "Perceived Curse Severity": {
+          "dtype": "float64"
+        },
+        "Curse-Related Psychological Distress": {
+          "dtype": "float64"
+        },
+        "Somatic Symptom Disorder Diagnosis": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Ascariasis Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence2": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence3": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence4": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence1": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Population Hookworm Prevalence5": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence6": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence7": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence8": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence9": {
+          "dtype": "float64"
+        },
+        "Population Ascariasis Prevalence": {
+          "dtype": "float64"
+        },
+        "Population Hookworm Prevalence": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Geographic Remoteness from Urban Centers": {
+      "dtype": "float64"
+    },
+    "Community Subclinical Parasite Burden": {
+      "dtype": "float64"
+    },
+    "Perceived Curse Severity": {
+      "dtype": "float64"
+    },
+    "Curse-Related Psychological Distress": {
+      "dtype": "float64"
+    },
+    "Somatic Symptom Disorder Diagnosis": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Ascariasis Prevalence1": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence2": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence3": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence4": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence5": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence6": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence1": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Population Hookworm Prevalence5": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence6": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence7": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence8": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence9": {
+      "dtype": "float64"
+    },
+    "Population Ascariasis Prevalence": {
+      "dtype": "float64"
+    },
+    "Population Hookworm Prevalence": {
+      "dtype": "float64"
+    }
+  }
+}

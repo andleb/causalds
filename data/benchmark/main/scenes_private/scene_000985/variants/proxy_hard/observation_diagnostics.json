@@ -1,0 +1,564 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Nausea-Mediated Treatment Adherence",
+    "Patient Age",
+    "Post-Treatment Nausea Severity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Nausea-Mediated Treatment Adherence",
+    "Patient Age",
+    "Post-Treatment Nausea Severity"
+  ],
+  "proxy_groups": {
+    "Nausea-Mediated Treatment Adherence": [
+      "Nausea-Mediated Treatment Adherence1",
+      "Nausea-Mediated Treatment Adherence2",
+      "Nausea-Mediated Treatment Adherence3"
+    ],
+    "Patient Age": [
+      "Patient Age1",
+      "Patient Age2",
+      "Patient Age3",
+      "Patient Age4"
+    ],
+    "Post-Treatment Nausea Severity": [
+      "Post-Treatment Nausea Severity1",
+      "Post-Treatment Nausea Severity2",
+      "Post-Treatment Nausea Severity3",
+      "Post-Treatment Nausea Severity4",
+      "Post-Treatment Nausea Severity5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Nausea-Mediated Treatment Adherence": {
+      "conceptual_node": "Nausea-Mediated Treatment Adherence",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Nausea-Mediated Treatment Adherence1",
+          "conceptual_node": "Nausea-Mediated Treatment Adherence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Nausea-Mediated Treatment Adherence": -1.2163950223516466
+            },
+            "b": -0.4323241731636153,
+            "w_nl": {
+              "Nausea-Mediated Treatment Adherence": 0.14478326899328542
+            },
+            "nl_shift": {
+              "Nausea-Mediated Treatment Adherence": 1.344653633343576
+            }
+          }
+        },
+        {
+          "column_name": "Nausea-Mediated Treatment Adherence2",
+          "conceptual_node": "Nausea-Mediated Treatment Adherence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.802160962439578,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  59,
+                  17
+                ],
+                [
+                  17,
+                  20
+                ],
+                [
+                  20,
+                  27
+                ],
+                [
+                  27,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Nausea-Mediated Treatment Adherence"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Nausea-Mediated Treatment Adherence3",
+          "conceptual_node": "Nausea-Mediated Treatment Adherence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.7838216398730427,
+          "params": {
+            "w": {
+              "Nausea-Mediated Treatment Adherence": -0.9614146117711009
+            },
+            "b": 0.14501100321310703,
+            "w_pair": {},
+            "w_nl": {
+              "Nausea-Mediated Treatment Adherence": 0.4021894181978304
+            },
+            "nl_shift": {
+              "Nausea-Mediated Treatment Adherence": 0.6915685318541178
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.08001219817035246,
+        "average_information": 0.20774193214201223,
+        "lower_tail_quantiles": {
+          "q10": 0.08047164490393462,
+          "q25": 0.08776589280216238
+        },
+        "per_proxy": {
+          "Nausea-Mediated Treatment Adherence1": {
+            "proxy_type": "binary"
+          },
+          "Nausea-Mediated Treatment Adherence2": {
+            "proxy_type": "continuous"
+          },
+          "Nausea-Mediated Treatment Adherence3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Nausea-Mediated Treatment Adherence1",
+          "rmse": 1.122870184441683,
+          "r2": 0.24404937105692093
+        },
+        "calibrated": {
+          "rmse": 1.0491375789784583,
+          "r2": 0.34006795266651824
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.0737326054632248,
+          "r2_gain": 0.09601858160959731
+        }
+      }
+    },
+    "Patient Age": {
+      "conceptual_node": "Patient Age",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Patient Age1",
+          "conceptual_node": "Patient Age",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Patient Age": 0.7423987460855199
+            },
+            "b": -1.3244028858123944,
+            "w_nl": {
+              "Patient Age": -0.5193973159562442
+            },
+            "nl_shift": {
+              "Patient Age": 0.555882415038023
+            }
+          }
+        },
+        {
+          "column_name": "Patient Age2",
+          "conceptual_node": "Patient Age",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Patient Age": 1.1359398554845588
+            },
+            "b": -0.26026502813145275,
+            "w_nl": {
+              "Patient Age": 0.9329672077908024
+            },
+            "nl_shift": {
+              "Patient Age": -0.918286715638419
+            }
+          }
+        },
+        {
+          "column_name": "Patient Age3",
+          "conceptual_node": "Patient Age",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Patient Age": 1.0786493721944208
+            },
+            "b": 0.5988123898349327,
+            "w_nl": {
+              "Patient Age": -0.8027256849279616
+            },
+            "nl_shift": {
+              "Patient Age": 0.7909202114644431
+            }
+          }
+        },
+        {
+          "column_name": "Patient Age4",
+          "conceptual_node": "Patient Age",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.9114557810865738,
+          "params": {
+            "w": {
+              "Patient Age": -1.1254304560487576
+            },
+            "b": -0.11531119810093285,
+            "w_pair": {},
+            "w_nl": {
+              "Patient Age": 0.8111439020412858
+            },
+            "nl_shift": {
+              "Patient Age": -1.2411018429067542
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.6379250214515823,
+        "min_information": 0.6379250214515823,
+        "average_information": 0.6379250214515823,
+        "lower_tail_quantiles": {
+          "q10": 0.6379250214515823,
+          "q25": 0.6379250214515823
+        },
+        "per_proxy": {
+          "Patient Age1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.002498433797007588,
+            "p_w1_z0": 0.23894160096218095,
+            "p_w1_z1": 0.3110846245530393
+          },
+          "Patient Age2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03151865062688768,
+            "p_w1_z0": 0.5500467726847521,
+            "p_w1_z1": 0.820222487087803
+          },
+          "Patient Age3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.004598499817835782,
+            "p_w1_z0": 0.7202993451824135,
+            "p_w1_z1": 0.8144616607071911
+          },
+          "Patient Age4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.5993094372098512,
+            "mean_z0": 0.5832485961667432,
+            "mean_z1": -0.43135005484685657,
+            "pooled_var": 1.7176609589716225
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Patient Age4",
+          "log_loss": 0.5970819937073165,
+          "auc": 0.6979459851868859
+        },
+        "calibrated": {
+          "log_loss": 0.4800221993093354,
+          "auc": 0.7571002315565184
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.11705979439798114,
+          "auc_gain": 0.05915424636963251
+        }
+      }
+    },
+    "Post-Treatment Nausea Severity": {
+      "conceptual_node": "Post-Treatment Nausea Severity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Post-Treatment Nausea Severity1",
+          "conceptual_node": "Post-Treatment Nausea Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8968050347591703,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  57
+                ],
+                [
+                  57,
+                  36
+                ],
+                [
+                  36,
+                  38
+                ],
+                [
+                  38,
+                  63
+                ],
+                [
+                  63,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Post-Treatment Nausea Severity"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Post-Treatment Nausea Severity2",
+          "conceptual_node": "Post-Treatment Nausea Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.8452239272562165,
+          "params": {
+            "w": {
+              "Post-Treatment Nausea Severity": 0.18718619489235022
+            },
+            "b": -0.1709887369869547,
+            "w_pair": {},
+            "w_nl": {
+              "Post-Treatment Nausea Severity": -0.6453381468147036
+            },
+            "nl_shift": {
+              "Post-Treatment Nausea Severity": 0.9195147253834755
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Post-Treatment Nausea Severity3",
+          "conceptual_node": "Post-Treatment Nausea Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.8000374348103025,
+          "params": {
+            "w": {
+              "Post-Treatment Nausea Severity": -0.7869292296163082
+            },
+            "b": -0.5548653542272486,
+            "w_pair": {},
+            "w_nl": {
+              "Post-Treatment Nausea Severity": 0.6113185042898441
+            },
+            "nl_shift": {
+              "Post-Treatment Nausea Severity": 0.3870270199164283
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Post-Treatment Nausea Severity4",
+          "conceptual_node": "Post-Treatment Nausea Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 3.1874686951170945,
+          "params": {
+            "w": {
+              "Post-Treatment Nausea Severity": -0.5574454218355639
+            },
+            "b": -0.3205568293509323,
+            "w_pair": {},
+            "w_nl": {
+              "Post-Treatment Nausea Severity": -0.3319544070270839
+            },
+            "nl_shift": {
+              "Post-Treatment Nausea Severity": 0.9169983200465297
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Post-Treatment Nausea Severity5",
+          "conceptual_node": "Post-Treatment Nausea Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5785293599593322,
+          "params": {
+            "w": {
+              "Post-Treatment Nausea Severity": -0.7894320005152441
+            },
+            "b": 0.21032865199397624,
+            "w_pair": {},
+            "w_nl": {
+              "Post-Treatment Nausea Severity": 0.47526253658392686
+            },
+            "nl_shift": {
+              "Post-Treatment Nausea Severity": 0.5726991507304513
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.17884973346903416,
+        "average_information": 0.7920484593918931,
+        "lower_tail_quantiles": {
+          "q10": 0.7048025438660594,
+          "q25": 0.7155813599072121
+        },
+        "per_proxy": {
+          "Post-Treatment Nausea Severity1": {
+            "proxy_type": "continuous"
+          },
+          "Post-Treatment Nausea Severity2": {
+            "proxy_type": "continuous"
+          },
+          "Post-Treatment Nausea Severity3": {
+            "proxy_type": "continuous"
+          },
+          "Post-Treatment Nausea Severity4": {
+            "proxy_type": "continuous"
+          },
+          "Post-Treatment Nausea Severity5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Post-Treatment Nausea Severity5",
+          "rmse": 0.9279192034094241,
+          "r2": 0.29598509930203654
+        },
+        "calibrated": {
+          "rmse": 0.7768959437374042,
+          "r2": 0.5064999125876068
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1510232596720199,
+          "r2_gain": 0.2105148132855703
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

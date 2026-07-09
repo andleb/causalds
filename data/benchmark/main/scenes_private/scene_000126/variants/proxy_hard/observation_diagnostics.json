@@ -1,0 +1,778 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "High Acute Viremia Status",
+    "Host Chromatin Accessibility Score",
+    "Oncogenic Viral Integration Burden",
+    "Silent Integration Percentage"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "High Acute Viremia Status",
+    "Host Chromatin Accessibility Score",
+    "Oncogenic Viral Integration Burden",
+    "Silent Integration Percentage"
+  ],
+  "proxy_groups": {
+    "High Acute Viremia Status": [
+      "High Acute Viremia Status1",
+      "High Acute Viremia Status2",
+      "High Acute Viremia Status3",
+      "High Acute Viremia Status4"
+    ],
+    "Host Chromatin Accessibility Score": [
+      "Host Chromatin Accessibility Score1",
+      "Host Chromatin Accessibility Score2",
+      "Host Chromatin Accessibility Score3",
+      "Host Chromatin Accessibility Score4",
+      "Host Chromatin Accessibility Score5",
+      "Host Chromatin Accessibility Score6"
+    ],
+    "Oncogenic Viral Integration Burden": [
+      "Oncogenic Viral Integration Burden1",
+      "Oncogenic Viral Integration Burden2",
+      "Oncogenic Viral Integration Burden3"
+    ],
+    "Silent Integration Percentage": [
+      "Silent Integration Percentage1",
+      "Silent Integration Percentage2",
+      "Silent Integration Percentage3",
+      "Silent Integration Percentage4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "High Acute Viremia Status": {
+      "conceptual_node": "High Acute Viremia Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "High Acute Viremia Status1",
+          "conceptual_node": "High Acute Viremia Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.6599850424526785,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  39,
+                  38
+                ],
+                [
+                  38,
+                  20
+                ],
+                [
+                  20,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "High Acute Viremia Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "High Acute Viremia Status2",
+          "conceptual_node": "High Acute Viremia Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.766372792196405,
+          "params": {
+            "w": {
+              "High Acute Viremia Status": -0.9905639186736268
+            },
+            "b": 0.8119184999933872,
+            "w_pair": {},
+            "w_nl": {
+              "High Acute Viremia Status": -0.22121746218363514
+            },
+            "nl_shift": {
+              "High Acute Viremia Status": 1.3616912214552177
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "High Acute Viremia Status3",
+          "conceptual_node": "High Acute Viremia Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.3620166692229825,
+          "params": {
+            "w": {
+              "High Acute Viremia Status": -0.6914111823844133
+            },
+            "b": -0.15666585946440448,
+            "w_pair": {},
+            "w_nl": {
+              "High Acute Viremia Status": -0.6307213431857928
+            },
+            "nl_shift": {
+              "High Acute Viremia Status": 0.8165569674683066
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "High Acute Viremia Status4",
+          "conceptual_node": "High Acute Viremia Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High Acute Viremia Status": -1.4287868341139056
+            },
+            "b": -0.22614104008946198,
+            "w_nl": {
+              "High Acute Viremia Status": -0.2633823108091805
+            },
+            "nl_shift": {
+              "High Acute Viremia Status": 1.0342807161044414
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.8699651046296404,
+        "min_information": 0.8699651046296404,
+        "average_information": 0.8699651046296404,
+        "lower_tail_quantiles": {
+          "q10": 0.8699651046296404,
+          "q25": 0.8699651046296404
+        },
+        "per_proxy": {
+          "High Acute Viremia Status1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.2927532983037767,
+            "mean_z0": -1.0460609052701828,
+            "mean_z1": 0.9783270344673123,
+            "pooled_var": 13.998634872090014
+          },
+          "High Acute Viremia Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.09160442172509038,
+            "mean_z0": 1.0157664793808405,
+            "mean_z1": -0.16808303061488758,
+            "pooled_var": 15.299476116154072
+          },
+          "High Acute Viremia Status3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.4265196126642684,
+            "mean_z0": 0.27645720812848146,
+            "mean_z1": -0.9900826790451888,
+            "pooled_var": 3.760960195433185
+          },
+          "High Acute Viremia Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.05908777193650486,
+            "p_w1_z0": 0.47067039106145253,
+            "p_w1_z1": 0.1569767441860465
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "High Acute Viremia Status4",
+          "log_loss": 0.6319806402201013,
+          "auc": 0.657996612478828
+        },
+        "calibrated": {
+          "log_loss": 0.5186777711460168,
+          "auc": 0.8203621272632955
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.11330286907408449,
+          "auc_gain": 0.16236551478446748
+        }
+      }
+    },
+    "Host Chromatin Accessibility Score": {
+      "conceptual_node": "Host Chromatin Accessibility Score",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Host Chromatin Accessibility Score1",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.642624573637355,
+          "params": {
+            "w": {
+              "Host Chromatin Accessibility Score": 0.13368246898802938
+            },
+            "b": 0.04802247655250138,
+            "w_pair": {},
+            "w_nl": {
+              "Host Chromatin Accessibility Score": -0.7315124786085679
+            },
+            "nl_shift": {
+              "Host Chromatin Accessibility Score": -1.311545731120653
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Host Chromatin Accessibility Score2",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Host Chromatin Accessibility Score": -1.1842863624241668
+            },
+            "b": 0.3826113360138403,
+            "w_nl": {
+              "Host Chromatin Accessibility Score": 0.6596199948972427
+            },
+            "nl_shift": {
+              "Host Chromatin Accessibility Score": -0.9927322221132941
+            }
+          }
+        },
+        {
+          "column_name": "Host Chromatin Accessibility Score3",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4369078677387521,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  54,
+                  4
+                ],
+                [
+                  4,
+                  57
+                ],
+                [
+                  57,
+                  18
+                ],
+                [
+                  18,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  18
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Host Chromatin Accessibility Score"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Host Chromatin Accessibility Score4",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.801638064414539,
+          "params": {
+            "w": {
+              "Host Chromatin Accessibility Score": -0.8151542346649652
+            },
+            "b": -0.5392976880714189,
+            "w_pair": {},
+            "w_nl": {
+              "Host Chromatin Accessibility Score": -0.23221266954982256
+            },
+            "nl_shift": {
+              "Host Chromatin Accessibility Score": -0.778518516502687
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Host Chromatin Accessibility Score5",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Host Chromatin Accessibility Score": 0.9199835685044739
+            },
+            "b": -0.9748997347777283,
+            "w_nl": {
+              "Host Chromatin Accessibility Score": 0.4269220436932797
+            },
+            "nl_shift": {
+              "Host Chromatin Accessibility Score": -0.833307986799808
+            }
+          }
+        },
+        {
+          "column_name": "Host Chromatin Accessibility Score6",
+          "conceptual_node": "Host Chromatin Accessibility Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9451811439632438,
+          "params": {
+            "w": {
+              "Host Chromatin Accessibility Score": 0.5604963463800742
+            },
+            "b": -0.3242828783132627,
+            "w_pair": {},
+            "w_nl": {
+              "Host Chromatin Accessibility Score": 0.21490456250952422
+            },
+            "nl_shift": {
+              "Host Chromatin Accessibility Score": -1.4627285828049277
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.47219398750592834,
+        "average_information": 0.6909757260416477,
+        "lower_tail_quantiles": {
+          "q10": 0.4767572104035364,
+          "q25": 0.5349392371784636
+        },
+        "per_proxy": {
+          "Host Chromatin Accessibility Score1": {
+            "proxy_type": "continuous"
+          },
+          "Host Chromatin Accessibility Score2": {
+            "proxy_type": "binary"
+          },
+          "Host Chromatin Accessibility Score3": {
+            "proxy_type": "continuous"
+          },
+          "Host Chromatin Accessibility Score4": {
+            "proxy_type": "continuous"
+          },
+          "Host Chromatin Accessibility Score5": {
+            "proxy_type": "binary"
+          },
+          "Host Chromatin Accessibility Score6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Host Chromatin Accessibility Score6",
+          "rmse": 1.1528444336750272,
+          "r2": 0.39983909143688634
+        },
+        "calibrated": {
+          "rmse": 0.8450955378723445,
+          "r2": 0.6774939192405998
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3077488958026827,
+          "r2_gain": 0.2776548278037134
+        }
+      }
+    },
+    "Oncogenic Viral Integration Burden": {
+      "conceptual_node": "Oncogenic Viral Integration Burden",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Oncogenic Viral Integration Burden1",
+          "conceptual_node": "Oncogenic Viral Integration Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.807464010248728,
+          "params": {
+            "w": {
+              "Oncogenic Viral Integration Burden": -0.7569567304546737
+            },
+            "b": 0.04823489397676961,
+            "w_pair": {},
+            "w_nl": {
+              "Oncogenic Viral Integration Burden": 0.519906584822196
+            },
+            "nl_shift": {
+              "Oncogenic Viral Integration Burden": -0.7685850961857302
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Oncogenic Viral Integration Burden2",
+          "conceptual_node": "Oncogenic Viral Integration Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.075181022384712,
+          "params": {
+            "w": {
+              "Oncogenic Viral Integration Burden": 0.831704623488901
+            },
+            "b": 0.3019418087079045,
+            "w_pair": {},
+            "w_nl": {
+              "Oncogenic Viral Integration Burden": -0.08564137137760819
+            },
+            "nl_shift": {
+              "Oncogenic Viral Integration Burden": -0.5660121819043912
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Oncogenic Viral Integration Burden3",
+          "conceptual_node": "Oncogenic Viral Integration Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.3940494992300447,
+          "params": {
+            "w": {
+              "Oncogenic Viral Integration Burden": -1.0332651415546787
+            },
+            "b": -0.4783975058024672,
+            "w_pair": {},
+            "w_nl": {
+              "Oncogenic Viral Integration Burden": 0.35821728956528665
+            },
+            "nl_shift": {
+              "Oncogenic Viral Integration Burden": -1.3847483386589055
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.4286440028205286,
+        "average_information": 0.8320227094747954,
+        "lower_tail_quantiles": {
+          "q10": 0.4364705365773204,
+          "q25": 0.4553145095642828
+        },
+        "per_proxy": {
+          "Oncogenic Viral Integration Burden1": {
+            "proxy_type": "continuous"
+          },
+          "Oncogenic Viral Integration Burden2": {
+            "proxy_type": "continuous"
+          },
+          "Oncogenic Viral Integration Burden3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 4
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Oncogenic Viral Integration Burden3",
+          "rmse": 1.1023877594510754,
+          "r2": 0.30234579589452537
+        },
+        "calibrated": {
+          "rmse": 0.9434504405174877,
+          "r2": 0.4890132555671509
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.15893731893358765,
+          "r2_gain": 0.18666745967262555
+        }
+      }
+    },
+    "Silent Integration Percentage": {
+      "conceptual_node": "Silent Integration Percentage",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Silent Integration Percentage1",
+          "conceptual_node": "Silent Integration Percentage",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 3.104624887430511,
+          "params": {
+            "w": {
+              "Silent Integration Percentage": 0.9540454449372838
+            },
+            "b": -0.6392580838058319,
+            "w_pair": {},
+            "w_nl": {
+              "Silent Integration Percentage": 0.7760266809888796
+            },
+            "nl_shift": {
+              "Silent Integration Percentage": 0.8642663257943686
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Silent Integration Percentage2",
+          "conceptual_node": "Silent Integration Percentage",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.6529781764073972,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  37,
+                  58
+                ],
+                [
+                  58,
+                  7
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  7,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Silent Integration Percentage"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Silent Integration Percentage3",
+          "conceptual_node": "Silent Integration Percentage",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Silent Integration Percentage": -1.1636438005098404
+            },
+            "b": 0.8194338397312204,
+            "w_nl": {
+              "Silent Integration Percentage": -0.6193524351174273
+            },
+            "nl_shift": {
+              "Silent Integration Percentage": -0.40738194832172603
+            }
+          }
+        },
+        {
+          "column_name": "Silent Integration Percentage4",
+          "conceptual_node": "Silent Integration Percentage",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.7501464925372794,
+          "params": {
+            "w": {
+              "Silent Integration Percentage": 1.2738109954415648
+            },
+            "b": -0.22132908418236866,
+            "w_pair": {},
+            "w_nl": {
+              "Silent Integration Percentage": -0.4729541580313299
+            },
+            "nl_shift": {
+              "Silent Integration Percentage": -0.3242808223490674
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.1789033066433972,
+        "average_information": 0.2971691030130294,
+        "lower_tail_quantiles": {
+          "q10": 0.17890330664339726,
+          "q25": 0.17890330664339726
+        },
+        "per_proxy": {
+          "Silent Integration Percentage1": {
+            "proxy_type": "continuous"
+          },
+          "Silent Integration Percentage2": {
+            "proxy_type": "continuous"
+          },
+          "Silent Integration Percentage3": {
+            "proxy_type": "binary"
+          },
+          "Silent Integration Percentage4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Silent Integration Percentage1",
+          "rmse": 1.9387368948140182,
+          "r2": 0.493936933537902
+        },
+        "calibrated": {
+          "rmse": 1.364139980697687,
+          "r2": 0.749455561087569
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.5745969141163312,
+          "r2_gain": 0.25551862754966703
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

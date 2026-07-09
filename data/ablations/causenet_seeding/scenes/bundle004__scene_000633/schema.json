@@ -1,0 +1,55 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Exposure to Natural Disasters": {
+      "dtype": "float64"
+    },
+    "Level of Hopelessness": {
+      "dtype": "float64"
+    },
+    "Severity of Psychological Suffering": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Exposure to Natural Disasters": {
+          "dtype": "float64"
+        },
+        "Level of Hopelessness": {
+          "dtype": "float64"
+        },
+        "Severity of Psychological Suffering": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Exposure to Natural Disasters": {
+          "dtype": "float64"
+        },
+        "Level of Hopelessness": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Exposure to Natural Disasters": {
+      "dtype": "float64"
+    },
+    "Level of Hopelessness": {
+      "dtype": "float64"
+    },
+    "Severity of Psychological Suffering": {
+      "dtype": "float64"
+    }
+  }
+}

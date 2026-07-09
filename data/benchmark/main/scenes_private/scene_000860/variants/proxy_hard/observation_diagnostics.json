@@ -1,0 +1,305 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Flooding Emergency Incidents",
+    "Presence of Critical Road Blockage"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Flooding Emergency Incidents",
+    "Presence of Critical Road Blockage"
+  ],
+  "proxy_groups": {
+    "Flooding Emergency Incidents": [
+      "Flooding Emergency Incidents1",
+      "Flooding Emergency Incidents2",
+      "Flooding Emergency Incidents3"
+    ],
+    "Presence of Critical Road Blockage": [
+      "Presence of Critical Road Blockage1",
+      "Presence of Critical Road Blockage2",
+      "Presence of Critical Road Blockage3",
+      "Presence of Critical Road Blockage4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Flooding Emergency Incidents": {
+      "conceptual_node": "Flooding Emergency Incidents",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Flooding Emergency Incidents1",
+          "conceptual_node": "Flooding Emergency Incidents",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.194039447709514,
+          "params": {
+            "w": {
+              "Flooding Emergency Incidents": 0.8126964639225948
+            },
+            "b": 1.2416204829962065,
+            "w_pair": {},
+            "w_nl": {
+              "Flooding Emergency Incidents": 0.19760239397435642
+            },
+            "nl_shift": {
+              "Flooding Emergency Incidents": 0.7772991307385184
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Flooding Emergency Incidents2",
+          "conceptual_node": "Flooding Emergency Incidents",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.7888954514409634,
+          "params": {
+            "w": {
+              "Flooding Emergency Incidents": 0.5665398737722835
+            },
+            "b": 0.3878933458563147,
+            "w_pair": {},
+            "w_nl": {
+              "Flooding Emergency Incidents": -0.7347661054392127
+            },
+            "nl_shift": {
+              "Flooding Emergency Incidents": -0.6860498271460426
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Flooding Emergency Incidents3",
+          "conceptual_node": "Flooding Emergency Incidents",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.605427930352528,
+          "params": {
+            "w": {
+              "Flooding Emergency Incidents": 0.923813148507346
+            },
+            "b": -0.1956657176617583,
+            "w_pair": {},
+            "w_nl": {
+              "Flooding Emergency Incidents": -0.19342405804056634
+            },
+            "nl_shift": {
+              "Flooding Emergency Incidents": -0.09711095626702004
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.08698862280166605,
+        "average_information": 0.42829684349791464,
+        "lower_tail_quantiles": {
+          "q10": 0.20320768051352917,
+          "q25": 0.230132090000458
+        },
+        "per_proxy": {
+          "Flooding Emergency Incidents1": {
+            "proxy_type": "continuous"
+          },
+          "Flooding Emergency Incidents2": {
+            "proxy_type": "continuous"
+          },
+          "Flooding Emergency Incidents3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Flooding Emergency Incidents1",
+          "rmse": 1.2651029786472963,
+          "r2": 0.16105671325734017
+        },
+        "calibrated": {
+          "rmse": 1.128978799374351,
+          "r2": 0.3318831578624818
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1361241792729453,
+          "r2_gain": 0.17082644460514163
+        }
+      }
+    },
+    "Presence of Critical Road Blockage": {
+      "conceptual_node": "Presence of Critical Road Blockage",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Presence of Critical Road Blockage1",
+          "conceptual_node": "Presence of Critical Road Blockage",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Critical Road Blockage": 0.6557080023624755
+            },
+            "b": -1.3912050212697082,
+            "w_nl": {
+              "Presence of Critical Road Blockage": 0.39788166101649347
+            },
+            "nl_shift": {
+              "Presence of Critical Road Blockage": 1.0234379045230368
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Critical Road Blockage2",
+          "conceptual_node": "Presence of Critical Road Blockage",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Critical Road Blockage": 2.757242368269891
+            },
+            "b": -0.45880966180428445,
+            "w_nl": {
+              "Presence of Critical Road Blockage": -0.8939882095735996
+            },
+            "nl_shift": {
+              "Presence of Critical Road Blockage": 0.1852905287853761
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Critical Road Blockage3",
+          "conceptual_node": "Presence of Critical Road Blockage",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.7791723093529606,
+          "params": {
+            "w": {
+              "Presence of Critical Road Blockage": 0.5734992560529484
+            },
+            "b": 0.7465361198729131,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Critical Road Blockage": -0.7789911589465899
+            },
+            "nl_shift": {
+              "Presence of Critical Road Blockage": 0.023277192728166085
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Presence of Critical Road Blockage4",
+          "conceptual_node": "Presence of Critical Road Blockage",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.8793334251197544,
+          "params": {
+            "w": {
+              "Presence of Critical Road Blockage": 2.0667622068598437
+            },
+            "b": -0.7941357662598708,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Critical Road Blockage": 0.41462358990374637
+            },
+            "nl_shift": {
+              "Presence of Critical Road Blockage": -0.2976112739828325
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 2.2568624591972353,
+        "min_information": 2.2568624591972353,
+        "average_information": 2.2568624591972353,
+        "lower_tail_quantiles": {
+          "q10": 2.2568624591972353,
+          "q25": 2.2568624591972353
+        },
+        "per_proxy": {
+          "Presence of Critical Road Blockage1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.013321536516819325,
+            "p_w1_z0": 0.16909985166679678,
+            "p_w1_z1": 0.31219580030593796
+          },
+          "Presence of Critical Road Blockage2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.09893592691257941,
+            "p_w1_z0": 0.4255601530174096,
+            "p_w1_z1": 0.8630232234737867
+          },
+          "Presence of Critical Road Blockage3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.00027721103914500806,
+            "mean_z0": 0.7405017491340199,
+            "mean_z1": 0.7045166396732224,
+            "pooled_var": 4.671271775104899
+          },
+          "Presence of Critical Road Blockage4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 2.1443277847286915,
+            "mean_z0": -0.6706972218589545,
+            "mean_z1": 1.6218495749613864,
+            "pooled_var": 2.4510109196184233
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Presence of Critical Road Blockage4",
+          "log_loss": 0.4492966595738941,
+          "auc": 0.8775141443521935
+        },
+        "calibrated": {
+          "log_loss": 0.3372506254504285,
+          "auc": 0.9230114034259136
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.11204603412346559,
+          "auc_gain": 0.04549725907372004
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

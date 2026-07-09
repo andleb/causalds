@@ -1,0 +1,136 @@
+{
+  "n_rows": 16000,
+  "n_columns": 4,
+  "columns": {
+    "Detection of Neurotoxic Metabolites Above Threshold": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Neurological Seizure Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Occupational Chemical Exposure1": {
+      "dtype": "float64"
+    },
+    "Duration of Occupational Chemical Exposure2": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 4,
+      "columns": {
+        "Detection of Neurotoxic Metabolites Above Threshold": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neurological Seizure Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Occupational Chemical Exposure1": {
+          "dtype": "float64"
+        },
+        "Duration of Occupational Chemical Exposure2": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 3,
+      "columns": {
+        "Detection of Neurotoxic Metabolites Above Threshold": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Occupational Chemical Exposure1": {
+          "dtype": "float64"
+        },
+        "Duration of Occupational Chemical Exposure2": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 5,
+      "columns": {
+        "Detection of Neurotoxic Metabolites Above Threshold": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neurological Seizure Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Occupational Chemical Exposure1": {
+          "dtype": "float64"
+        },
+        "Duration of Occupational Chemical Exposure2": {
+          "dtype": "float64"
+        },
+        "Duration of Occupational Chemical Exposure": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Detection of Neurotoxic Metabolites Above Threshold": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Neurological Seizure Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Occupational Chemical Exposure1": {
+      "dtype": "float64"
+    },
+    "Duration of Occupational Chemical Exposure2": {
+      "dtype": "float64"
+    },
+    "Duration of Occupational Chemical Exposure": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "n_rows": 16000,
+  "n_columns": 7,
+  "columns": {
+    "Metropolitan Population Size": {
+      "dtype": "float64"
+    },
+    "Average Summer Temperature": {
+      "dtype": "float64"
+    },
+    "White Collar Crime Rate": {
+      "dtype": "float64"
+    },
+    "Residential Overcrowding": {
+      "dtype": "float64"
+    },
+    "Heat-related Illness Rate": {
+      "dtype": "float64"
+    },
+    "Sanitation Deficiency Level": {
+      "dtype": "float64"
+    },
+    "Scabies Outbreak Present": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 7,
+      "columns": {
+        "Metropolitan Population Size": {
+          "dtype": "float64"
+        },
+        "Average Summer Temperature": {
+          "dtype": "float64"
+        },
+        "White Collar Crime Rate": {
+          "dtype": "float64"
+        },
+        "Residential Overcrowding": {
+          "dtype": "float64"
+        },
+        "Heat-related Illness Rate": {
+          "dtype": "float64"
+        },
+        "Sanitation Deficiency Level": {
+          "dtype": "float64"
+        },
+        "Scabies Outbreak Present": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 6,
+      "columns": {
+        "Metropolitan Population Size": {
+          "dtype": "float64"
+        },
+        "Average Summer Temperature": {
+          "dtype": "float64"
+        },
+        "White Collar Crime Rate": {
+          "dtype": "float64"
+        },
+        "Residential Overcrowding": {
+          "dtype": "float64"
+        },
+        "Heat-related Illness Rate": {
+          "dtype": "float64"
+        },
+        "Sanitation Deficiency Level": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Metropolitan Population Size": {
+      "dtype": "float64"
+    },
+    "Average Summer Temperature": {
+      "dtype": "float64"
+    },
+    "White Collar Crime Rate": {
+      "dtype": "float64"
+    },
+    "Residential Overcrowding": {
+      "dtype": "float64"
+    },
+    "Heat-related Illness Rate": {
+      "dtype": "float64"
+    },
+    "Sanitation Deficiency Level": {
+      "dtype": "float64"
+    },
+    "Scabies Outbreak Present": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

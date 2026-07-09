@@ -1,0 +1,187 @@
+{
+  "n_rows": 16000,
+  "n_columns": 6,
+  "columns": {
+    "Patient Mortality": {
+      "dtype": "float64"
+    },
+    "Cardiopulmonary Abnormalities1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Cardiopulmonary Abnormalities2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Circulatory Failure1": {
+      "dtype": "float64"
+    },
+    "Circulatory Failure2": {
+      "dtype": "float64"
+    },
+    "Circulatory Failure3": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 6,
+      "columns": {
+        "Patient Mortality": {
+          "dtype": "float64"
+        },
+        "Cardiopulmonary Abnormalities1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Cardiopulmonary Abnormalities2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Circulatory Failure1": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure2": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure3": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 5,
+      "columns": {
+        "Cardiopulmonary Abnormalities1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Cardiopulmonary Abnormalities2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Circulatory Failure1": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure2": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure3": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 8,
+      "columns": {
+        "Patient Mortality": {
+          "dtype": "float64"
+        },
+        "Cardiopulmonary Abnormalities1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Cardiopulmonary Abnormalities2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Circulatory Failure1": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure2": {
+          "dtype": "float64"
+        },
+        "Circulatory Failure3": {
+          "dtype": "float64"
+        },
+        "Cardiopulmonary Abnormalities": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Circulatory Failure": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Patient Mortality": {
+      "dtype": "float64"
+    },
+    "Cardiopulmonary Abnormalities1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Cardiopulmonary Abnormalities2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Circulatory Failure1": {
+      "dtype": "float64"
+    },
+    "Circulatory Failure2": {
+      "dtype": "float64"
+    },
+    "Circulatory Failure3": {
+      "dtype": "float64"
+    },
+    "Cardiopulmonary Abnormalities": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Circulatory Failure": {
+      "dtype": "float64"
+    }
+  }
+}

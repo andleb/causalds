@@ -1,0 +1,445 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Daily Duration of Scouring Pad Use",
+    "Presence of Mechanical Skin Abrasion"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Daily Duration of Scouring Pad Use",
+    "Presence of Mechanical Skin Abrasion"
+  ],
+  "proxy_groups": {
+    "Daily Duration of Scouring Pad Use": [
+      "Daily Duration of Scouring Pad Use1",
+      "Daily Duration of Scouring Pad Use2",
+      "Daily Duration of Scouring Pad Use3"
+    ],
+    "Presence of Mechanical Skin Abrasion": [
+      "Presence of Mechanical Skin Abrasion1",
+      "Presence of Mechanical Skin Abrasion2",
+      "Presence of Mechanical Skin Abrasion3",
+      "Presence of Mechanical Skin Abrasion4",
+      "Presence of Mechanical Skin Abrasion5",
+      "Presence of Mechanical Skin Abrasion6",
+      "Presence of Mechanical Skin Abrasion7",
+      "Presence of Mechanical Skin Abrasion8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Daily Duration of Scouring Pad Use": {
+      "conceptual_node": "Daily Duration of Scouring Pad Use",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Daily Duration of Scouring Pad Use1",
+          "conceptual_node": "Daily Duration of Scouring Pad Use",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Daily Duration of Scouring Pad Use": 0.5360279274595448
+            },
+            "b": -0.7401697863958417,
+            "w_nl": {
+              "Daily Duration of Scouring Pad Use": 0.7215595869135872
+            },
+            "nl_shift": {
+              "Daily Duration of Scouring Pad Use": 1.217635998861685
+            }
+          }
+        },
+        {
+          "column_name": "Daily Duration of Scouring Pad Use2",
+          "conceptual_node": "Daily Duration of Scouring Pad Use",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9508323401172771,
+          "params": {
+            "w": {
+              "Daily Duration of Scouring Pad Use": -0.972991573839745
+            },
+            "b": 0.3238738707415163,
+            "w_pair": {},
+            "w_nl": {
+              "Daily Duration of Scouring Pad Use": 0.8885108854608039
+            },
+            "nl_shift": {
+              "Daily Duration of Scouring Pad Use": -0.8228194760480856
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Daily Duration of Scouring Pad Use3",
+          "conceptual_node": "Daily Duration of Scouring Pad Use",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.822304438951893,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  51,
+                  14
+                ],
+                [
+                  14,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Daily Duration of Scouring Pad Use"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.035817767073047097,
+        "average_information": 1.004053411103847,
+        "lower_tail_quantiles": {
+          "q10": 0.13621620199242152,
+          "q25": 0.23548409298676565
+        },
+        "per_proxy": {
+          "Daily Duration of Scouring Pad Use1": {
+            "proxy_type": "binary"
+          },
+          "Daily Duration of Scouring Pad Use2": {
+            "proxy_type": "continuous"
+          },
+          "Daily Duration of Scouring Pad Use3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Daily Duration of Scouring Pad Use2",
+          "rmse": 1.0362469894811503,
+          "r2": 0.23116150007528247
+        },
+        "calibrated": {
+          "rmse": 0.9486575987117004,
+          "r2": 0.3556415346399374
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.08758939076944994,
+          "r2_gain": 0.12448003456465495
+        }
+      }
+    },
+    "Presence of Mechanical Skin Abrasion": {
+      "conceptual_node": "Presence of Mechanical Skin Abrasion",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion1",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 2.278359077972727
+            },
+            "b": 0.35847038997883174,
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": 0.6287681722783289
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": 0.7044882671464947
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion2",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 1.5452171329253743
+            },
+            "b": 0.468677066971889,
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": -0.7610518165912555
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": 0.7855523647756568
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion3",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.7831448310455233,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": -0.9877075792551256
+            },
+            "b": -0.06294975724239145,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": -0.3230393612253001
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": -0.10224128830884993
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion4",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.676879627632263,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 1.4139144214142085
+            },
+            "b": -0.41269138066119937,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": 0.05271865773750428
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": -0.2342738379329954
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion5",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": -0.6619524120604707
+            },
+            "b": -0.6814106484070626,
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": -0.5177033897462647
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": 0.24566946483385266
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion6",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.253539691471686,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 0.27745686644090695
+            },
+            "b": 0.5116587096325613,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": 0.8265079727153744
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": -0.490015660685998
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion7",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 0.5716762292643824
+            },
+            "b": 0.49831831060105886,
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": -0.16335604469493475
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": 0.7915060372687881
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Mechanical Skin Abrasion8",
+          "conceptual_node": "Presence of Mechanical Skin Abrasion",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Mechanical Skin Abrasion": 0.1778785945421857
+            },
+            "b": 0.5706133496924024,
+            "w_nl": {
+              "Presence of Mechanical Skin Abrasion": 0.28394438750448947
+            },
+            "nl_shift": {
+              "Presence of Mechanical Skin Abrasion": 0.47814305310182714
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.352655528999341,
+        "min_information": 1.352655528999341,
+        "average_information": 1.352655528999341,
+        "lower_tail_quantiles": {
+          "q10": 1.352655528999341,
+          "q25": 1.352655528999341
+        },
+        "per_proxy": {
+          "Presence of Mechanical Skin Abrasion1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.12470593377362693,
+            "p_w1_z0": 0.5239539114614918,
+            "p_w1_z1": 0.9430041559469622
+          },
+          "Presence of Mechanical Skin Abrasion2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0217711035505969,
+            "p_w1_z0": 0.6962805740853042,
+            "p_w1_z1": 0.8668117949732832
+          },
+          "Presence of Mechanical Skin Abrasion3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.7836521880521509,
+            "mean_z0": -0.09286428559427774,
+            "mean_z1": -1.286526211016585,
+            "pooled_var": 1.8181902812578752
+          },
+          "Presence of Mechanical Skin Abrasion4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.3061456848110916,
+            "mean_z0": -0.364424707068476,
+            "mean_z1": 1.0465352725460926,
+            "pooled_var": 6.502812754987483
+          },
+          "Presence of Mechanical Skin Abrasion5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.022277840269801424,
+            "p_w1_z0": 0.35617545987467153,
+            "p_w1_z1": 0.17168018998614684
+          },
+          "Presence of Mechanical Skin Abrasion6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.08401810527905797,
+            "mean_z0": 0.8952266758375117,
+            "mean_z1": 1.5327801177510647,
+            "pooled_var": 4.837938084246878
+          },
+          "Presence of Mechanical Skin Abrasion7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.005549204351461015,
+            "p_w1_z0": 0.6367495451788963,
+            "p_w1_z1": 0.7344151988917474
+          },
+          "Presence of Mechanical Skin Abrasion8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.004535468911554291,
+            "p_w1_z0": 0.6154234889832222,
+            "p_w1_z1": 0.7055214723926381
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Presence of Mechanical Skin Abrasion1",
+          "log_loss": 0.5769218535573826,
+          "auc": 0.6996785145562299
+        },
+        "calibrated": {
+          "log_loss": 0.4242906728630372,
+          "auc": 0.8860099325950686
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.1526311806943454,
+          "auc_gain": 0.18633141803883868
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

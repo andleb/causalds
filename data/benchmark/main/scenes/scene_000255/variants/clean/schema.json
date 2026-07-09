@@ -1,0 +1,55 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Clinical Negligence": {
+      "dtype": "float64"
+    },
+    "Critical Injury": {
+      "dtype": "float64"
+    },
+    "Patient Mortality": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Clinical Negligence": {
+          "dtype": "float64"
+        },
+        "Critical Injury": {
+          "dtype": "float64"
+        },
+        "Patient Mortality": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Clinical Negligence": {
+          "dtype": "float64"
+        },
+        "Critical Injury": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Clinical Negligence": {
+      "dtype": "float64"
+    },
+    "Critical Injury": {
+      "dtype": "float64"
+    },
+    "Patient Mortality": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "n_rows": 16000,
+  "n_columns": 9,
+  "columns": {
+    "Storm Severity": {
+      "dtype": "float64"
+    },
+    "Number of Road Closures": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred2": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred4": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred5": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred7": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 9,
+      "columns": {
+        "Storm Severity": {
+          "dtype": "float64"
+        },
+        "Number of Road Closures": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred2": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred4": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred5": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred7": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 8,
+      "columns": {
+        "Storm Severity": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred2": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred4": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred5": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred7": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 10,
+      "columns": {
+        "Storm Severity": {
+          "dtype": "float64"
+        },
+        "Number of Road Closures": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred2": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred4": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred5": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Power Outage Occurred7": {
+          "dtype": "float64"
+        },
+        "Power Outage Occurred": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Storm Severity": {
+      "dtype": "float64"
+    },
+    "Number of Road Closures": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred2": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred4": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred5": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Power Outage Occurred7": {
+      "dtype": "float64"
+    },
+    "Power Outage Occurred": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

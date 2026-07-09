@@ -1,0 +1,392 @@
+{
+  "n_rows": 16000,
+  "n_columns": 13,
+  "columns": {
+    "Neighborhood Unemployment Rate": {
+      "dtype": "float64"
+    },
+    "Murine Typhus Clinical Severity Score": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level1": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Neighborhood Educational Attainment Level3": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level4": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status2": {
+      "dtype": "float64"
+    },
+    "Rickettsia typhi Infection Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status5": {
+      "dtype": "float64"
+    },
+    "Rickettsia typhi Infection Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 13,
+      "columns": {
+        "Neighborhood Unemployment Rate": {
+          "dtype": "float64"
+        },
+        "Murine Typhus Clinical Severity Score": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level1": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neighborhood Educational Attainment Level3": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level4": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status2": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status5": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 12,
+      "columns": {
+        "Neighborhood Unemployment Rate": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level1": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neighborhood Educational Attainment Level3": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level4": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status2": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status5": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 15,
+      "columns": {
+        "Neighborhood Unemployment Rate": {
+          "dtype": "float64"
+        },
+        "Murine Typhus Clinical Severity Score": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level1": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neighborhood Educational Attainment Level3": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level4": {
+          "dtype": "float64"
+        },
+        "Neighborhood Educational Attainment Level5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status2": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Rickettsia typhi Infection Status5": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Neighborhood Educational Attainment Level": {
+          "dtype": "float64"
+        },
+        "Rickettsia typhi Infection Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Neighborhood Unemployment Rate": {
+      "dtype": "float64"
+    },
+    "Murine Typhus Clinical Severity Score": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level1": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Neighborhood Educational Attainment Level3": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level4": {
+      "dtype": "float64"
+    },
+    "Neighborhood Educational Attainment Level5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status2": {
+      "dtype": "float64"
+    },
+    "Rickettsia typhi Infection Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Rickettsia typhi Infection Status5": {
+      "dtype": "float64"
+    },
+    "Rickettsia typhi Infection Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Neighborhood Educational Attainment Level": {
+      "dtype": "float64"
+    },
+    "Rickettsia typhi Infection Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Cancer-Related Fatigue Severity Rating",
+    "Randomized Sleep Hygiene Intervention Assignment"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Cancer-Related Fatigue Severity Rating",
+    "Randomized Sleep Hygiene Intervention Assignment"
+  ],
+  "proxy_groups": {
+    "Cancer-Related Fatigue Severity Rating": [
+      "Cancer-Related Fatigue Severity Rating1",
+      "Cancer-Related Fatigue Severity Rating2",
+      "Cancer-Related Fatigue Severity Rating3",
+      "Cancer-Related Fatigue Severity Rating4",
+      "Cancer-Related Fatigue Severity Rating5",
+      "Cancer-Related Fatigue Severity Rating6",
+      "Cancer-Related Fatigue Severity Rating7"
+    ],
+    "Randomized Sleep Hygiene Intervention Assignment": [
+      "Randomized Sleep Hygiene Intervention Assignment1",
+      "Randomized Sleep Hygiene Intervention Assignment2",
+      "Randomized Sleep Hygiene Intervention Assignment3"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Cancer-Related Fatigue Severity Rating": {
+      "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating1",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.4869904153822655,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": 0.5245518651219848
+            },
+            "b": 0.7662526579557065,
+            "w_pair": {},
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": 0.7366128537130112
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": 1.0436924571489223
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating2",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.113016854890394,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": 0.5836040201277355
+            },
+            "b": -0.4581056636462669,
+            "w_pair": {},
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": 0.1549894253773314
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": -0.4106998936139421
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating3",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": -0.5946505279986821
+            },
+            "b": -0.9004185935815445,
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": 0.517711410619333
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": 1.2350746595597961
+            }
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating4",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.2113437129351823,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": -0.3123093398073725
+            },
+            "b": 0.4619885766150449,
+            "w_pair": {},
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": -0.11125525777368489
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": 0.42710402853819573
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating5",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.221128307775698,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": -1.3152441597719813
+            },
+            "b": -0.15826835631995528,
+            "w_pair": {},
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": 0.1572840861067068
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": 0.35775009000321645
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating6",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.7020059958573108,
+          "params": {
+            "w": {
+              "Cancer-Related Fatigue Severity Rating": -1.1748126735980482
+            },
+            "b": 0.028006946054622138,
+            "w_pair": {},
+            "w_nl": {
+              "Cancer-Related Fatigue Severity Rating": -0.7378394681810456
+            },
+            "nl_shift": {
+              "Cancer-Related Fatigue Severity Rating": -1.0946780621241008
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cancer-Related Fatigue Severity Rating7",
+          "conceptual_node": "Cancer-Related Fatigue Severity Rating",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.0704994938269583,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  10
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  12,
+                  33
+                ],
+                [
+                  33,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Cancer-Related Fatigue Severity Rating"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.9111992483560667,
+        "average_information": 2.5295592721238522,
+        "lower_tail_quantiles": {
+          "q10": 1.9696433500344241,
+          "q25": 1.9773449567721741
+        },
+        "per_proxy": {
+          "Cancer-Related Fatigue Severity Rating1": {
+            "proxy_type": "continuous"
+          },
+          "Cancer-Related Fatigue Severity Rating2": {
+            "proxy_type": "continuous"
+          },
+          "Cancer-Related Fatigue Severity Rating3": {
+            "proxy_type": "binary"
+          },
+          "Cancer-Related Fatigue Severity Rating4": {
+            "proxy_type": "continuous"
+          },
+          "Cancer-Related Fatigue Severity Rating5": {
+            "proxy_type": "continuous"
+          },
+          "Cancer-Related Fatigue Severity Rating6": {
+            "proxy_type": "continuous"
+          },
+          "Cancer-Related Fatigue Severity Rating7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Cancer-Related Fatigue Severity Rating5",
+          "rmse": 0.6501839803479912,
+          "r2": 0.4854765428213753
+        },
+        "calibrated": {
+          "rmse": 0.5077245704577614,
+          "r2": 0.6862461880003905
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.14245940989022976,
+          "r2_gain": 0.2007696451790152
+        }
+      }
+    },
+    "Randomized Sleep Hygiene Intervention Assignment": {
+      "conceptual_node": "Randomized Sleep Hygiene Intervention Assignment",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Randomized Sleep Hygiene Intervention Assignment1",
+          "conceptual_node": "Randomized Sleep Hygiene Intervention Assignment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.0946242704803708,
+          "params": {
+            "w": {
+              "Randomized Sleep Hygiene Intervention Assignment": 1.1206263294776122
+            },
+            "b": 0.5518034201324806,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Sleep Hygiene Intervention Assignment": -0.6325545567906338
+            },
+            "nl_shift": {
+              "Randomized Sleep Hygiene Intervention Assignment": 1.3363658703240833
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Sleep Hygiene Intervention Assignment2",
+          "conceptual_node": "Randomized Sleep Hygiene Intervention Assignment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Randomized Sleep Hygiene Intervention Assignment": -1.3876393585192954
+            },
+            "b": 1.3623112247367106,
+            "w_nl": {
+              "Randomized Sleep Hygiene Intervention Assignment": -0.45470396098636445
+            },
+            "nl_shift": {
+              "Randomized Sleep Hygiene Intervention Assignment": -0.7846020601584563
+            }
+          }
+        },
+        {
+          "column_name": "Randomized Sleep Hygiene Intervention Assignment3",
+          "conceptual_node": "Randomized Sleep Hygiene Intervention Assignment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Randomized Sleep Hygiene Intervention Assignment": -1.8999949609134918
+            },
+            "b": -0.09458462120530997,
+            "w_nl": {
+              "Randomized Sleep Hygiene Intervention Assignment": 0.22454195281149947
+            },
+            "nl_shift": {
+              "Randomized Sleep Hygiene Intervention Assignment": -0.2882590253741464
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.5872532974453409,
+        "min_information": 0.5872532974453409,
+        "average_information": 0.5872532974453409,
+        "lower_tail_quantiles": {
+          "q10": 0.5872532974453409,
+          "q25": 0.5872532974453409
+        },
+        "per_proxy": {
+          "Randomized Sleep Hygiene Intervention Assignment1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.4552153569575002,
+            "mean_z0": 1.0995870756737232,
+            "mean_z1": 1.8740096900856875,
+            "pooled_var": 1.3174651877323507
+          },
+          "Randomized Sleep Hygiene Intervention Assignment2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06342375858295346,
+            "p_w1_z0": 0.7618721656541456,
+            "p_w1_z1": 0.4118849993985324
+          },
+          "Randomized Sleep Hygiene Intervention Assignment3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06861418190488722,
+            "p_w1_z0": 0.4836142722683323,
+            "p_w1_z1": 0.13978106580055336
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Randomized Sleep Hygiene Intervention Assignment3",
+          "log_loss": 0.6164429395852182,
+          "auc": 0.6711018412522954
+        },
+        "calibrated": {
+          "log_loss": 0.5190245918639436,
+          "auc": 0.812781186646566
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.09741834772127467,
+          "auc_gain": 0.14167934539427052
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

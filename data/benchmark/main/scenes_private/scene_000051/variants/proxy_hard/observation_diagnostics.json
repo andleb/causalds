@@ -1,0 +1,429 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Household Socioeconomic Status"
+  ],
+  "proxified_nodes": [
+    "BCMO1 Gene Polymorphism",
+    "Vitamin A Deficiency Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "BCMO1 Gene Polymorphism",
+    "Vitamin A Deficiency Status"
+  ],
+  "proxy_groups": {
+    "BCMO1 Gene Polymorphism": [
+      "BCMO1 Gene Polymorphism1",
+      "BCMO1 Gene Polymorphism2",
+      "BCMO1 Gene Polymorphism3",
+      "BCMO1 Gene Polymorphism4"
+    ],
+    "Vitamin A Deficiency Status": [
+      "Vitamin A Deficiency Status1",
+      "Vitamin A Deficiency Status2",
+      "Vitamin A Deficiency Status3",
+      "Vitamin A Deficiency Status4",
+      "Vitamin A Deficiency Status5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "BCMO1 Gene Polymorphism": {
+      "conceptual_node": "BCMO1 Gene Polymorphism",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "BCMO1 Gene Polymorphism1",
+          "conceptual_node": "BCMO1 Gene Polymorphism",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.1176431602304,
+          "params": {
+            "w": {
+              "BCMO1 Gene Polymorphism": -0.46031322201065145
+            },
+            "b": 0.938206837709292,
+            "w_pair": {},
+            "w_nl": {
+              "BCMO1 Gene Polymorphism": -0.46582656952694923
+            },
+            "nl_shift": {
+              "BCMO1 Gene Polymorphism": 1.2789491243910502
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "BCMO1 Gene Polymorphism2",
+          "conceptual_node": "BCMO1 Gene Polymorphism",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4234041299770237,
+          "params": {
+            "w": {
+              "BCMO1 Gene Polymorphism": 0.34359345782123807
+            },
+            "b": 0.5940748644743133,
+            "w_pair": {},
+            "w_nl": {
+              "BCMO1 Gene Polymorphism": 0.5347028449328274
+            },
+            "nl_shift": {
+              "BCMO1 Gene Polymorphism": 1.1570417635450103
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "BCMO1 Gene Polymorphism3",
+          "conceptual_node": "BCMO1 Gene Polymorphism",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.285623097742624,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  53
+                ],
+                [
+                  53,
+                  23
+                ],
+                [
+                  23,
+                  46
+                ],
+                [
+                  46,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  23
+                ],
+                [
+                  1,
+                  46
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "BCMO1 Gene Polymorphism"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "BCMO1 Gene Polymorphism4",
+          "conceptual_node": "BCMO1 Gene Polymorphism",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.0923525407787804,
+          "params": {
+            "w": {
+              "BCMO1 Gene Polymorphism": 1.3542915345174897
+            },
+            "b": 0.44666871616615617,
+            "w_pair": {},
+            "w_nl": {
+              "BCMO1 Gene Polymorphism": 0.32105232376953974
+            },
+            "nl_shift": {
+              "BCMO1 Gene Polymorphism": -0.23424186196217223
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.25400301727385655,
+        "average_information": 0.8797440045746642,
+        "lower_tail_quantiles": {
+          "q10": 0.26521691221256727,
+          "q25": 0.26521691221256727
+        },
+        "per_proxy": {
+          "BCMO1 Gene Polymorphism1": {
+            "proxy_type": "continuous"
+          },
+          "BCMO1 Gene Polymorphism2": {
+            "proxy_type": "continuous"
+          },
+          "BCMO1 Gene Polymorphism3": {
+            "proxy_type": "continuous"
+          },
+          "BCMO1 Gene Polymorphism4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "BCMO1 Gene Polymorphism4",
+          "rmse": 1.1454064633655965,
+          "r2": 0.6084899359204794
+        },
+        "calibrated": {
+          "rmse": 0.956052272360245,
+          "r2": 0.7272360646563703
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.18935419100535145,
+          "r2_gain": 0.11874612873589085
+        }
+      }
+    },
+    "Vitamin A Deficiency Status": {
+      "conceptual_node": "Vitamin A Deficiency Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Vitamin A Deficiency Status1",
+          "conceptual_node": "Vitamin A Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Vitamin A Deficiency Status": 1.604083846913673
+            },
+            "b": 0.6380536541369309,
+            "w_nl": {
+              "Vitamin A Deficiency Status": 0.45342645707620693
+            },
+            "nl_shift": {
+              "Vitamin A Deficiency Status": -0.4784495355996796
+            }
+          }
+        },
+        {
+          "column_name": "Vitamin A Deficiency Status2",
+          "conceptual_node": "Vitamin A Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Vitamin A Deficiency Status": 1.5924571232587006
+            },
+            "b": 0.4053018233350692,
+            "w_nl": {
+              "Vitamin A Deficiency Status": -0.900186488246433
+            },
+            "nl_shift": {
+              "Vitamin A Deficiency Status": -0.9572990744946774
+            }
+          }
+        },
+        {
+          "column_name": "Vitamin A Deficiency Status3",
+          "conceptual_node": "Vitamin A Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Vitamin A Deficiency Status": -0.9276127112539095
+            },
+            "b": 0.14267668054138447,
+            "w_nl": {
+              "Vitamin A Deficiency Status": 0.6705777944743752
+            },
+            "nl_shift": {
+              "Vitamin A Deficiency Status": -1.0009950913573644
+            }
+          }
+        },
+        {
+          "column_name": "Vitamin A Deficiency Status4",
+          "conceptual_node": "Vitamin A Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.334396118975883,
+          "params": {
+            "w": {
+              "Vitamin A Deficiency Status": 1.3369190424070192
+            },
+            "b": -0.33061098072040823,
+            "w_pair": {},
+            "w_nl": {
+              "Vitamin A Deficiency Status": -0.8040145697968055
+            },
+            "nl_shift": {
+              "Vitamin A Deficiency Status": -0.5011803060349393
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Vitamin A Deficiency Status5",
+          "conceptual_node": "Vitamin A Deficiency Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.929616109876021,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  55,
+                  43
+                ],
+                [
+                  43,
+                  61
+                ],
+                [
+                  61,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  43
+                ],
+                [
+                  1,
+                  61
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Vitamin A Deficiency Status"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.8050595925196685,
+        "min_information": 0.8050595925196685,
+        "average_information": 0.8050595925196685,
+        "lower_tail_quantiles": {
+          "q10": 0.8050595925196685,
+          "q25": 0.8050595925196685
+        },
+        "per_proxy": {
+          "Vitamin A Deficiency Status1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04348711212846904,
+            "p_w1_z0": 0.6808587407541042,
+            "p_w1_z1": 0.9246731687072006
+          },
+          "Vitamin A Deficiency Status2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0461292063880761,
+            "p_w1_z0": 0.4926934872812556,
+            "p_w1_z1": 0.8062530262156741
+          },
+          "Vitamin A Deficiency Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01515697761507686,
+            "p_w1_z0": 0.6173552228035359,
+            "p_w1_z1": 0.42353185308155217
+          },
+          "Vitamin A Deficiency Status4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.10023419904908604,
+            "mean_z0": -0.7511264949824493,
+            "mean_z1": 0.28885087835915413,
+            "pooled_var": 10.790258687385226
+          },
+          "Vitamin A Deficiency Status5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6000520973389605,
+            "mean_z0": -1.0605962548885948,
+            "mean_z1": 0.9902191476684014,
+            "pooled_var": 7.009131097144047
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Vitamin A Deficiency Status5",
+          "log_loss": 0.5717049625111094,
+          "auc": 0.7402647874267924
+        },
+        "calibrated": {
+          "log_loss": 0.415847417372981,
+          "auc": 0.8488778800786871
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.15585754513812838,
+          "auc_gain": 0.10861309265189478
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

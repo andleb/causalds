@@ -1,0 +1,115 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Coastal Urbanization Density"
+  ],
+  "proxified_nodes": [
+    "Hurricane Irene Maximum Wind Speed"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Hurricane Irene Maximum Wind Speed"
+  ],
+  "proxy_groups": {
+    "Hurricane Irene Maximum Wind Speed": [
+      "Hurricane Irene Maximum Wind Speed1",
+      "Hurricane Irene Maximum Wind Speed2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Hurricane Irene Maximum Wind Speed": {
+      "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed1",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2771727309717662,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": -0.690705475529613
+            },
+            "b": -0.2667530794039458,
+            "w_pair": {},
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": -0.4808537240636879
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": 0.5436564875643892
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed2",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.620002737882426,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": 0.9897099051356715
+            },
+            "b": 0.6077813376960745,
+            "w_pair": {},
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": -0.12941725780211288
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": 0.04275182277595846
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.2224635046271357,
+        "average_information": 0.7179783651609422,
+        "lower_tail_quantiles": {
+          "q10": 0.6415113606308145,
+          "q25": 0.6415113606308145
+        },
+        "per_proxy": {
+          "Hurricane Irene Maximum Wind Speed1": {
+            "proxy_type": "continuous"
+          },
+          "Hurricane Irene Maximum Wind Speed2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Hurricane Irene Maximum Wind Speed2",
+          "rmse": 0.7620456715482244,
+          "r2": 0.2545440771655335
+        },
+        "calibrated": {
+          "rmse": 0.6908686461624438,
+          "r2": 0.3872956899825867
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.07117702538578063,
+          "r2_gain": 0.13275161281705317
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

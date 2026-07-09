@@ -1,0 +1,676 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Dermal Microfilarial Density",
+    "Multiple Palpable Nodules Present",
+    "Pruritus Intensity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Dermal Microfilarial Density",
+    "Multiple Palpable Nodules Present",
+    "Pruritus Intensity"
+  ],
+  "proxy_groups": {
+    "Dermal Microfilarial Density": [
+      "Dermal Microfilarial Density1",
+      "Dermal Microfilarial Density2",
+      "Dermal Microfilarial Density3",
+      "Dermal Microfilarial Density4",
+      "Dermal Microfilarial Density5",
+      "Dermal Microfilarial Density6",
+      "Dermal Microfilarial Density7",
+      "Dermal Microfilarial Density8"
+    ],
+    "Multiple Palpable Nodules Present": [
+      "Multiple Palpable Nodules Present1",
+      "Multiple Palpable Nodules Present2",
+      "Multiple Palpable Nodules Present3",
+      "Multiple Palpable Nodules Present4"
+    ],
+    "Pruritus Intensity": [
+      "Pruritus Intensity1",
+      "Pruritus Intensity2",
+      "Pruritus Intensity3",
+      "Pruritus Intensity4",
+      "Pruritus Intensity5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Dermal Microfilarial Density": {
+      "conceptual_node": "Dermal Microfilarial Density",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Dermal Microfilarial Density1",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.2675056660760093,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": -0.042276322878217365
+            },
+            "b": 0.15255442380839254,
+            "w_pair": {},
+            "w_nl": {
+              "Dermal Microfilarial Density": -0.635258729634655
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 0.6673171101686588
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density2",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": -0.8360488777486108
+            },
+            "b": 1.1229130932137876,
+            "w_nl": {
+              "Dermal Microfilarial Density": 0.6115404569931555
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 0.2282163851281498
+            }
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density3",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": 0.7717234323347767
+            },
+            "b": 1.0803862566791331,
+            "w_nl": {
+              "Dermal Microfilarial Density": -0.6764048820943879
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": -1.4223405217987097
+            }
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density4",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.418904272710157,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": 0.9150881683709706
+            },
+            "b": -0.22179553093749657,
+            "w_pair": {},
+            "w_nl": {
+              "Dermal Microfilarial Density": -0.6786753260855339
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 1.2817243209037925
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density5",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.822411715130267,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": 0.3428993213841873
+            },
+            "b": -0.33586216670035773,
+            "w_pair": {},
+            "w_nl": {
+              "Dermal Microfilarial Density": -0.35421377556211026
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 0.34912482536717615
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density6",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.7461107967453726,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": 1.1243372217258454
+            },
+            "b": -0.25340236736905003,
+            "w_pair": {},
+            "w_nl": {
+              "Dermal Microfilarial Density": 0.7465278103763565
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": -0.8435985900226944
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density7",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": 0.45509706955645957
+            },
+            "b": -1.1650755544072087,
+            "w_nl": {
+              "Dermal Microfilarial Density": 0.6052882450773999
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 0.3165993483089822
+            }
+          }
+        },
+        {
+          "column_name": "Dermal Microfilarial Density8",
+          "conceptual_node": "Dermal Microfilarial Density",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.8179169513347992,
+          "params": {
+            "w": {
+              "Dermal Microfilarial Density": -0.9495959865633696
+            },
+            "b": -0.08640898786496354,
+            "w_pair": {},
+            "w_nl": {
+              "Dermal Microfilarial Density": 0.5507722582826751
+            },
+            "nl_shift": {
+              "Dermal Microfilarial Density": 1.3543014722807456
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.37790145698639194,
+        "average_information": 0.48934755749693304,
+        "lower_tail_quantiles": {
+          "q10": 0.3824922523255625,
+          "q25": 0.4313404593378485
+        },
+        "per_proxy": {
+          "Dermal Microfilarial Density1": {
+            "proxy_type": "continuous"
+          },
+          "Dermal Microfilarial Density2": {
+            "proxy_type": "binary"
+          },
+          "Dermal Microfilarial Density3": {
+            "proxy_type": "binary"
+          },
+          "Dermal Microfilarial Density4": {
+            "proxy_type": "continuous"
+          },
+          "Dermal Microfilarial Density5": {
+            "proxy_type": "continuous"
+          },
+          "Dermal Microfilarial Density6": {
+            "proxy_type": "continuous"
+          },
+          "Dermal Microfilarial Density7": {
+            "proxy_type": "binary"
+          },
+          "Dermal Microfilarial Density8": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Dermal Microfilarial Density6",
+          "rmse": 1.351862296428888,
+          "r2": 0.1698457871903566
+        },
+        "calibrated": {
+          "rmse": 0.9881580224840285,
+          "r2": 0.5564458300356947
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3637042739448595,
+          "r2_gain": 0.3866000428453381
+        }
+      }
+    },
+    "Multiple Palpable Nodules Present": {
+      "conceptual_node": "Multiple Palpable Nodules Present",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Multiple Palpable Nodules Present1",
+          "conceptual_node": "Multiple Palpable Nodules Present",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Multiple Palpable Nodules Present": 1.3584938554453452
+            },
+            "b": -0.2920014649497907,
+            "w_nl": {
+              "Multiple Palpable Nodules Present": -0.7688961089975563
+            },
+            "nl_shift": {
+              "Multiple Palpable Nodules Present": -1.200555449588387
+            }
+          }
+        },
+        {
+          "column_name": "Multiple Palpable Nodules Present2",
+          "conceptual_node": "Multiple Palpable Nodules Present",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Multiple Palpable Nodules Present": 1.3998383114400688
+            },
+            "b": -0.061538670830430756,
+            "w_nl": {
+              "Multiple Palpable Nodules Present": -0.7210535427270138
+            },
+            "nl_shift": {
+              "Multiple Palpable Nodules Present": -0.4881819965504164
+            }
+          }
+        },
+        {
+          "column_name": "Multiple Palpable Nodules Present3",
+          "conceptual_node": "Multiple Palpable Nodules Present",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Multiple Palpable Nodules Present": 0.31406711059826886
+            },
+            "b": 0.21367453268678357,
+            "w_nl": {
+              "Multiple Palpable Nodules Present": -1.2682471265270476
+            },
+            "nl_shift": {
+              "Multiple Palpable Nodules Present": -0.1480576687393671
+            }
+          }
+        },
+        {
+          "column_name": "Multiple Palpable Nodules Present4",
+          "conceptual_node": "Multiple Palpable Nodules Present",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8105253206031469,
+          "params": {
+            "w": {
+              "Multiple Palpable Nodules Present": 1.0048162599076793
+            },
+            "b": 0.1774381321605759,
+            "w_pair": {},
+            "w_nl": {
+              "Multiple Palpable Nodules Present": 0.6293502758756134
+            },
+            "nl_shift": {
+              "Multiple Palpable Nodules Present": 0.528269501352598
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.4797893368211151,
+        "min_information": 0.4797893368211151,
+        "average_information": 0.4797893368211151,
+        "lower_tail_quantiles": {
+          "q10": 0.4797893368211151,
+          "q25": 0.4797893368211151
+        },
+        "per_proxy": {
+          "Multiple Palpable Nodules Present1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04878655785303482,
+            "p_w1_z0": 0.3203266787658802,
+            "p_w1_z1": 0.629736163459631
+          },
+          "Multiple Palpable Nodules Present2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04485581883662959,
+            "p_w1_z0": 0.416414599717685,
+            "p_w1_z1": 0.7110692322951795
+          },
+          "Multiple Palpable Nodules Present3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0010916481578238189,
+            "p_w1_z0": 0.5114942528735632,
+            "p_w1_z1": 0.4647887323943662
+          },
+          "Multiple Palpable Nodules Present4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.38505531197362686,
+            "mean_z0": -0.15663576678319635,
+            "mean_z1": 1.4324079770319373,
+            "pooled_var": 6.557655332205785
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Multiple Palpable Nodules Present4",
+          "log_loss": 0.640544917276752,
+          "auc": 0.6985004540290578
+        },
+        "calibrated": {
+          "log_loss": 0.5533452939522902,
+          "auc": 0.7913113939292115
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.08719962332446185,
+          "auc_gain": 0.09281093990015366
+        }
+      }
+    },
+    "Pruritus Intensity": {
+      "conceptual_node": "Pruritus Intensity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Pruritus Intensity1",
+          "conceptual_node": "Pruritus Intensity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.295522735673792,
+          "params": {
+            "w": {
+              "Pruritus Intensity": -0.7145186787882133
+            },
+            "b": 0.20629293691489156,
+            "w_pair": {},
+            "w_nl": {
+              "Pruritus Intensity": 0.3306449830827185
+            },
+            "nl_shift": {
+              "Pruritus Intensity": -1.2317175428170846
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Pruritus Intensity2",
+          "conceptual_node": "Pruritus Intensity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.9869691934331324,
+          "params": {
+            "w": {
+              "Pruritus Intensity": 0.3044559362165347
+            },
+            "b": 0.37834477017265894,
+            "w_pair": {},
+            "w_nl": {
+              "Pruritus Intensity": 0.18012374743395637
+            },
+            "nl_shift": {
+              "Pruritus Intensity": -1.1180028039355419
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Pruritus Intensity3",
+          "conceptual_node": "Pruritus Intensity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5480386366701457,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  8
+                ],
+                [
+                  8,
+                  62
+                ],
+                [
+                  62,
+                  62
+                ],
+                [
+                  62,
+                  63
+                ],
+                [
+                  63,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  62
+                ],
+                [
+                  1,
+                  62
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Pruritus Intensity"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Pruritus Intensity4",
+          "conceptual_node": "Pruritus Intensity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.478738260491821,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  21,
+                  56
+                ],
+                [
+                  56,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Pruritus Intensity"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Pruritus Intensity5",
+          "conceptual_node": "Pruritus Intensity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.667916218732134,
+          "params": {
+            "w": {
+              "Pruritus Intensity": -1.2788437334549239
+            },
+            "b": 0.527314272491148,
+            "w_pair": {},
+            "w_nl": {
+              "Pruritus Intensity": 0.6970257017201911
+            },
+            "nl_shift": {
+              "Pruritus Intensity": -0.07988253593079797
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.387957010103702,
+        "average_information": 1.3176293187510366,
+        "lower_tail_quantiles": {
+          "q10": 0.7281627388688968,
+          "q25": 0.7989807044479479
+        },
+        "per_proxy": {
+          "Pruritus Intensity1": {
+            "proxy_type": "continuous"
+          },
+          "Pruritus Intensity2": {
+            "proxy_type": "continuous"
+          },
+          "Pruritus Intensity3": {
+            "proxy_type": "continuous"
+          },
+          "Pruritus Intensity4": {
+            "proxy_type": "continuous"
+          },
+          "Pruritus Intensity5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Pruritus Intensity5",
+          "rmse": 1.1420520962589766,
+          "r2": 0.6575665812371312
+        },
+        "calibrated": {
+          "rmse": 0.8134131191825223,
+          "r2": 0.8262892655502677
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3286389770764543,
+          "r2_gain": 0.16872268431313653
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

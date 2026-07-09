@@ -1,0 +1,296 @@
+{
+  "n_rows": 16000,
+  "n_columns": 9,
+  "columns": {
+    "Monthly Co-payment for Spironolactone": {
+      "dtype": "float64"
+    },
+    "Menstrual Irregularity Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment2": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment4": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment5": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 9,
+      "columns": {
+        "Monthly Co-payment for Spironolactone": {
+          "dtype": "float64"
+        },
+        "Menstrual Irregularity Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment2": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment4": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment5": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 8,
+      "columns": {
+        "Monthly Co-payment for Spironolactone": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment2": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment4": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment5": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 10,
+      "columns": {
+        "Monthly Co-payment for Spironolactone": {
+          "dtype": "float64"
+        },
+        "Menstrual Irregularity Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment2": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment4": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment5": {
+          "dtype": "float64"
+        },
+        "Spironolactone Treatment6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Spironolactone Treatment": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Monthly Co-payment for Spironolactone": {
+      "dtype": "float64"
+    },
+    "Menstrual Irregularity Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment2": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment4": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment5": {
+      "dtype": "float64"
+    },
+    "Spironolactone Treatment6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Spironolactone Treatment": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

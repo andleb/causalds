@@ -1,0 +1,347 @@
+{
+  "n_rows": 16000,
+  "n_columns": 15,
+  "columns": {
+    "Randomized Administrative Zone": {
+      "dtype": "float64"
+    },
+    "Emergency Resource Package Level": {
+      "dtype": "float64"
+    },
+    "Post-Disaster Administrative Processing Speed": {
+      "dtype": "float64"
+    },
+    "Randomized Early Warning Intensity": {
+      "dtype": "float64"
+    },
+    "Survival Time Until Rescue": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour1": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour2": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour3": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour4": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance3": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance5": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance6": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 15,
+      "columns": {
+        "Randomized Administrative Zone": {
+          "dtype": "float64"
+        },
+        "Emergency Resource Package Level": {
+          "dtype": "float64"
+        },
+        "Post-Disaster Administrative Processing Speed": {
+          "dtype": "float64"
+        },
+        "Randomized Early Warning Intensity": {
+          "dtype": "float64"
+        },
+        "Survival Time Until Rescue": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour1": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour2": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour3": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour4": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance3": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance5": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 14,
+      "columns": {
+        "Randomized Administrative Zone": {
+          "dtype": "float64"
+        },
+        "Emergency Resource Package Level": {
+          "dtype": "float64"
+        },
+        "Post-Disaster Administrative Processing Speed": {
+          "dtype": "float64"
+        },
+        "Randomized Early Warning Intensity": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour1": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour2": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour3": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour4": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance3": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance5": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 17,
+      "columns": {
+        "Randomized Administrative Zone": {
+          "dtype": "float64"
+        },
+        "Emergency Resource Package Level": {
+          "dtype": "float64"
+        },
+        "Post-Disaster Administrative Processing Speed": {
+          "dtype": "float64"
+        },
+        "Randomized Early Warning Intensity": {
+          "dtype": "float64"
+        },
+        "Survival Time Until Rescue": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour1": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour2": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour3": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour4": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance3": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Evacuation Compliance5": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance6": {
+          "dtype": "float64"
+        },
+        "Disaster Onset Hour": {
+          "dtype": "float64"
+        },
+        "Evacuation Compliance": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Randomized Administrative Zone": {
+      "dtype": "float64"
+    },
+    "Emergency Resource Package Level": {
+      "dtype": "float64"
+    },
+    "Post-Disaster Administrative Processing Speed": {
+      "dtype": "float64"
+    },
+    "Randomized Early Warning Intensity": {
+      "dtype": "float64"
+    },
+    "Survival Time Until Rescue": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour1": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour2": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour3": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour4": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance3": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Evacuation Compliance5": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance6": {
+      "dtype": "float64"
+    },
+    "Disaster Onset Hour": {
+      "dtype": "float64"
+    },
+    "Evacuation Compliance": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

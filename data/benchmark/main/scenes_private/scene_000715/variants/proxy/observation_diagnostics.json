@@ -1,0 +1,459 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Individual Baseline Frailty"
+  ],
+  "proxified_nodes": [
+    "Disaster Onset Hour",
+    "Evacuation Compliance"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Disaster Onset Hour",
+    "Evacuation Compliance"
+  ],
+  "proxy_groups": {
+    "Disaster Onset Hour": [
+      "Disaster Onset Hour1",
+      "Disaster Onset Hour2",
+      "Disaster Onset Hour3",
+      "Disaster Onset Hour4"
+    ],
+    "Evacuation Compliance": [
+      "Evacuation Compliance1",
+      "Evacuation Compliance2",
+      "Evacuation Compliance3",
+      "Evacuation Compliance4",
+      "Evacuation Compliance5",
+      "Evacuation Compliance6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Disaster Onset Hour": {
+      "conceptual_node": "Disaster Onset Hour",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Disaster Onset Hour1",
+          "conceptual_node": "Disaster Onset Hour",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.820841181427901,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  51,
+                  12
+                ],
+                [
+                  12,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Disaster Onset Hour"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Disaster Onset Hour2",
+          "conceptual_node": "Disaster Onset Hour",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.4603606188878797,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  47
+                ],
+                [
+                  47,
+                  56
+                ],
+                [
+                  56,
+                  40
+                ],
+                [
+                  40,
+                  39
+                ],
+                [
+                  39,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  47
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  40
+                ],
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Disaster Onset Hour"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Disaster Onset Hour3",
+          "conceptual_node": "Disaster Onset Hour",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.863814587977975,
+          "params": {
+            "w": {
+              "Disaster Onset Hour": -1.2603860590881173
+            },
+            "b": 0.041583689365453806,
+            "w_pair": {},
+            "w_nl": {
+              "Disaster Onset Hour": 0.7279640986804583
+            },
+            "nl_shift": {
+              "Disaster Onset Hour": 1.3930986564039132
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Disaster Onset Hour4",
+          "conceptual_node": "Disaster Onset Hour",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.637828564936997,
+          "params": {
+            "w": {
+              "Disaster Onset Hour": 0.8096202478122693
+            },
+            "b": -0.3807970740423385,
+            "w_pair": {},
+            "w_nl": {
+              "Disaster Onset Hour": 0.42225033800110606
+            },
+            "nl_shift": {
+              "Disaster Onset Hour": -1.0497054203220864
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.47145043180188084,
+        "average_information": 0.8002396930264788,
+        "lower_tail_quantiles": {
+          "q10": 0.5765510797002562,
+          "q25": 0.6057492078603943
+        },
+        "per_proxy": {
+          "Disaster Onset Hour1": {
+            "proxy_type": "continuous"
+          },
+          "Disaster Onset Hour2": {
+            "proxy_type": "continuous"
+          },
+          "Disaster Onset Hour3": {
+            "proxy_type": "continuous"
+          },
+          "Disaster Onset Hour4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Disaster Onset Hour3",
+          "rmse": 1.086387785488524,
+          "r2": 0.4440446645937065
+        },
+        "calibrated": {
+          "rmse": 0.9327496021241487,
+          "r2": 0.5901732527000734
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1536381833643753,
+          "r2_gain": 0.14612858810636686
+        }
+      }
+    },
+    "Evacuation Compliance": {
+      "conceptual_node": "Evacuation Compliance",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Evacuation Compliance1",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Evacuation Compliance": 1.1169002872178813
+            },
+            "b": -0.1757237677169384,
+            "w_nl": {
+              "Evacuation Compliance": -0.7448002019286869
+            },
+            "nl_shift": {
+              "Evacuation Compliance": -0.2849511175565109
+            }
+          }
+        },
+        {
+          "column_name": "Evacuation Compliance2",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Evacuation Compliance": -0.25010523784140015
+            },
+            "b": 1.3977932484209723,
+            "w_nl": {
+              "Evacuation Compliance": 0.5259858779031403
+            },
+            "nl_shift": {
+              "Evacuation Compliance": 0.7086531603547672
+            }
+          }
+        },
+        {
+          "column_name": "Evacuation Compliance3",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4685344791836334,
+          "params": {
+            "w": {
+              "Evacuation Compliance": 0.49561659950260517
+            },
+            "b": 0.1241667091258093,
+            "w_pair": {},
+            "w_nl": {
+              "Evacuation Compliance": 1.0739000385247914
+            },
+            "nl_shift": {
+              "Evacuation Compliance": -0.8202215722856521
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Evacuation Compliance4",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Evacuation Compliance": 1.078747027881981
+            },
+            "b": -0.7473962129334722,
+            "w_nl": {
+              "Evacuation Compliance": -0.312520233173445
+            },
+            "nl_shift": {
+              "Evacuation Compliance": 0.30577843112931613
+            }
+          }
+        },
+        {
+          "column_name": "Evacuation Compliance5",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.920207353561415,
+          "params": {
+            "w": {
+              "Evacuation Compliance": 0.5436223809128733
+            },
+            "b": -0.019430674066572638,
+            "w_pair": {},
+            "w_nl": {
+              "Evacuation Compliance": 0.3699001512479132
+            },
+            "nl_shift": {
+              "Evacuation Compliance": -1.1380254864959114
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Evacuation Compliance6",
+          "conceptual_node": "Evacuation Compliance",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.082733554998699,
+          "params": {
+            "w": {
+              "Evacuation Compliance": 0.21745541036914318
+            },
+            "b": 0.1690503497904994,
+            "w_pair": {},
+            "w_nl": {
+              "Evacuation Compliance": 0.9343438341966179
+            },
+            "nl_shift": {
+              "Evacuation Compliance": -1.2195864407143961
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.3641646880830791,
+        "min_information": 0.3641646880830791,
+        "average_information": 0.3641646880830791,
+        "lower_tail_quantiles": {
+          "q10": 0.3641646880830791,
+          "q25": 0.3641646880830791
+        },
+        "per_proxy": {
+          "Evacuation Compliance1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01775991677391644,
+            "p_w1_z0": 0.4126296442168833,
+            "p_w1_z1": 0.6328157784305497
+          },
+          "Evacuation Compliance2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.00017654426358804445,
+            "p_w1_z0": 0.7636864907443875,
+            "p_w1_z1": 0.7822073017205203
+          },
+          "Evacuation Compliance3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.12789781448667292,
+            "mean_z0": 0.8534698904660133,
+            "mean_z1": 1.60514727108396,
+            "pooled_var": 4.417736822168553
+          },
+          "Evacuation Compliance4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01844254847979919,
+            "p_w1_z0": 0.331101483523697,
+            "p_w1_z1": 0.5526647083508183
+          },
+          "Evacuation Compliance5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.0542376750373724,
+            "mean_z0": 0.2720708941942929,
+            "mean_z1": 0.8591350778248082,
+            "pooled_var": 6.354334979592812
+          },
+          "Evacuation Compliance6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.14565018904173016,
+            "mean_z0": 0.9662990236412539,
+            "mean_z1": 1.286571692999265,
+            "pooled_var": 0.704253001060763
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Evacuation Compliance1",
+          "log_loss": 0.613887217531548,
+          "auc": 0.6014105354001029
+        },
+        "calibrated": {
+          "log_loss": 0.4824182097110828,
+          "auc": 0.738936617683573
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.13146900782046517,
+          "auc_gain": 0.13752608228347007
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

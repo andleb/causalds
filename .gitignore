@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+
+# run outputs
+data/benchmark_runs/
+
+# downloaded CauseNet index (see README)
+data/causenet/
+
+# built container artifacts
+docker/*.sif
+docker/*.tar

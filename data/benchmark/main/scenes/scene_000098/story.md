@@ -1,0 +1,5 @@
+# scene_000098
+
+At the new offshore installation, engineers deployed turbines with a **Rotor Diameter** of 125 meters, significantly larger than the older 80-meter models. These expansive 125-meter **Rotor Diameter** specifications created substantial aerodynamic turbulence that generated **Low Frequency Noise Emission** categorized as present (1), with infrasound measurements exceeding 20 dB inside coastal homes located 900 meters away.
+
+Residents within this radius submitted **Noise Complaint Filed** documentation marked as yes (1) due to two simultaneous pressures: the overwhelming physical presence signaled by the 125-meter **Rotor Diameter** created immediate visual impact anxiety, while the confirmed **Low Frequency Noise Emission** (1) manifested as rhythmic pressure pulses and indoor thumping that disrupted sleep cycles. Conversely, communities living near smaller turbines exhibiting **Low Frequency Noise Emission** values of 0 typically recorded **Noise Complaint Filed** outcomes of 0, as neither the modest scale nor the acoustic profile triggered regulatory thresholds.

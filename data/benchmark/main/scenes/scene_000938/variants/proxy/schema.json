@@ -1,0 +1,246 @@
+{
+  "n_rows": 16000,
+  "n_columns": 11,
+  "columns": {
+    "Rapid Quenching Protocol": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Total Thermal Dimensional Contraction": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain1": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain2": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Plastic Strain4": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain5": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain6": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain7": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain8": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain9": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 11,
+      "columns": {
+        "Rapid Quenching Protocol": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Total Thermal Dimensional Contraction": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain1": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain2": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Plastic Strain4": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain5": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain6": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain7": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain8": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 10,
+      "columns": {
+        "Rapid Quenching Protocol": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Plastic Strain1": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain2": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Plastic Strain4": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain5": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain6": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain7": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain8": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 12,
+      "columns": {
+        "Rapid Quenching Protocol": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Total Thermal Dimensional Contraction": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain1": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain2": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Accumulated Plastic Strain4": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain5": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain6": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain7": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain8": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain9": {
+          "dtype": "float64"
+        },
+        "Accumulated Plastic Strain": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Rapid Quenching Protocol": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Total Thermal Dimensional Contraction": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain1": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain2": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Accumulated Plastic Strain4": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain5": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain6": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain7": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain8": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain9": {
+      "dtype": "float64"
+    },
+    "Accumulated Plastic Strain": {
+      "dtype": "float64"
+    }
+  }
+}

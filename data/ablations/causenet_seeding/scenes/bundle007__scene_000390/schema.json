@@ -1,0 +1,55 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "FOXI3 Allele Dosage": {
+      "dtype": "float64"
+    },
+    "FOXI3 Protein Expression Level": {
+      "dtype": "float64"
+    },
+    "Hairlessness Severity Score": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "FOXI3 Allele Dosage": {
+          "dtype": "float64"
+        },
+        "FOXI3 Protein Expression Level": {
+          "dtype": "float64"
+        },
+        "Hairlessness Severity Score": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "FOXI3 Allele Dosage": {
+          "dtype": "float64"
+        },
+        "FOXI3 Protein Expression Level": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "FOXI3 Allele Dosage": {
+      "dtype": "float64"
+    },
+    "FOXI3 Protein Expression Level": {
+      "dtype": "float64"
+    },
+    "Hairlessness Severity Score": {
+      "dtype": "float64"
+    }
+  }
+}

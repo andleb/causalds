@@ -1,0 +1,287 @@
+{
+  "n_rows": 16000,
+  "n_columns": 15,
+  "columns": {
+    "Baseline Respiratory Disease Severity": {
+      "dtype": "float64"
+    },
+    "Patient Mortality": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure1": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Acute Respiratory Failure3": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure4": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure5": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment1": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment2": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment3": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment4": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment5": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment6": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment7": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment8": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 15,
+      "columns": {
+        "Baseline Respiratory Disease Severity": {
+          "dtype": "float64"
+        },
+        "Patient Mortality": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure1": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Acute Respiratory Failure3": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure4": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment1": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment2": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment3": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment4": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment6": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment7": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 14,
+      "columns": {
+        "Baseline Respiratory Disease Severity": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure1": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Acute Respiratory Failure3": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure4": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment1": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment2": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment3": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment4": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment6": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment7": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 17,
+      "columns": {
+        "Baseline Respiratory Disease Severity": {
+          "dtype": "float64"
+        },
+        "Patient Mortality": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure1": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Acute Respiratory Failure3": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure4": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment1": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment2": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment3": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment4": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment5": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment6": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment7": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment8": {
+          "dtype": "float64"
+        },
+        "Acute Respiratory Failure": {
+          "dtype": "float64"
+        },
+        "Randomized Treatment Assignment": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Baseline Respiratory Disease Severity": {
+      "dtype": "float64"
+    },
+    "Patient Mortality": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure1": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Acute Respiratory Failure3": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure4": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure5": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment1": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment2": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment3": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment4": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment5": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment6": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment7": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment8": {
+      "dtype": "float64"
+    },
+    "Acute Respiratory Failure": {
+      "dtype": "float64"
+    },
+    "Randomized Treatment Assignment": {
+      "dtype": "float64"
+    }
+  }
+}

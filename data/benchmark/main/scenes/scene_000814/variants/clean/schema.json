@@ -1,0 +1,75 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Allied Amphibious Invasion": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Naval Bombardment Intensity": {
+      "dtype": "float64"
+    },
+    "Urban Infrastructure Destruction": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Allied Amphibious Invasion": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Naval Bombardment Intensity": {
+          "dtype": "float64"
+        },
+        "Urban Infrastructure Destruction": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Allied Amphibious Invasion": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Naval Bombardment Intensity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Allied Amphibious Invasion": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Naval Bombardment Intensity": {
+      "dtype": "float64"
+    },
+    "Urban Infrastructure Destruction": {
+      "dtype": "float64"
+    }
+  }
+}

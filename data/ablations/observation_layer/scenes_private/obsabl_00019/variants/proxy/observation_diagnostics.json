@@ -1,0 +1,443 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Epidemic Incidence Rate",
+    "Severe Malnutrition Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Epidemic Incidence Rate",
+    "Severe Malnutrition Status"
+  ],
+  "proxy_groups": {
+    "Epidemic Incidence Rate": [
+      "Epidemic Incidence Rate1",
+      "Epidemic Incidence Rate2"
+    ],
+    "Severe Malnutrition Status": [
+      "Severe Malnutrition Status1",
+      "Severe Malnutrition Status2",
+      "Severe Malnutrition Status3",
+      "Severe Malnutrition Status4",
+      "Severe Malnutrition Status5",
+      "Severe Malnutrition Status6",
+      "Severe Malnutrition Status7",
+      "Severe Malnutrition Status8",
+      "Severe Malnutrition Status9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Epidemic Incidence Rate": {
+      "conceptual_node": "Epidemic Incidence Rate",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Epidemic Incidence Rate1",
+          "conceptual_node": "Epidemic Incidence Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.3683076113545454,
+          "params": {
+            "w": {
+              "Epidemic Incidence Rate": 1.4182723908879202
+            },
+            "b": 0.02788579301251752,
+            "w_pair": {},
+            "w_nl": {
+              "Epidemic Incidence Rate": 0.2828150387027685
+            },
+            "nl_shift": {
+              "Epidemic Incidence Rate": 1.4369466536006392
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Epidemic Incidence Rate2",
+          "conceptual_node": "Epidemic Incidence Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.5888555319018227,
+          "params": {
+            "w": {
+              "Epidemic Incidence Rate": -0.8460514961279928
+            },
+            "b": 0.2472927865840185,
+            "w_pair": {},
+            "w_nl": {
+              "Epidemic Incidence Rate": 0.42516683720226905
+            },
+            "nl_shift": {
+              "Epidemic Incidence Rate": -0.15995402257995717
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3757721125089371,
+        "average_information": 3.530974798665408,
+        "lower_tail_quantiles": {
+          "q10": 0.39075015129401375,
+          "q25": 0.39075015129401375
+        },
+        "per_proxy": {
+          "Epidemic Incidence Rate1": {
+            "proxy_type": "continuous"
+          },
+          "Epidemic Incidence Rate2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Epidemic Incidence Rate1",
+          "rmse": 0.8673713397991927,
+          "r2": 0.8027725632869522
+        },
+        "calibrated": {
+          "rmse": 0.7695451210935998,
+          "r2": 0.8447522291726357
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.09782621870559283,
+          "r2_gain": 0.04197966588568347
+        }
+      }
+    },
+    "Severe Malnutrition Status": {
+      "conceptual_node": "Severe Malnutrition Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Severe Malnutrition Status1",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": -1.4783542912196042
+            },
+            "b": 0.1349175029087746,
+            "w_nl": {
+              "Severe Malnutrition Status": 0.831472474360427
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -0.40526510279529004
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status2",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4710610159397335,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 1.4081293707408715
+            },
+            "b": 0.5512823106389683,
+            "w_pair": {},
+            "w_nl": {
+              "Severe Malnutrition Status": 0.1990295527466744
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -0.9534966651186192
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status3",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.367657671555336,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  19
+                ],
+                [
+                  19,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Severe Malnutrition Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status4",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 0.7027327229115512
+            },
+            "b": -0.6270388453391725,
+            "w_nl": {
+              "Severe Malnutrition Status": 0.8714181738517296
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -1.434324011922544
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status5",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 0.5677778599152017
+            },
+            "b": -0.8154001609678176,
+            "w_nl": {
+              "Severe Malnutrition Status": -0.25206442622053976
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -0.8272496542029159
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status6",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 1.9808842744378024
+            },
+            "b": -0.4129375323918445,
+            "w_nl": {
+              "Severe Malnutrition Status": -0.5892754013691329
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -0.3812463341296142
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status7",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 0.22956358504613195
+            },
+            "b": -0.03824019390260036,
+            "w_nl": {
+              "Severe Malnutrition Status": -0.507814576467581
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": 0.40370093516642935
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status8",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": 1.4957188582276382
+            },
+            "b": 0.07501831128577476,
+            "w_nl": {
+              "Severe Malnutrition Status": -0.9082487571100025
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": -0.12357376316963098
+            }
+          }
+        },
+        {
+          "column_name": "Severe Malnutrition Status9",
+          "conceptual_node": "Severe Malnutrition Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Severe Malnutrition Status": -1.3444660312444423
+            },
+            "b": -0.4912104618127913,
+            "w_nl": {
+              "Severe Malnutrition Status": -0.5942585286801358
+            },
+            "nl_shift": {
+              "Severe Malnutrition Status": 0.3348065538190994
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.3961436754933836,
+        "min_information": 1.3961436754933836,
+        "average_information": 1.3961436754933836,
+        "lower_tail_quantiles": {
+          "q10": 1.3961436754933836,
+          "q25": 1.3961436754933836
+        },
+        "per_proxy": {
+          "Severe Malnutrition Status1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04385509589510376,
+            "p_w1_z0": 0.5866177818515124,
+            "p_w1_z1": 0.29486298006089773
+          },
+          "Severe Malnutrition Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6026882103534618,
+            "mean_z0": 0.6902566316459867,
+            "mean_z1": 2.1285506145043738,
+            "pooled_var": 3.4324374454137847
+          },
+          "Severe Malnutrition Status3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.5355662514285329,
+            "mean_z0": 1.0247082981594051,
+            "mean_z1": -1.029318400866776,
+            "pooled_var": 7.877691450980806
+          },
+          "Severe Malnutrition Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.019685589818748975,
+            "p_w1_z0": 0.46684998472349526,
+            "p_w1_z1": 0.6629014831548964
+          },
+          "Severe Malnutrition Status5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.00658692300405278,
+            "p_w1_z0": 0.2889296262348508,
+            "p_w1_z1": 0.39779982320007856
+          },
+          "Severe Malnutrition Status6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.08829404831126911,
+            "p_w1_z0": 0.36011813830328954,
+            "p_w1_z1": 0.7699636577939298
+          },
+          "Severe Malnutrition Status7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0003953741738398162,
+            "p_w1_z0": 0.5228638354211224,
+            "p_w1_z1": 0.49474511344661626
+          },
+          "Severe Malnutrition Status8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0364761762982088,
+            "p_w1_z0": 0.4853854771361646,
+            "p_w1_z1": 0.7460956684019252
+          },
+          "Severe Malnutrition Status9": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06259600621016587,
+            "p_w1_z0": 0.4217333740706793,
+            "p_w1_z1": 0.11560750417444259
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 3
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Severe Malnutrition Status6",
+          "log_loss": 0.6127909917459615,
+          "auc": 0.6971483760738479
+        },
+        "calibrated": {
+          "log_loss": 0.3766696540193932,
+          "auc": 0.9122536951972438
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.23612133772656835,
+          "auc_gain": 0.2151053191233958
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

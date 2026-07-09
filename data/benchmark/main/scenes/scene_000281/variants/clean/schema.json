@@ -1,0 +1,79 @@
+{
+  "n_rows": 16000,
+  "n_columns": 5,
+  "columns": {
+    "Baseline Anxiety Score": {
+      "dtype": "float64"
+    },
+    "Palmar Perspiration Rate": {
+      "dtype": "float64"
+    },
+    "Electrodermal Conductance Level": {
+      "dtype": "float64"
+    },
+    "24-Hour Mean Arterial Pressure": {
+      "dtype": "float64"
+    },
+    "Time to All-Cause Mortality": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 5,
+      "columns": {
+        "Baseline Anxiety Score": {
+          "dtype": "float64"
+        },
+        "Palmar Perspiration Rate": {
+          "dtype": "float64"
+        },
+        "Electrodermal Conductance Level": {
+          "dtype": "float64"
+        },
+        "24-Hour Mean Arterial Pressure": {
+          "dtype": "float64"
+        },
+        "Time to All-Cause Mortality": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 4,
+      "columns": {
+        "Baseline Anxiety Score": {
+          "dtype": "float64"
+        },
+        "Palmar Perspiration Rate": {
+          "dtype": "float64"
+        },
+        "Electrodermal Conductance Level": {
+          "dtype": "float64"
+        },
+        "24-Hour Mean Arterial Pressure": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Baseline Anxiety Score": {
+      "dtype": "float64"
+    },
+    "Palmar Perspiration Rate": {
+      "dtype": "float64"
+    },
+    "Electrodermal Conductance Level": {
+      "dtype": "float64"
+    },
+    "24-Hour Mean Arterial Pressure": {
+      "dtype": "float64"
+    },
+    "Time to All-Cause Mortality": {
+      "dtype": "float64"
+    }
+  }
+}

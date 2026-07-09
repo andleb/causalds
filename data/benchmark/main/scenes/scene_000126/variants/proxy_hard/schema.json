@@ -1,0 +1,444 @@
+{
+  "n_rows": 16000,
+  "n_columns": 19,
+  "columns": {
+    "Initial Viral Inoculum Dose": {
+      "dtype": "float64"
+    },
+    "Time to Lymphoid Leukemia Onset": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status1": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status2": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status3": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score1": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score3": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score4": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score6": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden1": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden2": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden3": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage1": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage2": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Silent Integration Percentage4": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 19,
+      "columns": {
+        "Initial Viral Inoculum Dose": {
+          "dtype": "float64"
+        },
+        "Time to Lymphoid Leukemia Onset": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status1": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status2": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status3": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score1": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score3": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score4": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score6": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden1": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden2": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden3": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage1": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage2": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Silent Integration Percentage4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 18,
+      "columns": {
+        "Initial Viral Inoculum Dose": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status1": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status2": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status3": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score1": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score3": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score4": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score6": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden1": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden2": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden3": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage1": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage2": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Silent Integration Percentage4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 23,
+      "columns": {
+        "Initial Viral Inoculum Dose": {
+          "dtype": "float64"
+        },
+        "Time to Lymphoid Leukemia Onset": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status1": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status2": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status3": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score1": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score3": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score4": {
+          "dtype": "float64"
+        },
+        "Host Chromatin Accessibility Score5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score6": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden1": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden2": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden3": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage1": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage2": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Silent Integration Percentage4": {
+          "dtype": "float64"
+        },
+        "High Acute Viremia Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Host Chromatin Accessibility Score": {
+          "dtype": "float64"
+        },
+        "Oncogenic Viral Integration Burden": {
+          "dtype": "float64"
+        },
+        "Silent Integration Percentage": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Initial Viral Inoculum Dose": {
+      "dtype": "float64"
+    },
+    "Time to Lymphoid Leukemia Onset": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status1": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status2": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status3": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score1": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score3": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score4": {
+      "dtype": "float64"
+    },
+    "Host Chromatin Accessibility Score5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score6": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden1": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden2": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden3": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage1": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage2": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Silent Integration Percentage4": {
+      "dtype": "float64"
+    },
+    "High Acute Viremia Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Host Chromatin Accessibility Score": {
+      "dtype": "float64"
+    },
+    "Oncogenic Viral Integration Burden": {
+      "dtype": "float64"
+    },
+    "Silent Integration Percentage": {
+      "dtype": "float64"
+    }
+  }
+}

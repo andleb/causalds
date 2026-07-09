@@ -1,0 +1,5 @@
+# scene_000626
+
+In a longitudinal cohort study of aging, researchers meticulously recorded each participant's Birth Year as a continuous temporal marker measured in calendar years. This foundational demographic anchor served as the basis for calculating Advanced Chronological Age, expressed in years since birth; individuals born in earlier calendar years naturally exhibited higher values of Advanced Chronological Age at the time of assessment, establishing the deterministic flow of time from birth year to current age.
+
+Clinical evaluations revealed that Advanced Chronological Age acted as a primary driver of physiological deterioration throughout the study population. As participants accumulated more years of life, clinicians documented corresponding increases in Systemic Physical Debility, measured on a continuous frailty index score scale from 0 to 1. This index quantified accumulated health deficits, functional impairments, and comorbid conditions, demonstrating that greater Advanced Chronological Age directly precipitated higher frailty scores reflecting cumulative systemic vulnerability.

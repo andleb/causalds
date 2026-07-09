@@ -1,0 +1,558 @@
+{
+  "n_rows": 16000,
+  "n_columns": 22,
+  "columns": {
+    "Stomatal Conductance": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate": {
+      "dtype": "float64"
+    },
+    "Calculated Intercellular CO2 Concentration": {
+      "dtype": "float64"
+    },
+    "Soil Reclamation Cost": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Soil Salinity2": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Soil Salinity4": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity5": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity6": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Water Salinity2": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity3": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity4": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity5": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification2": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification4": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification5": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 22,
+      "columns": {
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Soil Reclamation Cost": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity2": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity4": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity5": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity6": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Water Salinity2": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity3": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity4": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity5": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification2": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification4": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification5": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 21,
+      "columns": {
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity2": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity4": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity5": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity6": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Water Salinity2": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity3": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity4": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity5": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification2": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification4": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification5": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 25,
+      "columns": {
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Soil Reclamation Cost": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity2": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity4": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity5": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity6": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Irrigation Water Salinity2": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity3": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity4": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity5": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification2": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Salinity Hazard Classification4": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification5": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Initial Soil Salinity": {
+          "dtype": "float64"
+        },
+        "Irrigation Water Salinity": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Stomatal Conductance": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate": {
+      "dtype": "float64"
+    },
+    "Calculated Intercellular CO2 Concentration": {
+      "dtype": "float64"
+    },
+    "Soil Reclamation Cost": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Soil Salinity2": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Soil Salinity4": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity5": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity6": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Irrigation Water Salinity2": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity3": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity4": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity5": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification2": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Salinity Hazard Classification4": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification5": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Initial Soil Salinity": {
+      "dtype": "float64"
+    },
+    "Irrigation Water Salinity": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,675 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "South African Ancestry Proportion",
+    "Weekly Cold Exposure Duration"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "South African Ancestry Proportion",
+    "Weekly Cold Exposure Duration"
+  ],
+  "proxy_groups": {
+    "South African Ancestry Proportion": [
+      "South African Ancestry Proportion1",
+      "South African Ancestry Proportion2",
+      "South African Ancestry Proportion3",
+      "South African Ancestry Proportion4",
+      "South African Ancestry Proportion5",
+      "South African Ancestry Proportion6"
+    ],
+    "Weekly Cold Exposure Duration": [
+      "Weekly Cold Exposure Duration1",
+      "Weekly Cold Exposure Duration2",
+      "Weekly Cold Exposure Duration3",
+      "Weekly Cold Exposure Duration4",
+      "Weekly Cold Exposure Duration5",
+      "Weekly Cold Exposure Duration6",
+      "Weekly Cold Exposure Duration7",
+      "Weekly Cold Exposure Duration8",
+      "Weekly Cold Exposure Duration9",
+      "Weekly Cold Exposure Duration10"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "South African Ancestry Proportion": {
+      "conceptual_node": "South African Ancestry Proportion",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "South African Ancestry Proportion1",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "South African Ancestry Proportion": 0.4610742031030156
+            },
+            "b": 1.0408431773088598,
+            "w_nl": {
+              "South African Ancestry Proportion": 0.8336463138597827
+            },
+            "nl_shift": {
+              "South African Ancestry Proportion": -0.9255091871542463
+            }
+          }
+        },
+        {
+          "column_name": "South African Ancestry Proportion2",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2544267089851144,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  22,
+                  24
+                ],
+                [
+                  24,
+                  17
+                ],
+                [
+                  17,
+                  53
+                ],
+                [
+                  53,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "South African Ancestry Proportion"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "South African Ancestry Proportion3",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.942918139944158,
+          "params": {
+            "w": {
+              "South African Ancestry Proportion": 1.0083050071595288
+            },
+            "b": 1.4951793111709692,
+            "w_pair": {},
+            "w_nl": {
+              "South African Ancestry Proportion": -0.5847831668054745
+            },
+            "nl_shift": {
+              "South African Ancestry Proportion": 0.37234923056368263
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "South African Ancestry Proportion4",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5578932765048612,
+          "params": {
+            "w": {
+              "South African Ancestry Proportion": -1.347939743601441
+            },
+            "b": 1.9409044528341695,
+            "w_pair": {},
+            "w_nl": {
+              "South African Ancestry Proportion": 0.12649146138750794
+            },
+            "nl_shift": {
+              "South African Ancestry Proportion": -1.1275610092282702
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "South African Ancestry Proportion5",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.571577968400886,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  36,
+                  64
+                ],
+                [
+                  64,
+                  51
+                ],
+                [
+                  51,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  64
+                ],
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "South African Ancestry Proportion"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "South African Ancestry Proportion6",
+          "conceptual_node": "South African Ancestry Proportion",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.259030004010066,
+          "params": {
+            "w": {
+              "South African Ancestry Proportion": -1.3131349678808806
+            },
+            "b": 0.3496027200000144,
+            "w_pair": {},
+            "w_nl": {
+              "South African Ancestry Proportion": 0.6579321172863093
+            },
+            "nl_shift": {
+              "South African Ancestry Proportion": -1.1695233246527477
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.1880075915119805,
+        "average_information": 1.5736622855040197,
+        "lower_tail_quantiles": {
+          "q10": 1.3577842208374784,
+          "q25": 1.3901045732897606
+        },
+        "per_proxy": {
+          "South African Ancestry Proportion1": {
+            "proxy_type": "binary"
+          },
+          "South African Ancestry Proportion2": {
+            "proxy_type": "continuous"
+          },
+          "South African Ancestry Proportion3": {
+            "proxy_type": "continuous"
+          },
+          "South African Ancestry Proportion4": {
+            "proxy_type": "continuous"
+          },
+          "South African Ancestry Proportion5": {
+            "proxy_type": "continuous"
+          },
+          "South African Ancestry Proportion6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "South African Ancestry Proportion4",
+          "rmse": 0.8479955446185172,
+          "r2": 0.4592526803002477
+        },
+        "calibrated": {
+          "rmse": 0.6907184395755401,
+          "r2": 0.6412356056259609
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1572771050429771,
+          "r2_gain": 0.18198292532571325
+        }
+      }
+    },
+    "Weekly Cold Exposure Duration": {
+      "conceptual_node": "Weekly Cold Exposure Duration",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Weekly Cold Exposure Duration1",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.0051471199145543,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": -0.7411575859842601
+            },
+            "b": 0.2228474839504771,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": -0.5647476023501815
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 0.9500486733419891
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration2",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.7200360261130845,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": -0.7059148642494256
+            },
+            "b": -0.9396174242996211,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": -0.09977264124547153
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 0.931352393710212
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration3",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": 0.8914331624249651
+            },
+            "b": -0.34917208189465476,
+            "w_nl": {
+              "Weekly Cold Exposure Duration": 1.1364734533845158
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 0.10808205402447157
+            }
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration4",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.473836310474298,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": 0.8644127168645579
+            },
+            "b": 0.29161430091619117,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": -0.9053767034385287
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": -0.2933587583937729
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration5",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": 1.7027626840202206
+            },
+            "b": 1.1132861508384067,
+            "w_nl": {
+              "Weekly Cold Exposure Duration": 0.5633406345529658
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": -1.343229917853438
+            }
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration6",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.3819797539789813,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": -0.6248607454190617
+            },
+            "b": 0.5838304078496371,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": 0.39318368779907176
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 0.7391103347465284
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration7",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.278593356210523,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  60
+                ],
+                [
+                  60,
+                  17
+                ],
+                [
+                  17,
+                  55
+                ],
+                [
+                  55,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Weekly Cold Exposure Duration"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration8",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.5239234417789045,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  33,
+                  38
+                ],
+                [
+                  38,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Weekly Cold Exposure Duration"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration9",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.249294795317458,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": -0.7715466486585146
+            },
+            "b": -0.07494051065933777,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": -0.4392670856913259
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 1.2336480568030486
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Weekly Cold Exposure Duration10",
+          "conceptual_node": "Weekly Cold Exposure Duration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.703748273167378,
+          "params": {
+            "w": {
+              "Weekly Cold Exposure Duration": 0.03274560923875358
+            },
+            "b": 0.1697497110725666,
+            "w_pair": {},
+            "w_nl": {
+              "Weekly Cold Exposure Duration": -0.5715538754653986
+            },
+            "nl_shift": {
+              "Weekly Cold Exposure Duration": 0.11645522312267453
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.44392045702701877,
+        "average_information": 1.1056816152980318,
+        "lower_tail_quantiles": {
+          "q10": 0.44392045702701877,
+          "q25": 0.4443292337765641
+        },
+        "per_proxy": {
+          "Weekly Cold Exposure Duration1": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration2": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration3": {
+            "proxy_type": "binary"
+          },
+          "Weekly Cold Exposure Duration4": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration5": {
+            "proxy_type": "binary"
+          },
+          "Weekly Cold Exposure Duration6": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration7": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration8": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration9": {
+            "proxy_type": "continuous"
+          },
+          "Weekly Cold Exposure Duration10": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Weekly Cold Exposure Duration1",
+          "rmse": 1.1478899755515255,
+          "r2": 0.5831198578103025
+        },
+        "calibrated": {
+          "rmse": 0.7462419926251255,
+          "r2": 0.8238145459733506
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.4016479829264,
+          "r2_gain": 0.24069468816304807
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

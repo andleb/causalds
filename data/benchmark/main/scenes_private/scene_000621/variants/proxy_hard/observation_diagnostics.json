@@ -1,0 +1,414 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Latent Relationship Strain"
+  ],
+  "proxified_nodes": [
+    "Communication Breakdown",
+    "Message Ambiguity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Communication Breakdown",
+    "Message Ambiguity"
+  ],
+  "proxy_groups": {
+    "Communication Breakdown": [
+      "Communication Breakdown1",
+      "Communication Breakdown2",
+      "Communication Breakdown3",
+      "Communication Breakdown4",
+      "Communication Breakdown5"
+    ],
+    "Message Ambiguity": [
+      "Message Ambiguity1",
+      "Message Ambiguity2",
+      "Message Ambiguity3",
+      "Message Ambiguity4",
+      "Message Ambiguity5",
+      "Message Ambiguity6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Communication Breakdown": {
+      "conceptual_node": "Communication Breakdown",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Communication Breakdown1",
+          "conceptual_node": "Communication Breakdown",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4674998577764504,
+          "params": {
+            "w": {
+              "Communication Breakdown": -0.1019518871946089
+            },
+            "b": 0.21250916121567806,
+            "w_pair": {},
+            "w_nl": {
+              "Communication Breakdown": 0.4531674047463751
+            },
+            "nl_shift": {
+              "Communication Breakdown": 0.16343119535477468
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Communication Breakdown2",
+          "conceptual_node": "Communication Breakdown",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.023359366708632,
+          "params": {
+            "w": {
+              "Communication Breakdown": -0.582406061362516
+            },
+            "b": -0.10928872092319294,
+            "w_pair": {},
+            "w_nl": {
+              "Communication Breakdown": -0.44608406752668667
+            },
+            "nl_shift": {
+              "Communication Breakdown": -1.0077993106765648
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Communication Breakdown3",
+          "conceptual_node": "Communication Breakdown",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Communication Breakdown": 1.3388817931840924
+            },
+            "b": -0.1473122762702997,
+            "w_nl": {
+              "Communication Breakdown": -0.5145381276224508
+            },
+            "nl_shift": {
+              "Communication Breakdown": -0.257944033108499
+            }
+          }
+        },
+        {
+          "column_name": "Communication Breakdown4",
+          "conceptual_node": "Communication Breakdown",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 3.1972545396044842,
+          "params": {
+            "w": {
+              "Communication Breakdown": 0.311271936060914
+            },
+            "b": -0.5102032865239969,
+            "w_pair": {},
+            "w_nl": {
+              "Communication Breakdown": -0.48232669489231533
+            },
+            "nl_shift": {
+              "Communication Breakdown": 1.0696359331703302
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Communication Breakdown5",
+          "conceptual_node": "Communication Breakdown",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Communication Breakdown": -0.6625893800537037
+            },
+            "b": -0.9147850236244525,
+            "w_nl": {
+              "Communication Breakdown": -0.841133950181659
+            },
+            "nl_shift": {
+              "Communication Breakdown": -0.029972455180434787
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.2501033088868501,
+        "min_information": 0.2501033088868501,
+        "average_information": 0.2501033088868501,
+        "lower_tail_quantiles": {
+          "q10": 0.2501033088868501,
+          "q25": 0.2501033088868501
+        },
+        "per_proxy": {
+          "Communication Breakdown1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.12976171055443914,
+            "mean_z0": 0.15172181033094798,
+            "mean_z1": 0.4228649945684232,
+            "pooled_var": 0.5665664088760145
+          },
+          "Communication Breakdown2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.06977234693078234,
+            "mean_z0": -0.4458133717350924,
+            "mean_z1": -1.1301366580983971,
+            "pooled_var": 6.711804616858439
+          },
+          "Communication Breakdown3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03177459019062313,
+            "p_w1_z0": 0.4402946719205071,
+            "p_w1_z1": 0.71051330932712
+          },
+          "Communication Breakdown4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 7.0186551405685486e-06,
+            "mean_z0": -0.17256778333335157,
+            "mean_z1": -0.15783413393531087,
+            "pooled_var": 30.92906265327639
+          },
+          "Communication Breakdown5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.018787642555864983,
+            "p_w1_z0": 0.2801096453657701,
+            "p_w1_z1": 0.1162183153286733
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Communication Breakdown3",
+          "log_loss": 0.6353739925821738,
+          "auc": 0.638934687915802
+        },
+        "calibrated": {
+          "log_loss": 0.5382835130480211,
+          "auc": 0.7237982935237202
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.09709047953415262,
+          "auc_gain": 0.08486360560791817
+        }
+      }
+    },
+    "Message Ambiguity": {
+      "conceptual_node": "Message Ambiguity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Message Ambiguity1",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 3.037115210766921,
+          "params": {
+            "w": {
+              "Message Ambiguity": -0.5102129673801954
+            },
+            "b": -0.08695485752676788,
+            "w_pair": {},
+            "w_nl": {
+              "Message Ambiguity": 0.5810929596246404
+            },
+            "nl_shift": {
+              "Message Ambiguity": -0.16014649883949428
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Message Ambiguity2",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Message Ambiguity": 1.0231832824671043
+            },
+            "b": 0.7953300265607394,
+            "w_nl": {
+              "Message Ambiguity": -0.011268919454291315
+            },
+            "nl_shift": {
+              "Message Ambiguity": 1.253678834579035
+            }
+          }
+        },
+        {
+          "column_name": "Message Ambiguity3",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 3.0790658424813433,
+          "params": {
+            "w": {
+              "Message Ambiguity": 0.6390844018375981
+            },
+            "b": 0.49713218314414903,
+            "w_pair": {},
+            "w_nl": {
+              "Message Ambiguity": -0.16845271498727282
+            },
+            "nl_shift": {
+              "Message Ambiguity": -0.6025089792108501
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Message Ambiguity4",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Message Ambiguity": -1.7727168667356916
+            },
+            "b": 1.2109113071320898,
+            "w_nl": {
+              "Message Ambiguity": 0.5558421629858881
+            },
+            "nl_shift": {
+              "Message Ambiguity": 1.2166153273436375
+            }
+          }
+        },
+        {
+          "column_name": "Message Ambiguity5",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.6511014602980576,
+          "params": {
+            "w": {
+              "Message Ambiguity": -0.731988097935569
+            },
+            "b": -0.41477902772882785,
+            "w_pair": {},
+            "w_nl": {
+              "Message Ambiguity": 0.2543541582368375
+            },
+            "nl_shift": {
+              "Message Ambiguity": -0.9553115758466699
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Message Ambiguity6",
+          "conceptual_node": "Message Ambiguity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.304854131802903,
+          "params": {
+            "w": {
+              "Message Ambiguity": 0.5767458514017898
+            },
+            "b": 0.32510930317806924,
+            "w_pair": {},
+            "w_nl": {
+              "Message Ambiguity": 0.9529492923765813
+            },
+            "nl_shift": {
+              "Message Ambiguity": 0.5187736613786735
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3451709998817037,
+        "average_information": 0.8262024236650835,
+        "lower_tail_quantiles": {
+          "q10": 0.4004433868597434,
+          "q25": 0.4275889923488583
+        },
+        "per_proxy": {
+          "Message Ambiguity1": {
+            "proxy_type": "continuous"
+          },
+          "Message Ambiguity2": {
+            "proxy_type": "binary"
+          },
+          "Message Ambiguity3": {
+            "proxy_type": "continuous"
+          },
+          "Message Ambiguity4": {
+            "proxy_type": "binary"
+          },
+          "Message Ambiguity5": {
+            "proxy_type": "continuous"
+          },
+          "Message Ambiguity6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Message Ambiguity6",
+          "rmse": 0.7841067314276605,
+          "r2": 0.4461039781386329
+        },
+        "calibrated": {
+          "rmse": 0.6635725111972237,
+          "r2": 0.6033068919554911
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1205342202304368,
+          "r2_gain": 0.15720291381685825
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

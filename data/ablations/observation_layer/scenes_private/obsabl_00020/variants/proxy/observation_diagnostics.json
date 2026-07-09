@@ -1,0 +1,490 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Average Summer Temperature",
+    "Sanitation Deficiency Level"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Average Summer Temperature",
+    "Sanitation Deficiency Level"
+  ],
+  "proxy_groups": {
+    "Average Summer Temperature": [
+      "Average Summer Temperature1",
+      "Average Summer Temperature2",
+      "Average Summer Temperature3",
+      "Average Summer Temperature4",
+      "Average Summer Temperature5",
+      "Average Summer Temperature6"
+    ],
+    "Sanitation Deficiency Level": [
+      "Sanitation Deficiency Level1",
+      "Sanitation Deficiency Level2",
+      "Sanitation Deficiency Level3",
+      "Sanitation Deficiency Level4",
+      "Sanitation Deficiency Level5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Average Summer Temperature": {
+      "conceptual_node": "Average Summer Temperature",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Average Summer Temperature1",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.7230895061992466,
+          "params": {
+            "w": {
+              "Average Summer Temperature": -0.5448857303909282
+            },
+            "b": 0.23087749644176436,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": -1.0950512211017522
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -0.4803042499225345
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature2",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4925930627085464,
+          "params": {
+            "w": {
+              "Average Summer Temperature": 0.7687827655008428
+            },
+            "b": 0.42130447582904695,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": -0.485774076390095
+            },
+            "nl_shift": {
+              "Average Summer Temperature": 0.8314117681411948
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature3",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.5523694038376314,
+          "params": {
+            "w": {
+              "Average Summer Temperature": -0.7568952058013247
+            },
+            "b": 0.2730446166028892,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": 0.4593891744915816
+            },
+            "nl_shift": {
+              "Average Summer Temperature": 0.05560333342280965
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature4",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.767801047800068,
+          "params": {
+            "w": {
+              "Average Summer Temperature": -0.3762012286184484
+            },
+            "b": -0.012418561217606849,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": 0.7298650708037542
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -0.6451233089897023
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature5",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.464871309504591,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  35,
+                  40
+                ],
+                [
+                  40,
+                  20
+                ],
+                [
+                  20,
+                  59
+                ],
+                [
+                  59,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  40
+                ],
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  59
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Average Summer Temperature"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature6",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.4858780114514984,
+          "params": {
+            "w": {
+              "Average Summer Temperature": 0.5010338774598215
+            },
+            "b": 0.3349040738826013,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": -0.38620438823554787
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -1.1345038725962104
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.23940712255792945,
+        "average_information": 0.7374812104059625,
+        "lower_tail_quantiles": {
+          "q10": 0.5495738113471681,
+          "q25": 0.633026812760696
+        },
+        "per_proxy": {
+          "Average Summer Temperature1": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature2": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature3": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature4": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature5": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 4
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Average Summer Temperature1",
+          "rmse": 0.962122029283615,
+          "r2": 0.22416607734019323
+        },
+        "calibrated": {
+          "rmse": 0.857998829404314,
+          "r2": 0.3830047248948508
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10412319987930096,
+          "r2_gain": 0.1588386475546576
+        }
+      }
+    },
+    "Sanitation Deficiency Level": {
+      "conceptual_node": "Sanitation Deficiency Level",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Sanitation Deficiency Level1",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": -0.5672278979627692
+            },
+            "b": 1.0477093201630627,
+            "w_nl": {
+              "Sanitation Deficiency Level": -0.7392816664866272
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": -1.1712285034479941
+            }
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level2",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.005237063282271,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  63
+                ],
+                [
+                  63,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Sanitation Deficiency Level"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level3",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": 1.4744583612578634
+            },
+            "b": 0.2832237094451951,
+            "w_nl": {
+              "Sanitation Deficiency Level": 0.08562661766989488
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": -0.11264907573500649
+            }
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level4",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.3353654310126433,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": 0.38042367183614356
+            },
+            "b": -0.007723964322972768,
+            "w_pair": {},
+            "w_nl": {
+              "Sanitation Deficiency Level": -0.4419123304437212
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": -1.4140467159590573
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level5",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.9893016549510136,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  49
+                ],
+                [
+                  49,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Sanitation Deficiency Level"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.16053036688906003,
+        "average_information": 0.5448021201673197,
+        "lower_tail_quantiles": {
+          "q10": 0.1911356176941752,
+          "q25": 0.28014179009827206
+        },
+        "per_proxy": {
+          "Sanitation Deficiency Level1": {
+            "proxy_type": "binary"
+          },
+          "Sanitation Deficiency Level2": {
+            "proxy_type": "continuous"
+          },
+          "Sanitation Deficiency Level3": {
+            "proxy_type": "binary"
+          },
+          "Sanitation Deficiency Level4": {
+            "proxy_type": "continuous"
+          },
+          "Sanitation Deficiency Level5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Sanitation Deficiency Level3",
+          "rmse": 0.5754127102950712,
+          "r2": 0.15318017080370594
+        },
+        "calibrated": {
+          "rmse": 0.5527869727485835,
+          "r2": 0.218466287328694
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.02262573754648778,
+          "r2_gain": 0.06528611652498806
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

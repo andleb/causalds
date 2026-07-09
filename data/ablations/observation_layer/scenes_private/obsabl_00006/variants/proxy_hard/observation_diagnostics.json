@@ -1,0 +1,433 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Coastal Urbanization Density"
+  ],
+  "proxified_nodes": [
+    "Elevated Coastal Sea Surface Temperature Indicator",
+    "Hurricane Irene Maximum Wind Speed"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Elevated Coastal Sea Surface Temperature Indicator",
+    "Hurricane Irene Maximum Wind Speed"
+  ],
+  "proxy_groups": {
+    "Elevated Coastal Sea Surface Temperature Indicator": [
+      "Elevated Coastal Sea Surface Temperature Indicator1",
+      "Elevated Coastal Sea Surface Temperature Indicator2",
+      "Elevated Coastal Sea Surface Temperature Indicator3",
+      "Elevated Coastal Sea Surface Temperature Indicator4",
+      "Elevated Coastal Sea Surface Temperature Indicator5"
+    ],
+    "Hurricane Irene Maximum Wind Speed": [
+      "Hurricane Irene Maximum Wind Speed1",
+      "Hurricane Irene Maximum Wind Speed2",
+      "Hurricane Irene Maximum Wind Speed3",
+      "Hurricane Irene Maximum Wind Speed4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Elevated Coastal Sea Surface Temperature Indicator": {
+      "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Elevated Coastal Sea Surface Temperature Indicator1",
+          "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.647765702086552,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  9
+                ],
+                [
+                  9,
+                  37
+                ],
+                [
+                  37,
+                  54
+                ],
+                [
+                  54,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  9
+                ],
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  54
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Elevated Coastal Sea Surface Temperature Indicator"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Elevated Coastal Sea Surface Temperature Indicator2",
+          "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 0.21293969218005748
+            },
+            "b": -1.1084500591477127,
+            "w_nl": {
+              "Elevated Coastal Sea Surface Temperature Indicator": -0.4600297758588198
+            },
+            "nl_shift": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 0.26528865405880087
+            }
+          }
+        },
+        {
+          "column_name": "Elevated Coastal Sea Surface Temperature Indicator3",
+          "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9107141939209418,
+          "params": {
+            "w": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 1.7236471064958288
+            },
+            "b": 0.3963292216322158,
+            "w_pair": {},
+            "w_nl": {
+              "Elevated Coastal Sea Surface Temperature Indicator": -0.2772819997774728
+            },
+            "nl_shift": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 1.4038764686650818
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Elevated Coastal Sea Surface Temperature Indicator4",
+          "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.4763788021674804,
+          "params": {
+            "w": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 0.29959703197216736
+            },
+            "b": -0.7658736508404751,
+            "w_pair": {},
+            "w_nl": {
+              "Elevated Coastal Sea Surface Temperature Indicator": -0.7474687219704965
+            },
+            "nl_shift": {
+              "Elevated Coastal Sea Surface Temperature Indicator": 1.141877448641528
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Elevated Coastal Sea Surface Temperature Indicator5",
+          "conceptual_node": "Elevated Coastal Sea Surface Temperature Indicator",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 3.1287309958008036,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  24
+                ],
+                [
+                  24,
+                  16
+                ],
+                [
+                  16,
+                  35
+                ],
+                [
+                  35,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  16
+                ],
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Elevated Coastal Sea Surface Temperature Indicator"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 8.912619980429247,
+        "min_information": 8.912619980429247,
+        "average_information": 8.912619980429247,
+        "lower_tail_quantiles": {
+          "q10": 8.912619980429247,
+          "q25": 8.912619980429247
+        },
+        "per_proxy": {
+          "Elevated Coastal Sea Surface Temperature Indicator1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 6.401042859373023,
+            "mean_z0": -0.9883000654698954,
+            "mean_z1": 1.0092613002766904,
+            "pooled_var": 0.623375205819854
+          },
+          "Elevated Coastal Sea Surface Temperature Indicator2": {
+            "proxy_type": "binary",
+            "mutual_information": 3.379657466186063e-05,
+            "p_w1_z0": 0.26355813488092855,
+            "p_w1_z1": 0.25634619228462924
+          },
+          "Elevated Coastal Sea Surface Temperature Indicator3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 2.0921161259910193,
+            "mean_z0": 0.641302495367664,
+            "mean_z1": 2.2149786437594705,
+            "pooled_var": 1.183708967801294
+          },
+          "Elevated Coastal Sea Surface Temperature Indicator4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.013533182855311623,
+            "mean_z0": -0.16746207078436678,
+            "mean_z1": -0.3633070419629662,
+            "pooled_var": 2.8341634888124214
+          },
+          "Elevated Coastal Sea Surface Temperature Indicator5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.4058940156352322,
+            "mean_z0": 1.0360978237828917,
+            "mean_z1": -0.952972737366846,
+            "pooled_var": 9.747376272696913
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Elevated Coastal Sea Surface Temperature Indicator1",
+          "log_loss": 0.25798956749280194,
+          "auc": 0.95941623985406
+        },
+        "calibrated": {
+          "log_loss": 0.17119600309461175,
+          "auc": 0.9820459955114988
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.08679356439819019,
+          "auc_gain": 0.022629755657438855
+        }
+      }
+    },
+    "Hurricane Irene Maximum Wind Speed": {
+      "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed1",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.6652526839946147,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": 0.7178667713884509
+            },
+            "b": -0.14478303642896748,
+            "w_pair": {},
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": -0.30552930019102453
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": 0.7308868424640904
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed2",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": -0.9950164356778374
+            },
+            "b": -0.6179451152447861,
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": 0.7941161047277452
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": 0.14492195666698082
+            }
+          }
+        },
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed3",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": 1.0376544839878792
+            },
+            "b": -0.1662195510188332,
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": 1.1506228891867667
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": -0.07962239550513983
+            }
+          }
+        },
+        {
+          "column_name": "Hurricane Irene Maximum Wind Speed4",
+          "conceptual_node": "Hurricane Irene Maximum Wind Speed",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.8408839155213057,
+          "params": {
+            "w": {
+              "Hurricane Irene Maximum Wind Speed": -0.8653295731778872
+            },
+            "b": 0.46475786290951854,
+            "w_pair": {},
+            "w_nl": {
+              "Hurricane Irene Maximum Wind Speed": -0.3544035147757876
+            },
+            "nl_shift": {
+              "Hurricane Irene Maximum Wind Speed": -0.309226328371202
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.09159143234184497,
+        "average_information": 0.7845764084415743,
+        "lower_tail_quantiles": {
+          "q10": 0.314841877287067,
+          "q25": 0.3547634094134904
+        },
+        "per_proxy": {
+          "Hurricane Irene Maximum Wind Speed1": {
+            "proxy_type": "continuous"
+          },
+          "Hurricane Irene Maximum Wind Speed2": {
+            "proxy_type": "binary"
+          },
+          "Hurricane Irene Maximum Wind Speed3": {
+            "proxy_type": "binary"
+          },
+          "Hurricane Irene Maximum Wind Speed4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Hurricane Irene Maximum Wind Speed3",
+          "rmse": 0.7983310261638956,
+          "r2": 0.22346862661745992
+        },
+        "calibrated": {
+          "rmse": 0.6696182180520537,
+          "r2": 0.45367948063271313
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.12871280811184194,
+          "r2_gain": 0.2302108540152532
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

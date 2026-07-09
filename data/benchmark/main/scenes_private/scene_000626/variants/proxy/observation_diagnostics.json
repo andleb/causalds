@@ -1,0 +1,670 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Advanced Chronological Age",
+    "Birth Year"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Advanced Chronological Age",
+    "Birth Year"
+  ],
+  "proxy_groups": {
+    "Advanced Chronological Age": [
+      "Advanced Chronological Age1",
+      "Advanced Chronological Age2",
+      "Advanced Chronological Age3",
+      "Advanced Chronological Age4",
+      "Advanced Chronological Age5",
+      "Advanced Chronological Age6",
+      "Advanced Chronological Age7",
+      "Advanced Chronological Age8",
+      "Advanced Chronological Age9"
+    ],
+    "Birth Year": [
+      "Birth Year1",
+      "Birth Year2",
+      "Birth Year3",
+      "Birth Year4",
+      "Birth Year5",
+      "Birth Year6",
+      "Birth Year7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Advanced Chronological Age": {
+      "conceptual_node": "Advanced Chronological Age",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Advanced Chronological Age1",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.6967897678363235,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  22,
+                  21
+                ],
+                [
+                  21,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Advanced Chronological Age"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age2",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -1.4096353111523934
+            },
+            "b": 0.32382159234944125,
+            "w_nl": {
+              "Advanced Chronological Age": 0.7089166555322455
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": -1.4181202583677384
+            }
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age3",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.9313289738677446,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  54,
+                  37
+                ],
+                [
+                  37,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Advanced Chronological Age"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age4",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -1.4630034172825563
+            },
+            "b": 1.0567622789302848,
+            "w_nl": {
+              "Advanced Chronological Age": 0.30264951953374236
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": 1.385549764759797
+            }
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age5",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -0.6646289067909044
+            },
+            "b": -0.40327753877011074,
+            "w_nl": {
+              "Advanced Chronological Age": -0.8500776885389489
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": 1.3492854780413666
+            }
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age6",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2259828869279235,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -0.9142541562414997
+            },
+            "b": 0.43841125937996395,
+            "w_pair": {},
+            "w_nl": {
+              "Advanced Chronological Age": 0.3465796117500427
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": -0.12838727147435725
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age7",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.333288347971007,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -0.7752105277663888
+            },
+            "b": 0.3148633333731988,
+            "w_pair": {},
+            "w_nl": {
+              "Advanced Chronological Age": 0.3410886751501797
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": -1.2838462924285126
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age8",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.565697669374253,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": -1.4422308259638812
+            },
+            "b": 0.015133793158958216,
+            "w_pair": {},
+            "w_nl": {
+              "Advanced Chronological Age": -0.8816466902361647
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": 0.4289413578850134
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Advanced Chronological Age9",
+          "conceptual_node": "Advanced Chronological Age",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.2899747927274223,
+          "params": {
+            "w": {
+              "Advanced Chronological Age": 1.3476824970351267
+            },
+            "b": -0.7866018676015369,
+            "w_pair": {},
+            "w_nl": {
+              "Advanced Chronological Age": 0.13486524139370043
+            },
+            "nl_shift": {
+              "Advanced Chronological Age": -1.07334410161251
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.2217232534259794,
+        "average_information": 2.2795525736170563,
+        "lower_tail_quantiles": {
+          "q10": 1.2883652280194269,
+          "q25": 1.4520834268399399
+        },
+        "per_proxy": {
+          "Advanced Chronological Age1": {
+            "proxy_type": "continuous"
+          },
+          "Advanced Chronological Age2": {
+            "proxy_type": "binary"
+          },
+          "Advanced Chronological Age3": {
+            "proxy_type": "continuous"
+          },
+          "Advanced Chronological Age4": {
+            "proxy_type": "binary"
+          },
+          "Advanced Chronological Age5": {
+            "proxy_type": "binary"
+          },
+          "Advanced Chronological Age6": {
+            "proxy_type": "continuous"
+          },
+          "Advanced Chronological Age7": {
+            "proxy_type": "continuous"
+          },
+          "Advanced Chronological Age8": {
+            "proxy_type": "continuous"
+          },
+          "Advanced Chronological Age9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Advanced Chronological Age8",
+          "rmse": 0.6758099630394743,
+          "r2": 0.34004683184174456
+        },
+        "calibrated": {
+          "rmse": 0.490050090909778,
+          "r2": 0.6529876860846062
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.18575987212969625,
+          "r2_gain": 0.31294085424286167
+        }
+      }
+    },
+    "Birth Year": {
+      "conceptual_node": "Birth Year",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Birth Year1",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.8076502360226154,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  48
+                ],
+                [
+                  48,
+                  56
+                ],
+                [
+                  56,
+                  53
+                ],
+                [
+                  53,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Birth Year"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Birth Year2",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Birth Year": -1.2364211276802413
+            },
+            "b": 0.6981639406680207,
+            "w_nl": {
+              "Birth Year": 1.051602113421112
+            },
+            "nl_shift": {
+              "Birth Year": -0.2848443491990249
+            }
+          }
+        },
+        {
+          "column_name": "Birth Year3",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.245089307494448,
+          "params": {
+            "w": {
+              "Birth Year": -0.6934678518819539
+            },
+            "b": -0.36483704245157544,
+            "w_pair": {},
+            "w_nl": {
+              "Birth Year": 0.8491497515808364
+            },
+            "nl_shift": {
+              "Birth Year": -1.444523281573888
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Birth Year4",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.1862912706773652,
+          "params": {
+            "w": {
+              "Birth Year": -1.0936292171911912
+            },
+            "b": 0.31732088420476606,
+            "w_pair": {},
+            "w_nl": {
+              "Birth Year": 0.6355196984972321
+            },
+            "nl_shift": {
+              "Birth Year": 0.012738755077063457
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Birth Year5",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Birth Year": 1.8931421887066566
+            },
+            "b": -1.040440560560723,
+            "w_nl": {
+              "Birth Year": -0.7739816638206428
+            },
+            "nl_shift": {
+              "Birth Year": -0.010996317167553116
+            }
+          }
+        },
+        {
+          "column_name": "Birth Year6",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.0726260766642082,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  38
+                ],
+                [
+                  38,
+                  58
+                ],
+                [
+                  58,
+                  40
+                ],
+                [
+                  40,
+                  58
+                ],
+                [
+                  58,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  40
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Birth Year"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Birth Year7",
+          "conceptual_node": "Birth Year",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.7704188386004667,
+          "params": {
+            "w": {
+              "Birth Year": 1.720991699905488
+            },
+            "b": -0.19391076238605193,
+            "w_pair": {},
+            "w_nl": {
+              "Birth Year": 0.17642739531545032
+            },
+            "nl_shift": {
+              "Birth Year": -1.2076273916010876
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.724148007449954,
+        "average_information": 1.4983715861494513,
+        "lower_tail_quantiles": {
+          "q10": 1.042936053214018,
+          "q25": 1.0774157867739453
+        },
+        "per_proxy": {
+          "Birth Year1": {
+            "proxy_type": "continuous"
+          },
+          "Birth Year2": {
+            "proxy_type": "binary"
+          },
+          "Birth Year3": {
+            "proxy_type": "continuous"
+          },
+          "Birth Year4": {
+            "proxy_type": "continuous"
+          },
+          "Birth Year5": {
+            "proxy_type": "binary"
+          },
+          "Birth Year6": {
+            "proxy_type": "continuous"
+          },
+          "Birth Year7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Birth Year4",
+          "rmse": 0.8476052841970019,
+          "r2": 0.24164446265735084
+        },
+        "calibrated": {
+          "rmse": 0.6352996821264882,
+          "r2": 0.5739674052746999
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.21230560207051363,
+          "r2_gain": 0.33232294261734907
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

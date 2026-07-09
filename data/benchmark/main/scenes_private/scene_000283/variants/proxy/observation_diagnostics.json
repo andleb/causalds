@@ -1,0 +1,699 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Dissolved Oxygen Tension",
+    "Intracellular ATP Concentration",
+    "Toxin-Induced Membrane Depolarization"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Dissolved Oxygen Tension",
+    "Intracellular ATP Concentration",
+    "Toxin-Induced Membrane Depolarization"
+  ],
+  "proxy_groups": {
+    "Dissolved Oxygen Tension": [
+      "Dissolved Oxygen Tension1",
+      "Dissolved Oxygen Tension2",
+      "Dissolved Oxygen Tension3",
+      "Dissolved Oxygen Tension4",
+      "Dissolved Oxygen Tension5",
+      "Dissolved Oxygen Tension6",
+      "Dissolved Oxygen Tension7"
+    ],
+    "Intracellular ATP Concentration": [
+      "Intracellular ATP Concentration1",
+      "Intracellular ATP Concentration2",
+      "Intracellular ATP Concentration3",
+      "Intracellular ATP Concentration4",
+      "Intracellular ATP Concentration5",
+      "Intracellular ATP Concentration6",
+      "Intracellular ATP Concentration7",
+      "Intracellular ATP Concentration8",
+      "Intracellular ATP Concentration9",
+      "Intracellular ATP Concentration10"
+    ],
+    "Toxin-Induced Membrane Depolarization": [
+      "Toxin-Induced Membrane Depolarization1",
+      "Toxin-Induced Membrane Depolarization2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Dissolved Oxygen Tension": {
+      "conceptual_node": "Dissolved Oxygen Tension",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Dissolved Oxygen Tension1",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.42289814757201,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": -0.6509162946108171
+            },
+            "b": -0.0929547897633323,
+            "w_pair": {},
+            "w_nl": {
+              "Dissolved Oxygen Tension": 0.6106045925439278
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": 0.45049227284659565
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension2",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": -1.6960836410069278
+            },
+            "b": 0.07684760449506821,
+            "w_nl": {
+              "Dissolved Oxygen Tension": 0.7333061685761235
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": 0.19205050749762353
+            }
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension3",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": -0.5729770633877411
+            },
+            "b": -0.2502053562748402,
+            "w_nl": {
+              "Dissolved Oxygen Tension": 1.1803521423235672
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": -0.6622151436848505
+            }
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension4",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.8740548230538403,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": -1.2383280869224087
+            },
+            "b": 0.16585808558882728,
+            "w_pair": {},
+            "w_nl": {
+              "Dissolved Oxygen Tension": 0.2827263727812722
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": -0.77853160101626
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension5",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.6774383794186747,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": -0.694932446327754
+            },
+            "b": -0.25758259950618145,
+            "w_pair": {},
+            "w_nl": {
+              "Dissolved Oxygen Tension": -0.6033796948556731
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": -0.4489484819355063
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension6",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Dissolved Oxygen Tension": 1.2722670295324736
+            },
+            "b": 0.6341875379500735,
+            "w_nl": {
+              "Dissolved Oxygen Tension": 0.09629654777170071
+            },
+            "nl_shift": {
+              "Dissolved Oxygen Tension": 0.31701844976081417
+            }
+          }
+        },
+        {
+          "column_name": "Dissolved Oxygen Tension7",
+          "conceptual_node": "Dissolved Oxygen Tension",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.807694063921152,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  49
+                ],
+                [
+                  49,
+                  29
+                ],
+                [
+                  29,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Dissolved Oxygen Tension"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.589792848102602,
+        "average_information": 0.7302692454551933,
+        "lower_tail_quantiles": {
+          "q10": 0.5939063748748284,
+          "q25": 0.6060201874344753
+        },
+        "per_proxy": {
+          "Dissolved Oxygen Tension1": {
+            "proxy_type": "continuous"
+          },
+          "Dissolved Oxygen Tension2": {
+            "proxy_type": "binary"
+          },
+          "Dissolved Oxygen Tension3": {
+            "proxy_type": "binary"
+          },
+          "Dissolved Oxygen Tension4": {
+            "proxy_type": "continuous"
+          },
+          "Dissolved Oxygen Tension5": {
+            "proxy_type": "continuous"
+          },
+          "Dissolved Oxygen Tension6": {
+            "proxy_type": "binary"
+          },
+          "Dissolved Oxygen Tension7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Dissolved Oxygen Tension4",
+          "rmse": 1.15471245667418,
+          "r2": 0.46162818154080065
+        },
+        "calibrated": {
+          "rmse": 0.8294229860830621,
+          "r2": 0.7222290971409225
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3252894705911179,
+          "r2_gain": 0.2606009156001219
+        }
+      }
+    },
+    "Intracellular ATP Concentration": {
+      "conceptual_node": "Intracellular ATP Concentration",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Intracellular ATP Concentration1",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": 0.6057819205334414
+            },
+            "b": -0.03031941598914072,
+            "w_nl": {
+              "Intracellular ATP Concentration": 0.9649956563740881
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": -1.4859995121123
+            }
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration2",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.2168100082653535,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": -1.196309720088151
+            },
+            "b": 0.06500469127498501,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": 0.9633426003992124
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": 1.3738290921215452
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration3",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9992474717270652,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": -1.0069116581398618
+            },
+            "b": 0.08919800647252962,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": -0.6921089937874891
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": 0.6679537434762519
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration4",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.6967678032626363,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": -0.9280117843445371
+            },
+            "b": 0.1442993457696004,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": -0.47448916741886143
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": -0.9964126756647037
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration5",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.9473999743911317,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": 0.6650977656853703
+            },
+            "b": 0.28716969521099667,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": -0.36772819710007043
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": -0.7078595806440368
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration6",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": -0.42074828035277256
+            },
+            "b": 0.4544951176703804,
+            "w_nl": {
+              "Intracellular ATP Concentration": 0.6261069759418763
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": 1.3305790686074186
+            }
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration7",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": 0.3654947770138389
+            },
+            "b": -0.6175577473808878,
+            "w_nl": {
+              "Intracellular ATP Concentration": 0.5782756917311418
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": 0.417594524166923
+            }
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration8",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": -0.9583838348534108
+            },
+            "b": -0.12503750263380026,
+            "w_nl": {
+              "Intracellular ATP Concentration": 0.6213841289285194
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": -0.9623039371519214
+            }
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration9",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.2540084180764353,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": 0.9698339147059991
+            },
+            "b": 0.2760982010877788,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": -0.22446641697027647
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": -1.1942414617179877
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intracellular ATP Concentration10",
+          "conceptual_node": "Intracellular ATP Concentration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.2667944403571836,
+          "params": {
+            "w": {
+              "Intracellular ATP Concentration": 0.6347206212137405
+            },
+            "b": 0.09554805448964657,
+            "w_pair": {},
+            "w_nl": {
+              "Intracellular ATP Concentration": -0.8565680469597443
+            },
+            "nl_shift": {
+              "Intracellular ATP Concentration": 0.35671122273728795
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.2339507361712192,
+        "average_information": 3.1313345740376715,
+        "lower_tail_quantiles": {
+          "q10": 1.399216398577925,
+          "q25": 1.5655402809966157
+        },
+        "per_proxy": {
+          "Intracellular ATP Concentration1": {
+            "proxy_type": "binary"
+          },
+          "Intracellular ATP Concentration2": {
+            "proxy_type": "continuous"
+          },
+          "Intracellular ATP Concentration3": {
+            "proxy_type": "continuous"
+          },
+          "Intracellular ATP Concentration4": {
+            "proxy_type": "continuous"
+          },
+          "Intracellular ATP Concentration5": {
+            "proxy_type": "continuous"
+          },
+          "Intracellular ATP Concentration6": {
+            "proxy_type": "binary"
+          },
+          "Intracellular ATP Concentration7": {
+            "proxy_type": "binary"
+          },
+          "Intracellular ATP Concentration8": {
+            "proxy_type": "binary"
+          },
+          "Intracellular ATP Concentration9": {
+            "proxy_type": "continuous"
+          },
+          "Intracellular ATP Concentration10": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Intracellular ATP Concentration9",
+          "rmse": 0.6733231085484674,
+          "r2": 0.2616603817568298
+        },
+        "calibrated": {
+          "rmse": 0.4886341835670401,
+          "r2": 0.6111547261894011
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.18468892498142736,
+          "r2_gain": 0.3494943444325713
+        }
+      }
+    },
+    "Toxin-Induced Membrane Depolarization": {
+      "conceptual_node": "Toxin-Induced Membrane Depolarization",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Toxin-Induced Membrane Depolarization1",
+          "conceptual_node": "Toxin-Induced Membrane Depolarization",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.8536108044934467,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  39,
+                  13
+                ],
+                [
+                  13,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  13
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Toxin-Induced Membrane Depolarization"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Toxin-Induced Membrane Depolarization2",
+          "conceptual_node": "Toxin-Induced Membrane Depolarization",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.77257312834798,
+          "params": {
+            "w": {
+              "Toxin-Induced Membrane Depolarization": -1.3297476410912619
+            },
+            "b": 1.0257106809155068,
+            "w_pair": {},
+            "w_nl": {
+              "Toxin-Induced Membrane Depolarization": -0.4447970497218641
+            },
+            "nl_shift": {
+              "Toxin-Induced Membrane Depolarization": 0.8944660599813989
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.10048646682661759,
+        "average_information": 0.6427526103414303,
+        "lower_tail_quantiles": {
+          "q10": 0.5035745758763724,
+          "q25": 0.5387565928789243
+        },
+        "per_proxy": {
+          "Toxin-Induced Membrane Depolarization1": {
+            "proxy_type": "continuous"
+          },
+          "Toxin-Induced Membrane Depolarization2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Toxin-Induced Membrane Depolarization2",
+          "rmse": 0.5856722257785361,
+          "r2": 0.11625678046102139
+        },
+        "calibrated": {
+          "rmse": 0.5723131486424003,
+          "r2": 0.15611302440312458
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.01335907713613571,
+          "r2_gain": 0.03985624394210319
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

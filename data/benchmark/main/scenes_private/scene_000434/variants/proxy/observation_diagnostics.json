@@ -1,0 +1,168 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Dominant Leadership Disposition"
+  ],
+  "proxified_nodes": [
+    "Institutional Opposition Resources"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Institutional Opposition Resources"
+  ],
+  "proxy_groups": {
+    "Institutional Opposition Resources": [
+      "Institutional Opposition Resources1",
+      "Institutional Opposition Resources2",
+      "Institutional Opposition Resources3",
+      "Institutional Opposition Resources4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Institutional Opposition Resources": {
+      "conceptual_node": "Institutional Opposition Resources",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Institutional Opposition Resources1",
+          "conceptual_node": "Institutional Opposition Resources",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Institutional Opposition Resources": -0.7811298591104332
+            },
+            "b": 0.7642897815889286,
+            "w_nl": {
+              "Institutional Opposition Resources": 0.39306739695948123
+            },
+            "nl_shift": {
+              "Institutional Opposition Resources": -0.27371769464903695
+            }
+          }
+        },
+        {
+          "column_name": "Institutional Opposition Resources2",
+          "conceptual_node": "Institutional Opposition Resources",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.8480730609146576,
+          "params": {
+            "w": {
+              "Institutional Opposition Resources": 0.5463415788360898
+            },
+            "b": -0.1465726063128989,
+            "w_pair": {},
+            "w_nl": {
+              "Institutional Opposition Resources": -0.19335958296032957
+            },
+            "nl_shift": {
+              "Institutional Opposition Resources": 0.7251054989413594
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Institutional Opposition Resources3",
+          "conceptual_node": "Institutional Opposition Resources",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.7143854206853149,
+          "params": {
+            "w": {
+              "Institutional Opposition Resources": 1.1855701686354514
+            },
+            "b": 0.21516786613235317,
+            "w_pair": {},
+            "w_nl": {
+              "Institutional Opposition Resources": 0.7762283400273334
+            },
+            "nl_shift": {
+              "Institutional Opposition Resources": 1.4796526016241103
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Institutional Opposition Resources4",
+          "conceptual_node": "Institutional Opposition Resources",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.4097617143676473,
+          "params": {
+            "w": {
+              "Institutional Opposition Resources": -0.8455915462573771
+            },
+            "b": -0.3898893730282871,
+            "w_pair": {},
+            "w_nl": {
+              "Institutional Opposition Resources": -0.6161636586754307
+            },
+            "nl_shift": {
+              "Institutional Opposition Resources": -0.12385260784397234
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3525894469382235,
+        "average_information": 0.6312654666753887,
+        "lower_tail_quantiles": {
+          "q10": 0.3616063848713724,
+          "q25": 0.404223085546354
+        },
+        "per_proxy": {
+          "Institutional Opposition Resources1": {
+            "proxy_type": "binary"
+          },
+          "Institutional Opposition Resources2": {
+            "proxy_type": "continuous"
+          },
+          "Institutional Opposition Resources3": {
+            "proxy_type": "continuous"
+          },
+          "Institutional Opposition Resources4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Institutional Opposition Resources3",
+          "rmse": 0.9618346401110569,
+          "r2": 0.29189048674036777
+        },
+        "calibrated": {
+          "rmse": 0.8010536857277012,
+          "r2": 0.5088401623960288
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.1607809543833557,
+          "r2_gain": 0.21694967565566103
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

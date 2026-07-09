@@ -1,0 +1,736 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Accumulated Interest on Defaulted Bonds",
+    "Duration of Legal Crisis",
+    "Initial Bond Principal Amount",
+    "Municipality Located in State Capital"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Accumulated Interest on Defaulted Bonds",
+    "Duration of Legal Crisis",
+    "Initial Bond Principal Amount",
+    "Municipality Located in State Capital"
+  ],
+  "proxy_groups": {
+    "Accumulated Interest on Defaulted Bonds": [
+      "Accumulated Interest on Defaulted Bonds1",
+      "Accumulated Interest on Defaulted Bonds2",
+      "Accumulated Interest on Defaulted Bonds3",
+      "Accumulated Interest on Defaulted Bonds4"
+    ],
+    "Duration of Legal Crisis": [
+      "Duration of Legal Crisis1",
+      "Duration of Legal Crisis2",
+      "Duration of Legal Crisis3",
+      "Duration of Legal Crisis4"
+    ],
+    "Initial Bond Principal Amount": [
+      "Initial Bond Principal Amount1",
+      "Initial Bond Principal Amount2",
+      "Initial Bond Principal Amount3",
+      "Initial Bond Principal Amount4",
+      "Initial Bond Principal Amount5",
+      "Initial Bond Principal Amount6"
+    ],
+    "Municipality Located in State Capital": [
+      "Municipality Located in State Capital1",
+      "Municipality Located in State Capital2",
+      "Municipality Located in State Capital3",
+      "Municipality Located in State Capital4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Accumulated Interest on Defaulted Bonds": {
+      "conceptual_node": "Accumulated Interest on Defaulted Bonds",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Accumulated Interest on Defaulted Bonds1",
+          "conceptual_node": "Accumulated Interest on Defaulted Bonds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Accumulated Interest on Defaulted Bonds": -0.9019659370503611
+            },
+            "b": 0.13795043339367177,
+            "w_nl": {
+              "Accumulated Interest on Defaulted Bonds": -0.42939464322065485
+            },
+            "nl_shift": {
+              "Accumulated Interest on Defaulted Bonds": -1.112958954688621
+            }
+          }
+        },
+        {
+          "column_name": "Accumulated Interest on Defaulted Bonds2",
+          "conceptual_node": "Accumulated Interest on Defaulted Bonds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Accumulated Interest on Defaulted Bonds": -1.207682113076203
+            },
+            "b": 0.6508341587958874,
+            "w_nl": {
+              "Accumulated Interest on Defaulted Bonds": 0.566903262743759
+            },
+            "nl_shift": {
+              "Accumulated Interest on Defaulted Bonds": -0.43194326364738367
+            }
+          }
+        },
+        {
+          "column_name": "Accumulated Interest on Defaulted Bonds3",
+          "conceptual_node": "Accumulated Interest on Defaulted Bonds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8699219182769686,
+          "params": {
+            "w": {
+              "Accumulated Interest on Defaulted Bonds": -1.1716573743783478
+            },
+            "b": 0.1766813382341034,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Interest on Defaulted Bonds": -0.8631200797143488
+            },
+            "nl_shift": {
+              "Accumulated Interest on Defaulted Bonds": 1.352321596676573
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Interest on Defaulted Bonds4",
+          "conceptual_node": "Accumulated Interest on Defaulted Bonds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.106570001575826,
+          "params": {
+            "w": {
+              "Accumulated Interest on Defaulted Bonds": 1.0262837470814756
+            },
+            "b": 0.09994137363397214,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Interest on Defaulted Bonds": 0.5922859473045893
+            },
+            "nl_shift": {
+              "Accumulated Interest on Defaulted Bonds": 0.002141379497978546
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.40449342136571154,
+        "average_information": 0.47609066372427106,
+        "lower_tail_quantiles": {
+          "q10": 0.40449342136571176,
+          "q25": 0.40468197229571473
+        },
+        "per_proxy": {
+          "Accumulated Interest on Defaulted Bonds1": {
+            "proxy_type": "binary"
+          },
+          "Accumulated Interest on Defaulted Bonds2": {
+            "proxy_type": "binary"
+          },
+          "Accumulated Interest on Defaulted Bonds3": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Interest on Defaulted Bonds4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Accumulated Interest on Defaulted Bonds4",
+          "rmse": 1.4359270960012769,
+          "r2": 0.6691057339831865
+        },
+        "calibrated": {
+          "rmse": 1.0147721413077615,
+          "r2": 0.8347423655272471
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.4211549546935154,
+          "r2_gain": 0.1656366315440606
+        }
+      }
+    },
+    "Duration of Legal Crisis": {
+      "conceptual_node": "Duration of Legal Crisis",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Duration of Legal Crisis1",
+          "conceptual_node": "Duration of Legal Crisis",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.9868933036680212,
+          "params": {
+            "w": {
+              "Duration of Legal Crisis": -1.1338733330441682
+            },
+            "b": -0.70994681757288,
+            "w_pair": {},
+            "w_nl": {
+              "Duration of Legal Crisis": -0.3725077025845954
+            },
+            "nl_shift": {
+              "Duration of Legal Crisis": -0.6848056446675915
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Duration of Legal Crisis2",
+          "conceptual_node": "Duration of Legal Crisis",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.3652034194521128,
+          "params": {
+            "w": {
+              "Duration of Legal Crisis": 1.1907306973100105
+            },
+            "b": -0.8011672153729295,
+            "w_pair": {},
+            "w_nl": {
+              "Duration of Legal Crisis": -0.1613474865320474
+            },
+            "nl_shift": {
+              "Duration of Legal Crisis": 0.39187953941437614
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Duration of Legal Crisis3",
+          "conceptual_node": "Duration of Legal Crisis",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Duration of Legal Crisis": -0.8480418073359967
+            },
+            "b": -0.16599780216341498,
+            "w_nl": {
+              "Duration of Legal Crisis": 0.5708990173897776
+            },
+            "nl_shift": {
+              "Duration of Legal Crisis": -1.0169645728436216
+            }
+          }
+        },
+        {
+          "column_name": "Duration of Legal Crisis4",
+          "conceptual_node": "Duration of Legal Crisis",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.6733480844268693,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  20,
+                  34
+                ],
+                [
+                  34,
+                  60
+                ],
+                [
+                  60,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  34
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Legal Crisis"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6148374520650945,
+        "average_information": 1.7624423829039064,
+        "lower_tail_quantiles": {
+          "q10": 0.6148417311948283,
+          "q25": 0.6263682711156617
+        },
+        "per_proxy": {
+          "Duration of Legal Crisis1": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Legal Crisis2": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Legal Crisis3": {
+            "proxy_type": "binary"
+          },
+          "Duration of Legal Crisis4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Duration of Legal Crisis1",
+          "rmse": 0.8166145498139651,
+          "r2": 0.8078360464715539
+        },
+        "calibrated": {
+          "rmse": 0.715412002272417,
+          "r2": 0.8525142225451564
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10120254754154812,
+          "r2_gain": 0.04467817607360247
+        }
+      }
+    },
+    "Initial Bond Principal Amount": {
+      "conceptual_node": "Initial Bond Principal Amount",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Initial Bond Principal Amount1",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": 1.0341076330756507
+            },
+            "b": -0.12444364294606947,
+            "w_nl": {
+              "Initial Bond Principal Amount": 0.46285368529800186
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": 0.5894025029225292
+            }
+          }
+        },
+        {
+          "column_name": "Initial Bond Principal Amount2",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": -0.29248903755200795
+            },
+            "b": 0.23589151273626757,
+            "w_nl": {
+              "Initial Bond Principal Amount": 0.6679025719389505
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": -0.8067770294581921
+            }
+          }
+        },
+        {
+          "column_name": "Initial Bond Principal Amount3",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": 1.502663908613374
+            },
+            "b": 1.0274895767333554,
+            "w_nl": {
+              "Initial Bond Principal Amount": -0.5941019519952844
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": -0.6534927085911989
+            }
+          }
+        },
+        {
+          "column_name": "Initial Bond Principal Amount4",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.146812850437501,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": -0.9425110886363103
+            },
+            "b": 0.014099407700055914,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Bond Principal Amount": 0.35544498618677955
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": -0.2115886877506119
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Initial Bond Principal Amount5",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.4299238443090883,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": -0.9792495167914729
+            },
+            "b": 0.5603180948770976,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Bond Principal Amount": 0.8862446527369576
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": -0.36691464929432915
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Initial Bond Principal Amount6",
+          "conceptual_node": "Initial Bond Principal Amount",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.1987117104063008,
+          "params": {
+            "w": {
+              "Initial Bond Principal Amount": 0.8414284956406741
+            },
+            "b": -0.2923855670278127,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Bond Principal Amount": -0.3416143227302144
+            },
+            "nl_shift": {
+              "Initial Bond Principal Amount": 0.20669521987354122
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3551596640587038,
+        "average_information": 1.8252121160649868,
+        "lower_tail_quantiles": {
+          "q10": 0.42475699574715214,
+          "q25": 0.5724026251166129
+        },
+        "per_proxy": {
+          "Initial Bond Principal Amount1": {
+            "proxy_type": "binary"
+          },
+          "Initial Bond Principal Amount2": {
+            "proxy_type": "binary"
+          },
+          "Initial Bond Principal Amount3": {
+            "proxy_type": "binary"
+          },
+          "Initial Bond Principal Amount4": {
+            "proxy_type": "continuous"
+          },
+          "Initial Bond Principal Amount5": {
+            "proxy_type": "continuous"
+          },
+          "Initial Bond Principal Amount6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Initial Bond Principal Amount3",
+          "rmse": 0.7415929327612213,
+          "r2": 0.1687384472219461
+        },
+        "calibrated": {
+          "rmse": 0.6023802964086569,
+          "r2": 0.45153610317049786
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.13921263635256442,
+          "r2_gain": 0.2827976559485518
+        }
+      }
+    },
+    "Municipality Located in State Capital": {
+      "conceptual_node": "Municipality Located in State Capital",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Municipality Located in State Capital1",
+          "conceptual_node": "Municipality Located in State Capital",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Municipality Located in State Capital": -1.2492992820378126
+            },
+            "b": -0.3317135341312056,
+            "w_nl": {
+              "Municipality Located in State Capital": 0.5424086337979467
+            },
+            "nl_shift": {
+              "Municipality Located in State Capital": -1.3008179357555647
+            }
+          }
+        },
+        {
+          "column_name": "Municipality Located in State Capital2",
+          "conceptual_node": "Municipality Located in State Capital",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.422135449700275,
+          "params": {
+            "w": {
+              "Municipality Located in State Capital": 0.8850017280585779
+            },
+            "b": 0.296916121238932,
+            "w_pair": {},
+            "w_nl": {
+              "Municipality Located in State Capital": 0.41888649220104074
+            },
+            "nl_shift": {
+              "Municipality Located in State Capital": 1.3997911134435137
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Municipality Located in State Capital3",
+          "conceptual_node": "Municipality Located in State Capital",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.805194547020093,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  16
+                ],
+                [
+                  16,
+                  26
+                ],
+                [
+                  26,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  16
+                ],
+                [
+                  1,
+                  26
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Municipality Located in State Capital"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Municipality Located in State Capital4",
+          "conceptual_node": "Municipality Located in State Capital",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Municipality Located in State Capital": 1.5419996135961656
+            },
+            "b": 0.3951235069126669,
+            "w_nl": {
+              "Municipality Located in State Capital": 1.1624700058719735
+            },
+            "nl_shift": {
+              "Municipality Located in State Capital": -0.7344230050540728
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.9145494899962225,
+        "min_information": 1.9145494899962225,
+        "average_information": 1.9145494899962225,
+        "lower_tail_quantiles": {
+          "q10": 1.9145494899962225,
+          "q25": 1.9145494899962225
+        },
+        "per_proxy": {
+          "Municipality Located in State Capital1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.036375235924164785,
+            "p_w1_z0": 0.49728434504792335,
+            "p_w1_z1": 0.22981283422459894
+          },
+          "Municipality Located in State Capital2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6383679062122718,
+            "mean_z0": -0.0861680568455922,
+            "mean_z1": 1.0168003967149808,
+            "pooled_var": 1.9057026484430986
+          },
+          "Municipality Located in State Capital3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.1949085389939949,
+            "mean_z0": 0.9712971502033487,
+            "mean_z1": -1.010951211757556,
+            "pooled_var": 3.2883760055851754
+          },
+          "Municipality Located in State Capital4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04489780886579124,
+            "p_w1_z0": 0.705111821086262,
+            "p_w1_z1": 0.938903743315508
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Municipality Located in State Capital3",
+          "log_loss": 0.5615376335886322,
+          "auc": 0.7685398549486596
+        },
+        "calibrated": {
+          "log_loss": 0.43883843220625884,
+          "auc": 0.8673755680750372
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.12269920138237334,
+          "auc_gain": 0.09883571312637762
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

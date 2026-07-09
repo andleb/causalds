@@ -1,0 +1,55 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Cumulative Hyperoxic Exposure": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity": {
+      "dtype": "float64"
+    },
+    "Survival Time": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Cumulative Hyperoxic Exposure": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity": {
+          "dtype": "float64"
+        },
+        "Survival Time": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Cumulative Hyperoxic Exposure": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Cumulative Hyperoxic Exposure": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity": {
+      "dtype": "float64"
+    },
+    "Survival Time": {
+      "dtype": "float64"
+    }
+  }
+}

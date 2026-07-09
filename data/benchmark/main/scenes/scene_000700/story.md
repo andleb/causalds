@@ -1,0 +1,5 @@
+# scene_000700
+
+When Track Circuit Fault occurs in railway signaling infrastructure, it creates dangerous wrong-side failures where the electrical detection system malfunctions, failing to register that trains occupy specific sections while incorrectly displaying clear indications to approaching operators. This malfunction directly precipitates Signal Passed at Danger, as operators proceed past stop signals based on erroneous track vacancy information supplied by the faulty circuit detection.
+
+Whenever Signal Passed at Danger occurs, the onboard Automatic Train Protection system immediately activates ATP Warning Light Activation, illuminating the cab display to alert the crew of the unauthorized signal transgression. Simultaneously, that same violation causes Entry into Occupied Track Section, as the train intrudes into a block already containing another train or obstruction. Both Signal Passed at Danger and subsequent Entry into Occupied Track Section independently contribute to the total count of Train Collisions, as either scenario can precipitate catastrophic rear-end or head-on impacts.

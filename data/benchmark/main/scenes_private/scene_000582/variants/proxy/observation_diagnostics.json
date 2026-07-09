@@ -1,0 +1,785 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Duration of Illness",
+    "Respiratory Failure Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Duration of Illness",
+    "Respiratory Failure Status"
+  ],
+  "proxy_groups": {
+    "Duration of Illness": [
+      "Duration of Illness1",
+      "Duration of Illness2",
+      "Duration of Illness3",
+      "Duration of Illness4",
+      "Duration of Illness5",
+      "Duration of Illness6",
+      "Duration of Illness7",
+      "Duration of Illness8",
+      "Duration of Illness9"
+    ],
+    "Respiratory Failure Status": [
+      "Respiratory Failure Status1",
+      "Respiratory Failure Status2",
+      "Respiratory Failure Status3",
+      "Respiratory Failure Status4",
+      "Respiratory Failure Status5",
+      "Respiratory Failure Status6",
+      "Respiratory Failure Status7",
+      "Respiratory Failure Status8",
+      "Respiratory Failure Status9",
+      "Respiratory Failure Status10"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Duration of Illness": {
+      "conceptual_node": "Duration of Illness",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Duration of Illness1",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.8042140184778779,
+          "params": {
+            "w": {
+              "Duration of Illness": -1.0220955098399964
+            },
+            "b": 0.41728190419221534,
+            "w_pair": {},
+            "w_nl": {
+              "Duration of Illness": 0.36010541700730614
+            },
+            "nl_shift": {
+              "Duration of Illness": -1.0061841310459563
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Duration of Illness2",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Duration of Illness": -1.374158659421763
+            },
+            "b": -0.06614344837088044,
+            "w_nl": {
+              "Duration of Illness": -0.6124578488810687
+            },
+            "nl_shift": {
+              "Duration of Illness": -0.8468715171359473
+            }
+          }
+        },
+        {
+          "column_name": "Duration of Illness3",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Duration of Illness": -1.4218709706732446
+            },
+            "b": -0.4848616662428771,
+            "w_nl": {
+              "Duration of Illness": 0.8374426530305794
+            },
+            "nl_shift": {
+              "Duration of Illness": -0.5533174216667766
+            }
+          }
+        },
+        {
+          "column_name": "Duration of Illness4",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.2397120423749697,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  41
+                ],
+                [
+                  41,
+                  48
+                ],
+                [
+                  48,
+                  49
+                ],
+                [
+                  49,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Illness"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Duration of Illness5",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Duration of Illness": 0.9584275298760252
+            },
+            "b": -0.2706268908531741,
+            "w_nl": {
+              "Duration of Illness": -0.393458785485162
+            },
+            "nl_shift": {
+              "Duration of Illness": 0.38798531563639216
+            }
+          }
+        },
+        {
+          "column_name": "Duration of Illness6",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.2425590816921455,
+          "params": {
+            "w": {
+              "Duration of Illness": -0.7749559210072124
+            },
+            "b": 0.07604897132411971,
+            "w_pair": {},
+            "w_nl": {
+              "Duration of Illness": -0.6763414414009994
+            },
+            "nl_shift": {
+              "Duration of Illness": -0.07493011726734511
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Duration of Illness7",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.6920680558514327,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  7,
+                  12
+                ],
+                [
+                  12,
+                  36
+                ],
+                [
+                  36,
+                  51
+                ],
+                [
+                  51,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Illness"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Duration of Illness8",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.7186296227608715,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  49
+                ],
+                [
+                  49,
+                  46
+                ],
+                [
+                  46,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  46
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Illness"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Duration of Illness9",
+          "conceptual_node": "Duration of Illness",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.0373639414220979,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  35,
+                  47
+                ],
+                [
+                  47,
+                  64
+                ],
+                [
+                  64,
+                  48
+                ],
+                [
+                  48,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  47
+                ],
+                [
+                  1,
+                  64
+                ],
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Duration of Illness"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6016685115433054,
+        "average_information": 1.5489498815875669,
+        "lower_tail_quantiles": {
+          "q10": 0.6019597277555078,
+          "q25": 0.6080752767640272
+        },
+        "per_proxy": {
+          "Duration of Illness1": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Illness2": {
+            "proxy_type": "binary"
+          },
+          "Duration of Illness3": {
+            "proxy_type": "binary"
+          },
+          "Duration of Illness4": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Illness5": {
+            "proxy_type": "binary"
+          },
+          "Duration of Illness6": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Illness7": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Illness8": {
+            "proxy_type": "continuous"
+          },
+          "Duration of Illness9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Duration of Illness1",
+          "rmse": 1.0052110921341246,
+          "r2": 0.308180708453613
+        },
+        "calibrated": {
+          "rmse": 0.6006809378616856,
+          "r2": 0.7529608273704086
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.404530154272439,
+          "r2_gain": 0.4447801189167956
+        }
+      }
+    },
+    "Respiratory Failure Status": {
+      "conceptual_node": "Respiratory Failure Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Respiratory Failure Status1",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 1.0196381774810988
+            },
+            "b": 0.894093078058084,
+            "w_nl": {
+              "Respiratory Failure Status": -1.0956303303442747
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": -0.01513512773723491
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status2",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.125374720651662,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": -0.30529890086202854
+            },
+            "b": -0.1594182752875539,
+            "w_pair": {},
+            "w_nl": {
+              "Respiratory Failure Status": -0.3782300063566052
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.7064073983136856
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status3",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 0.09663602549837325
+            },
+            "b": -0.4353995702418843,
+            "w_nl": {
+              "Respiratory Failure Status": 0.5984866364878177
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.20887636942513343
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status4",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 2.0240326820990564
+            },
+            "b": 0.2436770847165288,
+            "w_nl": {
+              "Respiratory Failure Status": 0.808401777201624
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": -0.12164005791489663
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status5",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 0.5566669324964664
+            },
+            "b": -0.6408381420797212,
+            "w_nl": {
+              "Respiratory Failure Status": 0.3670341197896857
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.6647331299803012
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status6",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 1.4423031124057757
+            },
+            "b": 0.8914090311403656,
+            "w_nl": {
+              "Respiratory Failure Status": -0.42432719904407684
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.5152344844575811
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status7",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": -0.8198030884969567
+            },
+            "b": 0.5038201375614628,
+            "w_nl": {
+              "Respiratory Failure Status": -0.5196349746803943
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.4891065712335543
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status8",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.4521122853101134,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 1.061015670626943
+            },
+            "b": 0.11645146542011933,
+            "w_pair": {},
+            "w_nl": {
+              "Respiratory Failure Status": -1.2198855934589927
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": 0.3738106110674777
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status9",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": -1.4814939426452574
+            },
+            "b": 0.18409687611799644,
+            "w_nl": {
+              "Respiratory Failure Status": 0.6332284676343425
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": -0.62930209895812
+            }
+          }
+        },
+        {
+          "column_name": "Respiratory Failure Status10",
+          "conceptual_node": "Respiratory Failure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.082855606638419,
+          "params": {
+            "w": {
+              "Respiratory Failure Status": 0.9224109139356804
+            },
+            "b": 0.4078246832683341,
+            "w_pair": {},
+            "w_nl": {
+              "Respiratory Failure Status": -0.5801188408661601
+            },
+            "nl_shift": {
+              "Respiratory Failure Status": -0.013833964870531457
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.5602554640302985,
+        "min_information": 0.5602554640302985,
+        "average_information": 0.5602554640302985,
+        "lower_tail_quantiles": {
+          "q10": 0.5602554640302985,
+          "q25": 0.5602554640302985
+        },
+        "per_proxy": {
+          "Respiratory Failure Status1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.00703042678479817,
+            "p_w1_z0": 0.7004418557943363,
+            "p_w1_z1": 0.8026289583748257
+          },
+          "Respiratory Failure Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.19375759130914438,
+            "mean_z0": 0.07016343883756608,
+            "mean_z1": -0.5648966362991881,
+            "pooled_var": 2.081473537670191
+          },
+          "Respiratory Failure Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0069593668021017165,
+            "p_w1_z0": 0.3674432616991364,
+            "p_w1_z1": 0.48396733718382795
+          },
+          "Respiratory Failure Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.09670191298870466,
+            "p_w1_z0": 0.5758184374372364,
+            "p_w1_z1": 0.9367655845449113
+          },
+          "Respiratory Failure Status5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.018312344559540533,
+            "p_w1_z0": 0.3180357501506327,
+            "p_w1_z1": 0.5057757418840868
+          },
+          "Respiratory Failure Status6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.02439941663186231,
+            "p_w1_z0": 0.7257481421972284,
+            "p_w1_z1": 0.8961362278430591
+          },
+          "Respiratory Failure Status7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04135077927396282,
+            "p_w1_z0": 0.6648925487045592,
+            "p_w1_z1": 0.3796056562437761
+          },
+          "Respiratory Failure Status8": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.003391840447810372,
+            "mean_z0": 0.6310873164313793,
+            "mean_z1": 0.4623626162432556,
+            "pooled_var": 8.393090680886825
+          },
+          "Respiratory Failure Status9": {
+            "proxy_type": "binary",
+            "mutual_information": 0.05456305316714097,
+            "p_w1_z0": 0.6137778670415747,
+            "p_w1_z1": 0.28818960366460866
+          },
+          "Respiratory Failure Status10": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.11378873206523252,
+            "mean_z0": 0.39850384733480576,
+            "mean_z1": 0.9033555933668497,
+            "pooled_var": 2.239899160889578
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Respiratory Failure Status4",
+          "log_loss": 0.602087394263863,
+          "auc": 0.6746977951647226
+        },
+        "calibrated": {
+          "log_loss": 0.4419559909606275,
+          "auc": 0.8745659930558888
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.16013140330323555,
+          "auc_gain": 0.19986819789116617
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,75 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Excessive Vibration Exposure": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Ambient Relative Humidity": {
+      "dtype": "float64"
+    },
+    "Phenolic Bond Degradation Percentage": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Excessive Vibration Exposure": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Ambient Relative Humidity": {
+          "dtype": "float64"
+        },
+        "Phenolic Bond Degradation Percentage": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Excessive Vibration Exposure": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Phenolic Bond Degradation Percentage": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Excessive Vibration Exposure": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Ambient Relative Humidity": {
+      "dtype": "float64"
+    },
+    "Phenolic Bond Degradation Percentage": {
+      "dtype": "float64"
+    }
+  }
+}

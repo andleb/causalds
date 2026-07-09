@@ -1,0 +1,281 @@
+{
+  "n_rows": 16000,
+  "n_columns": 12,
+  "columns": {
+    "Lifetime Number of Sexual Partners": {
+      "dtype": "float64"
+    },
+    "HPV Infection Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Genital Warts Presence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Masturbation Frequency1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Masturbation Frequency2": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency3": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency4": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency5": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency6": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency7": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency8": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency9": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 12,
+      "columns": {
+        "Lifetime Number of Sexual Partners": {
+          "dtype": "float64"
+        },
+        "HPV Infection Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Genital Warts Presence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency2": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency3": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency4": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency5": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency6": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency7": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency8": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 11,
+      "columns": {
+        "Lifetime Number of Sexual Partners": {
+          "dtype": "float64"
+        },
+        "HPV Infection Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency2": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency3": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency4": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency5": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency6": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency7": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency8": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency9": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 13,
+      "columns": {
+        "Lifetime Number of Sexual Partners": {
+          "dtype": "float64"
+        },
+        "HPV Infection Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Genital Warts Presence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Masturbation Frequency2": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency3": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency4": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency5": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency6": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency7": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency8": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency9": {
+          "dtype": "float64"
+        },
+        "Masturbation Frequency": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Lifetime Number of Sexual Partners": {
+      "dtype": "float64"
+    },
+    "HPV Infection Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Genital Warts Presence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Masturbation Frequency1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Masturbation Frequency2": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency3": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency4": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency5": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency6": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency7": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency8": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency9": {
+      "dtype": "float64"
+    },
+    "Masturbation Frequency": {
+      "dtype": "float64"
+    }
+  }
+}

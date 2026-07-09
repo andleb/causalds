@@ -1,0 +1,222 @@
+{
+  "n_rows": 16000,
+  "n_columns": 9,
+  "columns": {
+    "Survival Time": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure1": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure2": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Oxygen Toxicity Severity2": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Oxygen Toxicity Severity5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 9,
+      "columns": {
+        "Survival Time": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 8,
+      "columns": {
+        "Cumulative Hyperoxic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 11,
+      "columns": {
+        "Survival Time": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure1": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure2": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Oxygen Toxicity Severity5": {
+          "dtype": "float64"
+        },
+        "Cumulative Hyperoxic Exposure": {
+          "dtype": "float64"
+        },
+        "Pulmonary Oxygen Toxicity Severity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Survival Time": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure1": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure2": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Oxygen Toxicity Severity2": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Oxygen Toxicity Severity5": {
+      "dtype": "float64"
+    },
+    "Cumulative Hyperoxic Exposure": {
+      "dtype": "float64"
+    },
+    "Pulmonary Oxygen Toxicity Severity": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Peak Maternal Zika Viral Load"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Peak Maternal Zika Viral Load"
+  ],
+  "proxy_groups": {
+    "Peak Maternal Zika Viral Load": [
+      "Peak Maternal Zika Viral Load1",
+      "Peak Maternal Zika Viral Load2",
+      "Peak Maternal Zika Viral Load3",
+      "Peak Maternal Zika Viral Load4",
+      "Peak Maternal Zika Viral Load5",
+      "Peak Maternal Zika Viral Load6",
+      "Peak Maternal Zika Viral Load7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Peak Maternal Zika Viral Load": {
+      "conceptual_node": "Peak Maternal Zika Viral Load",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Peak Maternal Zika Viral Load1",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": 0.8329683545375005
+            },
+            "b": 0.3880093267721096,
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": -0.5947701359669645
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": 1.2020644559982374
+            }
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load2",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.1123577210391218,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": 0.6864358777005233
+            },
+            "b": -1.2161386937623135,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": 0.7476183982891887
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": -0.15456738028391603
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load3",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": -2.0638655361858476
+            },
+            "b": -0.22694667075797137,
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": -0.9738295517975304
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": -1.401808615667251
+            }
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load4",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.8177077324510895,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  37,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Peak Maternal Zika Viral Load"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load5",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.9735423227138853,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": -0.323758712896846
+            },
+            "b": 0.33074133547257556,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": -0.32673586960982914
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": 1.3481100967100956
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load6",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.929346416490106,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": 0.6297769201309256
+            },
+            "b": -0.2543985853981096,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": -0.36051476950419786
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": -1.1813038814489207
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Peak Maternal Zika Viral Load7",
+          "conceptual_node": "Peak Maternal Zika Viral Load",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Peak Maternal Zika Viral Load": 0.9824695495165138
+            },
+            "b": 0.3577519857054811,
+            "w_nl": {
+              "Peak Maternal Zika Viral Load": -0.3979818624466941
+            },
+            "nl_shift": {
+              "Peak Maternal Zika Viral Load": -0.12237055034726119
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3825886618062304,
+        "average_information": 1.0712277968709036,
+        "lower_tail_quantiles": {
+          "q10": 0.414285022117851,
+          "q25": 0.5902353822989194
+        },
+        "per_proxy": {
+          "Peak Maternal Zika Viral Load1": {
+            "proxy_type": "binary"
+          },
+          "Peak Maternal Zika Viral Load2": {
+            "proxy_type": "continuous"
+          },
+          "Peak Maternal Zika Viral Load3": {
+            "proxy_type": "binary"
+          },
+          "Peak Maternal Zika Viral Load4": {
+            "proxy_type": "continuous"
+          },
+          "Peak Maternal Zika Viral Load5": {
+            "proxy_type": "continuous"
+          },
+          "Peak Maternal Zika Viral Load6": {
+            "proxy_type": "continuous"
+          },
+          "Peak Maternal Zika Viral Load7": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 3
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Peak Maternal Zika Viral Load2",
+          "rmse": 0.7548312103781438,
+          "r2": 0.42942315763248995
+        },
+        "calibrated": {
+          "rmse": 0.5803323861612714,
+          "r2": 0.6627374970872242
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.17449882421687246,
+          "r2_gain": 0.23331433945473423
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

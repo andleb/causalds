@@ -1,0 +1,317 @@
+{
+  "n_rows": 16000,
+  "n_columns": 13,
+  "columns": {
+    "Physical Disability Grade": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status1": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Leprosy Infection Status3": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status4": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status5": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Leprosy Infection Status7": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy1": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy2": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy3": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 13,
+      "columns": {
+        "Physical Disability Grade": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status1": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status3": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status4": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status5": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status7": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy1": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy2": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy3": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 12,
+      "columns": {
+        "Leprosy Infection Status1": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status3": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status4": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status5": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status7": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy1": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy2": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy3": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 15,
+      "columns": {
+        "Physical Disability Grade": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status1": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status3": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status4": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status5": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Leprosy Infection Status7": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy1": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy2": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy3": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy5": {
+          "dtype": "float64"
+        },
+        "Leprosy Infection Status": {
+          "dtype": "float64"
+        },
+        "Presence of Clinically Significant Peripheral Neuropathy": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Physical Disability Grade": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status1": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Leprosy Infection Status3": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status4": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status5": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Leprosy Infection Status7": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy1": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy2": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy3": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy5": {
+      "dtype": "float64"
+    },
+    "Leprosy Infection Status": {
+      "dtype": "float64"
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

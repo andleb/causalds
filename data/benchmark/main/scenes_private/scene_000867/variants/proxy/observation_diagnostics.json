@@ -1,0 +1,309 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Baseline Hyperandrogenism Severity Score"
+  ],
+  "proxified_nodes": [
+    "Spironolactone Treatment"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Spironolactone Treatment"
+  ],
+  "proxy_groups": {
+    "Spironolactone Treatment": [
+      "Spironolactone Treatment1",
+      "Spironolactone Treatment2",
+      "Spironolactone Treatment3",
+      "Spironolactone Treatment4",
+      "Spironolactone Treatment5",
+      "Spironolactone Treatment6",
+      "Spironolactone Treatment7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Spironolactone Treatment": {
+      "conceptual_node": "Spironolactone Treatment",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Spironolactone Treatment1",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": 0.7772889417826175
+            },
+            "b": -1.2718389405666868,
+            "w_nl": {
+              "Spironolactone Treatment": 0.711937370687004
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": -0.2348203263542139
+            }
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment2",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.915726071783583,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": -0.6706440862730243
+            },
+            "b": 0.08311472652234984,
+            "w_pair": {},
+            "w_nl": {
+              "Spironolactone Treatment": -0.17235670496585753
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": -1.0237366031765496
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment3",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": -1.4014419456733798
+            },
+            "b": 0.7003905947646274,
+            "w_nl": {
+              "Spironolactone Treatment": 0.5549437381005294
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": -1.0235085635600263
+            }
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment4",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.451873366582671,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": -0.36608626660566457
+            },
+            "b": 0.44925023873727205,
+            "w_pair": {},
+            "w_nl": {
+              "Spironolactone Treatment": 0.23292916650071138
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": 1.3998458381288952
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment5",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.9508489099385877,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  47
+                ],
+                [
+                  47,
+                  29
+                ],
+                [
+                  29,
+                  17
+                ],
+                [
+                  17,
+                  24
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  47
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Spironolactone Treatment"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment6",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": 0.536536744224378
+            },
+            "b": 0.3251933874202377,
+            "w_nl": {
+              "Spironolactone Treatment": -0.6399451718702442
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": 0.3122544171501822
+            }
+          }
+        },
+        {
+          "column_name": "Spironolactone Treatment7",
+          "conceptual_node": "Spironolactone Treatment",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Spironolactone Treatment": -0.20521341225077028
+            },
+            "b": 0.3343577427265861,
+            "w_nl": {
+              "Spironolactone Treatment": -0.5553799540142152
+            },
+            "nl_shift": {
+              "Spironolactone Treatment": -0.3342750005345614
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.6253018275013067,
+        "min_information": 0.6253018275013067,
+        "average_information": 0.6253018275013067,
+        "lower_tail_quantiles": {
+          "q10": 0.6253018275013067,
+          "q25": 0.6253018275013067
+        },
+        "per_proxy": {
+          "Spironolactone Treatment1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.02201465652025418,
+            "p_w1_z0": 0.2451409309330847,
+            "p_w1_z1": 0.4597985801551923
+          },
+          "Spironolactone Treatment2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.05271101733111295,
+            "mean_z0": -0.04266628102524448,
+            "mean_z1": -0.7106402175994484,
+            "pooled_var": 8.46481822082142
+          },
+          "Spironolactone Treatment3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04067626811909276,
+            "p_w1_z0": 0.7256687943771067,
+            "p_w1_z1": 0.4238071652633317
+          },
+          "Spironolactone Treatment4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.03678334275462157,
+            "mean_z0": 0.255214035863355,
+            "mean_z1": -0.02134697067456846,
+            "pooled_var": 2.0793648594555596
+          },
+          "Spironolactone Treatment5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.4684125807054489,
+            "mean_z0": -1.0002802961211446,
+            "mean_z1": 1.0197748741440664,
+            "pooled_var": 8.711599685835983
+          },
+          "Spironolactone Treatment6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0005120528959254569,
+            "p_w1_z0": 0.6118482392598437,
+            "p_w1_z1": 0.6455340927852072
+          },
+          "Spironolactone Treatment7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.004191909174850787,
+            "p_w1_z0": 0.545148102990748,
+            "p_w1_z1": 0.4456001320785868
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Spironolactone Treatment5",
+          "log_loss": 0.6295643262006647,
+          "auc": 0.6957754585594758
+        },
+        "calibrated": {
+          "log_loss": 0.5009281115387972,
+          "auc": 0.782442762782537
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.12863621466186748,
+          "auc_gain": 0.08666730422306124
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

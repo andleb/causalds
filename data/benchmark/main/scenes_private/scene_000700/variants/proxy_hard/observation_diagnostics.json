@@ -1,0 +1,839 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "ATP Warning Light Activation",
+    "Entry into Occupied Track Section",
+    "Signal Passed at Danger",
+    "Track Circuit Fault"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "ATP Warning Light Activation",
+    "Entry into Occupied Track Section",
+    "Signal Passed at Danger",
+    "Track Circuit Fault"
+  ],
+  "proxy_groups": {
+    "ATP Warning Light Activation": [
+      "ATP Warning Light Activation1",
+      "ATP Warning Light Activation2",
+      "ATP Warning Light Activation3",
+      "ATP Warning Light Activation4",
+      "ATP Warning Light Activation5"
+    ],
+    "Entry into Occupied Track Section": [
+      "Entry into Occupied Track Section1",
+      "Entry into Occupied Track Section2",
+      "Entry into Occupied Track Section3",
+      "Entry into Occupied Track Section4",
+      "Entry into Occupied Track Section5"
+    ],
+    "Signal Passed at Danger": [
+      "Signal Passed at Danger1",
+      "Signal Passed at Danger2",
+      "Signal Passed at Danger3",
+      "Signal Passed at Danger4"
+    ],
+    "Track Circuit Fault": [
+      "Track Circuit Fault1",
+      "Track Circuit Fault2",
+      "Track Circuit Fault3",
+      "Track Circuit Fault4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "ATP Warning Light Activation": {
+      "conceptual_node": "ATP Warning Light Activation",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "ATP Warning Light Activation1",
+          "conceptual_node": "ATP Warning Light Activation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.483631099883648,
+          "params": {
+            "w": {
+              "ATP Warning Light Activation": -0.3527327202143699
+            },
+            "b": 0.08895579753121996,
+            "w_pair": {},
+            "w_nl": {
+              "ATP Warning Light Activation": -0.601653066786998
+            },
+            "nl_shift": {
+              "ATP Warning Light Activation": 1.113106918205622
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "ATP Warning Light Activation2",
+          "conceptual_node": "ATP Warning Light Activation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.0818041175738227,
+          "params": {
+            "w": {
+              "ATP Warning Light Activation": -0.40525938848030263
+            },
+            "b": 0.1203711062795163,
+            "w_pair": {},
+            "w_nl": {
+              "ATP Warning Light Activation": -0.8751531529505003
+            },
+            "nl_shift": {
+              "ATP Warning Light Activation": -1.4378834678746142
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "ATP Warning Light Activation3",
+          "conceptual_node": "ATP Warning Light Activation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.6646857005314373,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  17
+                ],
+                [
+                  17,
+                  5
+                ],
+                [
+                  5,
+                  21
+                ],
+                [
+                  21,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "ATP Warning Light Activation"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "ATP Warning Light Activation4",
+          "conceptual_node": "ATP Warning Light Activation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.1855938349133033,
+          "params": {
+            "w": {
+              "ATP Warning Light Activation": 1.256736088644679
+            },
+            "b": -0.2371450026478064,
+            "w_pair": {},
+            "w_nl": {
+              "ATP Warning Light Activation": -0.33754062467804036
+            },
+            "nl_shift": {
+              "ATP Warning Light Activation": -0.0494704323660653
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "ATP Warning Light Activation5",
+          "conceptual_node": "ATP Warning Light Activation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.1080851371982194,
+          "params": {
+            "w": {
+              "ATP Warning Light Activation": -1.1715536347991748
+            },
+            "b": 0.5546049244419171,
+            "w_pair": {},
+            "w_nl": {
+              "ATP Warning Light Activation": 0.5236029428593959
+            },
+            "nl_shift": {
+              "ATP Warning Light Activation": 0.7427969480612848
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.7278610692046961,
+        "average_information": 2.352384072049168,
+        "lower_tail_quantiles": {
+          "q10": 1.3408598961855736,
+          "q25": 1.5262815351452312
+        },
+        "per_proxy": {
+          "ATP Warning Light Activation1": {
+            "proxy_type": "continuous"
+          },
+          "ATP Warning Light Activation2": {
+            "proxy_type": "continuous"
+          },
+          "ATP Warning Light Activation3": {
+            "proxy_type": "continuous"
+          },
+          "ATP Warning Light Activation4": {
+            "proxy_type": "continuous"
+          },
+          "ATP Warning Light Activation5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "ATP Warning Light Activation2",
+          "rmse": 0.7478416986568934,
+          "r2": 0.2009310079013611
+        },
+        "calibrated": {
+          "rmse": 0.5789735687587958,
+          "r2": 0.5210585778339241
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.16886812989809763,
+          "r2_gain": 0.32012756993256297
+        }
+      }
+    },
+    "Entry into Occupied Track Section": {
+      "conceptual_node": "Entry into Occupied Track Section",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Entry into Occupied Track Section1",
+          "conceptual_node": "Entry into Occupied Track Section",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Entry into Occupied Track Section": -0.433654215304926
+            },
+            "b": -0.1613262723914552,
+            "w_nl": {
+              "Entry into Occupied Track Section": 0.7400367100828118
+            },
+            "nl_shift": {
+              "Entry into Occupied Track Section": -1.170231509564789
+            }
+          }
+        },
+        {
+          "column_name": "Entry into Occupied Track Section2",
+          "conceptual_node": "Entry into Occupied Track Section",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Entry into Occupied Track Section": 0.6964883039215694
+            },
+            "b": -0.9192171067256742,
+            "w_nl": {
+              "Entry into Occupied Track Section": 0.47179697474785287
+            },
+            "nl_shift": {
+              "Entry into Occupied Track Section": 1.3809212736527288
+            }
+          }
+        },
+        {
+          "column_name": "Entry into Occupied Track Section3",
+          "conceptual_node": "Entry into Occupied Track Section",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8938080913711486,
+          "params": {
+            "w": {
+              "Entry into Occupied Track Section": 1.0906529899090736
+            },
+            "b": 0.3227616906359825,
+            "w_pair": {},
+            "w_nl": {
+              "Entry into Occupied Track Section": 0.13396577530215914
+            },
+            "nl_shift": {
+              "Entry into Occupied Track Section": 0.285907950404265
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Entry into Occupied Track Section4",
+          "conceptual_node": "Entry into Occupied Track Section",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.1198526295515503,
+          "params": {
+            "w": {
+              "Entry into Occupied Track Section": -0.5939686541190248
+            },
+            "b": 0.5755708991437612,
+            "w_pair": {},
+            "w_nl": {
+              "Entry into Occupied Track Section": 0.32561748692106607
+            },
+            "nl_shift": {
+              "Entry into Occupied Track Section": -0.3570610310432101
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Entry into Occupied Track Section5",
+          "conceptual_node": "Entry into Occupied Track Section",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Entry into Occupied Track Section": -1.5204794835844795
+            },
+            "b": -0.7605092323709212,
+            "w_nl": {
+              "Entry into Occupied Track Section": 0.2956012348580353
+            },
+            "nl_shift": {
+              "Entry into Occupied Track Section": -0.5808287271676723
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.7523085381866196,
+        "min_information": 0.7523085381866196,
+        "average_information": 0.7523085381866196,
+        "lower_tail_quantiles": {
+          "q10": 0.7523085381866196,
+          "q25": 0.7523085381866196
+        },
+        "per_proxy": {
+          "Entry into Occupied Track Section1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0034103758442467734,
+            "p_w1_z0": 0.5628424373235928,
+            "p_w1_z1": 0.47291979680904345
+          },
+          "Entry into Occupied Track Section2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01671232280951427,
+            "p_w1_z0": 0.22447285405943881,
+            "p_w1_z1": 0.41081777205408887
+          },
+          "Entry into Occupied Track Section3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6594377037114959,
+            "mean_z0": 0.2932896060059506,
+            "mean_z1": 1.498850220396535,
+            "pooled_var": 2.2039631443422225
+          },
+          "Entry into Occupied Track Section4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.03874647998254858,
+            "mean_z0": 0.6619751691148477,
+            "mean_z1": 0.2441350138827236,
+            "pooled_var": 4.505967907356773
+          },
+          "Entry into Occupied Track Section5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03400165583881408,
+            "p_w1_z0": 0.3423543084841441,
+            "p_w1_z1": 0.11425914001574014
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Entry into Occupied Track Section3",
+          "log_loss": 0.5394833034656037,
+          "auc": 0.7595347352637714
+        },
+        "calibrated": {
+          "log_loss": 0.4520485324882027,
+          "auc": 0.8255802076915654
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.08743477097740099,
+          "auc_gain": 0.06604547242779402
+        }
+      }
+    },
+    "Signal Passed at Danger": {
+      "conceptual_node": "Signal Passed at Danger",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Signal Passed at Danger1",
+          "conceptual_node": "Signal Passed at Danger",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.424762091831563,
+          "params": {
+            "w": {
+              "Signal Passed at Danger": -0.6319465298265555
+            },
+            "b": -0.21927687209598748,
+            "w_pair": {},
+            "w_nl": {
+              "Signal Passed at Danger": 0.37075689906990145
+            },
+            "nl_shift": {
+              "Signal Passed at Danger": -1.0259783605836081
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Signal Passed at Danger2",
+          "conceptual_node": "Signal Passed at Danger",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.6138277933667105,
+          "params": {
+            "w": {
+              "Signal Passed at Danger": 0.5726530872215099
+            },
+            "b": 0.6142251626836779,
+            "w_pair": {},
+            "w_nl": {
+              "Signal Passed at Danger": -0.8225056803995928
+            },
+            "nl_shift": {
+              "Signal Passed at Danger": 1.1048187702134236
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Signal Passed at Danger3",
+          "conceptual_node": "Signal Passed at Danger",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.7907930848902267,
+          "params": {
+            "w": {
+              "Signal Passed at Danger": -0.5559130464259876
+            },
+            "b": 0.2192407704467057,
+            "w_pair": {},
+            "w_nl": {
+              "Signal Passed at Danger": 0.5251027259089375
+            },
+            "nl_shift": {
+              "Signal Passed at Danger": -1.426099243047581
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Signal Passed at Danger4",
+          "conceptual_node": "Signal Passed at Danger",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4862482395486782,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  14,
+                  22
+                ],
+                [
+                  22,
+                  61
+                ],
+                [
+                  61,
+                  30
+                ],
+                [
+                  30,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  61
+                ],
+                [
+                  1,
+                  30
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Signal Passed at Danger"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.07641844038320246,
+        "average_information": 0.6208756792152258,
+        "lower_tail_quantiles": {
+          "q10": 0.12047985455969205,
+          "q25": 0.16112312276514518
+        },
+        "per_proxy": {
+          "Signal Passed at Danger1": {
+            "proxy_type": "continuous"
+          },
+          "Signal Passed at Danger2": {
+            "proxy_type": "continuous"
+          },
+          "Signal Passed at Danger3": {
+            "proxy_type": "continuous"
+          },
+          "Signal Passed at Danger4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Signal Passed at Danger1",
+          "rmse": 1.3610413109639417,
+          "r2": 0.08545430520124886
+        },
+        "calibrated": {
+          "rmse": 1.0874496825367546,
+          "r2": 0.4161770854603003
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.2735916284271871,
+          "r2_gain": 0.33072278025905144
+        }
+      }
+    },
+    "Track Circuit Fault": {
+      "conceptual_node": "Track Circuit Fault",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Track Circuit Fault1",
+          "conceptual_node": "Track Circuit Fault",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.473010231497864,
+          "params": {
+            "w": {
+              "Track Circuit Fault": -0.358915928766653
+            },
+            "b": -0.08018843517658232,
+            "w_pair": {},
+            "w_nl": {
+              "Track Circuit Fault": -1.1538423041030406
+            },
+            "nl_shift": {
+              "Track Circuit Fault": 1.4706146667236704
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Track Circuit Fault2",
+          "conceptual_node": "Track Circuit Fault",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.741998171315104,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  42
+                ],
+                [
+                  42,
+                  63
+                ],
+                [
+                  63,
+                  42
+                ],
+                [
+                  42,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  42
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  42
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Track Circuit Fault"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Track Circuit Fault3",
+          "conceptual_node": "Track Circuit Fault",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.6341343980715737,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  17
+                ],
+                [
+                  17,
+                  23
+                ],
+                [
+                  23,
+                  52
+                ],
+                [
+                  52,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  23
+                ],
+                [
+                  1,
+                  52
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Track Circuit Fault"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Track Circuit Fault4",
+          "conceptual_node": "Track Circuit Fault",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.8466172674210055,
+          "params": {
+            "w": {
+              "Track Circuit Fault": 0.5030588802838629
+            },
+            "b": -0.04434202152770215,
+            "w_pair": {},
+            "w_nl": {
+              "Track Circuit Fault": -0.013172685675060636
+            },
+            "nl_shift": {
+              "Track Circuit Fault": -0.7882437856800701
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.12214078091839616,
+        "average_information": 1.326409812825832,
+        "lower_tail_quantiles": {
+          "q10": 0.1407615643218377,
+          "q25": 0.1435468577935468
+        },
+        "per_proxy": {
+          "Track Circuit Fault1": {
+            "proxy_type": "continuous"
+          },
+          "Track Circuit Fault2": {
+            "proxy_type": "continuous"
+          },
+          "Track Circuit Fault3": {
+            "proxy_type": "continuous"
+          },
+          "Track Circuit Fault4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Track Circuit Fault1",
+          "rmse": 0.9019996256101369,
+          "r2": 0.18353461273057092
+        },
+        "calibrated": {
+          "rmse": 0.6980133086634664,
+          "r2": 0.5110634879681136
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.20398631694667047,
+          "r2_gain": 0.3275288752375427
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

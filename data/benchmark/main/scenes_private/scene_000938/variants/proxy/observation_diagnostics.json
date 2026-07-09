@@ -1,0 +1,335 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Accumulated Plastic Strain"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Accumulated Plastic Strain"
+  ],
+  "proxy_groups": {
+    "Accumulated Plastic Strain": [
+      "Accumulated Plastic Strain1",
+      "Accumulated Plastic Strain2",
+      "Accumulated Plastic Strain3",
+      "Accumulated Plastic Strain4",
+      "Accumulated Plastic Strain5",
+      "Accumulated Plastic Strain6",
+      "Accumulated Plastic Strain7",
+      "Accumulated Plastic Strain8",
+      "Accumulated Plastic Strain9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Accumulated Plastic Strain": {
+      "conceptual_node": "Accumulated Plastic Strain",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Accumulated Plastic Strain1",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.641169098745224,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": -0.22752276898092827
+            },
+            "b": -0.5975218648128385,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": 0.6586479958541783
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -1.0541123264478451
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain2",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.9988556662642272,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": -0.08143820117260747
+            },
+            "b": -0.020572847898033708,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": -0.846313689688997
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -0.8735065021766628
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain3",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": 1.4855641273865499
+            },
+            "b": -0.5547139908734819,
+            "w_nl": {
+              "Accumulated Plastic Strain": 0.6488209633992348
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": 1.0045505393492435
+            }
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain4",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.8589403237694822,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  59,
+                  8
+                ],
+                [
+                  8,
+                  14
+                ],
+                [
+                  14,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Accumulated Plastic Strain"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain5",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.9666730863467348,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": 0.689504450212505
+            },
+            "b": 0.01869709139650355,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": 0.7835694631816118
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -0.008341927361456447
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain6",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.8213893674029387,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": 0.05811438189292362
+            },
+            "b": -0.5136584521045777,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": 0.4776464204453468
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -0.4418473437873631
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain7",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.7402396670554672,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": 1.0641802427041123
+            },
+            "b": -0.36105539017103394,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": -0.8535836434706001
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": 0.5642428877494368
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain8",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.8138041925125297,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": 1.8433630618333465
+            },
+            "b": 0.08365179810056877,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": -0.7854034840757923
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -1.4426818166315063
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Accumulated Plastic Strain9",
+          "conceptual_node": "Accumulated Plastic Strain",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.650603648998585,
+          "params": {
+            "w": {
+              "Accumulated Plastic Strain": -0.2972598725689418
+            },
+            "b": -0.17262995219828145,
+            "w_pair": {},
+            "w_nl": {
+              "Accumulated Plastic Strain": 0.3934642615170806
+            },
+            "nl_shift": {
+              "Accumulated Plastic Strain": -0.49459042408595444
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.8188749355908457,
+        "average_information": 0.9453750310950787,
+        "lower_tail_quantiles": {
+          "q10": 0.8384446171777915,
+          "q25": 0.8486581560111077
+        },
+        "per_proxy": {
+          "Accumulated Plastic Strain1": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain2": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain3": {
+            "proxy_type": "binary"
+          },
+          "Accumulated Plastic Strain4": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain5": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain6": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain7": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain8": {
+            "proxy_type": "continuous"
+          },
+          "Accumulated Plastic Strain9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Accumulated Plastic Strain8",
+          "rmse": 1.0744205729598788,
+          "r2": 0.4096128973299751
+        },
+        "calibrated": {
+          "rmse": 0.7592170101490054,
+          "r2": 0.7052050157524683
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.31520356281087336,
+          "r2_gain": 0.2955921184224932
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

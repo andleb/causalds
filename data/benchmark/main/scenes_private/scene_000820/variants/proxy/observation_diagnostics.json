@@ -1,0 +1,734 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Host Genetic Susceptibility Score"
+  ],
+  "proxified_nodes": [
+    "Community Environmental Mycobacterium Contamination Level",
+    "Pulmonary Mycobacterial Burden"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Community Environmental Mycobacterium Contamination Level",
+    "Pulmonary Mycobacterial Burden"
+  ],
+  "proxy_groups": {
+    "Community Environmental Mycobacterium Contamination Level": [
+      "Community Environmental Mycobacterium Contamination Level1",
+      "Community Environmental Mycobacterium Contamination Level2",
+      "Community Environmental Mycobacterium Contamination Level3",
+      "Community Environmental Mycobacterium Contamination Level4",
+      "Community Environmental Mycobacterium Contamination Level5",
+      "Community Environmental Mycobacterium Contamination Level6",
+      "Community Environmental Mycobacterium Contamination Level7",
+      "Community Environmental Mycobacterium Contamination Level8",
+      "Community Environmental Mycobacterium Contamination Level9",
+      "Community Environmental Mycobacterium Contamination Level10"
+    ],
+    "Pulmonary Mycobacterial Burden": [
+      "Pulmonary Mycobacterial Burden1",
+      "Pulmonary Mycobacterial Burden2",
+      "Pulmonary Mycobacterial Burden3",
+      "Pulmonary Mycobacterial Burden4",
+      "Pulmonary Mycobacterial Burden5",
+      "Pulmonary Mycobacterial Burden6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Community Environmental Mycobacterium Contamination Level": {
+      "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level1",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.7507014228497164,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  57
+                ],
+                [
+                  57,
+                  6
+                ],
+                [
+                  6,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Community Environmental Mycobacterium Contamination Level"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level2",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.7209298267731712,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": -0.25921083421101343
+            },
+            "b": -0.11165738446876515,
+            "w_pair": {},
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": -1.0149276546302977
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": 0.49049413670031683
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level3",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.7520843952044425,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  39,
+                  8
+                ],
+                [
+                  8,
+                  41
+                ],
+                [
+                  41,
+                  28
+                ],
+                [
+                  28,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Community Environmental Mycobacterium Contamination Level"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level4",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.0005492003233125,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  8
+                ],
+                [
+                  8,
+                  44
+                ],
+                [
+                  44,
+                  12
+                ],
+                [
+                  12,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  44
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Community Environmental Mycobacterium Contamination Level"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level5",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.0062434345778923,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": -0.28229897172554697
+            },
+            "b": 0.9899976551838929,
+            "w_pair": {},
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": -0.006718415845350489
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": -1.2325158479564993
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level6",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.0615354024733705,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": 2.1655862198649505
+            },
+            "b": -0.6433367804545138,
+            "w_pair": {},
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": 0.963277848385215
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": 0.27059380929597987
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level7",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4515323935893938,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  36,
+                  4
+                ],
+                [
+                  4,
+                  41
+                ],
+                [
+                  41,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Community Environmental Mycobacterium Contamination Level"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level8",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.5055040227308085,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": 1.4546088160884187
+            },
+            "b": 0.18588948446492864,
+            "w_pair": {},
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": 0.6690799959206533
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": -0.6231653153878859
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level9",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.52269783409355,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": 1.224413884762553
+            },
+            "b": -0.20855338160285122,
+            "w_pair": {},
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": 0.5357593223219821
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": 1.1669132550645323
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Community Environmental Mycobacterium Contamination Level10",
+          "conceptual_node": "Community Environmental Mycobacterium Contamination Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Community Environmental Mycobacterium Contamination Level": -0.8935190466082157
+            },
+            "b": 0.3310577636848075,
+            "w_nl": {
+              "Community Environmental Mycobacterium Contamination Level": -0.6275533137762901
+            },
+            "nl_shift": {
+              "Community Environmental Mycobacterium Contamination Level": -0.6767953291778996
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 3.2355716558700793,
+        "average_information": 3.876553008599961,
+        "lower_tail_quantiles": {
+          "q10": 3.236605032548321,
+          "q25": 3.247126139015625
+        },
+        "per_proxy": {
+          "Community Environmental Mycobacterium Contamination Level1": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level2": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level3": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level4": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level5": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level6": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level7": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level8": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level9": {
+            "proxy_type": "continuous"
+          },
+          "Community Environmental Mycobacterium Contamination Level10": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Community Environmental Mycobacterium Contamination Level6",
+          "rmse": 0.5465717046298311,
+          "r2": 0.8336244304699901
+        },
+        "calibrated": {
+          "rmse": 0.4165357017809937,
+          "r2": 0.9033727260075132
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.13003600284883737,
+          "r2_gain": 0.06974829553752304
+        }
+      }
+    },
+    "Pulmonary Mycobacterial Burden": {
+      "conceptual_node": "Pulmonary Mycobacterial Burden",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Pulmonary Mycobacterial Burden1",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.01741029848308,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  21,
+                  58
+                ],
+                [
+                  58,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Pulmonary Mycobacterial Burden"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Pulmonary Mycobacterial Burden2",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.3229127854394314,
+          "params": {
+            "w": {
+              "Pulmonary Mycobacterial Burden": -0.7178492511743795
+            },
+            "b": 0.4471103931528362,
+            "w_pair": {},
+            "w_nl": {
+              "Pulmonary Mycobacterial Burden": -0.14175519974943085
+            },
+            "nl_shift": {
+              "Pulmonary Mycobacterial Burden": -1.1558820134871401
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Pulmonary Mycobacterial Burden3",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.9787002085287746,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  30
+                ],
+                [
+                  30,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  30
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Pulmonary Mycobacterial Burden"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Pulmonary Mycobacterial Burden4",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Pulmonary Mycobacterial Burden": 1.632853999920365
+            },
+            "b": -0.5532163722356671,
+            "w_nl": {
+              "Pulmonary Mycobacterial Burden": -0.9100975942990401
+            },
+            "nl_shift": {
+              "Pulmonary Mycobacterial Burden": -0.11043284628199412
+            }
+          }
+        },
+        {
+          "column_name": "Pulmonary Mycobacterial Burden5",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Pulmonary Mycobacterial Burden": -0.5771154864885811
+            },
+            "b": 0.5149578677433647,
+            "w_nl": {
+              "Pulmonary Mycobacterial Burden": -0.4342420887462456
+            },
+            "nl_shift": {
+              "Pulmonary Mycobacterial Burden": -0.7769230102778182
+            }
+          }
+        },
+        {
+          "column_name": "Pulmonary Mycobacterial Burden6",
+          "conceptual_node": "Pulmonary Mycobacterial Burden",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Pulmonary Mycobacterial Burden": 2.022232303590421
+            },
+            "b": -0.05011080345889014,
+            "w_nl": {
+              "Pulmonary Mycobacterial Burden": 0.7136384665430007
+            },
+            "nl_shift": {
+              "Pulmonary Mycobacterial Burden": 1.3554341952781694
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.06895882195106288,
+        "average_information": 0.5067310673615066,
+        "lower_tail_quantiles": {
+          "q10": 0.07162501138220691,
+          "q25": 0.08811919957659213
+        },
+        "per_proxy": {
+          "Pulmonary Mycobacterial Burden1": {
+            "proxy_type": "continuous"
+          },
+          "Pulmonary Mycobacterial Burden2": {
+            "proxy_type": "continuous"
+          },
+          "Pulmonary Mycobacterial Burden3": {
+            "proxy_type": "continuous"
+          },
+          "Pulmonary Mycobacterial Burden4": {
+            "proxy_type": "binary"
+          },
+          "Pulmonary Mycobacterial Burden5": {
+            "proxy_type": "binary"
+          },
+          "Pulmonary Mycobacterial Burden6": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Pulmonary Mycobacterial Burden6",
+          "rmse": 0.7716853702763344,
+          "r2": 0.3284206091373514
+        },
+        "calibrated": {
+          "rmse": 0.6776466223876513,
+          "r2": 0.48212686485948386
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.09403874788868316,
+          "r2_gain": 0.15370625572213248
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

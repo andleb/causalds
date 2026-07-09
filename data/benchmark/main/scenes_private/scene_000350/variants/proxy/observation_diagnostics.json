@@ -1,0 +1,934 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Chronic Emotional Suppression",
+    "Instrumental Verbal Aggression",
+    "Somatic Frustration Manifestation"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Chronic Emotional Suppression",
+    "Instrumental Verbal Aggression",
+    "Somatic Frustration Manifestation"
+  ],
+  "proxy_groups": {
+    "Chronic Emotional Suppression": [
+      "Chronic Emotional Suppression1",
+      "Chronic Emotional Suppression2",
+      "Chronic Emotional Suppression3",
+      "Chronic Emotional Suppression4",
+      "Chronic Emotional Suppression5",
+      "Chronic Emotional Suppression6",
+      "Chronic Emotional Suppression7",
+      "Chronic Emotional Suppression8"
+    ],
+    "Instrumental Verbal Aggression": [
+      "Instrumental Verbal Aggression1",
+      "Instrumental Verbal Aggression2",
+      "Instrumental Verbal Aggression3",
+      "Instrumental Verbal Aggression4",
+      "Instrumental Verbal Aggression5",
+      "Instrumental Verbal Aggression6",
+      "Instrumental Verbal Aggression7",
+      "Instrumental Verbal Aggression8",
+      "Instrumental Verbal Aggression9"
+    ],
+    "Somatic Frustration Manifestation": [
+      "Somatic Frustration Manifestation1",
+      "Somatic Frustration Manifestation2",
+      "Somatic Frustration Manifestation3",
+      "Somatic Frustration Manifestation4",
+      "Somatic Frustration Manifestation5",
+      "Somatic Frustration Manifestation6",
+      "Somatic Frustration Manifestation7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Chronic Emotional Suppression": {
+      "conceptual_node": "Chronic Emotional Suppression",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Chronic Emotional Suppression1",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.3725333806806135,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": 1.0490924626544826
+            },
+            "b": 0.33372352629970864,
+            "w_pair": {},
+            "w_nl": {
+              "Chronic Emotional Suppression": -0.20023004389719612
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": 1.0845733947667116
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression2",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.575105977701575,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": 0.7812849441908875
+            },
+            "b": -0.5412230684275859,
+            "w_pair": {},
+            "w_nl": {
+              "Chronic Emotional Suppression": 0.3098938016748969
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": -1.4337658262178339
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression3",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.0242466859283494,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": -0.8023084852722515
+            },
+            "b": 0.4029304474779478,
+            "w_pair": {},
+            "w_nl": {
+              "Chronic Emotional Suppression": 0.3554575905763704
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": -0.6735622515010291
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression4",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.6505049379448111,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  48
+                ],
+                [
+                  48,
+                  50
+                ],
+                [
+                  50,
+                  31
+                ],
+                [
+                  31,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  31
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Chronic Emotional Suppression"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression5",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": 1.061904859795597
+            },
+            "b": 0.22375542543996216,
+            "w_nl": {
+              "Chronic Emotional Suppression": -0.9395318645483166
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": 0.4149762953207208
+            }
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression6",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": 1.173521188678269
+            },
+            "b": -0.13423490057964307,
+            "w_nl": {
+              "Chronic Emotional Suppression": -0.5160904488004477
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": 1.3862767045100641
+            }
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression7",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.6597863462727633,
+          "params": {
+            "w": {
+              "Chronic Emotional Suppression": -1.2746673987975232
+            },
+            "b": -0.3420038947655501,
+            "w_pair": {},
+            "w_nl": {
+              "Chronic Emotional Suppression": 0.32316436151128486
+            },
+            "nl_shift": {
+              "Chronic Emotional Suppression": -0.9332283225599735
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Chronic Emotional Suppression8",
+          "conceptual_node": "Chronic Emotional Suppression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.019791018073249,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  12
+                ],
+                [
+                  12,
+                  58
+                ],
+                [
+                  58,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Chronic Emotional Suppression"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6986939002091587,
+        "average_information": 2.4493484355155184,
+        "lower_tail_quantiles": {
+          "q10": 0.9723562466856146,
+          "q25": 1.0210536372782157
+        },
+        "per_proxy": {
+          "Chronic Emotional Suppression1": {
+            "proxy_type": "continuous"
+          },
+          "Chronic Emotional Suppression2": {
+            "proxy_type": "continuous"
+          },
+          "Chronic Emotional Suppression3": {
+            "proxy_type": "continuous"
+          },
+          "Chronic Emotional Suppression4": {
+            "proxy_type": "continuous"
+          },
+          "Chronic Emotional Suppression5": {
+            "proxy_type": "binary"
+          },
+          "Chronic Emotional Suppression6": {
+            "proxy_type": "binary"
+          },
+          "Chronic Emotional Suppression7": {
+            "proxy_type": "continuous"
+          },
+          "Chronic Emotional Suppression8": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Chronic Emotional Suppression1",
+          "rmse": 0.6921889561546357,
+          "r2": 0.21523410623963934
+        },
+        "calibrated": {
+          "rmse": 0.5451817092149451,
+          "r2": 0.5131744735174735
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.14700724693969058,
+          "r2_gain": 0.29794036727783413
+        }
+      }
+    },
+    "Instrumental Verbal Aggression": {
+      "conceptual_node": "Instrumental Verbal Aggression",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Instrumental Verbal Aggression1",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.4677022401713613,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": -0.9499708700508034
+            },
+            "b": -0.3523972018129238,
+            "w_pair": {},
+            "w_nl": {
+              "Instrumental Verbal Aggression": -1.0312642895141413
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": 0.9498943100490633
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression2",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": -1.372024184735964
+            },
+            "b": 1.0386943027371565,
+            "w_nl": {
+              "Instrumental Verbal Aggression": -1.0307731081781264
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": 0.8691024099102767
+            }
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression3",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.185161809845664,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  39,
+                  18
+                ],
+                [
+                  18,
+                  36
+                ],
+                [
+                  36,
+                  40
+                ],
+                [
+                  40,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  18
+                ],
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  40
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Instrumental Verbal Aggression"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression4",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": 0.9650582282282125
+            },
+            "b": 0.3121138308175484,
+            "w_nl": {
+              "Instrumental Verbal Aggression": 0.5373234335284409
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": -0.7073009713559327
+            }
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression5",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": -0.7557092587227439
+            },
+            "b": 0.09817362237398723,
+            "w_nl": {
+              "Instrumental Verbal Aggression": -0.6190425857708913
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": -0.20802708818201499
+            }
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression6",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9040445226331848,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": -0.5233549448797891
+            },
+            "b": 0.3155252573383387,
+            "w_pair": {},
+            "w_nl": {
+              "Instrumental Verbal Aggression": 0.9052228958750572
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": 0.739002704587369
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression7",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4707962901198564,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": -1.0683388806313616
+            },
+            "b": -0.7960622680505572,
+            "w_pair": {},
+            "w_nl": {
+              "Instrumental Verbal Aggression": 0.8358395260076689
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": -0.08415622862615146
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression8",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.106487179324606,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": 1.118383745791951
+            },
+            "b": 0.09535164431095657,
+            "w_pair": {},
+            "w_nl": {
+              "Instrumental Verbal Aggression": -0.3699272719981414
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": -1.236215898562103
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Instrumental Verbal Aggression9",
+          "conceptual_node": "Instrumental Verbal Aggression",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.765805971247192,
+          "params": {
+            "w": {
+              "Instrumental Verbal Aggression": 0.43347295469767
+            },
+            "b": 0.6310948751724453,
+            "w_pair": {},
+            "w_nl": {
+              "Instrumental Verbal Aggression": 1.081714735809598
+            },
+            "nl_shift": {
+              "Instrumental Verbal Aggression": 0.41526388528360014
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.1157842860717182,
+        "average_information": 1.5713855034317699,
+        "lower_tail_quantiles": {
+          "q10": 1.1460939080112904,
+          "q25": 1.220983235200686
+        },
+        "per_proxy": {
+          "Instrumental Verbal Aggression1": {
+            "proxy_type": "continuous"
+          },
+          "Instrumental Verbal Aggression2": {
+            "proxy_type": "binary"
+          },
+          "Instrumental Verbal Aggression3": {
+            "proxy_type": "continuous"
+          },
+          "Instrumental Verbal Aggression4": {
+            "proxy_type": "binary"
+          },
+          "Instrumental Verbal Aggression5": {
+            "proxy_type": "binary"
+          },
+          "Instrumental Verbal Aggression6": {
+            "proxy_type": "continuous"
+          },
+          "Instrumental Verbal Aggression7": {
+            "proxy_type": "continuous"
+          },
+          "Instrumental Verbal Aggression8": {
+            "proxy_type": "continuous"
+          },
+          "Instrumental Verbal Aggression9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Instrumental Verbal Aggression1",
+          "rmse": 1.0098857441595237,
+          "r2": 0.7949569630648505
+        },
+        "calibrated": {
+          "rmse": 0.7132943521345264,
+          "r2": 0.8977088377897585
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.2965913920249973,
+          "r2_gain": 0.10275187472490799
+        }
+      }
+    },
+    "Somatic Frustration Manifestation": {
+      "conceptual_node": "Somatic Frustration Manifestation",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Somatic Frustration Manifestation1",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.6843811583755937,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": 0.583244846552164
+            },
+            "b": -0.0005067986950477506,
+            "w_pair": {},
+            "w_nl": {
+              "Somatic Frustration Manifestation": 0.2243823335224734
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": 1.3333658107658888
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation2",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8502222046838857,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": 0.9091706234038113
+            },
+            "b": 0.919209424623286,
+            "w_pair": {},
+            "w_nl": {
+              "Somatic Frustration Manifestation": 0.8926430968831955
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": 1.1310689802562264
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation3",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": 1.1829660440960816
+            },
+            "b": -1.2805956320133087,
+            "w_nl": {
+              "Somatic Frustration Manifestation": 0.4436302546040321
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": 0.983145636716809
+            }
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation4",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": 1.4978121067767447
+            },
+            "b": 0.5115128706876072,
+            "w_nl": {
+              "Somatic Frustration Manifestation": 0.5959922039998696
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": -0.9571864697511212
+            }
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation5",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.451723515478154,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": 0.2908799726495276
+            },
+            "b": -0.6707360928393193,
+            "w_pair": {},
+            "w_nl": {
+              "Somatic Frustration Manifestation": -0.6018946127406241
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": 0.6451650711300143
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation6",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.1480897493860225,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  22,
+                  61
+                ],
+                [
+                  61,
+                  25
+                ],
+                [
+                  25,
+                  26
+                ],
+                [
+                  26,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  61
+                ],
+                [
+                  1,
+                  25
+                ],
+                [
+                  1,
+                  26
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Somatic Frustration Manifestation"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Somatic Frustration Manifestation7",
+          "conceptual_node": "Somatic Frustration Manifestation",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Somatic Frustration Manifestation": -0.6020093089841678
+            },
+            "b": 0.8099375308452059,
+            "w_nl": {
+              "Somatic Frustration Manifestation": 1.103169991491178
+            },
+            "nl_shift": {
+              "Somatic Frustration Manifestation": 0.014702982696698674
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.36218875743382434,
+        "average_information": 1.6655976054683421,
+        "lower_tail_quantiles": {
+          "q10": 0.3964485765275098,
+          "q25": 0.5868441013922377
+        },
+        "per_proxy": {
+          "Somatic Frustration Manifestation1": {
+            "proxy_type": "continuous"
+          },
+          "Somatic Frustration Manifestation2": {
+            "proxy_type": "continuous"
+          },
+          "Somatic Frustration Manifestation3": {
+            "proxy_type": "binary"
+          },
+          "Somatic Frustration Manifestation4": {
+            "proxy_type": "binary"
+          },
+          "Somatic Frustration Manifestation5": {
+            "proxy_type": "continuous"
+          },
+          "Somatic Frustration Manifestation6": {
+            "proxy_type": "continuous"
+          },
+          "Somatic Frustration Manifestation7": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Somatic Frustration Manifestation2",
+          "rmse": 0.9862115531206682,
+          "r2": 0.36576151771606236
+        },
+        "calibrated": {
+          "rmse": 0.6979908509888135,
+          "r2": 0.6823039042344743
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.2882207021318547,
+          "r2_gain": 0.31654238651841193
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

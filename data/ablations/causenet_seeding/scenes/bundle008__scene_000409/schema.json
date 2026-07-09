@@ -1,0 +1,67 @@
+{
+  "n_rows": 16000,
+  "n_columns": 4,
+  "columns": {
+    "Wildfire Burn Severity Index": {
+      "dtype": "float64"
+    },
+    "Rainfall Gauge Measurement": {
+      "dtype": "float64"
+    },
+    "Native Habitat Degradation Score": {
+      "dtype": "float64"
+    },
+    "Satellite Precipitation Estimate": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 4,
+      "columns": {
+        "Wildfire Burn Severity Index": {
+          "dtype": "float64"
+        },
+        "Rainfall Gauge Measurement": {
+          "dtype": "float64"
+        },
+        "Native Habitat Degradation Score": {
+          "dtype": "float64"
+        },
+        "Satellite Precipitation Estimate": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 3,
+      "columns": {
+        "Wildfire Burn Severity Index": {
+          "dtype": "float64"
+        },
+        "Rainfall Gauge Measurement": {
+          "dtype": "float64"
+        },
+        "Satellite Precipitation Estimate": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Wildfire Burn Severity Index": {
+      "dtype": "float64"
+    },
+    "Rainfall Gauge Measurement": {
+      "dtype": "float64"
+    },
+    "Native Habitat Degradation Score": {
+      "dtype": "float64"
+    },
+    "Satellite Precipitation Estimate": {
+      "dtype": "float64"
+    }
+  }
+}

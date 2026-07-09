@@ -1,0 +1,642 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Acute Respiratory Failure",
+    "Randomized Treatment Assignment"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Acute Respiratory Failure",
+    "Randomized Treatment Assignment"
+  ],
+  "proxy_groups": {
+    "Acute Respiratory Failure": [
+      "Acute Respiratory Failure1",
+      "Acute Respiratory Failure2",
+      "Acute Respiratory Failure3",
+      "Acute Respiratory Failure4",
+      "Acute Respiratory Failure5"
+    ],
+    "Randomized Treatment Assignment": [
+      "Randomized Treatment Assignment1",
+      "Randomized Treatment Assignment2",
+      "Randomized Treatment Assignment3",
+      "Randomized Treatment Assignment4",
+      "Randomized Treatment Assignment5",
+      "Randomized Treatment Assignment6",
+      "Randomized Treatment Assignment7",
+      "Randomized Treatment Assignment8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Acute Respiratory Failure": {
+      "conceptual_node": "Acute Respiratory Failure",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Acute Respiratory Failure1",
+          "conceptual_node": "Acute Respiratory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.2707272786501174,
+          "params": {
+            "w": {
+              "Acute Respiratory Failure": 1.1607725160487923
+            },
+            "b": 0.49461084013001694,
+            "w_pair": {},
+            "w_nl": {
+              "Acute Respiratory Failure": -0.29424362759596623
+            },
+            "nl_shift": {
+              "Acute Respiratory Failure": 0.5312504523748491
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Acute Respiratory Failure2",
+          "conceptual_node": "Acute Respiratory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Acute Respiratory Failure": -1.0997615401932521
+            },
+            "b": 1.3398236141759607,
+            "w_nl": {
+              "Acute Respiratory Failure": -0.1660768844234648
+            },
+            "nl_shift": {
+              "Acute Respiratory Failure": -0.3561700699604655
+            }
+          }
+        },
+        {
+          "column_name": "Acute Respiratory Failure3",
+          "conceptual_node": "Acute Respiratory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.1736147080209525,
+          "params": {
+            "w": {
+              "Acute Respiratory Failure": 0.763153498349554
+            },
+            "b": 0.55921247464348,
+            "w_pair": {},
+            "w_nl": {
+              "Acute Respiratory Failure": 0.5368529124142585
+            },
+            "nl_shift": {
+              "Acute Respiratory Failure": -0.19202711993463506
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Acute Respiratory Failure4",
+          "conceptual_node": "Acute Respiratory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.4773016834421977,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  22,
+                  60
+                ],
+                [
+                  60,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Acute Respiratory Failure"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Acute Respiratory Failure5",
+          "conceptual_node": "Acute Respiratory Failure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.2665006411885233,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  53
+                ],
+                [
+                  53,
+                  13
+                ],
+                [
+                  13,
+                  48
+                ],
+                [
+                  48,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  13
+                ],
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Acute Respiratory Failure"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.563363904271206,
+        "average_information": 0.7980471868682051,
+        "lower_tail_quantiles": {
+          "q10": 0.6201638783393139,
+          "q25": 0.6619496392646627
+        },
+        "per_proxy": {
+          "Acute Respiratory Failure1": {
+            "proxy_type": "continuous"
+          },
+          "Acute Respiratory Failure2": {
+            "proxy_type": "binary"
+          },
+          "Acute Respiratory Failure3": {
+            "proxy_type": "continuous"
+          },
+          "Acute Respiratory Failure4": {
+            "proxy_type": "continuous"
+          },
+          "Acute Respiratory Failure5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Acute Respiratory Failure1",
+          "rmse": 1.2609532136166064,
+          "r2": 0.5320459926200237
+        },
+        "calibrated": {
+          "rmse": 0.8837962385655352,
+          "r2": 0.7701155884016759
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.37715697505107115,
+          "r2_gain": 0.2380695957816522
+        }
+      }
+    },
+    "Randomized Treatment Assignment": {
+      "conceptual_node": "Randomized Treatment Assignment",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Randomized Treatment Assignment1",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.1833791355127696,
+          "params": {
+            "w": {
+              "Randomized Treatment Assignment": 0.5405262964073629
+            },
+            "b": 0.36476599682061894,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Treatment Assignment": 0.1992976217229644
+            },
+            "nl_shift": {
+              "Randomized Treatment Assignment": 0.5712990577471393
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment2",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.388102664427934,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  7,
+                  24
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Randomized Treatment Assignment"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment3",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.9317748325553412,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  36,
+                  22
+                ],
+                [
+                  22,
+                  9
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  11,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  9
+                ],
+                [
+                  1,
+                  11
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Randomized Treatment Assignment"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment4",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.3616426241957462,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  52
+                ],
+                [
+                  52,
+                  46
+                ],
+                [
+                  46,
+                  33
+                ],
+                [
+                  33,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  52
+                ],
+                [
+                  1,
+                  46
+                ],
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Randomized Treatment Assignment"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment5",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.9396022951799459,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  56,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Randomized Treatment Assignment"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment6",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.153511538701353,
+          "params": {
+            "w": {
+              "Randomized Treatment Assignment": 0.8043071663709688
+            },
+            "b": -0.6034348741948207,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Treatment Assignment": -0.5052837649702664
+            },
+            "nl_shift": {
+              "Randomized Treatment Assignment": -0.4513172952039193
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment7",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.248226125136185,
+          "params": {
+            "w": {
+              "Randomized Treatment Assignment": 0.7928479628437802
+            },
+            "b": -0.2576397613440812,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Treatment Assignment": -0.2740177835678773
+            },
+            "nl_shift": {
+              "Randomized Treatment Assignment": -0.8993919170971468
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Randomized Treatment Assignment8",
+          "conceptual_node": "Randomized Treatment Assignment",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.701033367459532,
+          "params": {
+            "w": {
+              "Randomized Treatment Assignment": -1.3555848699517554
+            },
+            "b": 0.5373559549689465,
+            "w_pair": {},
+            "w_nl": {
+              "Randomized Treatment Assignment": -0.3509224203017371
+            },
+            "nl_shift": {
+              "Randomized Treatment Assignment": 1.205159995839018
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.617716116524063,
+        "average_information": 1.1647651342073355,
+        "lower_tail_quantiles": {
+          "q10": 0.6623917723312703,
+          "q25": 0.6643187789251621
+        },
+        "per_proxy": {
+          "Randomized Treatment Assignment1": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment2": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment3": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment4": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment5": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment6": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment7": {
+            "proxy_type": "continuous"
+          },
+          "Randomized Treatment Assignment8": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Randomized Treatment Assignment8",
+          "rmse": 1.3965354639689904,
+          "r2": 0.5546425078138486
+        },
+        "calibrated": {
+          "rmse": 0.8368223990327279,
+          "r2": 0.8400915484215472
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.5597130649362625,
+          "r2_gain": 0.2854490406076986
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

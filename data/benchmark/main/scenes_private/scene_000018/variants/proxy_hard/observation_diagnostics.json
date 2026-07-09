@@ -1,0 +1,332 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Autoimmune Disease Activity Score",
+    "Occupational Chemical Exposure Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Autoimmune Disease Activity Score",
+    "Occupational Chemical Exposure Status"
+  ],
+  "proxy_groups": {
+    "Autoimmune Disease Activity Score": [
+      "Autoimmune Disease Activity Score1",
+      "Autoimmune Disease Activity Score2",
+      "Autoimmune Disease Activity Score3"
+    ],
+    "Occupational Chemical Exposure Status": [
+      "Occupational Chemical Exposure Status1",
+      "Occupational Chemical Exposure Status2",
+      "Occupational Chemical Exposure Status3",
+      "Occupational Chemical Exposure Status4"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Autoimmune Disease Activity Score": {
+      "conceptual_node": "Autoimmune Disease Activity Score",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Autoimmune Disease Activity Score1",
+          "conceptual_node": "Autoimmune Disease Activity Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Autoimmune Disease Activity Score": 0.4671378574320403
+            },
+            "b": -0.16333191512386214,
+            "w_nl": {
+              "Autoimmune Disease Activity Score": 0.5517642183797974
+            },
+            "nl_shift": {
+              "Autoimmune Disease Activity Score": 0.10885846976118407
+            }
+          }
+        },
+        {
+          "column_name": "Autoimmune Disease Activity Score2",
+          "conceptual_node": "Autoimmune Disease Activity Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.90998893743508,
+          "params": {
+            "w": {
+              "Autoimmune Disease Activity Score": -0.14161714841109208
+            },
+            "b": -1.0031373013615819,
+            "w_pair": {},
+            "w_nl": {
+              "Autoimmune Disease Activity Score": -0.30303330133215445
+            },
+            "nl_shift": {
+              "Autoimmune Disease Activity Score": -0.42286092670329056
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Autoimmune Disease Activity Score3",
+          "conceptual_node": "Autoimmune Disease Activity Score",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.5308296490411168,
+          "params": {
+            "w": {
+              "Autoimmune Disease Activity Score": -0.48223074667805044
+            },
+            "b": -0.26753000683160744,
+            "w_pair": {},
+            "w_nl": {
+              "Autoimmune Disease Activity Score": 0.3262999068653032
+            },
+            "nl_shift": {
+              "Autoimmune Disease Activity Score": -1.2460955760463852
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.10922205707443863,
+        "average_information": 0.1836905846859509,
+        "lower_tail_quantiles": {
+          "q10": 0.11550512945350216,
+          "q25": 0.12295616724361952
+        },
+        "per_proxy": {
+          "Autoimmune Disease Activity Score1": {
+            "proxy_type": "binary"
+          },
+          "Autoimmune Disease Activity Score2": {
+            "proxy_type": "continuous"
+          },
+          "Autoimmune Disease Activity Score3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Autoimmune Disease Activity Score3",
+          "rmse": 1.2533587697007265,
+          "r2": 0.208760121647528
+        },
+        "calibrated": {
+          "rmse": 1.159416713837657,
+          "r2": 0.322925476475592
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.09394205586306947,
+          "r2_gain": 0.114165354828064
+        }
+      }
+    },
+    "Occupational Chemical Exposure Status": {
+      "conceptual_node": "Occupational Chemical Exposure Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Occupational Chemical Exposure Status1",
+          "conceptual_node": "Occupational Chemical Exposure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.332458814544993,
+          "params": {
+            "w": {
+              "Occupational Chemical Exposure Status": 0.5282199031103388
+            },
+            "b": 0.6684030096134109,
+            "w_pair": {},
+            "w_nl": {
+              "Occupational Chemical Exposure Status": -0.5098323547000556
+            },
+            "nl_shift": {
+              "Occupational Chemical Exposure Status": 0.9856483973087946
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Occupational Chemical Exposure Status2",
+          "conceptual_node": "Occupational Chemical Exposure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.9023092896268317,
+          "params": {
+            "w": {
+              "Occupational Chemical Exposure Status": -1.2241585818978948
+            },
+            "b": -0.024222710015066595,
+            "w_pair": {},
+            "w_nl": {
+              "Occupational Chemical Exposure Status": -0.368363595515243
+            },
+            "nl_shift": {
+              "Occupational Chemical Exposure Status": 0.8870536423378708
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Occupational Chemical Exposure Status3",
+          "conceptual_node": "Occupational Chemical Exposure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.1952883642725673,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  24
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Occupational Chemical Exposure Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Occupational Chemical Exposure Status4",
+          "conceptual_node": "Occupational Chemical Exposure Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Occupational Chemical Exposure Status": -1.2307158102336848
+            },
+            "b": 0.37197659266669586,
+            "w_nl": {
+              "Occupational Chemical Exposure Status": -0.36918979203349933
+            },
+            "nl_shift": {
+              "Occupational Chemical Exposure Status": 0.3389964077007961
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.0704495953614799,
+        "min_information": 1.0704495953614799,
+        "average_information": 1.0704495953614799,
+        "lower_tail_quantiles": {
+          "q10": 1.0704495953614799,
+          "q25": 1.0704495953614799
+        },
+        "per_proxy": {
+          "Occupational Chemical Exposure Status1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.005394390735609045,
+            "mean_z0": 1.0707121665082617,
+            "mean_z1": 1.186475157206498,
+            "pooled_var": 2.484260164347718
+          },
+          "Occupational Chemical Exposure Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.3687343621722336,
+            "mean_z0": 0.25969195860850536,
+            "mean_z1": -1.2861428752886084,
+            "pooled_var": 6.480560476144468
+          },
+          "Occupational Chemical Exposure Status3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6331815896902852,
+            "mean_z0": 1.0255366147147704,
+            "mean_z1": -1.0320295265306583,
+            "pooled_var": 6.686199495582963
+          },
+          "Occupational Chemical Exposure Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06313925276335218,
+            "p_w1_z0": 0.6107906753184331,
+            "p_w1_z1": 0.2586915567734201
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Occupational Chemical Exposure Status4",
+          "log_loss": 0.6297043174447411,
+          "auc": 0.6829557428872498
+        },
+        "calibrated": {
+          "log_loss": 0.4767382527319311,
+          "auc": 0.8449712176468652
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.15296606471281,
+          "auc_gain": 0.16201547475961542
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

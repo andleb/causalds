@@ -1,0 +1,377 @@
+{
+  "n_rows": 16000,
+  "n_columns": 12,
+  "columns": {
+    "Contact Dermatitis Severity": {
+      "dtype": "float64"
+    },
+    "Daily Duration of Scouring Pad Use1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Daily Duration of Scouring Pad Use2": {
+      "dtype": "float64"
+    },
+    "Daily Duration of Scouring Pad Use3": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion3": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion4": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion6": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 12,
+      "columns": {
+        "Contact Dermatitis Severity": {
+          "dtype": "float64"
+        },
+        "Daily Duration of Scouring Pad Use1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Daily Duration of Scouring Pad Use2": {
+          "dtype": "float64"
+        },
+        "Daily Duration of Scouring Pad Use3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion4": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion6": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 11,
+      "columns": {
+        "Daily Duration of Scouring Pad Use1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Daily Duration of Scouring Pad Use2": {
+          "dtype": "float64"
+        },
+        "Daily Duration of Scouring Pad Use3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion4": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion6": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 14,
+      "columns": {
+        "Contact Dermatitis Severity": {
+          "dtype": "float64"
+        },
+        "Daily Duration of Scouring Pad Use1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Daily Duration of Scouring Pad Use2": {
+          "dtype": "float64"
+        },
+        "Daily Duration of Scouring Pad Use3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion3": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion4": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion6": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Presence of Mechanical Skin Abrasion8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Daily Duration of Scouring Pad Use": {
+          "dtype": "float64"
+        },
+        "Presence of Mechanical Skin Abrasion": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Contact Dermatitis Severity": {
+      "dtype": "float64"
+    },
+    "Daily Duration of Scouring Pad Use1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Daily Duration of Scouring Pad Use2": {
+      "dtype": "float64"
+    },
+    "Daily Duration of Scouring Pad Use3": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion3": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion4": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion6": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Presence of Mechanical Skin Abrasion8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Daily Duration of Scouring Pad Use": {
+      "dtype": "float64"
+    },
+    "Presence of Mechanical Skin Abrasion": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

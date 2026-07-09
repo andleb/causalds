@@ -1,0 +1,588 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Leprosy Infection Status",
+    "Presence of Clinically Significant Peripheral Neuropathy"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Leprosy Infection Status",
+    "Presence of Clinically Significant Peripheral Neuropathy"
+  ],
+  "proxy_groups": {
+    "Leprosy Infection Status": [
+      "Leprosy Infection Status1",
+      "Leprosy Infection Status2",
+      "Leprosy Infection Status3",
+      "Leprosy Infection Status4",
+      "Leprosy Infection Status5",
+      "Leprosy Infection Status6",
+      "Leprosy Infection Status7"
+    ],
+    "Presence of Clinically Significant Peripheral Neuropathy": [
+      "Presence of Clinically Significant Peripheral Neuropathy1",
+      "Presence of Clinically Significant Peripheral Neuropathy2",
+      "Presence of Clinically Significant Peripheral Neuropathy3",
+      "Presence of Clinically Significant Peripheral Neuropathy4",
+      "Presence of Clinically Significant Peripheral Neuropathy5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Leprosy Infection Status": {
+      "conceptual_node": "Leprosy Infection Status",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Leprosy Infection Status1",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.3535176087850256,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  55,
+                  51
+                ],
+                [
+                  51,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Leprosy Infection Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status2",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Leprosy Infection Status": 0.861256072357095
+            },
+            "b": 0.35734424312694857,
+            "w_nl": {
+              "Leprosy Infection Status": -0.8136726414667043
+            },
+            "nl_shift": {
+              "Leprosy Infection Status": -1.1265151486188167
+            }
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status3",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.4773662399066594,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  54,
+                  48
+                ],
+                [
+                  48,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  1,
+                  48
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Leprosy Infection Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status4",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.6894312176074253,
+          "params": {
+            "w": {
+              "Leprosy Infection Status": 1.4217778164465387
+            },
+            "b": 0.4781658156840815,
+            "w_pair": {},
+            "w_nl": {
+              "Leprosy Infection Status": 0.3817673826006661
+            },
+            "nl_shift": {
+              "Leprosy Infection Status": 0.5626259303859791
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status5",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.1678985806940323,
+          "params": {
+            "w": {
+              "Leprosy Infection Status": -0.1417157744318296
+            },
+            "b": 0.45480925457017457,
+            "w_pair": {},
+            "w_nl": {
+              "Leprosy Infection Status": -0.7912129378859758
+            },
+            "nl_shift": {
+              "Leprosy Infection Status": -0.3355278088597873
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status6",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Leprosy Infection Status": 0.8450796765418023
+            },
+            "b": 0.0634870869331766,
+            "w_nl": {
+              "Leprosy Infection Status": 0.6955438169540643
+            },
+            "nl_shift": {
+              "Leprosy Infection Status": -0.941075819251615
+            }
+          }
+        },
+        {
+          "column_name": "Leprosy Infection Status7",
+          "conceptual_node": "Leprosy Infection Status",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.4417250757110027,
+          "params": {
+            "w": {
+              "Leprosy Infection Status": -0.9761136814760694
+            },
+            "b": -0.41736950840057097,
+            "w_pair": {},
+            "w_nl": {
+              "Leprosy Infection Status": 0.08880411692613605
+            },
+            "nl_shift": {
+              "Leprosy Infection Status": 1.4631358388990616
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.7771656160806226,
+        "average_information": 1.8234065502893944,
+        "lower_tail_quantiles": {
+          "q10": 0.802957230425476,
+          "q25": 0.9062362001706332
+        },
+        "per_proxy": {
+          "Leprosy Infection Status1": {
+            "proxy_type": "continuous"
+          },
+          "Leprosy Infection Status2": {
+            "proxy_type": "binary"
+          },
+          "Leprosy Infection Status3": {
+            "proxy_type": "continuous"
+          },
+          "Leprosy Infection Status4": {
+            "proxy_type": "continuous"
+          },
+          "Leprosy Infection Status5": {
+            "proxy_type": "continuous"
+          },
+          "Leprosy Infection Status6": {
+            "proxy_type": "binary"
+          },
+          "Leprosy Infection Status7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Leprosy Infection Status7",
+          "rmse": 0.881383730871986,
+          "r2": 0.6350455711115999
+        },
+        "calibrated": {
+          "rmse": 0.6637003059985621,
+          "r2": 0.7930561070623227
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.21768342487342385,
+          "r2_gain": 0.15801053595072279
+        }
+      }
+    },
+    "Presence of Clinically Significant Peripheral Neuropathy": {
+      "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Presence of Clinically Significant Peripheral Neuropathy1",
+          "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.8932002141005793,
+          "params": {
+            "w": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 0.8034199998751124
+            },
+            "b": -0.055991600288140236,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 0.6935642480750883
+            },
+            "nl_shift": {
+              "Presence of Clinically Significant Peripheral Neuropathy": -0.18103713576556446
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Presence of Clinically Significant Peripheral Neuropathy2",
+          "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.5992687235022793,
+          "params": {
+            "w": {
+              "Presence of Clinically Significant Peripheral Neuropathy": -1.176901572765477
+            },
+            "b": -0.47464696300299897,
+            "w_pair": {},
+            "w_nl": {
+              "Presence of Clinically Significant Peripheral Neuropathy": -0.04207006218953324
+            },
+            "nl_shift": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 1.4615189818322332
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Presence of Clinically Significant Peripheral Neuropathy3",
+          "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.8161876424447094,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  59,
+                  41
+                ],
+                [
+                  41,
+                  21
+                ],
+                [
+                  21,
+                  25
+                ],
+                [
+                  25,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  59
+                ],
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  25
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Presence of Clinically Significant Peripheral Neuropathy"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Presence of Clinically Significant Peripheral Neuropathy4",
+          "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 2.6270028436617725
+            },
+            "b": -0.813734782447939,
+            "w_nl": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 0.18914114681334865
+            },
+            "nl_shift": {
+              "Presence of Clinically Significant Peripheral Neuropathy": 1.0403751451144299
+            }
+          }
+        },
+        {
+          "column_name": "Presence of Clinically Significant Peripheral Neuropathy5",
+          "conceptual_node": "Presence of Clinically Significant Peripheral Neuropathy",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.407392828515985,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  49
+                ],
+                [
+                  49,
+                  12
+                ],
+                [
+                  12,
+                  21
+                ],
+                [
+                  21,
+                  24
+                ],
+                [
+                  24,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Presence of Clinically Significant Peripheral Neuropathy"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 3.2517487084277814,
+        "min_information": 3.2517487084277814,
+        "average_information": 3.2517487084277814,
+        "lower_tail_quantiles": {
+          "q10": 3.2517487084277814,
+          "q25": 3.2517487084277814
+        },
+        "per_proxy": {
+          "Presence of Clinically Significant Peripheral Neuropathy1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.252663353046552,
+            "mean_z0": 0.07973351123804938,
+            "mean_z1": 1.3533411280058916,
+            "pooled_var": 6.41991148273174
+          },
+          "Presence of Clinically Significant Peripheral Neuropathy2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.2670431757040007,
+            "mean_z0": -0.43186149417906383,
+            "mean_z1": -1.6382389170049612,
+            "pooled_var": 5.449854625445312
+          },
+          "Presence of Clinically Significant Peripheral Neuropathy3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.5146964426039062,
+            "mean_z0": 1.0009549935094364,
+            "mean_z1": -0.9752821765382342,
+            "pooled_var": 2.5784132334555956
+          },
+          "Presence of Clinically Significant Peripheral Neuropathy4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.17686762826023908,
+            "p_w1_z0": 0.2944111776447106,
+            "p_w1_z1": 0.8616232464929859
+          },
+          "Presence of Clinically Significant Peripheral Neuropathy5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.040478108813083,
+            "mean_z0": 1.0112918551283936,
+            "mean_z1": -1.0306924022287351,
+            "pooled_var": 4.007484320886766
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Presence of Clinically Significant Peripheral Neuropathy4",
+          "log_loss": 0.5193413970466104,
+          "auc": 0.7811651246604986
+        },
+        "calibrated": {
+          "log_loss": 0.2663380798377559,
+          "auc": 0.9572289539158156
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.2530033172088545,
+          "auc_gain": 0.17606382925531705
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

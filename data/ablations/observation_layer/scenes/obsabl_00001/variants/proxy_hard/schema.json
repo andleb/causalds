@@ -1,0 +1,222 @@
+{
+  "n_rows": 16000,
+  "n_columns": 7,
+  "columns": {
+    "Renal Artery Stenosis": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Coronary Artery Disease1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Coronary Artery Disease2": {
+      "dtype": "float64"
+    },
+    "Coronary Artery Disease3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Systemic Atherosclerosis1": {
+      "dtype": "float64"
+    },
+    "Systemic Atherosclerosis2": {
+      "dtype": "float64"
+    },
+    "Systemic Atherosclerosis3": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 7,
+      "columns": {
+        "Renal Artery Stenosis": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Coronary Artery Disease1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Coronary Artery Disease2": {
+          "dtype": "float64"
+        },
+        "Coronary Artery Disease3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Systemic Atherosclerosis1": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis2": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis3": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 6,
+      "columns": {
+        "Coronary Artery Disease1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Coronary Artery Disease2": {
+          "dtype": "float64"
+        },
+        "Coronary Artery Disease3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Systemic Atherosclerosis1": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis2": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis3": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 9,
+      "columns": {
+        "Renal Artery Stenosis": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Coronary Artery Disease1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Coronary Artery Disease2": {
+          "dtype": "float64"
+        },
+        "Coronary Artery Disease3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Systemic Atherosclerosis1": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis2": {
+          "dtype": "float64"
+        },
+        "Systemic Atherosclerosis3": {
+          "dtype": "float64"
+        },
+        "Coronary Artery Disease": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Systemic Atherosclerosis": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Renal Artery Stenosis": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Coronary Artery Disease1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Coronary Artery Disease2": {
+      "dtype": "float64"
+    },
+    "Coronary Artery Disease3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Systemic Atherosclerosis1": {
+      "dtype": "float64"
+    },
+    "Systemic Atherosclerosis2": {
+      "dtype": "float64"
+    },
+    "Systemic Atherosclerosis3": {
+      "dtype": "float64"
+    },
+    "Coronary Artery Disease": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Systemic Atherosclerosis": {
+      "dtype": "float64"
+    }
+  }
+}

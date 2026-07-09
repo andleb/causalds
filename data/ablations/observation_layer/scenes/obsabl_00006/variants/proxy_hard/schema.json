@@ -1,0 +1,292 @@
+{
+  "n_rows": 16000,
+  "n_columns": 10,
+  "columns": {
+    "Widespread Power Outage Event": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator1": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator3": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator4": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator5": {
+      "dtype": "float64"
+    },
+    "Hurricane Irene Maximum Wind Speed1": {
+      "dtype": "float64"
+    },
+    "Hurricane Irene Maximum Wind Speed2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hurricane Irene Maximum Wind Speed3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hurricane Irene Maximum Wind Speed4": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 10,
+      "columns": {
+        "Widespread Power Outage Event": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator1": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator3": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator4": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator5": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed1": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 9,
+      "columns": {
+        "Elevated Coastal Sea Surface Temperature Indicator1": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator3": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator4": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator5": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed1": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed4": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 12,
+      "columns": {
+        "Widespread Power Outage Event": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator1": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator3": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator4": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator5": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed1": {
+          "dtype": "float64"
+        },
+        "Hurricane Irene Maximum Wind Speed2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed4": {
+          "dtype": "float64"
+        },
+        "Elevated Coastal Sea Surface Temperature Indicator": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hurricane Irene Maximum Wind Speed": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Widespread Power Outage Event": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator1": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator3": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator4": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator5": {
+      "dtype": "float64"
+    },
+    "Hurricane Irene Maximum Wind Speed1": {
+      "dtype": "float64"
+    },
+    "Hurricane Irene Maximum Wind Speed2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hurricane Irene Maximum Wind Speed3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hurricane Irene Maximum Wind Speed4": {
+      "dtype": "float64"
+    },
+    "Elevated Coastal Sea Surface Temperature Indicator": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hurricane Irene Maximum Wind Speed": {
+      "dtype": "float64"
+    }
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Average Summer Temperature",
+    "Metropolitan Population Size",
+    "Sanitation Deficiency Level",
+    "White Collar Crime Rate"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Average Summer Temperature",
+    "Metropolitan Population Size",
+    "Sanitation Deficiency Level",
+    "White Collar Crime Rate"
+  ],
+  "proxy_groups": {
+    "Average Summer Temperature": [
+      "Average Summer Temperature1",
+      "Average Summer Temperature2",
+      "Average Summer Temperature3"
+    ],
+    "Metropolitan Population Size": [
+      "Metropolitan Population Size1",
+      "Metropolitan Population Size2",
+      "Metropolitan Population Size3"
+    ],
+    "Sanitation Deficiency Level": [
+      "Sanitation Deficiency Level1",
+      "Sanitation Deficiency Level2",
+      "Sanitation Deficiency Level3",
+      "Sanitation Deficiency Level4"
+    ],
+    "White Collar Crime Rate": [
+      "White Collar Crime Rate1",
+      "White Collar Crime Rate2",
+      "White Collar Crime Rate3"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Average Summer Temperature": {
+      "conceptual_node": "Average Summer Temperature",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Average Summer Temperature1",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.4866005041584645,
+          "params": {
+            "w": {
+              "Average Summer Temperature": 0.9031200376789079
+            },
+            "b": -0.251072254431284,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": 0.3091000718753425
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -1.2391931803920015
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature2",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9876269117819052,
+          "params": {
+            "w": {
+              "Average Summer Temperature": 1.2221875405569
+            },
+            "b": 0.2569867771280999,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": -0.37781920714376355
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -1.0692573993029497
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Average Summer Temperature3",
+          "conceptual_node": "Average Summer Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.9388355276811082,
+          "params": {
+            "w": {
+              "Average Summer Temperature": 0.47380273858714717
+            },
+            "b": -0.9058460451925304,
+            "w_pair": {},
+            "w_nl": {
+              "Average Summer Temperature": -0.7630590150301071
+            },
+            "nl_shift": {
+              "Average Summer Temperature": -1.2911240620817694
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6628506218686098,
+        "average_information": 1.2678400038874558,
+        "lower_tail_quantiles": {
+          "q10": 0.7708160008159304,
+          "q25": 0.7861017719531662
+        },
+        "per_proxy": {
+          "Average Summer Temperature1": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature2": {
+            "proxy_type": "continuous"
+          },
+          "Average Summer Temperature3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Average Summer Temperature2",
+          "rmse": 0.7007905177740719,
+          "r2": 0.5844834166754016
+        },
+        "calibrated": {
+          "rmse": 0.6754226825627663,
+          "r2": 0.6140214145249194
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.02536783521130559,
+          "r2_gain": 0.029537997849517827
+        }
+      }
+    },
+    "Metropolitan Population Size": {
+      "conceptual_node": "Metropolitan Population Size",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Metropolitan Population Size1",
+          "conceptual_node": "Metropolitan Population Size",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Metropolitan Population Size": 0.9527916778111525
+            },
+            "b": -0.06546274104946315,
+            "w_nl": {
+              "Metropolitan Population Size": 0.3747849506053571
+            },
+            "nl_shift": {
+              "Metropolitan Population Size": 0.43534099172276
+            }
+          }
+        },
+        {
+          "column_name": "Metropolitan Population Size2",
+          "conceptual_node": "Metropolitan Population Size",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.524021453424662,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  20,
+                  7
+                ],
+                [
+                  7,
+                  58
+                ],
+                [
+                  58,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  58
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Metropolitan Population Size"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Metropolitan Population Size3",
+          "conceptual_node": "Metropolitan Population Size",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.954495706160934,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  46
+                ],
+                [
+                  46,
+                  27
+                ],
+                [
+                  27,
+                  28
+                ],
+                [
+                  28,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  46
+                ],
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Metropolitan Population Size"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.13921824174443517,
+        "average_information": 0.42812139165934116,
+        "lower_tail_quantiles": {
+          "q10": 0.1541855218618346,
+          "q25": 0.1886360393898746
+        },
+        "per_proxy": {
+          "Metropolitan Population Size1": {
+            "proxy_type": "binary"
+          },
+          "Metropolitan Population Size2": {
+            "proxy_type": "continuous"
+          },
+          "Metropolitan Population Size3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Metropolitan Population Size1",
+          "rmse": 0.8336222750853679,
+          "r2": 0.18059113461751541
+        },
+        "calibrated": {
+          "rmse": 0.7244549551719903,
+          "r2": 0.38115083213977696
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10916731991337758,
+          "r2_gain": 0.20055969752226155
+        }
+      }
+    },
+    "Sanitation Deficiency Level": {
+      "conceptual_node": "Sanitation Deficiency Level",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Sanitation Deficiency Level1",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.6647983879379495,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": -0.7846247294942358
+            },
+            "b": 0.06105390985019183,
+            "w_pair": {},
+            "w_nl": {
+              "Sanitation Deficiency Level": 0.03139382228739929
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": 0.5541951932990004
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level2",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.5359982678605424,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": 0.914646220622113
+            },
+            "b": 0.06907863093653659,
+            "w_pair": {},
+            "w_nl": {
+              "Sanitation Deficiency Level": 0.04403083531749641
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": 0.500960726737774
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level3",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.644506621840165,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": 0.41225523458757124
+            },
+            "b": 0.10753275145162858,
+            "w_pair": {},
+            "w_nl": {
+              "Sanitation Deficiency Level": 0.607734153366522
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": 0.1958713566765713
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Sanitation Deficiency Level4",
+          "conceptual_node": "Sanitation Deficiency Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.1361825200884446,
+          "params": {
+            "w": {
+              "Sanitation Deficiency Level": -1.251068702919927
+            },
+            "b": -0.24164707013061107,
+            "w_pair": {},
+            "w_nl": {
+              "Sanitation Deficiency Level": -0.539464763447141
+            },
+            "nl_shift": {
+              "Sanitation Deficiency Level": -0.37180896152204546
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.5642618850909734,
+        "average_information": 1.2458972341374681,
+        "lower_tail_quantiles": {
+          "q10": 0.7182142213375595,
+          "q25": 0.7182142213375599
+        },
+        "per_proxy": {
+          "Sanitation Deficiency Level1": {
+            "proxy_type": "continuous"
+          },
+          "Sanitation Deficiency Level2": {
+            "proxy_type": "continuous"
+          },
+          "Sanitation Deficiency Level3": {
+            "proxy_type": "continuous"
+          },
+          "Sanitation Deficiency Level4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Sanitation Deficiency Level4",
+          "rmse": 0.5887295535847211,
+          "r2": 0.12645559249305938
+        },
+        "calibrated": {
+          "rmse": 0.5142886994533643,
+          "r2": 0.33339698142313434
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.07444085413135682,
+          "r2_gain": 0.20694138893007497
+        }
+      }
+    },
+    "White Collar Crime Rate": {
+      "conceptual_node": "White Collar Crime Rate",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "White Collar Crime Rate1",
+          "conceptual_node": "White Collar Crime Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "White Collar Crime Rate": 1.636916703204426
+            },
+            "b": 0.1915835928953346,
+            "w_nl": {
+              "White Collar Crime Rate": -0.21337516919744903
+            },
+            "nl_shift": {
+              "White Collar Crime Rate": -0.7747702536441797
+            }
+          }
+        },
+        {
+          "column_name": "White Collar Crime Rate2",
+          "conceptual_node": "White Collar Crime Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.1628857755469335,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  54,
+                  21
+                ],
+                [
+                  21,
+                  15
+                ],
+                [
+                  15,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  54
+                ],
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  15
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "White Collar Crime Rate"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "White Collar Crime Rate3",
+          "conceptual_node": "White Collar Crime Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.6864727031103652,
+          "params": {
+            "w": {
+              "White Collar Crime Rate": -0.22662184180605893
+            },
+            "b": 0.3616300753547196,
+            "w_pair": {},
+            "w_nl": {
+              "White Collar Crime Rate": 0.6986571114787123
+            },
+            "nl_shift": {
+              "White Collar Crime Rate": 1.4776714169789718
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.04818695773859526,
+        "average_information": 0.372227642047692,
+        "lower_tail_quantiles": {
+          "q10": 0.06107483682314846,
+          "q25": 0.10572897020141286
+        },
+        "per_proxy": {
+          "White Collar Crime Rate1": {
+            "proxy_type": "binary"
+          },
+          "White Collar Crime Rate2": {
+            "proxy_type": "continuous"
+          },
+          "White Collar Crime Rate3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "White Collar Crime Rate1",
+          "rmse": 0.7060656712666091,
+          "r2": 0.217122442096509
+        },
+        "calibrated": {
+          "rmse": 0.6763678116930059,
+          "r2": 0.281594724281506
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.02969785957360327,
+          "r2_gain": 0.06447228218499701
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

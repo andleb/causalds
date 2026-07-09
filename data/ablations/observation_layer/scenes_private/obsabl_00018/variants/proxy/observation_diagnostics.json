@@ -1,0 +1,161 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Coronary Artery Disease"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Coronary Artery Disease"
+  ],
+  "proxy_groups": {
+    "Coronary Artery Disease": [
+      "Coronary Artery Disease1",
+      "Coronary Artery Disease2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Coronary Artery Disease": {
+      "conceptual_node": "Coronary Artery Disease",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Coronary Artery Disease1",
+          "conceptual_node": "Coronary Artery Disease",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Coronary Artery Disease": 1.174819465384706
+            },
+            "b": 0.98819921055308,
+            "w_nl": {
+              "Coronary Artery Disease": 0.6362974903346632
+            },
+            "nl_shift": {
+              "Coronary Artery Disease": 0.5732734020357655
+            }
+          }
+        },
+        {
+          "column_name": "Coronary Artery Disease2",
+          "conceptual_node": "Coronary Artery Disease",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.3280453131407521,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  22,
+                  13
+                ],
+                [
+                  13,
+                  29
+                ],
+                [
+                  29,
+                  46
+                ],
+                [
+                  46,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  22
+                ],
+                [
+                  1,
+                  13
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  46
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Coronary Artery Disease"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.2012283155636565,
+        "min_information": 1.2012283155636565,
+        "average_information": 1.2012283155636565,
+        "lower_tail_quantiles": {
+          "q10": 1.2012283155636565,
+          "q25": 1.2012283155636565
+        },
+        "per_proxy": {
+          "Coronary Artery Disease1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.04061058511981397,
+            "p_w1_z0": 0.6828854031371765,
+            "p_w1_z1": 0.9077169452507257
+          },
+          "Coronary Artery Disease2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.1606177304438425,
+            "mean_z0": -1.03194410480847,
+            "mean_z1": 0.9997844001856945,
+            "pooled_var": 3.556658329204764
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Coronary Artery Disease2",
+          "log_loss": 0.545939392741862,
+          "auc": 0.8190770690770691
+        },
+        "calibrated": {
+          "log_loss": 0.4865736350300532,
+          "auc": 0.8403973403973405
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.0593657577118088,
+          "auc_gain": 0.021320271320271367
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

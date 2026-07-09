@@ -1,0 +1,317 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Machine Operating Temperature"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Machine Operating Temperature"
+  ],
+  "proxy_groups": {
+    "Machine Operating Temperature": [
+      "Machine Operating Temperature1",
+      "Machine Operating Temperature2",
+      "Machine Operating Temperature3",
+      "Machine Operating Temperature4",
+      "Machine Operating Temperature5",
+      "Machine Operating Temperature6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Machine Operating Temperature": {
+      "conceptual_node": "Machine Operating Temperature",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Machine Operating Temperature1",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.859966777986918,
+          "params": {
+            "w": {
+              "Machine Operating Temperature": 0.6226000143312719
+            },
+            "b": -0.6558109630129959,
+            "w_pair": {},
+            "w_nl": {
+              "Machine Operating Temperature": 0.5434295784991809
+            },
+            "nl_shift": {
+              "Machine Operating Temperature": -0.32878589435633465
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Machine Operating Temperature2",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.0132023599625457,
+          "params": {
+            "w": {
+              "Machine Operating Temperature": 0.5733082459118942
+            },
+            "b": -0.3864707783897187,
+            "w_pair": {},
+            "w_nl": {
+              "Machine Operating Temperature": 0.25502080266690974
+            },
+            "nl_shift": {
+              "Machine Operating Temperature": -0.2194072039797268
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Machine Operating Temperature3",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.564868654926836,
+          "params": {
+            "w": {
+              "Machine Operating Temperature": 0.6766189086397285
+            },
+            "b": 0.11459041599803813,
+            "w_pair": {},
+            "w_nl": {
+              "Machine Operating Temperature": 0.331811395355042
+            },
+            "nl_shift": {
+              "Machine Operating Temperature": -1.0624759844330973
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Machine Operating Temperature4",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.935619366760446,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  27,
+                  53
+                ],
+                [
+                  53,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Machine Operating Temperature"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Machine Operating Temperature5",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.750614603630775,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  61
+                ],
+                [
+                  61,
+                  34
+                ],
+                [
+                  34,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  61
+                ],
+                [
+                  1,
+                  34
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Machine Operating Temperature"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Machine Operating Temperature6",
+          "conceptual_node": "Machine Operating Temperature",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.5548227539983666,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  36,
+                  34
+                ],
+                [
+                  34,
+                  28
+                ],
+                [
+                  28,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  34
+                ],
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Machine Operating Temperature"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.4999377041858233,
+        "average_information": 0.6511831732216771,
+        "lower_tail_quantiles": {
+          "q10": 0.4999377041858233,
+          "q25": 0.4999377041858233
+        },
+        "per_proxy": {
+          "Machine Operating Temperature1": {
+            "proxy_type": "continuous"
+          },
+          "Machine Operating Temperature2": {
+            "proxy_type": "continuous"
+          },
+          "Machine Operating Temperature3": {
+            "proxy_type": "continuous"
+          },
+          "Machine Operating Temperature4": {
+            "proxy_type": "continuous"
+          },
+          "Machine Operating Temperature5": {
+            "proxy_type": "continuous"
+          },
+          "Machine Operating Temperature6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Machine Operating Temperature1",
+          "rmse": 1.284073792995204,
+          "r2": 0.1818944653711264
+        },
+        "calibrated": {
+          "rmse": 0.9328651104721493,
+          "r2": 0.5682154812139623
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.3512086825230547,
+          "r2_gain": 0.38632101584283585
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

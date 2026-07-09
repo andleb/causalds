@@ -1,0 +1,252 @@
+{
+  "n_rows": 16000,
+  "n_columns": 9,
+  "columns": {
+    "Individual Mortality Outcome": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Epidemic Incidence Rate1": {
+      "dtype": "float64"
+    },
+    "Epidemic Incidence Rate2": {
+      "dtype": "float64"
+    },
+    "Epidemic Incidence Rate3": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status1": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Severe Malnutrition Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Severe Malnutrition Status4": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 9,
+      "columns": {
+        "Individual Mortality Outcome": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Epidemic Incidence Rate1": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate2": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate3": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status1": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status4": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 8,
+      "columns": {
+        "Epidemic Incidence Rate1": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate2": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate3": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status1": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status4": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 11,
+      "columns": {
+        "Individual Mortality Outcome": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Epidemic Incidence Rate1": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate2": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate3": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status1": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Severe Malnutrition Status4": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status5": {
+          "dtype": "float64"
+        },
+        "Epidemic Incidence Rate": {
+          "dtype": "float64"
+        },
+        "Severe Malnutrition Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Individual Mortality Outcome": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Epidemic Incidence Rate1": {
+      "dtype": "float64"
+    },
+    "Epidemic Incidence Rate2": {
+      "dtype": "float64"
+    },
+    "Epidemic Incidence Rate3": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status1": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Severe Malnutrition Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Severe Malnutrition Status4": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status5": {
+      "dtype": "float64"
+    },
+    "Epidemic Incidence Rate": {
+      "dtype": "float64"
+    },
+    "Severe Malnutrition Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

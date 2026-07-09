@@ -1,0 +1,311 @@
+{
+  "n_rows": 16000,
+  "n_columns": 12,
+  "columns": {
+    "Irrigation Water Salinity": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance": {
+      "dtype": "float64"
+    },
+    "Calculated Intercellular CO2 Concentration": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Reclamation Cost": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate1": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate2": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate6": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 12,
+      "columns": {
+        "Irrigation Water Salinity": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Reclamation Cost": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate1": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate2": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 11,
+      "columns": {
+        "Irrigation Water Salinity": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate1": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate2": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate6": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 13,
+      "columns": {
+        "Irrigation Water Salinity": {
+          "dtype": "float64"
+        },
+        "Initial Soil Salinity": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance": {
+          "dtype": "float64"
+        },
+        "Calculated Intercellular CO2 Concentration": {
+          "dtype": "float64"
+        },
+        "Soil Salinity Hazard Classification": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Soil Reclamation Cost": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate1": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate2": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate6": {
+          "dtype": "float64"
+        },
+        "Stomatal Conductance-derived Photosynthetic Rate": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Irrigation Water Salinity": {
+      "dtype": "float64"
+    },
+    "Initial Soil Salinity": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance": {
+      "dtype": "float64"
+    },
+    "Calculated Intercellular CO2 Concentration": {
+      "dtype": "float64"
+    },
+    "Soil Salinity Hazard Classification": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Soil Reclamation Cost": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate1": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate2": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate6": {
+      "dtype": "float64"
+    },
+    "Stomatal Conductance-derived Photosynthetic Rate": {
+      "dtype": "float64"
+    }
+  }
+}

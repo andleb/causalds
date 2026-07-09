@@ -1,0 +1,90 @@
+{
+  "n_rows": 16000,
+  "n_columns": 3,
+  "columns": {
+    "Type 2 Diabetes Mellitus": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Diabetic Peripheral Neuropathy Severity": {
+      "dtype": "float64"
+    },
+    "Urinary Incontinence Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 3,
+      "columns": {
+        "Type 2 Diabetes Mellitus": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Diabetic Peripheral Neuropathy Severity": {
+          "dtype": "float64"
+        },
+        "Urinary Incontinence Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 2,
+      "columns": {
+        "Type 2 Diabetes Mellitus": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Diabetic Peripheral Neuropathy Severity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Type 2 Diabetes Mellitus": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Diabetic Peripheral Neuropathy Severity": {
+      "dtype": "float64"
+    },
+    "Urinary Incontinence Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Soil Permeability Index"
+  ],
+  "proxified_nodes": [
+    "Peak Flood Depth",
+    "Storm Precipitation Volume"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Peak Flood Depth",
+    "Storm Precipitation Volume"
+  ],
+  "proxy_groups": {
+    "Peak Flood Depth": [
+      "Peak Flood Depth1",
+      "Peak Flood Depth2",
+      "Peak Flood Depth3",
+      "Peak Flood Depth4",
+      "Peak Flood Depth5",
+      "Peak Flood Depth6",
+      "Peak Flood Depth7"
+    ],
+    "Storm Precipitation Volume": [
+      "Storm Precipitation Volume1",
+      "Storm Precipitation Volume2",
+      "Storm Precipitation Volume3",
+      "Storm Precipitation Volume4",
+      "Storm Precipitation Volume5",
+      "Storm Precipitation Volume6",
+      "Storm Precipitation Volume7",
+      "Storm Precipitation Volume8"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Peak Flood Depth": {
+      "conceptual_node": "Peak Flood Depth",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Peak Flood Depth1",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Peak Flood Depth": -0.65820175692612
+            },
+            "b": 0.737432019613186,
+            "w_nl": {
+              "Peak Flood Depth": -0.19046724487898148
+            },
+            "nl_shift": {
+              "Peak Flood Depth": 1.0366537520903778
+            }
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth2",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.3476379982030067,
+          "params": {
+            "w": {
+              "Peak Flood Depth": -0.49730994344707796
+            },
+            "b": 0.1830692385535247,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Flood Depth": -0.5988364317275087
+            },
+            "nl_shift": {
+              "Peak Flood Depth": 0.7705030507539012
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth3",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.996298829398715,
+          "params": {
+            "w": {
+              "Peak Flood Depth": -1.434202298589783
+            },
+            "b": 0.21595682964841173,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Flood Depth": 0.7840023360381856
+            },
+            "nl_shift": {
+              "Peak Flood Depth": 0.12560616022968385
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth4",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Peak Flood Depth": 0.833340639552899
+            },
+            "b": -0.7681220554459268,
+            "w_nl": {
+              "Peak Flood Depth": 0.2643178755866336
+            },
+            "nl_shift": {
+              "Peak Flood Depth": 0.6399943703050348
+            }
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth5",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.3022337119229253,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  19
+                ],
+                [
+                  19,
+                  5
+                ],
+                [
+                  5,
+                  37
+                ],
+                [
+                  37,
+                  64
+                ],
+                [
+                  64,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  64
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Peak Flood Depth"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth6",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.8794307175893366,
+          "params": {
+            "w": {
+              "Peak Flood Depth": 0.43132625330945973
+            },
+            "b": -0.3095071202532069,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Flood Depth": -0.1746734783050079
+            },
+            "nl_shift": {
+              "Peak Flood Depth": 1.1933297054051444
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Peak Flood Depth7",
+          "conceptual_node": "Peak Flood Depth",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.6590367261930927,
+          "params": {
+            "w": {
+              "Peak Flood Depth": 0.6018908989786511
+            },
+            "b": 0.3458463076862307,
+            "w_pair": {},
+            "w_nl": {
+              "Peak Flood Depth": -0.4260656015116078
+            },
+            "nl_shift": {
+              "Peak Flood Depth": -0.9402208184099143
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.2692791886267915,
+        "average_information": 0.38190646683863694,
+        "lower_tail_quantiles": {
+          "q10": 0.27235020480981426,
+          "q25": 0.27235020480981426
+        },
+        "per_proxy": {
+          "Peak Flood Depth1": {
+            "proxy_type": "binary"
+          },
+          "Peak Flood Depth2": {
+            "proxy_type": "continuous"
+          },
+          "Peak Flood Depth3": {
+            "proxy_type": "continuous"
+          },
+          "Peak Flood Depth4": {
+            "proxy_type": "binary"
+          },
+          "Peak Flood Depth5": {
+            "proxy_type": "continuous"
+          },
+          "Peak Flood Depth6": {
+            "proxy_type": "continuous"
+          },
+          "Peak Flood Depth7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Peak Flood Depth2",
+          "rmse": 2.025616268004375,
+          "r2": 0.5671892401201694
+        },
+        "calibrated": {
+          "rmse": 1.2829834999104848,
+          "r2": 0.8263695708422911
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.7426327680938902,
+          "r2_gain": 0.25918033072212177
+        }
+      }
+    },
+    "Storm Precipitation Volume": {
+      "conceptual_node": "Storm Precipitation Volume",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Storm Precipitation Volume1",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.1993280152352062,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  23
+                ],
+                [
+                  23,
+                  17
+                ],
+                [
+                  17,
+                  56
+                ],
+                [
+                  56,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  23
+                ],
+                [
+                  1,
+                  17
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Storm Precipitation Volume"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume2",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": 0.056084519015082046
+            },
+            "b": -0.2150217122333699,
+            "w_nl": {
+              "Storm Precipitation Volume": -0.7018240502658714
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": -0.6021788548898495
+            }
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume3",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": 1.1910923071283142
+            },
+            "b": -0.6678582947085446,
+            "w_nl": {
+              "Storm Precipitation Volume": 1.0168139988222857
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": -0.4983418850864898
+            }
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume4",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.0004088397734092,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  33,
+                  32
+                ],
+                [
+                  32,
+                  4
+                ],
+                [
+                  4,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  32
+                ],
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Storm Precipitation Volume"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume5",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": -0.6355804474115687
+            },
+            "b": 0.459192237322295,
+            "w_nl": {
+              "Storm Precipitation Volume": -0.8411787693211231
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": 0.8632578171498411
+            }
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume6",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": -1.1407796336925136
+            },
+            "b": 0.7479952089650448,
+            "w_nl": {
+              "Storm Precipitation Volume": -0.9479941371972562
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": -0.5723204204627453
+            }
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume7",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.487340687886853,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": -0.542390506991951
+            },
+            "b": 0.19131643348538352,
+            "w_pair": {},
+            "w_nl": {
+              "Storm Precipitation Volume": 0.8146967670227807
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": 1.2122677900732377
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Storm Precipitation Volume8",
+          "conceptual_node": "Storm Precipitation Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.8106513376062252,
+          "params": {
+            "w": {
+              "Storm Precipitation Volume": 0.441520099144435
+            },
+            "b": -0.7767006772680983,
+            "w_pair": {},
+            "w_nl": {
+              "Storm Precipitation Volume": -1.0212043794358232
+            },
+            "nl_shift": {
+              "Storm Precipitation Volume": 0.9915518171200706
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.14527918472710832,
+        "average_information": 1.1096251020117913,
+        "lower_tail_quantiles": {
+          "q10": 0.20234639568713325,
+          "q25": 0.2566822647483312
+        },
+        "per_proxy": {
+          "Storm Precipitation Volume1": {
+            "proxy_type": "continuous"
+          },
+          "Storm Precipitation Volume2": {
+            "proxy_type": "binary"
+          },
+          "Storm Precipitation Volume3": {
+            "proxy_type": "binary"
+          },
+          "Storm Precipitation Volume4": {
+            "proxy_type": "continuous"
+          },
+          "Storm Precipitation Volume5": {
+            "proxy_type": "binary"
+          },
+          "Storm Precipitation Volume6": {
+            "proxy_type": "binary"
+          },
+          "Storm Precipitation Volume7": {
+            "proxy_type": "continuous"
+          },
+          "Storm Precipitation Volume8": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Storm Precipitation Volume3",
+          "rmse": 0.9767793298542715,
+          "r2": 0.3563490668837611
+        },
+        "calibrated": {
+          "rmse": 0.7290236637465427,
+          "r2": 0.6414574252778857
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.2477556661077288,
+          "r2_gain": 0.28510835839412463
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

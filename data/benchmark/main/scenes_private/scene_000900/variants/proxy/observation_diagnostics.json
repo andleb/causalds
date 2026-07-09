@@ -1,0 +1,395 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Political Threshold for Mandate Authorization"
+  ],
+  "proxified_nodes": [
+    "Formal Negotiation Mandate"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Formal Negotiation Mandate"
+  ],
+  "proxy_groups": {
+    "Formal Negotiation Mandate": [
+      "Formal Negotiation Mandate1",
+      "Formal Negotiation Mandate2",
+      "Formal Negotiation Mandate3",
+      "Formal Negotiation Mandate4",
+      "Formal Negotiation Mandate5",
+      "Formal Negotiation Mandate6",
+      "Formal Negotiation Mandate7",
+      "Formal Negotiation Mandate8",
+      "Formal Negotiation Mandate9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Formal Negotiation Mandate": {
+      "conceptual_node": "Formal Negotiation Mandate",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Formal Negotiation Mandate1",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 0.3828495528015122
+            },
+            "b": -0.32406103659984625,
+            "w_nl": {
+              "Formal Negotiation Mandate": -0.5510614705727207
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": 0.03820623967208858
+            }
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate2",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": -1.8408331656759143
+            },
+            "b": 0.41320273436963817,
+            "w_nl": {
+              "Formal Negotiation Mandate": 0.7138322731582709
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": -1.0509699670906283
+            }
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate3",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 0.013198054779797852
+            },
+            "b": 0.4790032275153167,
+            "w_nl": {
+              "Formal Negotiation Mandate": 0.8275140736443791
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": 0.33585256853946754
+            }
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate4",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 0.6593882213450106
+            },
+            "b": 0.5904970147608604,
+            "w_nl": {
+              "Formal Negotiation Mandate": 0.331568696843492
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": 0.13739635767618674
+            }
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate5",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.3233299555097044,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 1.149554809583444
+            },
+            "b": -0.13402300417642424,
+            "w_pair": {},
+            "w_nl": {
+              "Formal Negotiation Mandate": -0.11439744046930184
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": 0.7305707279667799
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate6",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9525039041262895,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 0.9548166335245998
+            },
+            "b": 0.6488023454666151,
+            "w_pair": {},
+            "w_nl": {
+              "Formal Negotiation Mandate": -0.4414584855488368
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": -0.5102250170210045
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate7",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.2829555990023522,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  55,
+                  36
+                ],
+                [
+                  36,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Formal Negotiation Mandate"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate8",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Formal Negotiation Mandate": 0.47014250613428243
+            },
+            "b": -0.3596966220631339,
+            "w_nl": {
+              "Formal Negotiation Mandate": -0.9896339335783741
+            },
+            "nl_shift": {
+              "Formal Negotiation Mandate": 0.4801043854249798
+            }
+          }
+        },
+        {
+          "column_name": "Formal Negotiation Mandate9",
+          "conceptual_node": "Formal Negotiation Mandate",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.703008822783152,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  28,
+                  43
+                ],
+                [
+                  43,
+                  56
+                ],
+                [
+                  56,
+                  15
+                ],
+                [
+                  15,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  28
+                ],
+                [
+                  1,
+                  43
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  15
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Formal Negotiation Mandate"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 4.3697846761670815,
+        "min_information": 4.3697846761670815,
+        "average_information": 4.3697846761670815,
+        "lower_tail_quantiles": {
+          "q10": 4.3697846761670815,
+          "q25": 4.3697846761670815
+        },
+        "per_proxy": {
+          "Formal Negotiation Mandate1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0004393154577333339,
+            "p_w1_z0": 0.4206191704703314,
+            "p_w1_z1": 0.4500100786131828
+          },
+          "Formal Negotiation Mandate2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.08425367482087394,
+            "p_w1_z0": 0.6847588807303037,
+            "p_w1_z1": 0.2803870187462205
+          },
+          "Formal Negotiation Mandate3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.008172713801260282,
+            "p_w1_z0": 0.5710458424290534,
+            "p_w1_z1": 0.6941140899012296
+          },
+          "Formal Negotiation Mandate4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.02003221604010673,
+            "p_w1_z0": 0.6335582456836674,
+            "p_w1_z1": 0.8116307196129813
+          },
+          "Formal Negotiation Mandate5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.48558464073744934,
+            "mean_z0": -0.05292239553990901,
+            "mean_z1": 0.9913113510141048,
+            "pooled_var": 2.245590214274948
+          },
+          "Formal Negotiation Mandate6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.20696187604147923,
+            "mean_z0": 0.4656977193530334,
+            "mean_z1": 1.2170021075918707,
+            "pooled_var": 2.727353919394338
+          },
+          "Formal Negotiation Mandate7": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 2.9111595050984347,
+            "mean_z0": -1.0085052949417845,
+            "mean_z1": 0.9983621118033864,
+            "pooled_var": 1.3834751346336505
+          },
+          "Formal Negotiation Mandate8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0007965039859413273,
+            "p_w1_z0": 0.4914665608255606,
+            "p_w1_z1": 0.451622656722435
+          },
+          "Formal Negotiation Mandate9": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6523842301838029,
+            "mean_z0": 0.9852243323990891,
+            "mean_z1": -0.9747552824796464,
+            "pooled_var": 5.888431867302933
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Formal Negotiation Mandate7",
+          "log_loss": 0.4393501088562715,
+          "auc": 0.8772258924571171
+        },
+        "calibrated": {
+          "log_loss": 0.2905512275909673,
+          "auc": 0.9488516015024961
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.14879888126530422,
+          "auc_gain": 0.07162570904537902
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

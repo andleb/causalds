@@ -1,0 +1,570 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Absence of Deathbed Witnesses",
+    "Reclusive and Paranoid Temperament"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Absence of Deathbed Witnesses",
+    "Reclusive and Paranoid Temperament"
+  ],
+  "proxy_groups": {
+    "Absence of Deathbed Witnesses": [
+      "Absence of Deathbed Witnesses1",
+      "Absence of Deathbed Witnesses2",
+      "Absence of Deathbed Witnesses3",
+      "Absence of Deathbed Witnesses4",
+      "Absence of Deathbed Witnesses5",
+      "Absence of Deathbed Witnesses6",
+      "Absence of Deathbed Witnesses7",
+      "Absence of Deathbed Witnesses8",
+      "Absence of Deathbed Witnesses9"
+    ],
+    "Reclusive and Paranoid Temperament": [
+      "Reclusive and Paranoid Temperament1",
+      "Reclusive and Paranoid Temperament2",
+      "Reclusive and Paranoid Temperament3",
+      "Reclusive and Paranoid Temperament4",
+      "Reclusive and Paranoid Temperament5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Absence of Deathbed Witnesses": {
+      "conceptual_node": "Absence of Deathbed Witnesses",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Absence of Deathbed Witnesses1",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": 0.8742064957517436
+            },
+            "b": -0.740263840875582,
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.40772284442868434
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": -1.0076213984997484
+            }
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses2",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.16227980890264,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": -0.4396361684832636
+            },
+            "b": -0.4559446676226821,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.6246591482702708
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": -0.7986175666182587
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses3",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.4009742992703966,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  56,
+                  35
+                ],
+                [
+                  35,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Absence of Deathbed Witnesses"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses4",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9766633525996733,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": 0.7695534967898783
+            },
+            "b": -1.2636488908003913,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.5390515461743531
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": 0.6986777134313948
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses5",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.872310838779691,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": -0.30499308987914797
+            },
+            "b": 0.16907323211583988,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": 0.6884081727943588
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": 0.11934887050127663
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses6",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.85334757164106,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": -1.0834079835883244
+            },
+            "b": 0.4593787966719187,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.4840199484495908
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": -0.19298979294112462
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses7",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.4190979929292613,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": 1.1930945339237808
+            },
+            "b": -0.40785007534068035,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": 1.050873168032471
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": -0.7612813708032602
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses8",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": -1.2296411462713246
+            },
+            "b": -1.6196565140032988,
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.8634136021276093
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": -0.9273921494710798
+            }
+          }
+        },
+        {
+          "column_name": "Absence of Deathbed Witnesses9",
+          "conceptual_node": "Absence of Deathbed Witnesses",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.076819849699187,
+          "params": {
+            "w": {
+              "Absence of Deathbed Witnesses": 0.7135305542949534
+            },
+            "b": 0.2545546174590991,
+            "w_pair": {},
+            "w_nl": {
+              "Absence of Deathbed Witnesses": -0.9992252078417272
+            },
+            "nl_shift": {
+              "Absence of Deathbed Witnesses": 1.1847098743722144
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.2213194539168046,
+        "min_information": 1.2213194539168046,
+        "average_information": 1.2213194539168046,
+        "lower_tail_quantiles": {
+          "q10": 1.2213194539168046,
+          "q25": 1.2213194539168046
+        },
+        "per_proxy": {
+          "Absence of Deathbed Witnesses1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01653491309787484,
+            "p_w1_z0": 0.28054232319530964,
+            "p_w1_z1": 0.4675059008654603
+          },
+          "Absence of Deathbed Witnesses2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.07094066500174806,
+            "mean_z0": -0.8599853048146857,
+            "mean_z1": -1.4367382563140279,
+            "pooled_var": 4.689044951227984
+          },
+          "Absence of Deathbed Witnesses3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.5829515030905109,
+            "mean_z0": -1.0217605631922404,
+            "mean_z1": 1.0471927121142646,
+            "pooled_var": 7.342922408996518
+          },
+          "Absence of Deathbed Witnesses4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.019247247508411086,
+            "mean_z0": -0.9618948089717505,
+            "mean_z1": -0.6572584661235824,
+            "pooled_var": 4.821640151058035
+          },
+          "Absence of Deathbed Witnesses5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.024807571101161437,
+            "mean_z0": 0.07197134546554718,
+            "mean_z1": 0.3470184708352324,
+            "pooled_var": 3.0495093963707527
+          },
+          "Absence of Deathbed Witnesses6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.11866019331771387,
+            "mean_z0": 0.36697397230761547,
+            "mean_z1": -1.0337667028499418,
+            "pooled_var": 16.535237169110076
+          },
+          "Absence of Deathbed Witnesses7": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.3746016642962772,
+            "mean_z0": 0.28198860608015486,
+            "mean_z1": 1.7605088671046603,
+            "pooled_var": 5.835591164194665
+          },
+          "Absence of Deathbed Witnesses8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.010899939140258118,
+            "p_w1_z0": 0.11440087944301942,
+            "p_w1_z1": 0.031628638867033834
+          },
+          "Absence of Deathbed Witnesses9": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.002675757362849082,
+            "mean_z0": 1.0744279043415508,
+            "mean_z1": 1.1388420151630607,
+            "pooled_var": 1.5506554258371992
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Absence of Deathbed Witnesses3",
+          "log_loss": 0.6128958151739926,
+          "auc": 0.7193116795764466
+        },
+        "calibrated": {
+          "log_loss": 0.46438742826903795,
+          "auc": 0.8290367844398784
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.14850838690495466,
+          "auc_gain": 0.10972510486343179
+        }
+      }
+    },
+    "Reclusive and Paranoid Temperament": {
+      "conceptual_node": "Reclusive and Paranoid Temperament",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Reclusive and Paranoid Temperament1",
+          "conceptual_node": "Reclusive and Paranoid Temperament",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Reclusive and Paranoid Temperament": 1.1454694364220293
+            },
+            "b": 0.32818579641617657,
+            "w_nl": {
+              "Reclusive and Paranoid Temperament": -0.4402059148847837
+            },
+            "nl_shift": {
+              "Reclusive and Paranoid Temperament": -0.3925622846531396
+            }
+          }
+        },
+        {
+          "column_name": "Reclusive and Paranoid Temperament2",
+          "conceptual_node": "Reclusive and Paranoid Temperament",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.0234212335704345,
+          "params": {
+            "w": {
+              "Reclusive and Paranoid Temperament": 0.950329086223494
+            },
+            "b": -1.0507031649519085,
+            "w_pair": {},
+            "w_nl": {
+              "Reclusive and Paranoid Temperament": 0.00792726489088924
+            },
+            "nl_shift": {
+              "Reclusive and Paranoid Temperament": 0.8808505640158124
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Reclusive and Paranoid Temperament3",
+          "conceptual_node": "Reclusive and Paranoid Temperament",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Reclusive and Paranoid Temperament": -1.1359433661958294
+            },
+            "b": -0.007240658807377174,
+            "w_nl": {
+              "Reclusive and Paranoid Temperament": 0.7693934388241276
+            },
+            "nl_shift": {
+              "Reclusive and Paranoid Temperament": -0.09094389965736993
+            }
+          }
+        },
+        {
+          "column_name": "Reclusive and Paranoid Temperament4",
+          "conceptual_node": "Reclusive and Paranoid Temperament",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.0232004321433696,
+          "params": {
+            "w": {
+              "Reclusive and Paranoid Temperament": -1.1773116796137424
+            },
+            "b": 0.33571167235094757,
+            "w_pair": {},
+            "w_nl": {
+              "Reclusive and Paranoid Temperament": -0.24359234408883645
+            },
+            "nl_shift": {
+              "Reclusive and Paranoid Temperament": 0.11844696361104479
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Reclusive and Paranoid Temperament5",
+          "conceptual_node": "Reclusive and Paranoid Temperament",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.6364038681984208,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  32
+                ],
+                [
+                  32,
+                  53
+                ],
+                [
+                  53,
+                  27
+                ],
+                [
+                  27,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  32
+                ],
+                [
+                  1,
+                  53
+                ],
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Reclusive and Paranoid Temperament"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.6542507598830702,
+        "average_information": 0.9938380248267338,
+        "lower_tail_quantiles": {
+          "q10": 0.6670273696118115,
+          "q25": 0.7735229609863066
+        },
+        "per_proxy": {
+          "Reclusive and Paranoid Temperament1": {
+            "proxy_type": "binary"
+          },
+          "Reclusive and Paranoid Temperament2": {
+            "proxy_type": "continuous"
+          },
+          "Reclusive and Paranoid Temperament3": {
+            "proxy_type": "binary"
+          },
+          "Reclusive and Paranoid Temperament4": {
+            "proxy_type": "continuous"
+          },
+          "Reclusive and Paranoid Temperament5": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Reclusive and Paranoid Temperament4",
+          "rmse": 0.8278804689733915,
+          "r2": 0.3638024325339124
+        },
+        "calibrated": {
+          "rmse": 0.6751040463596863,
+          "r2": 0.5769437141678675
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.15277642261370517,
+          "r2_gain": 0.21314128163395507
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,205 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Subsurface Soil Permeability"
+  ],
+  "proxified_nodes": [
+    "Irrigation Event Executed"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Irrigation Event Executed"
+  ],
+  "proxy_groups": {
+    "Irrigation Event Executed": [
+      "Irrigation Event Executed1",
+      "Irrigation Event Executed2",
+      "Irrigation Event Executed3",
+      "Irrigation Event Executed4",
+      "Irrigation Event Executed5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Irrigation Event Executed": {
+      "conceptual_node": "Irrigation Event Executed",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Irrigation Event Executed1",
+          "conceptual_node": "Irrigation Event Executed",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Event Executed": -1.3789899935124927
+            },
+            "b": -1.3592428347641368,
+            "w_nl": {
+              "Irrigation Event Executed": -0.5296087203135357
+            },
+            "nl_shift": {
+              "Irrigation Event Executed": 0.2989274296383464
+            }
+          }
+        },
+        {
+          "column_name": "Irrigation Event Executed2",
+          "conceptual_node": "Irrigation Event Executed",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Event Executed": -0.3050540431242328
+            },
+            "b": 0.1239823351678787,
+            "w_nl": {
+              "Irrigation Event Executed": 0.8879234627915835
+            },
+            "nl_shift": {
+              "Irrigation Event Executed": 0.5424816836656055
+            }
+          }
+        },
+        {
+          "column_name": "Irrigation Event Executed3",
+          "conceptual_node": "Irrigation Event Executed",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.8276899439314094,
+          "params": {
+            "w": {
+              "Irrigation Event Executed": -1.101269630053078
+            },
+            "b": -0.44594588225717874,
+            "w_pair": {},
+            "w_nl": {
+              "Irrigation Event Executed": 0.8248656724290904
+            },
+            "nl_shift": {
+              "Irrigation Event Executed": 1.1564648628893508
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Irrigation Event Executed4",
+          "conceptual_node": "Irrigation Event Executed",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Event Executed": -2.2073525201702084
+            },
+            "b": 0.18598768270856547,
+            "w_nl": {
+              "Irrigation Event Executed": 0.6732784662504945
+            },
+            "nl_shift": {
+              "Irrigation Event Executed": -0.5143332138878027
+            }
+          }
+        },
+        {
+          "column_name": "Irrigation Event Executed5",
+          "conceptual_node": "Irrigation Event Executed",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Irrigation Event Executed": -0.4421084212197989
+            },
+            "b": 0.01935214747883158,
+            "w_nl": {
+              "Irrigation Event Executed": -0.928983413075859
+            },
+            "nl_shift": {
+              "Irrigation Event Executed": -0.5179127656047868
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.26063438322077115,
+        "min_information": 0.26063438322077115,
+        "average_information": 0.26063438322077115,
+        "lower_tail_quantiles": {
+          "q10": 0.26063438322077115,
+          "q25": 0.26063438322077115
+        },
+        "per_proxy": {
+          "Irrigation Event Executed1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03792639370974055,
+            "p_w1_z0": 0.23090468853180718,
+            "p_w1_z1": 0.047920102620487445
+          },
+          "Irrigation Event Executed2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0015512642797341838,
+            "p_w1_z0": 0.4621395553598943,
+            "p_w1_z1": 0.518050210738501
+          },
+          "Irrigation Event Executed3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.10433764253151934,
+            "mean_z0": -1.1018957459162961,
+            "mean_z1": -1.687626532001927,
+            "pooled_var": 3.288176207976426
+          },
+          "Irrigation Event Executed4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.10253587739548459,
+            "p_w1_z0": 0.5994937266123707,
+            "p_w1_z1": 0.16849917537108303
+          },
+          "Irrigation Event Executed5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.014283205304292501,
+            "p_w1_z0": 0.4336341624477218,
+            "p_w1_z1": 0.2722191680410482
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Irrigation Event Executed4",
+          "log_loss": 0.5933198238052366,
+          "auc": 0.712033825192972
+        },
+        "calibrated": {
+          "log_loss": 0.542090208970383,
+          "auc": 0.7958248445548242
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.051229614834853665,
+          "auc_gain": 0.08379101936185218
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

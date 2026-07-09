@@ -1,0 +1,392 @@
+{
+  "n_rows": 16000,
+  "n_columns": 15,
+  "columns": {
+    "Historical Controversy Regarding Cause of Death": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses2": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses3": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses4": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses5": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses6": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses7": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses9": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Reclusive and Paranoid Temperament2": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Reclusive and Paranoid Temperament4": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 15,
+      "columns": {
+        "Historical Controversy Regarding Cause of Death": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses2": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses3": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses4": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses5": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses6": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses7": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses9": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament2": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament4": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 14,
+      "columns": {
+        "Absence of Deathbed Witnesses1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses2": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses3": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses4": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses5": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses6": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses7": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses9": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament2": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament4": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 17,
+      "columns": {
+        "Historical Controversy Regarding Cause of Death": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses2": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses3": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses4": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses5": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses6": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses7": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Absence of Deathbed Witnesses9": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament2": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament4": {
+          "dtype": "float64"
+        },
+        "Reclusive and Paranoid Temperament5": {
+          "dtype": "float64"
+        },
+        "Absence of Deathbed Witnesses": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Reclusive and Paranoid Temperament": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Historical Controversy Regarding Cause of Death": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses2": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses3": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses4": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses5": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses6": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses7": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Absence of Deathbed Witnesses9": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Reclusive and Paranoid Temperament2": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Reclusive and Paranoid Temperament4": {
+      "dtype": "float64"
+    },
+    "Reclusive and Paranoid Temperament5": {
+      "dtype": "float64"
+    },
+    "Absence of Deathbed Witnesses": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Reclusive and Paranoid Temperament": {
+      "dtype": "float64"
+    }
+  }
+}

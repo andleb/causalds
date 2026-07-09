@@ -1,0 +1,359 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Contact with Rabid Animal"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Contact with Rabid Animal"
+  ],
+  "proxy_groups": {
+    "Contact with Rabid Animal": [
+      "Contact with Rabid Animal1",
+      "Contact with Rabid Animal2",
+      "Contact with Rabid Animal3",
+      "Contact with Rabid Animal4",
+      "Contact with Rabid Animal5",
+      "Contact with Rabid Animal6",
+      "Contact with Rabid Animal7",
+      "Contact with Rabid Animal8",
+      "Contact with Rabid Animal9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Contact with Rabid Animal": {
+      "conceptual_node": "Contact with Rabid Animal",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Contact with Rabid Animal1",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": -1.9310621913936081
+            },
+            "b": -0.15039322494469615,
+            "w_nl": {
+              "Contact with Rabid Animal": -0.5637851205010149
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": 1.4483970373427901
+            }
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal2",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.1701358685273908,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": 0.729815790091922
+            },
+            "b": 0.16506839355235367,
+            "w_pair": {},
+            "w_nl": {
+              "Contact with Rabid Animal": -0.4599999526825367
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": 0.9337501553786378
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal3",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.9317799449926842,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  43
+                ],
+                [
+                  43,
+                  56
+                ],
+                [
+                  56,
+                  49
+                ],
+                [
+                  49,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  43
+                ],
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Contact with Rabid Animal"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal4",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.3373484446269839,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": -0.3668621588369921
+            },
+            "b": 0.08197637499804614,
+            "w_pair": {},
+            "w_nl": {
+              "Contact with Rabid Animal": 0.25710112323393564
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -0.22958821966941878
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal5",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": -1.948567003007462
+            },
+            "b": 0.5651812125677307,
+            "w_nl": {
+              "Contact with Rabid Animal": 0.13864942297796418
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -1.4572974204962583
+            }
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal6",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.3363744479681126,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": 0.6456792143542212
+            },
+            "b": -0.181855146655976,
+            "w_pair": {},
+            "w_nl": {
+              "Contact with Rabid Animal": -0.7964767977989778
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -0.2802592607720724
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal7",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": 1.2314163184116085
+            },
+            "b": 0.08374812333768077,
+            "w_nl": {
+              "Contact with Rabid Animal": -0.39384566741666727
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -0.25418254987190947
+            }
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal8",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": 0.06554579482979017
+            },
+            "b": -0.13148732224453713,
+            "w_nl": {
+              "Contact with Rabid Animal": -1.183049856816925
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -0.7954186567439494
+            }
+          }
+        },
+        {
+          "column_name": "Contact with Rabid Animal9",
+          "conceptual_node": "Contact with Rabid Animal",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Contact with Rabid Animal": -1.09098938995188
+            },
+            "b": 0.28838287490125153,
+            "w_nl": {
+              "Contact with Rabid Animal": -1.0263257689913778
+            },
+            "nl_shift": {
+              "Contact with Rabid Animal": -1.0264978558806688
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 1.8170725201116562,
+        "min_information": 1.8170725201116562,
+        "average_information": 1.8170725201116562,
+        "lower_tail_quantiles": {
+          "q10": 1.8170725201116562,
+          "q25": 1.8170725201116562
+        },
+        "per_proxy": {
+          "Contact with Rabid Animal1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.10128285078724182,
+            "p_w1_z0": 0.5505255613951267,
+            "p_w1_z1": 0.13312693498452013
+          },
+          "Contact with Rabid Animal2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.11288810021897935,
+            "mean_z0": 0.4858304018787011,
+            "mean_z1": 0.8780436233487419,
+            "pooled_var": 1.3626875711213742
+          },
+          "Contact with Rabid Animal3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 1.3536919209724787,
+            "mean_z0": 1.0225319536876651,
+            "mean_z1": -0.9913036125751937,
+            "pooled_var": 2.99590595549377
+          },
+          "Contact with Rabid Animal4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.07590221672298819,
+            "mean_z0": 0.14312071518808378,
+            "mean_z1": -0.058893575422243535,
+            "pooled_var": 0.5376624738080132
+          },
+          "Contact with Rabid Animal5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.10063808819626625,
+            "p_w1_z0": 0.6600573339703775,
+            "p_w1_z1": 0.21878224974200206
+          },
+          "Contact with Rabid Animal6": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.0028377570796760208,
+            "mean_z0": -0.38210976371803307,
+            "mean_z1": -0.2410862901831594,
+            "pooled_var": 7.0082179444731505
+          },
+          "Contact with Rabid Animal7": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03221837683110382,
+            "p_w1_z0": 0.5011944577161969,
+            "p_w1_z1": 0.7476780185758514
+          },
+          "Contact with Rabid Animal8": {
+            "proxy_type": "binary",
+            "mutual_information": 0.001226098588357042,
+            "p_w1_z0": 0.35176779741997133,
+            "p_w1_z1": 0.3046955624355005
+          },
+          "Contact with Rabid Animal9": {
+            "proxy_type": "binary",
+            "mutual_information": 0.036387110714565324,
+            "p_w1_z0": 0.4366937410415671,
+            "p_w1_z1": 0.18756449948400414
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Contact with Rabid Animal3",
+          "log_loss": 0.5642581226984227,
+          "auc": 0.7826461248922625
+        },
+        "calibrated": {
+          "log_loss": 0.36993530326863583,
+          "auc": 0.9112577059904605
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.19432281942978685,
+          "auc_gain": 0.12861158109819804
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,299 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Unobserved Plant Resistance Genotype Dosage"
+  ],
+  "proxified_nodes": [
+    "Henosepilachna guttatopustulata Abundance",
+    "Observed Plant Resistance Phenotype"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Henosepilachna guttatopustulata Abundance",
+    "Observed Plant Resistance Phenotype"
+  ],
+  "proxy_groups": {
+    "Henosepilachna guttatopustulata Abundance": [
+      "Henosepilachna guttatopustulata Abundance1",
+      "Henosepilachna guttatopustulata Abundance2"
+    ],
+    "Observed Plant Resistance Phenotype": [
+      "Observed Plant Resistance Phenotype1",
+      "Observed Plant Resistance Phenotype2"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Henosepilachna guttatopustulata Abundance": {
+      "conceptual_node": "Henosepilachna guttatopustulata Abundance",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Henosepilachna guttatopustulata Abundance1",
+          "conceptual_node": "Henosepilachna guttatopustulata Abundance",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.1800318583623457,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  25
+                ],
+                [
+                  25,
+                  39
+                ],
+                [
+                  39,
+                  57
+                ],
+                [
+                  57,
+                  60
+                ],
+                [
+                  60,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  25
+                ],
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Henosepilachna guttatopustulata Abundance"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Henosepilachna guttatopustulata Abundance2",
+          "conceptual_node": "Henosepilachna guttatopustulata Abundance",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.1423998798978037,
+          "params": {
+            "w": {
+              "Henosepilachna guttatopustulata Abundance": 0.9982640214716322
+            },
+            "b": -0.046590717553980816,
+            "w_pair": {},
+            "w_nl": {
+              "Henosepilachna guttatopustulata Abundance": -0.5870352865738347
+            },
+            "nl_shift": {
+              "Henosepilachna guttatopustulata Abundance": 0.020731540413336802
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.04867777761414369,
+        "average_information": 0.12964098803670182,
+        "lower_tail_quantiles": {
+          "q10": 0.09603351345270507,
+          "q25": 0.09603351345270507
+        },
+        "per_proxy": {
+          "Henosepilachna guttatopustulata Abundance1": {
+            "proxy_type": "continuous"
+          },
+          "Henosepilachna guttatopustulata Abundance2": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Henosepilachna guttatopustulata Abundance2",
+          "rmse": 0.8290434391345561,
+          "r2": 0.027525236627229388
+        },
+        "calibrated": {
+          "rmse": 0.8206879274863795,
+          "r2": 0.047028624016605236
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.008355511648176606,
+          "r2_gain": 0.019503387389375848
+        }
+      }
+    },
+    "Observed Plant Resistance Phenotype": {
+      "conceptual_node": "Observed Plant Resistance Phenotype",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Observed Plant Resistance Phenotype1",
+          "conceptual_node": "Observed Plant Resistance Phenotype",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.4789496341979143,
+          "params": {
+            "w": {
+              "Observed Plant Resistance Phenotype": -0.8675053939995864
+            },
+            "b": 0.01668167621295198,
+            "w_pair": {},
+            "w_nl": {
+              "Observed Plant Resistance Phenotype": -0.6474947252812967
+            },
+            "nl_shift": {
+              "Observed Plant Resistance Phenotype": 0.07663378868580395
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Observed Plant Resistance Phenotype2",
+          "conceptual_node": "Observed Plant Resistance Phenotype",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.4487215764568404,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  56,
+                  60
+                ],
+                [
+                  60,
+                  29
+                ],
+                [
+                  29,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Observed Plant Resistance Phenotype"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 6.566516644336071,
+        "min_information": 6.566516644336071,
+        "average_information": 6.566516644336071,
+        "lower_tail_quantiles": {
+          "q10": 6.566516644336071,
+          "q25": 6.566516644336071
+        },
+        "per_proxy": {
+          "Observed Plant Resistance Phenotype1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 3.950987798789276,
+            "mean_z0": 0.0659063912220364,
+            "mean_z1": -1.3212903997371592,
+            "pooled_var": 0.4870465399658204
+          },
+          "Observed Plant Resistance Phenotype2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 2.615528845546794,
+            "mean_z0": -0.9999857072768096,
+            "mean_z1": 1.0077492338736738,
+            "pooled_var": 1.5411795594530433
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Observed Plant Resistance Phenotype1",
+          "log_loss": 0.324094721138261,
+          "auc": 0.9213209324848541
+        },
+        "calibrated": {
+          "log_loss": 0.1702549876324054,
+          "auc": 0.9712759698942964
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.15383973350585559,
+          "auc_gain": 0.04995503740944229
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

@@ -1,0 +1,211 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Intestinal Colonization Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Intestinal Colonization Status"
+  ],
+  "proxy_groups": {
+    "Intestinal Colonization Status": [
+      "Intestinal Colonization Status1",
+      "Intestinal Colonization Status2",
+      "Intestinal Colonization Status3",
+      "Intestinal Colonization Status4",
+      "Intestinal Colonization Status5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Intestinal Colonization Status": {
+      "conceptual_node": "Intestinal Colonization Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Intestinal Colonization Status1",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.669226842754815,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": 0.8760013887944168
+            },
+            "b": 0.4942059909165684,
+            "w_pair": {},
+            "w_nl": {
+              "Intestinal Colonization Status": -0.7070613061528668
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": 1.2829103843100373
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status2",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": 1.1589710288715824
+            },
+            "b": -0.7846548808827467,
+            "w_nl": {
+              "Intestinal Colonization Status": -0.46846830736572675
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": 0.9663360781354795
+            }
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status3",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": 1.266426733361932
+            },
+            "b": 1.0826917996887857,
+            "w_nl": {
+              "Intestinal Colonization Status": -0.5788275853943542
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": 1.0612721361178288
+            }
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status4",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.269536382897757,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": 0.907748925433593
+            },
+            "b": -0.23848338282455556,
+            "w_pair": {},
+            "w_nl": {
+              "Intestinal Colonization Status": -0.5621337805690894
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": 1.3647351998783166
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Intestinal Colonization Status5",
+          "conceptual_node": "Intestinal Colonization Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.942076705354067,
+          "params": {
+            "w": {
+              "Intestinal Colonization Status": -0.6470718225075953
+            },
+            "b": 0.41858544936486247,
+            "w_pair": {},
+            "w_nl": {
+              "Intestinal Colonization Status": 0.5192732358996357
+            },
+            "nl_shift": {
+              "Intestinal Colonization Status": -0.7911187561355931
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.16265766830602874,
+        "min_information": 0.16265766830602874,
+        "average_information": 0.16265766830602874,
+        "lower_tail_quantiles": {
+          "q10": 0.16265766830602874,
+          "q25": 0.16265766830602874
+        },
+        "per_proxy": {
+          "Intestinal Colonization Status1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.04878209363834677,
+            "mean_z0": 1.1177348948842198,
+            "mean_z1": 1.5514646881523397,
+            "pooled_var": 3.8563644882294863
+          },
+          "Intestinal Colonization Status2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.025515661067785092,
+            "p_w1_z0": 0.3676899849018621,
+            "p_w1_z1": 0.5924490809736711
+          },
+          "Intestinal Colonization Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01397747192762135,
+            "p_w1_z0": 0.7971816809260192,
+            "p_w1_z1": 0.9133631395926478
+          },
+          "Intestinal Colonization Status4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.04975510491681097,
+            "mean_z0": 0.30291591287023456,
+            "mean_z1": 0.9353148696000755,
+            "pooled_var": 8.037937838572734
+          },
+          "Intestinal Colonization Status5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.024627336755464566,
+            "mean_z0": 0.7580382472477021,
+            "mean_z1": 0.24322942566502445,
+            "pooled_var": 10.761542159873947
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Intestinal Colonization Status2",
+          "log_loss": 0.6710159882438934,
+          "auc": 0.6053844524931178
+        },
+        "calibrated": {
+          "log_loss": 0.6306997849087351,
+          "auc": 0.6966255574298013
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.040316203335158285,
+          "auc_gain": 0.09124110493668347
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

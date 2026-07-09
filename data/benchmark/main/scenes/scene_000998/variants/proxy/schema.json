@@ -1,0 +1,508 @@
+{
+  "n_rows": 16000,
+  "n_columns": 19,
+  "columns": {
+    "Adult Onchocerca Worm Burden": {
+      "dtype": "float64"
+    },
+    "Clinically Significant Nodule Discomfort": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density1": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density4": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density5": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density6": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density8": {
+      "dtype": "float64"
+    },
+    "Multiple Palpable Nodules Present1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present4": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity1": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity2": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity3": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity4": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 19,
+      "columns": {
+        "Adult Onchocerca Worm Burden": {
+          "dtype": "float64"
+        },
+        "Clinically Significant Nodule Discomfort": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density1": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density4": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density5": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density6": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density8": {
+          "dtype": "float64"
+        },
+        "Multiple Palpable Nodules Present1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity1": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity2": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity3": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 18,
+      "columns": {
+        "Adult Onchocerca Worm Burden": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density1": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density4": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density5": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density6": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density8": {
+          "dtype": "float64"
+        },
+        "Multiple Palpable Nodules Present1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity1": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity2": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity3": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 22,
+      "columns": {
+        "Adult Onchocerca Worm Burden": {
+          "dtype": "float64"
+        },
+        "Clinically Significant Nodule Discomfort": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density1": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density4": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density5": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density6": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Dermal Microfilarial Density8": {
+          "dtype": "float64"
+        },
+        "Multiple Palpable Nodules Present1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Multiple Palpable Nodules Present4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity1": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity2": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity3": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity4": {
+          "dtype": "float64"
+        },
+        "Pruritus Intensity5": {
+          "dtype": "float64"
+        },
+        "Dermal Microfilarial Density": {
+          "dtype": "float64"
+        },
+        "Multiple Palpable Nodules Present": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pruritus Intensity": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Adult Onchocerca Worm Burden": {
+      "dtype": "float64"
+    },
+    "Clinically Significant Nodule Discomfort": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density1": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density4": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density5": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density6": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Dermal Microfilarial Density8": {
+      "dtype": "float64"
+    },
+    "Multiple Palpable Nodules Present1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Multiple Palpable Nodules Present4": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity1": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity2": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity3": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity4": {
+      "dtype": "float64"
+    },
+    "Pruritus Intensity5": {
+      "dtype": "float64"
+    },
+    "Dermal Microfilarial Density": {
+      "dtype": "float64"
+    },
+    "Multiple Palpable Nodules Present": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pruritus Intensity": {
+      "dtype": "float64"
+    }
+  }
+}

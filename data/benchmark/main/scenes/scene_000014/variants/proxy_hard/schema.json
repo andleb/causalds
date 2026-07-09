@@ -1,0 +1,277 @@
+{
+  "n_rows": 16000,
+  "n_columns": 12,
+  "columns": {
+    "Length of Hospital Stay": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital1": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Distance to Nearest Hospital3": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital4": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital5": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital6": {
+      "dtype": "float64"
+    },
+    "Hospital Admission1": {
+      "dtype": "float64"
+    },
+    "Hospital Admission2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hospital Admission3": {
+      "dtype": "float64"
+    },
+    "Hospital Admission4": {
+      "dtype": "float64"
+    },
+    "Hospital Admission5": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 12,
+      "columns": {
+        "Length of Hospital Stay": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital1": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Distance to Nearest Hospital3": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital4": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital5": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital6": {
+          "dtype": "float64"
+        },
+        "Hospital Admission1": {
+          "dtype": "float64"
+        },
+        "Hospital Admission2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hospital Admission3": {
+          "dtype": "float64"
+        },
+        "Hospital Admission4": {
+          "dtype": "float64"
+        },
+        "Hospital Admission5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 11,
+      "columns": {
+        "Distance to Nearest Hospital1": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Distance to Nearest Hospital3": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital4": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital5": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital6": {
+          "dtype": "float64"
+        },
+        "Hospital Admission1": {
+          "dtype": "float64"
+        },
+        "Hospital Admission2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hospital Admission3": {
+          "dtype": "float64"
+        },
+        "Hospital Admission4": {
+          "dtype": "float64"
+        },
+        "Hospital Admission5": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 1600,
+      "n_columns": 14,
+      "columns": {
+        "Length of Hospital Stay": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital1": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Distance to Nearest Hospital3": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital4": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital5": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital6": {
+          "dtype": "float64"
+        },
+        "Hospital Admission1": {
+          "dtype": "float64"
+        },
+        "Hospital Admission2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hospital Admission3": {
+          "dtype": "float64"
+        },
+        "Hospital Admission4": {
+          "dtype": "float64"
+        },
+        "Hospital Admission5": {
+          "dtype": "float64"
+        },
+        "Distance to Nearest Hospital": {
+          "dtype": "float64"
+        },
+        "Hospital Admission": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Length of Hospital Stay": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital1": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Distance to Nearest Hospital3": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital4": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital5": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital6": {
+      "dtype": "float64"
+    },
+    "Hospital Admission1": {
+      "dtype": "float64"
+    },
+    "Hospital Admission2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hospital Admission3": {
+      "dtype": "float64"
+    },
+    "Hospital Admission4": {
+      "dtype": "float64"
+    },
+    "Hospital Admission5": {
+      "dtype": "float64"
+    },
+    "Distance to Nearest Hospital": {
+      "dtype": "float64"
+    },
+    "Hospital Admission": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

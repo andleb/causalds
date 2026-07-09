@@ -1,0 +1,216 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Stomatal Conductance-derived Photosynthetic Rate"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Stomatal Conductance-derived Photosynthetic Rate"
+  ],
+  "proxy_groups": {
+    "Stomatal Conductance-derived Photosynthetic Rate": [
+      "Stomatal Conductance-derived Photosynthetic Rate1",
+      "Stomatal Conductance-derived Photosynthetic Rate2",
+      "Stomatal Conductance-derived Photosynthetic Rate3",
+      "Stomatal Conductance-derived Photosynthetic Rate4",
+      "Stomatal Conductance-derived Photosynthetic Rate5",
+      "Stomatal Conductance-derived Photosynthetic Rate6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Stomatal Conductance-derived Photosynthetic Rate": {
+      "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate1",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9976142307838594,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -1.355346796923552
+            },
+            "b": -0.5814995910923023,
+            "w_pair": {},
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -0.5514851202535432
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.11545751195794107
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate2",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.8855631598619162,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 1.005949980819465
+            },
+            "b": 0.7664732968327829,
+            "w_pair": {},
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.14262788688446554
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.7727681165892468
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate3",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.8754011374765216
+            },
+            "b": 0.3956492454595904,
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -0.8933205565884472
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 1.3690929064504735
+            }
+          }
+        },
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate4",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.8610934266489909
+            },
+            "b": 0.5341569887205753,
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.6591350228496652
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.7505329993815524
+            }
+          }
+        },
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate5",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -0.9408238812818603
+            },
+            "b": -0.3494198990168906,
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.6688543545309767
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -1.019868375018516
+            }
+          }
+        },
+        {
+          "column_name": "Stomatal Conductance-derived Photosynthetic Rate6",
+          "conceptual_node": "Stomatal Conductance-derived Photosynthetic Rate",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.0042819918624235,
+          "params": {
+            "w": {
+              "Stomatal Conductance-derived Photosynthetic Rate": -0.6116406471924043
+            },
+            "b": -0.13553200292771705,
+            "w_pair": {},
+            "w_nl": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.6790214123882319
+            },
+            "nl_shift": {
+              "Stomatal Conductance-derived Photosynthetic Rate": 0.18654546043261178
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.7754529711544151,
+        "average_information": 0.853634567475691,
+        "lower_tail_quantiles": {
+          "q10": 0.784112026545794,
+          "q25": 0.784112026545794
+        },
+        "per_proxy": {
+          "Stomatal Conductance-derived Photosynthetic Rate1": {
+            "proxy_type": "continuous"
+          },
+          "Stomatal Conductance-derived Photosynthetic Rate2": {
+            "proxy_type": "continuous"
+          },
+          "Stomatal Conductance-derived Photosynthetic Rate3": {
+            "proxy_type": "binary"
+          },
+          "Stomatal Conductance-derived Photosynthetic Rate4": {
+            "proxy_type": "binary"
+          },
+          "Stomatal Conductance-derived Photosynthetic Rate5": {
+            "proxy_type": "binary"
+          },
+          "Stomatal Conductance-derived Photosynthetic Rate6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Stomatal Conductance-derived Photosynthetic Rate1",
+          "rmse": 1.422302238252293,
+          "r2": 0.8016095807157347
+        },
+        "calibrated": {
+          "rmse": 0.8354442777419869,
+          "r2": 0.9315502469301179
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.586857960510306,
+          "r2_gain": 0.12994066621438316
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

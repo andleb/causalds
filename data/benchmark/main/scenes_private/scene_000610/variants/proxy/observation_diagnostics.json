@@ -1,0 +1,411 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Distance to Nearest Sensitive Wetland"
+  ],
+  "proxified_nodes": [
+    "Ethanol Production Volume",
+    "High-Intensity Corn Cultivation Permit Approval"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Ethanol Production Volume",
+    "High-Intensity Corn Cultivation Permit Approval"
+  ],
+  "proxy_groups": {
+    "Ethanol Production Volume": [
+      "Ethanol Production Volume1",
+      "Ethanol Production Volume2",
+      "Ethanol Production Volume3",
+      "Ethanol Production Volume4",
+      "Ethanol Production Volume5"
+    ],
+    "High-Intensity Corn Cultivation Permit Approval": [
+      "High-Intensity Corn Cultivation Permit Approval1",
+      "High-Intensity Corn Cultivation Permit Approval2",
+      "High-Intensity Corn Cultivation Permit Approval3",
+      "High-Intensity Corn Cultivation Permit Approval4",
+      "High-Intensity Corn Cultivation Permit Approval5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Ethanol Production Volume": {
+      "conceptual_node": "Ethanol Production Volume",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Ethanol Production Volume1",
+          "conceptual_node": "Ethanol Production Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.247279257448735,
+          "params": {
+            "w": {
+              "Ethanol Production Volume": -0.6647760934441911
+            },
+            "b": 0.7220346042915285,
+            "w_pair": {},
+            "w_nl": {
+              "Ethanol Production Volume": 0.3745050424557789
+            },
+            "nl_shift": {
+              "Ethanol Production Volume": 1.0227684428026032
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Ethanol Production Volume2",
+          "conceptual_node": "Ethanol Production Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.251483649359699,
+          "params": {
+            "w": {
+              "Ethanol Production Volume": 0.8721365002824923
+            },
+            "b": 0.5217701370509407,
+            "w_pair": {},
+            "w_nl": {
+              "Ethanol Production Volume": -0.8429286979293866
+            },
+            "nl_shift": {
+              "Ethanol Production Volume": -1.1248986010402526
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Ethanol Production Volume3",
+          "conceptual_node": "Ethanol Production Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.909210926405237,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  38
+                ],
+                [
+                  38,
+                  55
+                ],
+                [
+                  55,
+                  10
+                ],
+                [
+                  10,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Ethanol Production Volume"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Ethanol Production Volume4",
+          "conceptual_node": "Ethanol Production Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Ethanol Production Volume": -0.5471278118401903
+            },
+            "b": -1.6611925567554358,
+            "w_nl": {
+              "Ethanol Production Volume": -0.5349654498157552
+            },
+            "nl_shift": {
+              "Ethanol Production Volume": -0.3631467105884305
+            }
+          }
+        },
+        {
+          "column_name": "Ethanol Production Volume5",
+          "conceptual_node": "Ethanol Production Volume",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Ethanol Production Volume": -0.4936945998265022
+            },
+            "b": -0.9097447517631131,
+            "w_nl": {
+              "Ethanol Production Volume": 0.4732180448006612
+            },
+            "nl_shift": {
+              "Ethanol Production Volume": -0.12734030348866465
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.10269308578258986,
+        "average_information": 0.45141303954563466,
+        "lower_tail_quantiles": {
+          "q10": 0.2058800634066381,
+          "q25": 0.2773101871899927
+        },
+        "per_proxy": {
+          "Ethanol Production Volume1": {
+            "proxy_type": "continuous"
+          },
+          "Ethanol Production Volume2": {
+            "proxy_type": "continuous"
+          },
+          "Ethanol Production Volume3": {
+            "proxy_type": "continuous"
+          },
+          "Ethanol Production Volume4": {
+            "proxy_type": "binary"
+          },
+          "Ethanol Production Volume5": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Ethanol Production Volume1",
+          "rmse": 0.9713705038424478,
+          "r2": 0.10991565861519104
+        },
+        "calibrated": {
+          "rmse": 0.8711159712754424,
+          "r2": 0.2841644050300547
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10025453256700545,
+          "r2_gain": 0.17424874641486365
+        }
+      }
+    },
+    "High-Intensity Corn Cultivation Permit Approval": {
+      "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "High-Intensity Corn Cultivation Permit Approval1",
+          "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.411718088414618
+            },
+            "b": 0.6507353662839606,
+            "w_nl": {
+              "High-Intensity Corn Cultivation Permit Approval": 1.0474032306921361
+            },
+            "nl_shift": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.5989216554693144
+            }
+          }
+        },
+        {
+          "column_name": "High-Intensity Corn Cultivation Permit Approval2",
+          "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High-Intensity Corn Cultivation Permit Approval": 0.8674111491290944
+            },
+            "b": -0.6615903161143555,
+            "w_nl": {
+              "High-Intensity Corn Cultivation Permit Approval": 0.33345236230852265
+            },
+            "nl_shift": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.7871704540832244
+            }
+          }
+        },
+        {
+          "column_name": "High-Intensity Corn Cultivation Permit Approval3",
+          "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High-Intensity Corn Cultivation Permit Approval": 1.84957827724391
+            },
+            "b": 0.4797294325704361,
+            "w_nl": {
+              "High-Intensity Corn Cultivation Permit Approval": 0.04712779909592191
+            },
+            "nl_shift": {
+              "High-Intensity Corn Cultivation Permit Approval": -1.0034838930910746
+            }
+          }
+        },
+        {
+          "column_name": "High-Intensity Corn Cultivation Permit Approval4",
+          "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High-Intensity Corn Cultivation Permit Approval": 1.696804735821324
+            },
+            "b": -0.6562801662614058,
+            "w_nl": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.9040924217616864
+            },
+            "nl_shift": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.19774923578448234
+            }
+          }
+        },
+        {
+          "column_name": "High-Intensity Corn Cultivation Permit Approval5",
+          "conceptual_node": "High-Intensity Corn Cultivation Permit Approval",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "High-Intensity Corn Cultivation Permit Approval": -1.6336776532604569
+            },
+            "b": -0.3481658215530383,
+            "w_nl": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.36300334341996515
+            },
+            "nl_shift": {
+              "High-Intensity Corn Cultivation Permit Approval": -0.30028465213382693
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.2057825910841783,
+        "min_information": 0.2057825910841783,
+        "average_information": 0.2057825910841783,
+        "lower_tail_quantiles": {
+          "q10": 0.2057825910841783,
+          "q25": 0.2057825910841783
+        },
+        "per_proxy": {
+          "High-Intensity Corn Cultivation Permit Approval1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0005533776028464159,
+            "p_w1_z0": 0.7350919749343037,
+            "p_w1_z1": 0.7052246190381951
+          },
+          "High-Intensity Corn Cultivation Permit Approval2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.027161017567878455,
+            "p_w1_z0": 0.36628259551243175,
+            "p_w1_z1": 0.598159509202454
+          },
+          "High-Intensity Corn Cultivation Permit Approval3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.062010113919820205,
+            "p_w1_z0": 0.6262381241156256,
+            "p_w1_z1": 0.9137146249752622
+          },
+          "High-Intensity Corn Cultivation Permit Approval4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.053995844541339016,
+            "p_w1_z0": 0.30594299575500306,
+            "p_w1_z1": 0.6309123293093212
+          },
+          "High-Intensity Corn Cultivation Permit Approval5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.06206223745229421,
+            "p_w1_z0": 0.3960986456438245,
+            "p_w1_z1": 0.09994062932911142
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "High-Intensity Corn Cultivation Permit Approval3",
+          "log_loss": 0.6227393309241037,
+          "auc": 0.6552687433789575
+        },
+        "calibrated": {
+          "log_loss": 0.5202889892936483,
+          "auc": 0.8152227533085522
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.10245034163045541,
+          "auc_gain": 0.15995400992959474
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

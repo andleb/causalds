@@ -1,0 +1,550 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Initial Mass Released in First 60 Seconds",
+    "Leak Orifice Diameter"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Initial Mass Released in First 60 Seconds",
+    "Leak Orifice Diameter"
+  ],
+  "proxy_groups": {
+    "Initial Mass Released in First 60 Seconds": [
+      "Initial Mass Released in First 60 Seconds1",
+      "Initial Mass Released in First 60 Seconds2",
+      "Initial Mass Released in First 60 Seconds3",
+      "Initial Mass Released in First 60 Seconds4",
+      "Initial Mass Released in First 60 Seconds5"
+    ],
+    "Leak Orifice Diameter": [
+      "Leak Orifice Diameter1",
+      "Leak Orifice Diameter2",
+      "Leak Orifice Diameter3",
+      "Leak Orifice Diameter4",
+      "Leak Orifice Diameter5",
+      "Leak Orifice Diameter6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Initial Mass Released in First 60 Seconds": {
+      "conceptual_node": "Initial Mass Released in First 60 Seconds",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Initial Mass Released in First 60 Seconds1",
+          "conceptual_node": "Initial Mass Released in First 60 Seconds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4941141965196387,
+          "params": {
+            "w": {
+              "Initial Mass Released in First 60 Seconds": 0.7166947018206646
+            },
+            "b": 0.22528010307861926,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Mass Released in First 60 Seconds": -0.6611311318086208
+            },
+            "nl_shift": {
+              "Initial Mass Released in First 60 Seconds": 0.33355784109039366
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Initial Mass Released in First 60 Seconds2",
+          "conceptual_node": "Initial Mass Released in First 60 Seconds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.826694478329775,
+          "params": {
+            "w": {
+              "Initial Mass Released in First 60 Seconds": -0.987969230393142
+            },
+            "b": 0.1861250823593425,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Mass Released in First 60 Seconds": 0.024996139537984075
+            },
+            "nl_shift": {
+              "Initial Mass Released in First 60 Seconds": 0.2854601364160767
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Initial Mass Released in First 60 Seconds3",
+          "conceptual_node": "Initial Mass Released in First 60 Seconds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.645944352083558,
+          "params": {
+            "w": {
+              "Initial Mass Released in First 60 Seconds": -0.9992274002462428
+            },
+            "b": -0.23314399427472152,
+            "w_pair": {},
+            "w_nl": {
+              "Initial Mass Released in First 60 Seconds": 0.5149754848229255
+            },
+            "nl_shift": {
+              "Initial Mass Released in First 60 Seconds": -1.3056386818379202
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Initial Mass Released in First 60 Seconds4",
+          "conceptual_node": "Initial Mass Released in First 60 Seconds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.9347797398408355,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  35,
+                  11
+                ],
+                [
+                  11,
+                  39
+                ],
+                [
+                  39,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  11
+                ],
+                [
+                  1,
+                  39
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Initial Mass Released in First 60 Seconds"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Initial Mass Released in First 60 Seconds5",
+          "conceptual_node": "Initial Mass Released in First 60 Seconds",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Initial Mass Released in First 60 Seconds": 0.6874228832429157
+            },
+            "b": 0.7588244732143651,
+            "w_nl": {
+              "Initial Mass Released in First 60 Seconds": 0.886240814734184
+            },
+            "nl_shift": {
+              "Initial Mass Released in First 60 Seconds": 1.2684205994975417
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3248547496713009,
+        "average_information": 0.3536633582568902,
+        "lower_tail_quantiles": {
+          "q10": 0.32963960692926986,
+          "q25": 0.3375878614156261
+        },
+        "per_proxy": {
+          "Initial Mass Released in First 60 Seconds1": {
+            "proxy_type": "continuous"
+          },
+          "Initial Mass Released in First 60 Seconds2": {
+            "proxy_type": "continuous"
+          },
+          "Initial Mass Released in First 60 Seconds3": {
+            "proxy_type": "continuous"
+          },
+          "Initial Mass Released in First 60 Seconds4": {
+            "proxy_type": "continuous"
+          },
+          "Initial Mass Released in First 60 Seconds5": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Initial Mass Released in First 60 Seconds2",
+          "rmse": 1.7867589303212597,
+          "r2": 0.35894654903390266
+        },
+        "calibrated": {
+          "rmse": 1.3073976109342407,
+          "r2": 0.6567759641734185
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.479361319387019,
+          "r2_gain": 0.2978294151395159
+        }
+      }
+    },
+    "Leak Orifice Diameter": {
+      "conceptual_node": "Leak Orifice Diameter",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Leak Orifice Diameter1",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.1021348260443964,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  51,
+                  50
+                ],
+                [
+                  50,
+                  36
+                ],
+                [
+                  36,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  36
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Leak Orifice Diameter"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Leak Orifice Diameter2",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.4246052962733344,
+          "params": {
+            "w": {
+              "Leak Orifice Diameter": 1.0465533257893405
+            },
+            "b": 0.5283996283539161,
+            "w_pair": {},
+            "w_nl": {
+              "Leak Orifice Diameter": 0.33361139354296554
+            },
+            "nl_shift": {
+              "Leak Orifice Diameter": 1.4160082690392901
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Leak Orifice Diameter3",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.8516723734571907,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  64
+                ],
+                [
+                  64,
+                  9
+                ],
+                [
+                  9,
+                  20
+                ],
+                [
+                  20,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  64
+                ],
+                [
+                  1,
+                  9
+                ],
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Leak Orifice Diameter"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Leak Orifice Diameter4",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.7882594884685807,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  5,
+                  12
+                ],
+                [
+                  12,
+                  35
+                ],
+                [
+                  35,
+                  23
+                ],
+                [
+                  23,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  12
+                ],
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  23
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Leak Orifice Diameter"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Leak Orifice Diameter5",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.1925053722245855,
+          "params": {
+            "w": {
+              "Leak Orifice Diameter": 1.0569576462936123
+            },
+            "b": -0.5242318352443016,
+            "w_pair": {},
+            "w_nl": {
+              "Leak Orifice Diameter": -0.6270273766282695
+            },
+            "nl_shift": {
+              "Leak Orifice Diameter": 0.3717071692615401
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Leak Orifice Diameter6",
+          "conceptual_node": "Leak Orifice Diameter",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Leak Orifice Diameter": -0.24470315216640903
+            },
+            "b": -1.0498049481082514,
+            "w_nl": {
+              "Leak Orifice Diameter": 0.5133595903523211
+            },
+            "nl_shift": {
+              "Leak Orifice Diameter": -1.260949125027722
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.46542870575066303,
+        "average_information": 0.989633970017991,
+        "lower_tail_quantiles": {
+          "q10": 0.4667497316806728,
+          "q25": 0.4818178520353722
+        },
+        "per_proxy": {
+          "Leak Orifice Diameter1": {
+            "proxy_type": "continuous"
+          },
+          "Leak Orifice Diameter2": {
+            "proxy_type": "continuous"
+          },
+          "Leak Orifice Diameter3": {
+            "proxy_type": "continuous"
+          },
+          "Leak Orifice Diameter4": {
+            "proxy_type": "continuous"
+          },
+          "Leak Orifice Diameter5": {
+            "proxy_type": "continuous"
+          },
+          "Leak Orifice Diameter6": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Leak Orifice Diameter5",
+          "rmse": 1.1643295067198969,
+          "r2": 0.49520993266040914
+        },
+        "calibrated": {
+          "rmse": 0.9373164562835135,
+          "r2": 0.6728616360263315
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.22701305043638342,
+          "r2_gain": 0.1776517033659224
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

@@ -1,0 +1,305 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Tidal Current Velocity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Tidal Current Velocity"
+  ],
+  "proxy_groups": {
+    "Tidal Current Velocity": [
+      "Tidal Current Velocity1",
+      "Tidal Current Velocity2",
+      "Tidal Current Velocity3",
+      "Tidal Current Velocity4",
+      "Tidal Current Velocity5",
+      "Tidal Current Velocity6",
+      "Tidal Current Velocity7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Tidal Current Velocity": {
+      "conceptual_node": "Tidal Current Velocity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Tidal Current Velocity1",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.8494098536276342,
+          "params": {
+            "w": {
+              "Tidal Current Velocity": -0.5344227839186659
+            },
+            "b": 0.06534593382004074,
+            "w_pair": {},
+            "w_nl": {
+              "Tidal Current Velocity": 0.24599997810180602
+            },
+            "nl_shift": {
+              "Tidal Current Velocity": -0.9879515552016349
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity2",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.965303339638817,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  15
+                ],
+                [
+                  15,
+                  47
+                ],
+                [
+                  47,
+                  29
+                ],
+                [
+                  29,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  15
+                ],
+                [
+                  1,
+                  47
+                ],
+                [
+                  1,
+                  29
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Tidal Current Velocity"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity3",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.0523323294767195,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  20,
+                  61
+                ],
+                [
+                  61,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  61
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Tidal Current Velocity"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity4",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Tidal Current Velocity": 0.1880762295984415
+            },
+            "b": -0.19312891738364746,
+            "w_nl": {
+              "Tidal Current Velocity": 0.8667887817263933
+            },
+            "nl_shift": {
+              "Tidal Current Velocity": -0.8505597435833134
+            }
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity5",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Tidal Current Velocity": -0.5261106460459263
+            },
+            "b": 1.1479091116987823,
+            "w_nl": {
+              "Tidal Current Velocity": -0.4073538027583291
+            },
+            "nl_shift": {
+              "Tidal Current Velocity": 0.9879582382174621
+            }
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity6",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.500267544162365,
+          "params": {
+            "w": {
+              "Tidal Current Velocity": 0.20563814079700415
+            },
+            "b": 0.840689205436556,
+            "w_pair": {},
+            "w_nl": {
+              "Tidal Current Velocity": -0.060368090135517194
+            },
+            "nl_shift": {
+              "Tidal Current Velocity": -0.7004476591955332
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Tidal Current Velocity7",
+          "conceptual_node": "Tidal Current Velocity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.0685047599484805,
+          "params": {
+            "w": {
+              "Tidal Current Velocity": -0.92497664683329
+            },
+            "b": -0.8769969370848998,
+            "w_pair": {},
+            "w_nl": {
+              "Tidal Current Velocity": -0.129947119432266
+            },
+            "nl_shift": {
+              "Tidal Current Velocity": -0.46179127087652505
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.3093877429440981,
+        "average_information": 0.5042552750860854,
+        "lower_tail_quantiles": {
+          "q10": 0.36601546294450993,
+          "q25": 0.37898610919091624
+        },
+        "per_proxy": {
+          "Tidal Current Velocity1": {
+            "proxy_type": "continuous"
+          },
+          "Tidal Current Velocity2": {
+            "proxy_type": "continuous"
+          },
+          "Tidal Current Velocity3": {
+            "proxy_type": "continuous"
+          },
+          "Tidal Current Velocity4": {
+            "proxy_type": "binary"
+          },
+          "Tidal Current Velocity5": {
+            "proxy_type": "binary"
+          },
+          "Tidal Current Velocity6": {
+            "proxy_type": "continuous"
+          },
+          "Tidal Current Velocity7": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Tidal Current Velocity7",
+          "rmse": 0.9511197917039369,
+          "r2": 0.21734225718796563
+        },
+        "calibrated": {
+          "rmse": 0.8329281588062621,
+          "r2": 0.39977160429468184
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.11819163289767476,
+          "r2_gain": 0.1824293471067162
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

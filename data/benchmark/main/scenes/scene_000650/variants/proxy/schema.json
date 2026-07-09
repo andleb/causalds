@@ -1,0 +1,357 @@
+{
+  "n_rows": 16000,
+  "n_columns": 11,
+  "columns": {
+    "Severe Municipal Water Shortage": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Precipitation Deficit1": {
+      "dtype": "float64"
+    },
+    "Annual Precipitation Deficit2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence3": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence6": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence7": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence8": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 11,
+      "columns": {
+        "Severe Municipal Water Shortage": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Precipitation Deficit1": {
+          "dtype": "float64"
+        },
+        "Annual Precipitation Deficit2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence3": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence6": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence7": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 10,
+      "columns": {
+        "Annual Precipitation Deficit1": {
+          "dtype": "float64"
+        },
+        "Annual Precipitation Deficit2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence3": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence6": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence7": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence8": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 13,
+      "columns": {
+        "Severe Municipal Water Shortage": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Annual Precipitation Deficit1": {
+          "dtype": "float64"
+        },
+        "Annual Precipitation Deficit2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence3": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Hydrological Drought Occurrence6": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence7": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence8": {
+          "dtype": "float64"
+        },
+        "Annual Precipitation Deficit": {
+          "dtype": "float64"
+        },
+        "Hydrological Drought Occurrence": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Severe Municipal Water Shortage": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Annual Precipitation Deficit1": {
+      "dtype": "float64"
+    },
+    "Annual Precipitation Deficit2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence3": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Hydrological Drought Occurrence6": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence7": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence8": {
+      "dtype": "float64"
+    },
+    "Annual Precipitation Deficit": {
+      "dtype": "float64"
+    },
+    "Hydrological Drought Occurrence": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

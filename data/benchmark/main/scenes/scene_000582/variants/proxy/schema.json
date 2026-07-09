@@ -1,0 +1,617 @@
+{
+  "n_rows": 16000,
+  "n_columns": 20,
+  "columns": {
+    "Patient Mortality": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness1": {
+      "dtype": "float64"
+    },
+    "Duration of Illness2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness4": {
+      "dtype": "float64"
+    },
+    "Duration of Illness5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness6": {
+      "dtype": "float64"
+    },
+    "Duration of Illness7": {
+      "dtype": "float64"
+    },
+    "Duration of Illness8": {
+      "dtype": "float64"
+    },
+    "Duration of Illness9": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status2": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status8": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status9": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status10": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 20,
+      "columns": {
+        "Patient Mortality": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness1": {
+          "dtype": "float64"
+        },
+        "Duration of Illness2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness4": {
+          "dtype": "float64"
+        },
+        "Duration of Illness5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness6": {
+          "dtype": "float64"
+        },
+        "Duration of Illness7": {
+          "dtype": "float64"
+        },
+        "Duration of Illness8": {
+          "dtype": "float64"
+        },
+        "Duration of Illness9": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status2": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status8": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status10": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 19,
+      "columns": {
+        "Duration of Illness1": {
+          "dtype": "float64"
+        },
+        "Duration of Illness2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness4": {
+          "dtype": "float64"
+        },
+        "Duration of Illness5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness6": {
+          "dtype": "float64"
+        },
+        "Duration of Illness7": {
+          "dtype": "float64"
+        },
+        "Duration of Illness8": {
+          "dtype": "float64"
+        },
+        "Duration of Illness9": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status2": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status8": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status10": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 22,
+      "columns": {
+        "Patient Mortality": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness1": {
+          "dtype": "float64"
+        },
+        "Duration of Illness2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness4": {
+          "dtype": "float64"
+        },
+        "Duration of Illness5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Duration of Illness6": {
+          "dtype": "float64"
+        },
+        "Duration of Illness7": {
+          "dtype": "float64"
+        },
+        "Duration of Illness8": {
+          "dtype": "float64"
+        },
+        "Duration of Illness9": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status2": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status8": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Respiratory Failure Status10": {
+          "dtype": "float64"
+        },
+        "Duration of Illness": {
+          "dtype": "float64"
+        },
+        "Respiratory Failure Status": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Patient Mortality": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness1": {
+      "dtype": "float64"
+    },
+    "Duration of Illness2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness4": {
+      "dtype": "float64"
+    },
+    "Duration of Illness5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Duration of Illness6": {
+      "dtype": "float64"
+    },
+    "Duration of Illness7": {
+      "dtype": "float64"
+    },
+    "Duration of Illness8": {
+      "dtype": "float64"
+    },
+    "Duration of Illness9": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status2": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status8": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status9": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Respiratory Failure Status10": {
+      "dtype": "float64"
+    },
+    "Duration of Illness": {
+      "dtype": "float64"
+    },
+    "Respiratory Failure Status": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

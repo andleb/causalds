@@ -1,0 +1,67 @@
+{
+  "n_rows": 16000,
+  "n_columns": 4,
+  "columns": {
+    "Core Body Temperature": {
+      "dtype": "float64"
+    },
+    "Primary Thermometer Reading": {
+      "dtype": "float64"
+    },
+    "Glasgow Coma Scale Score": {
+      "dtype": "float64"
+    },
+    "Secondary Thermometer Reading": {
+      "dtype": "float64"
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 4,
+      "columns": {
+        "Core Body Temperature": {
+          "dtype": "float64"
+        },
+        "Primary Thermometer Reading": {
+          "dtype": "float64"
+        },
+        "Glasgow Coma Scale Score": {
+          "dtype": "float64"
+        },
+        "Secondary Thermometer Reading": {
+          "dtype": "float64"
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 3,
+      "columns": {
+        "Core Body Temperature": {
+          "dtype": "float64"
+        },
+        "Primary Thermometer Reading": {
+          "dtype": "float64"
+        },
+        "Secondary Thermometer Reading": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Core Body Temperature": {
+      "dtype": "float64"
+    },
+    "Primary Thermometer Reading": {
+      "dtype": "float64"
+    },
+    "Glasgow Coma Scale Score": {
+      "dtype": "float64"
+    },
+    "Secondary Thermometer Reading": {
+      "dtype": "float64"
+    }
+  }
+}

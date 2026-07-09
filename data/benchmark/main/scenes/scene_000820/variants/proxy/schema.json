@@ -1,0 +1,392 @@
+{
+  "n_rows": 16000,
+  "n_columns": 17,
+  "columns": {
+    "Clinical Tuberculosis Severity Index": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level1": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level2": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level3": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level4": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level5": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level6": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level7": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level8": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level9": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level10": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden1": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden2": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 17,
+      "columns": {
+        "Clinical Tuberculosis Severity Index": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level1": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level2": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level3": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level4": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level5": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level6": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level7": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level8": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level9": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level10": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden1": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 16,
+      "columns": {
+        "Community Environmental Mycobacterium Contamination Level1": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level2": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level3": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level4": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level5": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level6": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level7": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level8": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level9": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level10": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden1": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 19,
+      "columns": {
+        "Clinical Tuberculosis Severity Index": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level1": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level2": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level3": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level4": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level5": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level6": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level7": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level8": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level9": {
+          "dtype": "float64"
+        },
+        "Community Environmental Mycobacterium Contamination Level10": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden1": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden2": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden3": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Pulmonary Mycobacterial Burden6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Community Environmental Mycobacterium Contamination Level": {
+          "dtype": "float64"
+        },
+        "Pulmonary Mycobacterial Burden": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Clinical Tuberculosis Severity Index": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level1": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level2": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level3": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level4": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level5": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level6": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level7": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level8": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level9": {
+      "dtype": "float64"
+    },
+    "Community Environmental Mycobacterium Contamination Level10": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden1": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden2": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden3": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Pulmonary Mycobacterial Burden6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Community Environmental Mycobacterium Contamination Level": {
+      "dtype": "float64"
+    },
+    "Pulmonary Mycobacterial Burden": {
+      "dtype": "float64"
+    }
+  }
+}

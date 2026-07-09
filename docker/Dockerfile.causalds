@@ -1,0 +1,22 @@
+FROM python:3.11-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential && rm -rf /var/lib/apt/lists/*
+
+# Latest non-prerelease PyPI wheels compatible with CPython 3.11 Linux
+# as of 2026-04-27.
+RUN pip install --no-cache-dir \
+    pandas==3.0.2 \
+    numpy==2.4.4 \
+    scipy==1.17.1 \
+    scikit-learn==1.8.0 \
+    statsmodels==0.14.6 \
+    pyarrow==24.0.0 \
+    matplotlib==3.10.9 \
+    seaborn==0.13.2 \
+    networkx==3.6.1 \
+    && pip install --no-cache-dir --no-deps xgboost==3.2.0
+
+RUN mkdir -p /workspace/answers /workspace/scenes
+
+WORKDIR /workspace

@@ -1,0 +1,446 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Individual Genetic Susceptibility to Infection",
+    "Neighborhood Socioeconomic Deprivation Index"
+  ],
+  "proxified_nodes": [
+    "Neighborhood Educational Attainment Level",
+    "Rickettsia typhi Infection Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Neighborhood Educational Attainment Level",
+    "Rickettsia typhi Infection Status"
+  ],
+  "proxy_groups": {
+    "Neighborhood Educational Attainment Level": [
+      "Neighborhood Educational Attainment Level1",
+      "Neighborhood Educational Attainment Level2",
+      "Neighborhood Educational Attainment Level3",
+      "Neighborhood Educational Attainment Level4",
+      "Neighborhood Educational Attainment Level5"
+    ],
+    "Rickettsia typhi Infection Status": [
+      "Rickettsia typhi Infection Status1",
+      "Rickettsia typhi Infection Status2",
+      "Rickettsia typhi Infection Status3",
+      "Rickettsia typhi Infection Status4",
+      "Rickettsia typhi Infection Status5",
+      "Rickettsia typhi Infection Status6"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Neighborhood Educational Attainment Level": {
+      "conceptual_node": "Neighborhood Educational Attainment Level",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Neighborhood Educational Attainment Level1",
+          "conceptual_node": "Neighborhood Educational Attainment Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.93099706697255,
+          "params": {
+            "w": {
+              "Neighborhood Educational Attainment Level": 0.69324420191874
+            },
+            "b": -0.6738818383745048,
+            "w_pair": {},
+            "w_nl": {
+              "Neighborhood Educational Attainment Level": 0.4802333095535889
+            },
+            "nl_shift": {
+              "Neighborhood Educational Attainment Level": -0.4175097630644582
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Neighborhood Educational Attainment Level2",
+          "conceptual_node": "Neighborhood Educational Attainment Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Neighborhood Educational Attainment Level": 0.1756910438292999
+            },
+            "b": -0.9476944089684531,
+            "w_nl": {
+              "Neighborhood Educational Attainment Level": 0.6272744960169023
+            },
+            "nl_shift": {
+              "Neighborhood Educational Attainment Level": -1.4287472405248778
+            }
+          }
+        },
+        {
+          "column_name": "Neighborhood Educational Attainment Level3",
+          "conceptual_node": "Neighborhood Educational Attainment Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.9814507340032892,
+          "params": {
+            "w": {
+              "Neighborhood Educational Attainment Level": -1.0087440653573518
+            },
+            "b": -0.7888415052907581,
+            "w_pair": {},
+            "w_nl": {
+              "Neighborhood Educational Attainment Level": -0.7456870054524136
+            },
+            "nl_shift": {
+              "Neighborhood Educational Attainment Level": -1.3520507338994159
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Neighborhood Educational Attainment Level4",
+          "conceptual_node": "Neighborhood Educational Attainment Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.018599366705109,
+          "params": {
+            "w": {
+              "Neighborhood Educational Attainment Level": 1.0336833316739662
+            },
+            "b": -0.45463859620250113,
+            "w_pair": {},
+            "w_nl": {
+              "Neighborhood Educational Attainment Level": 0.49419511866615795
+            },
+            "nl_shift": {
+              "Neighborhood Educational Attainment Level": 0.3969643969396026
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Neighborhood Educational Attainment Level5",
+          "conceptual_node": "Neighborhood Educational Attainment Level",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Neighborhood Educational Attainment Level": -2.06908377649529
+            },
+            "b": 0.9641306416806642,
+            "w_nl": {
+              "Neighborhood Educational Attainment Level": 0.5524637345122475
+            },
+            "nl_shift": {
+              "Neighborhood Educational Attainment Level": -0.917629022853559
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.38531440145712753,
+        "average_information": 0.570118218052947,
+        "lower_tail_quantiles": {
+          "q10": 0.39949411142809615,
+          "q25": 0.4001710944937272
+        },
+        "per_proxy": {
+          "Neighborhood Educational Attainment Level1": {
+            "proxy_type": "continuous"
+          },
+          "Neighborhood Educational Attainment Level2": {
+            "proxy_type": "binary"
+          },
+          "Neighborhood Educational Attainment Level3": {
+            "proxy_type": "continuous"
+          },
+          "Neighborhood Educational Attainment Level4": {
+            "proxy_type": "continuous"
+          },
+          "Neighborhood Educational Attainment Level5": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Neighborhood Educational Attainment Level4",
+          "rmse": 1.2404048249679491,
+          "r2": 0.5089738163685108
+        },
+        "calibrated": {
+          "rmse": 0.8928642646627313,
+          "r2": 0.7455815278401168
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.34754056030521785,
+          "r2_gain": 0.23660771147160597
+        }
+      }
+    },
+    "Rickettsia typhi Infection Status": {
+      "conceptual_node": "Rickettsia typhi Infection Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Rickettsia typhi Infection Status1",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Rickettsia typhi Infection Status": 1.152574180785768
+            },
+            "b": 1.3407525664548268,
+            "w_nl": {
+              "Rickettsia typhi Infection Status": -0.03524451620859226
+            },
+            "nl_shift": {
+              "Rickettsia typhi Infection Status": -0.25290654576919946
+            }
+          }
+        },
+        {
+          "column_name": "Rickettsia typhi Infection Status2",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.877025384404436,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  60
+                ],
+                [
+                  60,
+                  40
+                ],
+                [
+                  40,
+                  57
+                ],
+                [
+                  57,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  40
+                ],
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Rickettsia typhi Infection Status"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Rickettsia typhi Infection Status3",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Rickettsia typhi Infection Status": 0.9040557902274797
+            },
+            "b": -0.5406676265492723,
+            "w_nl": {
+              "Rickettsia typhi Infection Status": 1.0118109879660484
+            },
+            "nl_shift": {
+              "Rickettsia typhi Infection Status": -1.240164308949053
+            }
+          }
+        },
+        {
+          "column_name": "Rickettsia typhi Infection Status4",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Rickettsia typhi Infection Status": -0.592998545247893
+            },
+            "b": 0.11115445237481868,
+            "w_nl": {
+              "Rickettsia typhi Infection Status": 0.638993038295534
+            },
+            "nl_shift": {
+              "Rickettsia typhi Infection Status": -1.0256449922714468
+            }
+          }
+        },
+        {
+          "column_name": "Rickettsia typhi Infection Status5",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 3.161913257897834,
+          "params": {
+            "w": {
+              "Rickettsia typhi Infection Status": 1.1186497577624286
+            },
+            "b": 0.1621831986579947,
+            "w_pair": {},
+            "w_nl": {
+              "Rickettsia typhi Infection Status": -0.5915353074172642
+            },
+            "nl_shift": {
+              "Rickettsia typhi Infection Status": 1.2955389009024492
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Rickettsia typhi Infection Status6",
+          "conceptual_node": "Rickettsia typhi Infection Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Rickettsia typhi Infection Status": -1.1782847623590933
+            },
+            "b": -0.2752694415082484,
+            "w_nl": {
+              "Rickettsia typhi Infection Status": -0.9736205651202463
+            },
+            "nl_shift": {
+              "Rickettsia typhi Infection Status": -1.1324713803035866
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.526284296329479,
+        "min_information": 0.526284296329479,
+        "average_information": 0.526284296329479,
+        "lower_tail_quantiles": {
+          "q10": 0.526284296329479,
+          "q25": 0.526284296329479
+        },
+        "per_proxy": {
+          "Rickettsia typhi Infection Status1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.014825045419601366,
+            "p_w1_z0": 0.7870054084827782,
+            "p_w1_z1": 0.9211499663752521
+          },
+          "Rickettsia typhi Infection Status2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.3117771190754329,
+            "mean_z0": -0.9973486890730792,
+            "mean_z1": 0.9510387884646455,
+            "pooled_var": 12.176049909895227
+          },
+          "Rickettsia typhi Infection Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.025266790266746574,
+            "p_w1_z0": 0.5064759464844862,
+            "p_w1_z1": 0.7447881640887694
+          },
+          "Rickettsia typhi Infection Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.007385408891304682,
+            "p_w1_z0": 0.6143609450612012,
+            "p_w1_z1": 0.48251513113651645
+          },
+          "Rickettsia typhi Infection Status5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.14154675533482097,
+            "mean_z0": 0.6745394643507181,
+            "mean_z1": 1.4663770057649368,
+            "pooled_var": 4.429679016730303
+          },
+          "Rickettsia typhi Infection Status6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.025483177341572533,
+            "p_w1_z0": 0.3094933105607743,
+            "p_w1_z1": 0.10759919300605246
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Rickettsia typhi Infection Status2",
+          "log_loss": 0.6167840535561007,
+          "auc": 0.6706836328837585
+        },
+        "calibrated": {
+          "log_loss": 0.4835695629128833,
+          "auc": 0.7981490176141632
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.1332144906432174,
+          "auc_gain": 0.1274653847304047
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

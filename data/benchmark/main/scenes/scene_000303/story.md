@@ -1,0 +1,3 @@
+# scene_000303
+
+During a 24-hour observation period in a shallow coastal estuary, oceanographers recorded Tidal Current Velocity fluctuations ranging from 0.1 to 1.8 m/s. When the Tidal Current Velocity exceeded 1.2 m/s, the critical threshold for bottom sediment resuspension was crossed, causing the High Sediment Load Flag to switch to 1 throughout the water column as fine particles became suspended. The resulting Turbulent Kinetic Energy measurements reached 0.08 m²/s², reflecting contributions from both the swift Tidal Current Velocity itself and the suspended particulate matter indicated by the High Sediment Load Flag, which increased eddy formation through particle-fluid interactions.

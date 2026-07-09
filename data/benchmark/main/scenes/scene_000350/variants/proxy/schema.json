@@ -1,0 +1,633 @@
+{
+  "n_rows": 16000,
+  "n_columns": 26,
+  "columns": {
+    "Trait-based Rumination Tendency": {
+      "dtype": "float64"
+    },
+    "Impulsive Physical Aggression": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression1": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression2": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression3": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression4": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Chronic Emotional Suppression6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Chronic Emotional Suppression7": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression8": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression1": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression3": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression6": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression7": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression8": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression9": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation1": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation2": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Somatic Frustration Manifestation4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Somatic Frustration Manifestation5": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation6": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 26,
+      "columns": {
+        "Trait-based Rumination Tendency": {
+          "dtype": "float64"
+        },
+        "Impulsive Physical Aggression": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression1": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression2": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression3": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression4": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression7": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression1": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression3": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression6": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression7": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression9": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation1": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation2": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation5": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation6": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 25,
+      "columns": {
+        "Trait-based Rumination Tendency": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression1": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression2": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression3": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression4": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression7": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression1": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression3": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression6": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression7": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression9": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation1": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation2": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation5": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation6": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 29,
+      "columns": {
+        "Trait-based Rumination Tendency": {
+          "dtype": "float64"
+        },
+        "Impulsive Physical Aggression": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression1": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression2": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression3": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression4": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression6": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression7": {
+          "dtype": "float64"
+        },
+        "Chronic Emotional Suppression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression1": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression2": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression3": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Instrumental Verbal Aggression6": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression7": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression8": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression9": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation1": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation2": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation3": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation4": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Somatic Frustration Manifestation5": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation6": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Chronic Emotional Suppression": {
+          "dtype": "float64"
+        },
+        "Instrumental Verbal Aggression": {
+          "dtype": "float64"
+        },
+        "Somatic Frustration Manifestation": {
+          "dtype": "float64"
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Trait-based Rumination Tendency": {
+      "dtype": "float64"
+    },
+    "Impulsive Physical Aggression": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression1": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression2": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression3": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression4": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Chronic Emotional Suppression6": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Chronic Emotional Suppression7": {
+      "dtype": "float64"
+    },
+    "Chronic Emotional Suppression8": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression1": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression2": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression3": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Instrumental Verbal Aggression6": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression7": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression8": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression9": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation1": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation2": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation3": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Somatic Frustration Manifestation4": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Somatic Frustration Manifestation5": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation6": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Chronic Emotional Suppression": {
+      "dtype": "float64"
+    },
+    "Instrumental Verbal Aggression": {
+      "dtype": "float64"
+    },
+    "Somatic Frustration Manifestation": {
+      "dtype": "float64"
+    }
+  }
+}

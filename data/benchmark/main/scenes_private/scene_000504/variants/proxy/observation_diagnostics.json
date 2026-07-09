@@ -1,0 +1,634 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Population Ascariasis Prevalence",
+    "Population Hookworm Prevalence"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Population Ascariasis Prevalence",
+    "Population Hookworm Prevalence"
+  ],
+  "proxy_groups": {
+    "Population Ascariasis Prevalence": [
+      "Population Ascariasis Prevalence1",
+      "Population Ascariasis Prevalence2",
+      "Population Ascariasis Prevalence3",
+      "Population Ascariasis Prevalence4",
+      "Population Ascariasis Prevalence5",
+      "Population Ascariasis Prevalence6"
+    ],
+    "Population Hookworm Prevalence": [
+      "Population Hookworm Prevalence1",
+      "Population Hookworm Prevalence2",
+      "Population Hookworm Prevalence3",
+      "Population Hookworm Prevalence4",
+      "Population Hookworm Prevalence5",
+      "Population Hookworm Prevalence6",
+      "Population Hookworm Prevalence7",
+      "Population Hookworm Prevalence8",
+      "Population Hookworm Prevalence9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Population Ascariasis Prevalence": {
+      "conceptual_node": "Population Ascariasis Prevalence",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Population Ascariasis Prevalence1",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.1149308168347383,
+          "params": {
+            "w": {
+              "Population Ascariasis Prevalence": -0.9147122264869155
+            },
+            "b": -1.0546285084929883,
+            "w_pair": {},
+            "w_nl": {
+              "Population Ascariasis Prevalence": 0.15280198816459245
+            },
+            "nl_shift": {
+              "Population Ascariasis Prevalence": 0.053112801766798334
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Population Ascariasis Prevalence2",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.6482520198860486,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  7,
+                  41
+                ],
+                [
+                  41,
+                  7
+                ],
+                [
+                  7,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  41
+                ],
+                [
+                  1,
+                  7
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Population Ascariasis Prevalence"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Population Ascariasis Prevalence3",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.6818357448547663,
+          "params": {
+            "w": {
+              "Population Ascariasis Prevalence": -0.4259451750868473
+            },
+            "b": -0.17961384989156493,
+            "w_pair": {},
+            "w_nl": {
+              "Population Ascariasis Prevalence": -0.6572571823258674
+            },
+            "nl_shift": {
+              "Population Ascariasis Prevalence": -0.7393036887849493
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Population Ascariasis Prevalence4",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.6208204179769932,
+          "params": {
+            "w": {
+              "Population Ascariasis Prevalence": 0.5910170918019261
+            },
+            "b": -0.5301205791606943,
+            "w_pair": {},
+            "w_nl": {
+              "Population Ascariasis Prevalence": -0.014393130001316257
+            },
+            "nl_shift": {
+              "Population Ascariasis Prevalence": 1.0473181286218471
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Population Ascariasis Prevalence5",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.8505050473412388,
+          "params": {
+            "w": {
+              "Population Ascariasis Prevalence": -1.3064618411475766
+            },
+            "b": -0.9140861132903377,
+            "w_pair": {},
+            "w_nl": {
+              "Population Ascariasis Prevalence": 0.884546869761405
+            },
+            "nl_shift": {
+              "Population Ascariasis Prevalence": 0.14235943789269068
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Population Ascariasis Prevalence6",
+          "conceptual_node": "Population Ascariasis Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.01358041742633,
+          "params": {
+            "w": {
+              "Population Ascariasis Prevalence": -1.2522515868507906
+            },
+            "b": -0.48309564852308884,
+            "w_pair": {},
+            "w_nl": {
+              "Population Ascariasis Prevalence": 0.5573910624656166
+            },
+            "nl_shift": {
+              "Population Ascariasis Prevalence": -1.0657801762121812
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.36526953012003277,
+        "average_information": 1.2170201342085991,
+        "lower_tail_quantiles": {
+          "q10": 0.9852600984831448,
+          "q25": 1.0882365178091444
+        },
+        "per_proxy": {
+          "Population Ascariasis Prevalence1": {
+            "proxy_type": "continuous"
+          },
+          "Population Ascariasis Prevalence2": {
+            "proxy_type": "continuous"
+          },
+          "Population Ascariasis Prevalence3": {
+            "proxy_type": "continuous"
+          },
+          "Population Ascariasis Prevalence4": {
+            "proxy_type": "continuous"
+          },
+          "Population Ascariasis Prevalence5": {
+            "proxy_type": "continuous"
+          },
+          "Population Ascariasis Prevalence6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Population Ascariasis Prevalence5",
+          "rmse": 1.2780128143770526,
+          "r2": 0.5622633257749141
+        },
+        "calibrated": {
+          "rmse": 0.8988141846999627,
+          "r2": 0.7834878102344205
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.37919862967708995,
+          "r2_gain": 0.22122448445950638
+        }
+      }
+    },
+    "Population Hookworm Prevalence": {
+      "conceptual_node": "Population Hookworm Prevalence",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Population Hookworm Prevalence1",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.368659399427699,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  63
+                ],
+                [
+                  63,
+                  60
+                ],
+                [
+                  60,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Population Hookworm Prevalence"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence2",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": 0.6865486330665077
+            },
+            "b": -0.6956536638112526,
+            "w_nl": {
+              "Population Hookworm Prevalence": 0.9535790401661935
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": 0.8197430379002775
+            }
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence3",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": 1.2721303057023667
+            },
+            "b": 0.47342868194030946,
+            "w_nl": {
+              "Population Hookworm Prevalence": 0.2523219906753639
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": 1.4788714772681057
+            }
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence4",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": 0.16335854589450727
+            },
+            "b": 0.5921219345758483,
+            "w_nl": {
+              "Population Hookworm Prevalence": -0.25026068551709685
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": 0.027885380675918947
+            }
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence5",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.3270710279843083,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  33,
+                  49
+                ],
+                [
+                  49,
+                  27
+                ],
+                [
+                  27,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Population Hookworm Prevalence"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence6",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.6952786548783294,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": -0.5610547955780281
+            },
+            "b": -0.5058229169728358,
+            "w_pair": {},
+            "w_nl": {
+              "Population Hookworm Prevalence": 0.8931004942742669
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": 0.17136380300546117
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence7",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.6454807591661007,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  6,
+                  57
+                ],
+                [
+                  57,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  6
+                ],
+                [
+                  1,
+                  57
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Population Hookworm Prevalence"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence8",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.6263542877182364,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": -1.161363868611783
+            },
+            "b": 0.6834400444034509,
+            "w_pair": {},
+            "w_nl": {
+              "Population Hookworm Prevalence": -1.4178775016062395
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": 1.2803400826448512
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Population Hookworm Prevalence9",
+          "conceptual_node": "Population Hookworm Prevalence",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4257794073967534,
+          "params": {
+            "w": {
+              "Population Hookworm Prevalence": 0.09904644137818985
+            },
+            "b": 0.06132738129168024,
+            "w_pair": {},
+            "w_nl": {
+              "Population Hookworm Prevalence": -0.8570330760170899
+            },
+            "nl_shift": {
+              "Population Hookworm Prevalence": -0.7077912063740792
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.09277332253990725,
+        "average_information": 1.6806857686512504,
+        "lower_tail_quantiles": {
+          "q10": 0.09586540244182058,
+          "q25": 0.13833332841909585
+        },
+        "per_proxy": {
+          "Population Hookworm Prevalence1": {
+            "proxy_type": "continuous"
+          },
+          "Population Hookworm Prevalence2": {
+            "proxy_type": "binary"
+          },
+          "Population Hookworm Prevalence3": {
+            "proxy_type": "binary"
+          },
+          "Population Hookworm Prevalence4": {
+            "proxy_type": "binary"
+          },
+          "Population Hookworm Prevalence5": {
+            "proxy_type": "continuous"
+          },
+          "Population Hookworm Prevalence6": {
+            "proxy_type": "continuous"
+          },
+          "Population Hookworm Prevalence7": {
+            "proxy_type": "continuous"
+          },
+          "Population Hookworm Prevalence8": {
+            "proxy_type": "continuous"
+          },
+          "Population Hookworm Prevalence9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Population Hookworm Prevalence8",
+          "rmse": 0.9579184484308179,
+          "r2": 0.3198866914202546
+        },
+        "calibrated": {
+          "rmse": 0.6635633439383607,
+          "r2": 0.6736459754987527
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.29435510449245716,
+          "r2_gain": 0.3537592840784981
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,431 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Defensive Position Fortification Level"
+  ],
+  "proxified_nodes": [
+    "Administrative Processing Delay",
+    "Mortar Attack Authorized"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Administrative Processing Delay",
+    "Mortar Attack Authorized"
+  ],
+  "proxy_groups": {
+    "Administrative Processing Delay": [
+      "Administrative Processing Delay1",
+      "Administrative Processing Delay2",
+      "Administrative Processing Delay3",
+      "Administrative Processing Delay4",
+      "Administrative Processing Delay5",
+      "Administrative Processing Delay6"
+    ],
+    "Mortar Attack Authorized": [
+      "Mortar Attack Authorized1",
+      "Mortar Attack Authorized2",
+      "Mortar Attack Authorized3"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Administrative Processing Delay": {
+      "conceptual_node": "Administrative Processing Delay",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Administrative Processing Delay1",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.778076236494755,
+          "params": {
+            "w": {
+              "Administrative Processing Delay": -1.5320591021969234
+            },
+            "b": 0.0329904883990163,
+            "w_pair": {},
+            "w_nl": {
+              "Administrative Processing Delay": -0.6090431195442829
+            },
+            "nl_shift": {
+              "Administrative Processing Delay": -0.39173971874322566
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Administrative Processing Delay2",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 3.0306643024843996,
+          "params": {
+            "w": {
+              "Administrative Processing Delay": 0.42623135574603366
+            },
+            "b": -0.5227909906538144,
+            "w_pair": {},
+            "w_nl": {
+              "Administrative Processing Delay": 0.5075305193398431
+            },
+            "nl_shift": {
+              "Administrative Processing Delay": -0.543663161087015
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Administrative Processing Delay3",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.7199485174137727,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  37,
+                  49
+                ],
+                [
+                  49,
+                  60
+                ],
+                [
+                  60,
+                  8
+                ],
+                [
+                  8,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  37
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  60
+                ],
+                [
+                  1,
+                  8
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Administrative Processing Delay"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Administrative Processing Delay4",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.702255201646718,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  21,
+                  51
+                ],
+                [
+                  51,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  21
+                ],
+                [
+                  1,
+                  51
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Administrative Processing Delay"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Administrative Processing Delay5",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Administrative Processing Delay": 0.5396024561711626
+            },
+            "b": 0.38255821012417496,
+            "w_nl": {
+              "Administrative Processing Delay": -0.6160531557944123
+            },
+            "nl_shift": {
+              "Administrative Processing Delay": 0.08182397520529117
+            }
+          }
+        },
+        {
+          "column_name": "Administrative Processing Delay6",
+          "conceptual_node": "Administrative Processing Delay",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Administrative Processing Delay": 0.36952811491803716
+            },
+            "b": 0.9222177178072349,
+            "w_nl": {
+              "Administrative Processing Delay": 0.5893114912841599
+            },
+            "nl_shift": {
+              "Administrative Processing Delay": -0.3341070521169831
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.4788610401450555,
+        "average_information": 0.6721226138705627,
+        "lower_tail_quantiles": {
+          "q10": 0.498978650167403,
+          "q25": 0.5156998007955405
+        },
+        "per_proxy": {
+          "Administrative Processing Delay1": {
+            "proxy_type": "continuous"
+          },
+          "Administrative Processing Delay2": {
+            "proxy_type": "continuous"
+          },
+          "Administrative Processing Delay3": {
+            "proxy_type": "continuous"
+          },
+          "Administrative Processing Delay4": {
+            "proxy_type": "continuous"
+          },
+          "Administrative Processing Delay5": {
+            "proxy_type": "binary"
+          },
+          "Administrative Processing Delay6": {
+            "proxy_type": "binary"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Administrative Processing Delay1",
+          "rmse": 0.8065681908042462,
+          "r2": 0.3512999612133314
+        },
+        "calibrated": {
+          "rmse": 0.6977117521946107,
+          "r2": 0.5145842991512848
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.10885643860963556,
+          "r2_gain": 0.16328433793795338
+        }
+      }
+    },
+    "Mortar Attack Authorized": {
+      "conceptual_node": "Mortar Attack Authorized",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Mortar Attack Authorized1",
+          "conceptual_node": "Mortar Attack Authorized",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Mortar Attack Authorized": -0.3517430360854492
+            },
+            "b": 0.18228748888119528,
+            "w_nl": {
+              "Mortar Attack Authorized": -0.7937492484798752
+            },
+            "nl_shift": {
+              "Mortar Attack Authorized": 0.2859244511513839
+            }
+          }
+        },
+        {
+          "column_name": "Mortar Attack Authorized2",
+          "conceptual_node": "Mortar Attack Authorized",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.986453521522599,
+          "params": {
+            "w": {
+              "Mortar Attack Authorized": -0.8881671475793311
+            },
+            "b": 0.030329009063377124,
+            "w_pair": {},
+            "w_nl": {
+              "Mortar Attack Authorized": 0.5203328400349704
+            },
+            "nl_shift": {
+              "Mortar Attack Authorized": -1.20814319089333
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Mortar Attack Authorized3",
+          "conceptual_node": "Mortar Attack Authorized",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.9238275385048438,
+          "params": {
+            "w": {
+              "Mortar Attack Authorized": -0.8602541806032487
+            },
+            "b": 0.14648114383181618,
+            "w_pair": {},
+            "w_nl": {
+              "Mortar Attack Authorized": 1.0014754313209249
+            },
+            "nl_shift": {
+              "Mortar Attack Authorized": -0.8921511753524171
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.7311940299690469,
+        "min_information": 0.7311940299690469,
+        "average_information": 0.7311940299690469,
+        "lower_tail_quantiles": {
+          "q10": 0.7311940299690469,
+          "q25": 0.7311940299690469
+        },
+        "per_proxy": {
+          "Mortar Attack Authorized1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.01835967950734857,
+            "p_w1_z0": 0.5792321116928447,
+            "p_w1_z1": 0.368885774351787
+          },
+          "Mortar Attack Authorized2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.18115649832353445,
+            "mean_z0": 0.4397891501579148,
+            "mean_z1": -0.32505058978904783,
+            "pooled_var": 3.2291407330991744
+          },
+          "Mortar Attack Authorized3": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.5316778521381639,
+            "mean_z0": 0.8869856999624711,
+            "mean_z1": 0.23493027808690092,
+            "pooled_var": 0.7996877648513367
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Mortar Attack Authorized3",
+          "log_loss": 0.6072493008052027,
+          "auc": 0.6797572006344851
+        },
+        "calibrated": {
+          "log_loss": 0.49310585521097505,
+          "auc": 0.758541944131564
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.11414344559422762,
+          "auc_gain": 0.07878474349707887
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

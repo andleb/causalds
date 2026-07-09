@@ -1,0 +1,378 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Power Outage Occurred"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Power Outage Occurred"
+  ],
+  "proxy_groups": {
+    "Power Outage Occurred": [
+      "Power Outage Occurred1",
+      "Power Outage Occurred2",
+      "Power Outage Occurred3",
+      "Power Outage Occurred4",
+      "Power Outage Occurred5",
+      "Power Outage Occurred6",
+      "Power Outage Occurred7"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Power Outage Occurred": {
+      "conceptual_node": "Power Outage Occurred",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Power Outage Occurred1",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Power Outage Occurred": 1.2021525701916054
+            },
+            "b": -0.27887435531777044,
+            "w_nl": {
+              "Power Outage Occurred": 0.9311462323396444
+            },
+            "nl_shift": {
+              "Power Outage Occurred": 0.7762720526864246
+            }
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred2",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.5653549340841995,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  56,
+                  5
+                ],
+                [
+                  5,
+                  35
+                ],
+                [
+                  35,
+                  26
+                ],
+                [
+                  26,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  56
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  26
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Power Outage Occurred"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred3",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Power Outage Occurred": -0.12987419141471412
+            },
+            "b": -1.1004750236782992,
+            "w_nl": {
+              "Power Outage Occurred": 0.009465391181182836
+            },
+            "nl_shift": {
+              "Power Outage Occurred": 1.133577681273584
+            }
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred4",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.1902191041034431,
+          "params": {
+            "w": {
+              "Power Outage Occurred": -0.20933244172990573
+            },
+            "b": 0.007979650923697193,
+            "w_pair": {},
+            "w_nl": {
+              "Power Outage Occurred": -0.11663005603984927
+            },
+            "nl_shift": {
+              "Power Outage Occurred": -0.9224385661918337
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred5",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.1853768983019575,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  27,
+                  38
+                ],
+                [
+                  38,
+                  63
+                ],
+                [
+                  63,
+                  33
+                ],
+                [
+                  33,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  38
+                ],
+                [
+                  1,
+                  63
+                ],
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Power Outage Occurred"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred6",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Power Outage Occurred": 1.4277397080597158
+            },
+            "b": 0.6954933431503169,
+            "w_nl": {
+              "Power Outage Occurred": 0.7748698205241344
+            },
+            "nl_shift": {
+              "Power Outage Occurred": -1.268769869014634
+            }
+          }
+        },
+        {
+          "column_name": "Power Outage Occurred7",
+          "conceptual_node": "Power Outage Occurred",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.1674581218968492,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  33,
+                  31
+                ],
+                [
+                  31,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  31
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Power Outage Occurred"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 4.348086586728911,
+        "min_information": 4.348086586728911,
+        "average_information": 4.348086586728911,
+        "lower_tail_quantiles": {
+          "q10": 4.348086586728911,
+          "q25": 4.348086586728911
+        },
+        "per_proxy": {
+          "Power Outage Occurred1": {
+            "proxy_type": "binary",
+            "mutual_information": 0.08864206196148576,
+            "p_w1_z0": 0.3326508812533381,
+            "p_w1_z1": 0.7493725758612823
+          },
+          "Power Outage Occurred2": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.6096926559485618,
+            "mean_z0": -1.009827182151347,
+            "mean_z1": 1.003632319515891,
+            "pooled_var": 6.649283250011967
+          },
+          "Power Outage Occurred3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.000674563493536339,
+            "p_w1_z0": 0.24719601210610645,
+            "p_w1_z1": 0.2159479808350445
+          },
+          "Power Outage Occurred4": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.025600741129139754,
+            "mean_z0": -0.041355413140777356,
+            "mean_z1": -0.30843163030193804,
+            "pooled_var": 2.786235969236267
+          },
+          "Power Outage Occurred5": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.41265564966478796,
+            "mean_z0": -0.9700841231408346,
+            "mean_z1": 1.0055731313319387,
+            "pooled_var": 9.45878625512966
+          },
+          "Power Outage Occurred6": {
+            "proxy_type": "binary",
+            "mutual_information": 0.0325837385626921,
+            "p_w1_z0": 0.7562755919529999,
+            "p_w1_z1": 0.9380561259411362
+          },
+          "Power Outage Occurred7": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 3.1782371759687074,
+            "mean_z0": -1.0066468801779658,
+            "mean_z1": 1.0058835550527172,
+            "pooled_var": 1.27437901216271
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Power Outage Occurred7",
+          "log_loss": 0.4166924056496168,
+          "auc": 0.8889654736454082
+        },
+        "calibrated": {
+          "log_loss": 0.2811040069954848,
+          "auc": 0.9510911550699152
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.13558839865413197,
+          "auc_gain": 0.06212568142450692
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

@@ -1,0 +1,381 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Foot Ulceration",
+    "Podoconiosis Status"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Foot Ulceration",
+    "Podoconiosis Status"
+  ],
+  "proxy_groups": {
+    "Foot Ulceration": [
+      "Foot Ulceration1",
+      "Foot Ulceration2",
+      "Foot Ulceration3",
+      "Foot Ulceration4"
+    ],
+    "Podoconiosis Status": [
+      "Podoconiosis Status1",
+      "Podoconiosis Status2",
+      "Podoconiosis Status3",
+      "Podoconiosis Status4",
+      "Podoconiosis Status5"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Foot Ulceration": {
+      "conceptual_node": "Foot Ulceration",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Foot Ulceration1",
+          "conceptual_node": "Foot Ulceration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Foot Ulceration": -2.6643632955313032
+            },
+            "b": 0.41154997487680994,
+            "w_nl": {
+              "Foot Ulceration": -0.2743754889563083
+            },
+            "nl_shift": {
+              "Foot Ulceration": -0.9553755601570569
+            }
+          }
+        },
+        {
+          "column_name": "Foot Ulceration2",
+          "conceptual_node": "Foot Ulceration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 1.645085176846949,
+          "params": {
+            "w": {
+              "Foot Ulceration": -1.3272032419022788
+            },
+            "b": -0.6960647888712739,
+            "w_pair": {},
+            "w_nl": {
+              "Foot Ulceration": 0.9045395393404245
+            },
+            "nl_shift": {
+              "Foot Ulceration": -0.3316243640600629
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Foot Ulceration3",
+          "conceptual_node": "Foot Ulceration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.9262400727010003,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  55,
+                  50
+                ],
+                [
+                  50,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  55
+                ],
+                [
+                  1,
+                  50
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Foot Ulceration"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Foot Ulceration4",
+          "conceptual_node": "Foot Ulceration",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.489371485333311,
+          "params": {
+            "w": {
+              "Foot Ulceration": -0.7823104352192116
+            },
+            "b": -0.5530238761630243,
+            "w_pair": {},
+            "w_nl": {
+              "Foot Ulceration": -0.2865132032225778
+            },
+            "nl_shift": {
+              "Foot Ulceration": -0.957328303821528
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.042636580366357,
+        "average_information": 2.1363179547477023,
+        "lower_tail_quantiles": {
+          "q10": 1.3252875745203254,
+          "q25": 1.3544029780816116
+        },
+        "per_proxy": {
+          "Foot Ulceration1": {
+            "proxy_type": "binary"
+          },
+          "Foot Ulceration2": {
+            "proxy_type": "continuous"
+          },
+          "Foot Ulceration3": {
+            "proxy_type": "continuous"
+          },
+          "Foot Ulceration4": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 3
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Foot Ulceration2",
+          "rmse": 0.8205172940919745,
+          "r2": 0.4160663869490733
+        },
+        "calibrated": {
+          "rmse": 0.5822118346181326,
+          "r2": 0.7059981553937298
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.23830545947384185,
+          "r2_gain": 0.2899317684446565
+        }
+      }
+    },
+    "Podoconiosis Status": {
+      "conceptual_node": "Podoconiosis Status",
+      "conceptual_node_type": "binary",
+      "proxy_columns": [
+        {
+          "column_name": "Podoconiosis Status1",
+          "conceptual_node": "Podoconiosis Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.4892453828684857,
+          "params": {
+            "w": {
+              "Podoconiosis Status": 0.7427332767578281
+            },
+            "b": -0.28724389738352835,
+            "w_pair": {},
+            "w_nl": {
+              "Podoconiosis Status": -0.1306655624044774
+            },
+            "nl_shift": {
+              "Podoconiosis Status": 0.2048544875591154
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Podoconiosis Status2",
+          "conceptual_node": "Podoconiosis Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Podoconiosis Status": -1.941472157008139
+            },
+            "b": 0.9404831488874117,
+            "w_nl": {
+              "Podoconiosis Status": -0.7706326958824951
+            },
+            "nl_shift": {
+              "Podoconiosis Status": -0.9611855689391241
+            }
+          }
+        },
+        {
+          "column_name": "Podoconiosis Status3",
+          "conceptual_node": "Podoconiosis Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Podoconiosis Status": -0.9328200046391711
+            },
+            "b": 0.2956348025928333,
+            "w_nl": {
+              "Podoconiosis Status": 0.4858660591695253
+            },
+            "nl_shift": {
+              "Podoconiosis Status": 0.7470011304746369
+            }
+          }
+        },
+        {
+          "column_name": "Podoconiosis Status4",
+          "conceptual_node": "Podoconiosis Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Podoconiosis Status": -1.2693953452535127
+            },
+            "b": -0.5535860401240645,
+            "w_nl": {
+              "Podoconiosis Status": 0.6131088089903778
+            },
+            "nl_shift": {
+              "Podoconiosis Status": -0.21344219595809566
+            }
+          }
+        },
+        {
+          "column_name": "Podoconiosis Status5",
+          "conceptual_node": "Podoconiosis Status",
+          "conceptual_node_type": "binary",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Podoconiosis Status": 0.4710398699316153
+            },
+            "b": 0.061565454437964025,
+            "w_nl": {
+              "Podoconiosis Status": 0.9490690812015223
+            },
+            "nl_shift": {
+              "Podoconiosis Status": 0.6926209968743295
+            }
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "binary_latent",
+        "bundle_score": 0.22301889562154528,
+        "min_information": 0.22301889562154528,
+        "average_information": 0.22301889562154528,
+        "lower_tail_quantiles": {
+          "q10": 0.22301889562154528,
+          "q25": 0.22301889562154528
+        },
+        "per_proxy": {
+          "Podoconiosis Status1": {
+            "proxy_type": "continuous",
+            "cohen_d_squared": 0.039052870334493464,
+            "mean_z0": -0.27260084509453075,
+            "mean_z1": 0.4143247222299429,
+            "pooled_var": 12.082767054058852
+          },
+          "Podoconiosis Status2": {
+            "proxy_type": "binary",
+            "mutual_information": 0.1097060409570553,
+            "p_w1_z0": 0.6356596942880128,
+            "p_w1_z1": 0.18486475735879077
+          },
+          "Podoconiosis Status3": {
+            "proxy_type": "binary",
+            "mutual_information": 0.013102643207859796,
+            "p_w1_z0": 0.5236323411102172,
+            "p_w1_z1": 0.3631662688941925
+          },
+          "Podoconiosis Status4": {
+            "proxy_type": "binary",
+            "mutual_information": 0.025054377621786486,
+            "p_w1_z0": 0.3866653258246179,
+            "p_w1_z1": 0.18595863166268894
+          },
+          "Podoconiosis Status5": {
+            "proxy_type": "binary",
+            "mutual_information": 0.03610296350035022,
+            "p_w1_z0": 0.41773934030571197,
+            "p_w1_z1": 0.6833731105807478
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 2
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "binary",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 1600,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Podoconiosis Status2",
+          "log_loss": 0.5881284507357109,
+          "auc": 0.7228112400400112
+        },
+        "calibrated": {
+          "log_loss": 0.534360873151435,
+          "auc": 0.8087370892969512
+        },
+        "improvement_gap": {
+          "log_loss_reduction": 0.05376757758427586,
+          "auc_gain": 0.08592584925694002
+        }
+      }
+    }
+  },
+  "variant_name": "proxy_hard"
+}

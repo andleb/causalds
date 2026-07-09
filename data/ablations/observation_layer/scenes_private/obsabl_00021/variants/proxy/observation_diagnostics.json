@@ -1,0 +1,448 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [
+    "Unmeasured Non-Pulmonary Comorbidity Burden"
+  ],
+  "proxified_nodes": [
+    "Cumulative Hyperoxic Exposure",
+    "Pulmonary Oxygen Toxicity Severity"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Cumulative Hyperoxic Exposure",
+    "Pulmonary Oxygen Toxicity Severity"
+  ],
+  "proxy_groups": {
+    "Cumulative Hyperoxic Exposure": [
+      "Cumulative Hyperoxic Exposure1",
+      "Cumulative Hyperoxic Exposure2",
+      "Cumulative Hyperoxic Exposure3",
+      "Cumulative Hyperoxic Exposure4",
+      "Cumulative Hyperoxic Exposure5",
+      "Cumulative Hyperoxic Exposure6"
+    ],
+    "Pulmonary Oxygen Toxicity Severity": [
+      "Pulmonary Oxygen Toxicity Severity1",
+      "Pulmonary Oxygen Toxicity Severity2",
+      "Pulmonary Oxygen Toxicity Severity3"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Cumulative Hyperoxic Exposure": {
+      "conceptual_node": "Cumulative Hyperoxic Exposure",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Cumulative Hyperoxic Exposure1",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.055124549548517,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  10,
+                  33
+                ],
+                [
+                  33,
+                  19
+                ],
+                [
+                  19,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  10
+                ],
+                [
+                  1,
+                  33
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Cumulative Hyperoxic Exposure"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Cumulative Hyperoxic Exposure2",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.7933967035352874,
+          "params": {
+            "w": {
+              "Cumulative Hyperoxic Exposure": 0.7079861419573776
+            },
+            "b": -0.39526581120366483,
+            "w_pair": {},
+            "w_nl": {
+              "Cumulative Hyperoxic Exposure": -0.6444067065584468
+            },
+            "nl_shift": {
+              "Cumulative Hyperoxic Exposure": -0.8514777112063091
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Cumulative Hyperoxic Exposure3",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.4087090988577877,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  24
+                ],
+                [
+                  24,
+                  35
+                ],
+                [
+                  35,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  24
+                ],
+                [
+                  1,
+                  35
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Cumulative Hyperoxic Exposure"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Cumulative Hyperoxic Exposure4",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Cumulative Hyperoxic Exposure": -1.7032284192962914
+            },
+            "b": -0.5302374959614066,
+            "w_nl": {
+              "Cumulative Hyperoxic Exposure": -0.5540414623108665
+            },
+            "nl_shift": {
+              "Cumulative Hyperoxic Exposure": -0.5310883108885903
+            }
+          }
+        },
+        {
+          "column_name": "Cumulative Hyperoxic Exposure5",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.304358719677927,
+          "params": {
+            "w": {
+              "Cumulative Hyperoxic Exposure": -0.6846642593011849
+            },
+            "b": 0.17602931195668026,
+            "w_pair": {},
+            "w_nl": {
+              "Cumulative Hyperoxic Exposure": -1.0533860916668147
+            },
+            "nl_shift": {
+              "Cumulative Hyperoxic Exposure": -1.1660489624365962
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Cumulative Hyperoxic Exposure6",
+          "conceptual_node": "Cumulative Hyperoxic Exposure",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.7598139256575915,
+          "params": {
+            "w": {
+              "Cumulative Hyperoxic Exposure": -0.9684924379225548
+            },
+            "b": -0.1721630105992025,
+            "w_pair": {},
+            "w_nl": {
+              "Cumulative Hyperoxic Exposure": 0.1783656819672314
+            },
+            "nl_shift": {
+              "Cumulative Hyperoxic Exposure": -1.0529418372713386
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.4577590797242952,
+        "average_information": 1.4256645820876441,
+        "lower_tail_quantiles": {
+          "q10": 0.7818506724914593,
+          "q25": 0.7872021953915169
+        },
+        "per_proxy": {
+          "Cumulative Hyperoxic Exposure1": {
+            "proxy_type": "continuous"
+          },
+          "Cumulative Hyperoxic Exposure2": {
+            "proxy_type": "continuous"
+          },
+          "Cumulative Hyperoxic Exposure3": {
+            "proxy_type": "continuous"
+          },
+          "Cumulative Hyperoxic Exposure4": {
+            "proxy_type": "binary"
+          },
+          "Cumulative Hyperoxic Exposure5": {
+            "proxy_type": "continuous"
+          },
+          "Cumulative Hyperoxic Exposure6": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Cumulative Hyperoxic Exposure4",
+          "rmse": 0.5947611891598787,
+          "r2": 0.09495213450063922
+        },
+        "calibrated": {
+          "rmse": 0.5202671695765286,
+          "r2": 0.30746911075773387
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.07449401958335011,
+          "r2_gain": 0.21251697625709465
+        }
+      }
+    },
+    "Pulmonary Oxygen Toxicity Severity": {
+      "conceptual_node": "Pulmonary Oxygen Toxicity Severity",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Pulmonary Oxygen Toxicity Severity1",
+          "conceptual_node": "Pulmonary Oxygen Toxicity Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 1.7130180432963036,
+          "params": {
+            "w": {
+              "Pulmonary Oxygen Toxicity Severity": 0.46578543743414524
+            },
+            "b": 0.26073329185881794,
+            "w_pair": {},
+            "w_nl": {
+              "Pulmonary Oxygen Toxicity Severity": -0.8841141789534211
+            },
+            "nl_shift": {
+              "Pulmonary Oxygen Toxicity Severity": 0.08178137286232712
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Pulmonary Oxygen Toxicity Severity2",
+          "conceptual_node": "Pulmonary Oxygen Toxicity Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "gauss",
+          "base_noise_scale": 2.69415381912668,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  20,
+                  27
+                ],
+                [
+                  27,
+                  19
+                ],
+                [
+                  19,
+                  49
+                ],
+                [
+                  49,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  20
+                ],
+                [
+                  1,
+                  27
+                ],
+                [
+                  1,
+                  19
+                ],
+                [
+                  1,
+                  49
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Pulmonary Oxygen Toxicity Severity"
+            ],
+            "continuous_mechanism_family": "generic_nn"
+          }
+        },
+        {
+          "column_name": "Pulmonary Oxygen Toxicity Severity3",
+          "conceptual_node": "Pulmonary Oxygen Toxicity Severity",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.1492700273609107,
+          "params": {
+            "w": {
+              "Pulmonary Oxygen Toxicity Severity": -0.6486379249764772
+            },
+            "b": 0.5939742265730401,
+            "w_pair": {},
+            "w_nl": {
+              "Pulmonary Oxygen Toxicity Severity": -0.7903004470286685
+            },
+            "nl_shift": {
+              "Pulmonary Oxygen Toxicity Severity": 1.0590787463554383
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 0.2585276529906303,
+        "average_information": 0.9572997975992866,
+        "lower_tail_quantiles": {
+          "q10": 0.30174704258342494,
+          "q25": 0.3043120247758865
+        },
+        "per_proxy": {
+          "Pulmonary Oxygen Toxicity Severity1": {
+            "proxy_type": "continuous"
+          },
+          "Pulmonary Oxygen Toxicity Severity2": {
+            "proxy_type": "continuous"
+          },
+          "Pulmonary Oxygen Toxicity Severity3": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Pulmonary Oxygen Toxicity Severity3",
+          "rmse": 0.706664656123063,
+          "r2": 0.31016600291262897
+        },
+        "calibrated": {
+          "rmse": 0.6954708575445836,
+          "r2": 0.3318473034762006
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.011193798578479353,
+          "r2_gain": 0.021681300563571648
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

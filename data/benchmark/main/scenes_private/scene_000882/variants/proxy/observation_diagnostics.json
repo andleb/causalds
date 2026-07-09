@@ -1,0 +1,329 @@
+{
+  "enabled": true,
+  "measurement_scope": "observed_conceptual_nodes_only",
+  "true_latent_nodes": [],
+  "proxified_nodes": [
+    "Masturbation Frequency"
+  ],
+  "conceptual_nodes_with_proxy_observation": [
+    "Masturbation Frequency"
+  ],
+  "proxy_groups": {
+    "Masturbation Frequency": [
+      "Masturbation Frequency1",
+      "Masturbation Frequency2",
+      "Masturbation Frequency3",
+      "Masturbation Frequency4",
+      "Masturbation Frequency5",
+      "Masturbation Frequency6",
+      "Masturbation Frequency7",
+      "Masturbation Frequency8",
+      "Masturbation Frequency9"
+    ]
+  },
+  "calibration_source": "train_split",
+  "train_ratio": 0.8,
+  "bundles": {
+    "Masturbation Frequency": {
+      "conceptual_node": "Masturbation Frequency",
+      "conceptual_node_type": "continuous",
+      "proxy_columns": [
+        {
+          "column_name": "Masturbation Frequency1",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "binary",
+          "mechanism_kind": "proxy_binary",
+          "noise_kind": "none",
+          "base_noise_scale": 0.0,
+          "params": {
+            "w": {
+              "Masturbation Frequency": -1.4333665110030178
+            },
+            "b": 1.1011082349376928,
+            "w_nl": {
+              "Masturbation Frequency": 0.053999100924791765
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 1.2930240304668876
+            }
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency2",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.5121972339019454,
+          "params": {
+            "w": {
+              "Masturbation Frequency": -1.2489748792204072
+            },
+            "b": 0.25227909763668255,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": 0.5526553745426892
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 0.15207944819749564
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency3",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.141553355694924,
+          "params": {
+            "w": {
+              "Masturbation Frequency": 0.8506703383974137
+            },
+            "b": -0.6993640451552783,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": 0.5837296969377592
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 0.017025801045064348
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency4",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.196818400738308,
+          "params": {
+            "w": {
+              "Masturbation Frequency": 0.9995437254995092
+            },
+            "b": 0.3727500853573254,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": 0.3637115689748324
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 0.7776035552058511
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency5",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "laplace",
+          "base_noise_scale": 2.3788053703820577,
+          "params": {
+            "w": {
+              "Masturbation Frequency": 0.6085759539086221
+            },
+            "b": 1.0066003039956937,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": -0.7257628216801969
+            },
+            "nl_shift": {
+              "Masturbation Frequency": -1.4340629042202213
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency6",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "mixture",
+          "base_noise_scale": 2.9036126463459095,
+          "params": {
+            "w": {
+              "Masturbation Frequency": 0.4146898050159462
+            },
+            "b": 0.1219757193008584,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": 0.35273452336291594
+            },
+            "nl_shift": {
+              "Masturbation Frequency": -0.4346240116162208
+            },
+            "continuous_mechanism_family": "handcrafted_continuous"
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency7",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 2.0921860093433255,
+          "params": {
+            "w": {
+              "Masturbation Frequency": -0.24357616729155773
+            },
+            "b": -0.294084904015996,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": -0.6347271476293486
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 1.3999578136260018
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency8",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_nn",
+          "noise_kind": "mixture",
+          "base_noise_scale": 1.3971889615617727,
+          "params": {
+            "nn": {
+              "weights": [
+                [
+                  1,
+                  62
+                ],
+                [
+                  62,
+                  5
+                ],
+                [
+                  5,
+                  1
+                ]
+              ],
+              "biases": [
+                [
+                  1,
+                  62
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              "output_range": [
+                -1.0,
+                1.0
+              ]
+            },
+            "parent_order": [
+              "Masturbation Frequency"
+            ],
+            "continuous_mechanism_family": "generic_nn",
+            "heteroscedastic": true
+          }
+        },
+        {
+          "column_name": "Masturbation Frequency9",
+          "conceptual_node": "Masturbation Frequency",
+          "conceptual_node_type": "continuous",
+          "proxy_type": "continuous",
+          "mechanism_kind": "proxy_continuous",
+          "noise_kind": "studentt",
+          "base_noise_scale": 1.0396169174414231,
+          "params": {
+            "w": {
+              "Masturbation Frequency": 0.15504244524992428
+            },
+            "b": -0.3297959493345172,
+            "w_pair": {},
+            "w_nl": {
+              "Masturbation Frequency": 0.5181337864442688
+            },
+            "nl_shift": {
+              "Masturbation Frequency": 0.13131417607533935
+            },
+            "continuous_mechanism_family": "handcrafted_continuous",
+            "heteroscedastic": true
+          }
+        }
+      ],
+      "information_diagnostics": {
+        "diagnostic_type": "continuous_latent",
+        "min_information": 1.0540958802928952,
+        "average_information": 1.5037319035134613,
+        "lower_tail_quantiles": {
+          "q10": 1.0808090763681069,
+          "q25": 1.0840590686962888
+        },
+        "per_proxy": {
+          "Masturbation Frequency1": {
+            "proxy_type": "binary"
+          },
+          "Masturbation Frequency2": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency3": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency4": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency5": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency6": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency7": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency8": {
+            "proxy_type": "continuous"
+          },
+          "Masturbation Frequency9": {
+            "proxy_type": "continuous"
+          }
+        },
+        "rejected_thresholds": {},
+        "sampling_attempt": 1
+      },
+      "baseline_diagnostics": {
+        "status": "ok",
+        "metric_type": "continuous",
+        "naive_data_source": "calibration",
+        "naive_train_rows": 2400,
+        "calibrated_train_rows": 16000,
+        "naive": {
+          "proxy_name": "Masturbation Frequency4",
+          "rmse": 0.8792887807611335,
+          "r2": 0.49916492626258513
+        },
+        "calibrated": {
+          "rmse": 0.6214015790456243,
+          "r2": 0.7498638987207344
+        },
+        "improvement_gap": {
+          "rmse_reduction": 0.25788720171550916,
+          "r2_gain": 0.2506989724581493
+        }
+      }
+    }
+  },
+  "variant_name": "proxy"
+}

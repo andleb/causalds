@@ -1,0 +1,331 @@
+{
+  "n_rows": 16000,
+  "n_columns": 11,
+  "columns": {
+    "Rabies Virus Infection": {
+      "dtype": "float64"
+    },
+    "Hydrophobia Symptom": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal2": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal3": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal4": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal6": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal9": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "datasets": {
+    "data.parquet": {
+      "n_rows": 16000,
+      "n_columns": 11,
+      "columns": {
+        "Rabies Virus Infection": {
+          "dtype": "float64"
+        },
+        "Hydrophobia Symptom": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal2": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal3": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal4": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal6": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "test_features.parquet": {
+      "n_rows": 4000,
+      "n_columns": 10,
+      "columns": {
+        "Rabies Virus Infection": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal2": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal3": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal4": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal6": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "calibration.parquet": {
+      "n_rows": 2400,
+      "n_columns": 12,
+      "columns": {
+        "Rabies Virus Infection": {
+          "dtype": "float64"
+        },
+        "Hydrophobia Symptom": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal1": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal2": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal3": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal4": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal5": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal6": {
+          "dtype": "float64"
+        },
+        "Contact with Rabid Animal7": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal8": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal9": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        },
+        "Contact with Rabid Animal": {
+          "dtype": "float64",
+          "is_binary": true,
+          "values": [
+            0.0,
+            1.0
+          ]
+        }
+      }
+    }
+  },
+  "all_public_columns": {
+    "Rabies Virus Infection": {
+      "dtype": "float64"
+    },
+    "Hydrophobia Symptom": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal1": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal2": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal3": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal4": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal5": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal6": {
+      "dtype": "float64"
+    },
+    "Contact with Rabid Animal7": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal8": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal9": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    },
+    "Contact with Rabid Animal": {
+      "dtype": "float64",
+      "is_binary": true,
+      "values": [
+        0.0,
+        1.0
+      ]
+    }
+  }
+}
