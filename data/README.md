@@ -3,6 +3,8 @@ pretty_name: CausalDS
 license: cc0-1.0
 language:
 - en
+task_categories:
+- other
 tags:
 - causal-reasoning
 - causal-inference
@@ -11,7 +13,6 @@ tags:
 - agents
 - synthetic
 - tabular
-- arxiv:2607.08093
 configs:
 - config_name: main
   default: true
